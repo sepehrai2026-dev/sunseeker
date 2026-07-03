@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /Users/sradjpoust/Documents/Claude/Projects/Sunseeker/.claude)",
+      "Bash(npx --version)",
+      "Read(//opt/homebrew/bin/**)",
+      "Read(//usr/local/bin/**)",
+      "Read(//Users/sradjpoust/.nvm/versions/**)",
+      "Bash(command -v live-server)",
+      "Bash(command -v http-server)",
+      "Bash(command -v serve)"
+    ]
+  }
+}

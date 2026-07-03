@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "sunseeker",
+      "runtimeExecutable": "/usr/bin/python3",
+      "runtimeArgs": ["-c", "import http.server,socketserver,os;os.chdir('/Users/sradjpoust/Documents/Claude/Projects/Sunseeker');httpd=socketserver.TCPServer(('',8080),http.server.SimpleHTTPRequestHandler);httpd.serve_forever()"],
+      "port": 8080
+    }
+  ]
+}

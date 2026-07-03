@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunseeker — Find Sunny Patios Near You</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Search Bar -->
+    <div id="search-bar">
+      <div id="search-container">
+        <svg id="search-icon" viewBox="0 0 24 24" width="20" height="20">
+          <path fill="#5f6368" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+        </svg>
+        <input type="text" id="search-input" placeholder="Search street, city, or neighborhood..." autocomplete="off" />
+        <button id="locate-btn" title="Use my location">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path fill="#5f6368" d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm8.94 3A8.994 8.994 0 0 0 13 3.06V1h-2v2.06A8.994 8.994 0 0 0 3.06 11H1v2h2.06A8.994 8.994 0 0 0 11 20.94V23h2v-2.06A8.994 8.994 0 0 0 20.94 13H23v-2h-2.06zM12 19c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"/>
+          </svg>
+        </button>
+      </div>
+      <div id="search-results" class="hidden"></div>
+    </div>
+
+    <!-- Sun Status Banner -->
+    <div id="sun-banner">
+      <div id="sun-banner-content">
+        <span id="sun-icon-banner">☀️</span>
+        <span id="sun-status-text">Loading sun data...</span>
+      </div>
+    </div>
+
+    <!-- Map -->
+    <div id="map"></div>
+
+    <!-- Loading Overlay -->
+    <div id="loading-overlay" class="hidden">
+      <div id="loading-spinner"></div>
+      <div id="loading-text">Finding sunny patios...</div>
+    </div>
+
+    <!-- Time Slider -->
+    <div id="time-slider-container">
+      <div id="time-slider-header">
+        <button id="time-now-btn" class="time-btn active">Now</button>
+        <div id="time-display">
+          <span id="time-display-date"></span>
+          <span id="time-display-time"></span>
+        </div>
+        <button id="time-reset-btn" class="time-btn hidden">Reset</button>
+      </div>
+      <div id="time-slider-track">
+        <div id="time-slider-progress"></div>
+        <input type="range" id="time-slider" min="0" max="288" value="0" step="1" />
+        <div id="time-ticks"></div>
+      </div>
+      <div id="time-labels"></div>
+    </div>
+
+    <!-- Bottom Sheet -->
+    <div id="bottom-sheet" class="collapsed">
+      <div id="sheet-handle" role="button" tabindex="0">
+        <div id="handle-bar"></div>
+      </div>
+      <div id="sheet-content">
+        <div id="sheet-header">
+          <h2 id="sheet-title">Nearby Sunny Patios</h2>
+          <div id="sheet-subtitle">
+            <span id="patio-count">0</span> patios found &middot; <span id="sunny-count">0</span> in sun <span id="time-context">now</span>
+          </div>
+        </div>
+        <div id="filter-bar">
+          <button class="filter-chip active" data-filter="all">All</button>
+          <button class="filter-chip" data-filter="sunny">☀️ Sunny</button>
+          <button class="filter-chip" data-filter="soon">🌤️ Sun Soon</button>
+          <button class="filter-chip" data-filter="shade">🌥️ In Shade</button>
+        </div>
+        <div id="patio-list"></div>
+      </div>
+    </div>
+
+    <!-- Patio Detail Panel -->
+    <div id="detail-panel" class="hidden">
+      <button id="detail-close">&larr; Back</button>
+      <div id="detail-content"></div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="suncalc.js"></script>
+  <script src="places.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
