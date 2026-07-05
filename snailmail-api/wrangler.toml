@@ -1,0 +1,7 @@
+name = "snailmail-api"
+main = "src/index.js"
+compatibility_date = "2026-06-01"
+account_id = "89faf73996d0845a99ce853341011924"
+
+[observability]
+enabled = true

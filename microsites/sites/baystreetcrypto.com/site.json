@@ -34,7 +34,7 @@
         "CRA reporting requirements for crypto",
         "Common audit triggers to avoid"
       ],
-      "url": "#affiliate-tax-guide",
+      "url": "https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/compliance/digital-currency/cryptocurrency-guide.html",
       "cta": "Read tax guide"
     },
     {
@@ -49,7 +49,7 @@
         "Available cryptocurrencies",
         "Security and insurance coverage"
       ],
-      "url": "#affiliate-exchanges",
+      "url": "https://www.securities-administrators.ca/crypto-trading-platforms-regulation-and-enforcement-actions/",
       "cta": "Compare exchanges"
     },
     {
@@ -64,7 +64,7 @@
         "Spot vs. futures-based ETF differences",
         "Performance tracking and benchmarking"
       ],
-      "url": "#affiliate-etfs",
+      "url": "https://www.tmx.com",
       "cta": "Explore ETFs"
     },
     {
@@ -79,7 +79,7 @@
         "Environmental and sustainability factors",
         "Home mining vs. hosted mining options"
       ],
-      "url": "#affiliate-mining",
+      "url": "https://ccaf.io/cbnsi/cbeci",
       "cta": "Learn about mining"
     },
     {
@@ -94,7 +94,7 @@
         "Upcoming regulatory proposals",
         "Canada vs. US regulatory comparison"
       ],
-      "url": "#affiliate-regulations",
+      "url": "https://fintrac-canafe.canada.ca",
       "cta": "Understand regulations"
     },
     {
@@ -109,7 +109,7 @@
         "Environmental impact and green mining",
         "Major mining operations in Quebec"
       ],
-      "url": "#affiliate-quebec-mining",
+      "url": "https://www.hydroquebec.com/business/customer-space/rates/electricity-rates-blockchain-enterprises.html",
       "cta": "Explore Quebec mining"
     }
   ],

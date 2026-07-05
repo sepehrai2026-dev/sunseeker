@@ -50,6 +50,12 @@
       "port": 8085
     },
     {
+      "name": "snailmail-dist",
+      "runtimeExecutable": "/Users/sradjpoust/.nvm/versions/node/v22.23.1/bin/node",
+      "runtimeArgs": ["/private/tmp/claude-501/-Users-sradjpoust-Documents-Claude-Projects-Sunseeker/a2ff541a-62a3-4f53-ac87-27bc004179a0/scratchpad/serve-dist.js", "/Users/sradjpoust/Documents/Claude/Projects/Sunseeker/microsites/sites/snailmailme.com/dist", "8798"],
+      "port": 8798
+    },
+    {
       "name": "artsheet",
       "runtimeExecutable": "/Users/sradjpoust/.nvm/versions/node/v22.23.1/bin/node",
       "runtimeArgs": ["/private/tmp/claude-501/-Users-sradjpoust-Documents-Claude-Projects-Sunseeker/a2ff541a-62a3-4f53-ac87-27bc004179a0/scratchpad/serve-dist.js", "/private/tmp/claude-501/-Users-sradjpoust-Documents-Claude-Projects-Sunseeker/a2ff541a-62a3-4f53-ac87-27bc004179a0/scratchpad", "8086"],

@@ -33,7 +33,7 @@
         "Bitmain firmware with auto-tuning"
       ],
       "pricing": "From <strong>$5,500</strong>",
-      "url": "#affiliate-antminer-s21",
+      "url": "https://shop.bitmain.com/",
       "cta": "Check Price",
       "featured": true
     },
@@ -50,7 +50,7 @@
         "Industrial-grade reliability"
       ],
       "pricing": "From <strong>$7,200</strong>",
-      "url": "#affiliate-whatsminer-m56s",
+      "url": "https://www.microbt.com/",
       "cta": "Check Price",
       "featured": true
     },
@@ -67,7 +67,7 @@
         "Competitive price per TH"
       ],
       "pricing": "From <strong>$3,800</strong>",
-      "url": "#affiliate-avalon-a1466",
+      "url": "https://www.canaan.io/",
       "cta": "Check Price"
     },
     {
@@ -83,7 +83,7 @@
         "Quick ROI potential"
       ],
       "pricing": "From <strong>$9,500</strong>",
-      "url": "#affiliate-iceriver-ks5l",
+      "url": "https://www.iceriver.io/product/iceriver-kas-ks5l/",
       "cta": "Check Price"
     },
     {
@@ -99,7 +99,7 @@
         "Lower noise than industrial ASICs"
       ],
       "pricing": "From <strong>$3,000-$10,000</strong> depending on config",
-      "url": "#affiliate-gpu-mining-rigs",
+      "url": "https://pcpartpicker.com/",
       "cta": "Build a Rig"
     }
   ],

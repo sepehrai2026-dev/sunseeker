@@ -25,7 +25,7 @@
     {"name": "No app needed", "icon": "🌐", "description": "Everything happens in your browser. No downloads, no accounts required."}
   ],
   "faqs": [
-    {"q": "How much does it cost?", "a": "In a production version, postcards would start at $2.99 and letters at $3.99, including printing, envelope, stamp, and domestic postage. International postage varies by destination."},
+    {"q": "How much does it cost?", "a": "Postcards are $3.99 each, including printing, stamp, and domestic postage. International postage varies by destination."},
     {"q": "How long does delivery take?", "a": "Cards are printed and mailed within 1 business day. Domestic delivery typically takes 3-7 business days. International delivery takes 7-14 business days depending on the destination."},
     {"q": "Can I upload my own design?", "a": "In a full version, yes. You'd be able to upload any image to use as your postcard front. We'd print it edge-to-edge on premium cardstock."},
     {"q": "Is this demo functional?", "a": "This is a concept demo — you can design a card and preview it, but it won't actually be printed or mailed. The full version would integrate with a print-and-mail API to handle physical delivery."},

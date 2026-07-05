@@ -33,7 +33,7 @@
         "Based in Sweden (strong privacy laws)"
       ],
       "pricing": "<strong>€5/mo</strong> — flat rate, no tiers",
-      "url": "#affiliate-mullvad",
+      "url": "https://mullvad.net/",
       "cta": "Visit Mullvad",
       "featured": true
     },
@@ -50,7 +50,7 @@
         "Open-source apps, independently audited"
       ],
       "pricing": "<strong>Free</strong> or from <strong>$4.99/mo</strong> for Plus",
-      "url": "#affiliate-protonvpn",
+      "url": "https://protonvpn.com/",
       "cta": "Visit ProtonVPN"
     },
     {
@@ -66,7 +66,7 @@
         "Open-source, independently audited"
       ],
       "pricing": "<strong>Free</strong> or from <strong>$3.99/mo</strong> for Mail Plus",
-      "url": "#affiliate-protonmail",
+      "url": "https://proton.me/mail",
       "cta": "Visit ProtonMail"
     },
     {
@@ -82,7 +82,7 @@
         "Open-source clients"
       ],
       "pricing": "<strong>Free</strong> or from <strong>€3/mo</strong> for Revolutionary",
-      "url": "#affiliate-tuta",
+      "url": "https://tuta.com/",
       "cta": "Visit Tuta"
     },
     {
@@ -98,7 +98,7 @@
         "Earn BAT tokens for optional ads"
       ],
       "pricing": "<strong>Free</strong>",
-      "url": "#affiliate-brave",
+      "url": "https://brave.com/",
       "cta": "Download Brave",
       "featured": true
     },
@@ -115,7 +115,7 @@
         "Containers for isolating sessions"
       ],
       "pricing": "<strong>Free</strong>",
-      "url": "#affiliate-firefox",
+      "url": "https://www.firefox.com/",
       "cta": "Download Firefox"
     },
     {
@@ -131,7 +131,7 @@
         "Sealed sender (hides metadata)"
       ],
       "pricing": "<strong>Free</strong>",
-      "url": "#affiliate-signal",
+      "url": "https://signal.org/",
       "cta": "Download Signal",
       "featured": true
     },
@@ -148,7 +148,7 @@
         "Independently audited no-logs policy"
       ],
       "pricing": "From <strong>$3.59/mo</strong> (2-year plan)",
-      "url": "#affiliate-nordvpn",
+      "url": "https://nordvpn.com/",
       "cta": "Visit NordVPN"
     },
     {
@@ -164,7 +164,7 @@
         "TOTP authenticator on premium"
       ],
       "pricing": "<strong>Free</strong> or <strong>$10/year</strong> for Premium",
-      "url": "#affiliate-bitwarden",
+      "url": "https://bitwarden.com/",
       "cta": "Visit Bitwarden"
     }
   ],

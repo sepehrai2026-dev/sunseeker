@@ -33,7 +33,7 @@
         "Deepest liquidity of any crypto asset"
       ],
       "pricing": "<strong>Divisible</strong> — buy any fraction (satoshis)",
-      "url": "#affiliate-bitcoin",
+      "url": "https://bitcoin.org/",
       "cta": "Buy Bitcoin",
       "featured": true
     },
@@ -50,7 +50,7 @@
         "Largest developer community in crypto"
       ],
       "pricing": "<strong>Divisible</strong> — buy any fraction (wei)",
-      "url": "#affiliate-ethereum",
+      "url": "https://ethereum.org/",
       "cta": "Buy Ethereum",
       "featured": true
     },
@@ -67,7 +67,7 @@
         "Strong developer ecosystem (Rust/Anchor)"
       ],
       "pricing": "<strong>Divisible</strong> — buy any fraction (lamports)",
-      "url": "#affiliate-solana",
+      "url": "https://solana.com/",
       "cta": "Buy Solana"
     },
     {
@@ -83,7 +83,7 @@
         "High staking yield on AVAX"
       ],
       "pricing": "<strong>Divisible</strong> — buy any fraction",
-      "url": "#affiliate-avalanche",
+      "url": "https://www.avax.network/",
       "cta": "Buy Avalanche"
     },
     {
@@ -99,7 +99,7 @@
         "Critical infrastructure for blockchain"
       ],
       "pricing": "<strong>Divisible</strong> — buy any fraction",
-      "url": "#affiliate-chainlink",
+      "url": "https://chain.link/",
       "cta": "Buy Chainlink"
     },
     {
@@ -115,7 +115,7 @@
         "On-chain governance with treasury"
       ],
       "pricing": "<strong>Divisible</strong> — buy any fraction (planck)",
-      "url": "#affiliate-polkadot",
+      "url": "https://polkadot.com/",
       "cta": "Buy Polkadot"
     }
   ],

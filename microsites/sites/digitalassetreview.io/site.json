@@ -34,7 +34,7 @@
         "Smart contract audit history",
         "Governance and token utility breakdown"
       ],
-      "url": "#affiliate-defi-protocols",
+      "url": "https://defillama.com",
       "cta": "Read DeFi review"
     },
     {
@@ -49,7 +49,7 @@
         "Decentralization progress and sequencer risk",
         "Ecosystem and developer adoption metrics"
       ],
-      "url": "#affiliate-layer2-review",
+      "url": "https://l2beat.com",
       "cta": "Read L2 review"
     },
     {
@@ -64,7 +64,7 @@
         "On-chain vs. off-chain metadata storage",
         "Market volume and liquidity analysis"
       ],
-      "url": "#affiliate-nft-platforms",
+      "url": "https://opensea.io",
       "cta": "Read NFT review"
     },
     {
@@ -79,7 +79,7 @@
         "Centralized vs. algorithmic vs. CDP models",
         "Integration across DeFi protocols"
       ],
-      "url": "#affiliate-stablecoins",
+      "url": "https://defillama.com/stablecoins",
       "cta": "Read stablecoin review"
     },
     {
@@ -94,7 +94,7 @@
         "Fee and speed benchmarks",
         "Trust assumptions and verification methods"
       ],
-      "url": "#affiliate-bridge-protocols",
+      "url": "https://l2beat.com/bridges/summary",
       "cta": "Read bridge review"
     },
     {
@@ -109,7 +109,7 @@
         "Regulatory framework and compliance",
         "Institutional adoption and TVL growth"
       ],
-      "url": "#affiliate-rwa-review",
+      "url": "https://www.rwa.xyz",
       "cta": "Read RWA review"
     }
   ],

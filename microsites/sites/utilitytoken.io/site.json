@@ -33,7 +33,7 @@
         "Enterprise clients including Internet Archive"
       ],
       "pricing": "<strong>FIL token</strong> — storage costs ~$0.0001/GB/month",
-      "url": "#affiliate-filecoin",
+      "url": "https://filecoin.io/",
       "cta": "Explore Filecoin",
       "featured": true
     },
@@ -50,7 +50,7 @@
         "Growing AI and machine learning demand"
       ],
       "pricing": "<strong>RNDR token</strong> — pay per compute job",
-      "url": "#affiliate-render",
+      "url": "https://rendernetwork.com/",
       "cta": "Explore Render",
       "featured": true
     },
@@ -67,7 +67,7 @@
         "Critical infrastructure for dApps"
       ],
       "pricing": "<strong>GRT token</strong> — pay per query",
-      "url": "#affiliate-the-graph",
+      "url": "https://thegraph.com/",
       "cta": "Explore The Graph"
     },
     {
@@ -83,7 +83,7 @@
         "LINK staking for node operators"
       ],
       "pricing": "<strong>LINK token</strong> — compensates oracle node operators",
-      "url": "#affiliate-chainlink",
+      "url": "https://chain.link/",
       "cta": "Explore Chainlink"
     },
     {
@@ -99,7 +99,7 @@
         "Migrated to Solana for scalability"
       ],
       "pricing": "<strong>HNT token</strong> — earned by providing coverage",
-      "url": "#affiliate-helium",
+      "url": "https://www.helium.com/",
       "cta": "Explore Helium"
     }
   ],

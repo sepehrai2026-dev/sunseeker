@@ -33,7 +33,7 @@
         "Strong historical average ROI"
       ],
       "pricing": "<strong>Stake BNB</strong> — allocation based on BNB holdings",
-      "url": "#affiliate-binance-launchpad",
+      "url": "https://www.binance.com/en/launchpad",
       "cta": "Visit Binance Launchpad",
       "featured": true
     },
@@ -50,7 +50,7 @@
         "Quick listing after token generation"
       ],
       "pricing": "<strong>Hold KCS</strong> — lottery and first-come-first-served options",
-      "url": "#affiliate-kucoin-spotlight",
+      "url": "https://www.kucoin.com/spotlight",
       "cta": "Visit KuCoin Spotlight"
     },
     {
@@ -66,7 +66,7 @@
         "Cross-chain project support"
       ],
       "pricing": "<strong>Stake DAO</strong> — tiered allocation system",
-      "url": "#affiliate-dao-maker",
+      "url": "https://daomaker.com/",
       "cta": "Visit DAO Maker",
       "featured": true
     },
@@ -83,7 +83,7 @@
         "NFT launchpad integration"
       ],
       "pricing": "<strong>Stake SFUND</strong> — 9-tier allocation system",
-      "url": "#affiliate-seedify",
+      "url": "https://seedify.fund/",
       "cta": "Visit Seedify"
     },
     {
@@ -99,7 +99,7 @@
         "Strong DeFi project focus"
       ],
       "pricing": "<strong>Stake POLS</strong> — whitelist and lottery system",
-      "url": "#affiliate-polkastarter",
+      "url": "https://polkastarter.com/",
       "cta": "Visit Polkastarter"
     }
   ],

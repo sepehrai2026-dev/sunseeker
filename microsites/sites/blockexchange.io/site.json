@@ -33,7 +33,7 @@
         "Coinbase Wallet for self-custody"
       ],
       "pricing": "Maker <strong>0.40%</strong> / Taker <strong>0.60%</strong> (volume discounts available)",
-      "url": "#affiliate-coinbase",
+      "url": "https://www.coinbase.com/",
       "cta": "Visit Coinbase",
       "featured": true
     },
@@ -50,7 +50,7 @@
         "24/7 live customer support"
       ],
       "pricing": "Maker <strong>0.25%</strong> / Taker <strong>0.40%</strong>",
-      "url": "#affiliate-kraken",
+      "url": "https://www.kraken.com/",
       "cta": "Visit Kraken",
       "featured": true
     },
@@ -67,7 +67,7 @@
         "Binance Earn passive income products"
       ],
       "pricing": "Maker <strong>0.10%</strong> / Taker <strong>0.10%</strong> (before BNB discount)",
-      "url": "#affiliate-binance",
+      "url": "https://www.binance.com/",
       "cta": "Visit Binance"
     },
     {
@@ -83,7 +83,7 @@
         "ActiveTrader platform for advanced users"
       ],
       "pricing": "Maker <strong>0.20%</strong> / Taker <strong>0.40%</strong>",
-      "url": "#affiliate-gemini",
+      "url": "https://www.gemini.com/",
       "cta": "Visit Gemini"
     },
     {
@@ -99,7 +99,7 @@
         "P2P trading available"
       ],
       "pricing": "Maker <strong>0.10%</strong> / Taker <strong>0.10%</strong>",
-      "url": "#affiliate-kucoin",
+      "url": "https://www.kucoin.com/",
       "cta": "Visit KuCoin"
     },
     {
@@ -115,7 +115,7 @@
         "Multi-chain (Ethereum, Polygon, Arbitrum, etc.)"
       ],
       "pricing": "<strong>0.30%</strong> swap fee (varies by pool)",
-      "url": "#affiliate-uniswap",
+      "url": "https://uniswap.org/",
       "cta": "Visit Uniswap"
     }
   ],

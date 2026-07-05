@@ -33,7 +33,7 @@
         "15-day average time from deployment to value"
       ],
       "pricing": "<strong>$8.99/endpoint/mo</strong> — Falcon Go (up to 100 endpoints)",
-      "url": "#affiliate-crowdstrike",
+      "url": "https://www.crowdstrike.com/platform/",
       "cta": "Visit CrowdStrike",
       "featured": true
     },
@@ -50,7 +50,7 @@
         "No cloud connectivity required for detection"
       ],
       "pricing": "<strong>$6/endpoint/mo</strong> — Singularity Control",
-      "url": "#affiliate-sentinelone",
+      "url": "https://www.sentinelone.com/platform/",
       "cta": "Visit SentinelOne",
       "featured": true
     },
@@ -67,7 +67,7 @@
         "Cross-platform (Windows, macOS, Linux, mobile)"
       ],
       "pricing": "<strong>$5.20/user/mo</strong> — Plan 2 standalone",
-      "url": "#affiliate-msdefender",
+      "url": "https://www.microsoft.com/en-us/security/business/endpoint-security/microsoft-defender-endpoint",
       "cta": "Visit Microsoft"
     },
     {
@@ -83,7 +83,7 @@
         "Forensic investigation tools"
       ],
       "pricing": "Contact for pricing — enterprise agreements",
-      "url": "#affiliate-cortex",
+      "url": "https://www.paloaltonetworks.com/cortex/cortex-xdr",
       "cta": "Visit Palo Alto"
     },
     {
@@ -99,7 +99,7 @@
         "Central management via Sophos Central"
       ],
       "pricing": "From <strong>$28/user/year</strong> — Intercept X Advanced",
-      "url": "#affiliate-sophos",
+      "url": "https://www.sophos.com/en-us/products/intercept-x.aspx",
       "cta": "Visit Sophos"
     },
     {
@@ -115,7 +115,7 @@
         "Self-hosted or Elastic Cloud"
       ],
       "pricing": "<strong>Free</strong> (self-hosted) or from <strong>$95/mo</strong> (Elastic Cloud)",
-      "url": "#affiliate-elastic",
+      "url": "https://www.elastic.co/security",
       "cta": "Visit Elastic"
     }
   ],

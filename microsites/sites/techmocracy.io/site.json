@@ -34,7 +34,7 @@
         "Frontier model regulation and safety standards",
         "Impact on open-source AI development"
       ],
-      "url": "#affiliate-ai-regulation",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
       "cta": "Understand AI regulation"
     },
     {
@@ -49,7 +49,7 @@
         "Enforcement actions and penalty tracker",
         "Children's privacy (COPPA, Age Appropriate Design)"
       ],
-      "url": "#affiliate-privacy-laws",
+      "url": "https://iapp.org/",
       "cta": "Compare privacy laws"
     },
     {
@@ -64,7 +64,7 @@
         "Algorithmic amplification and recommendation",
         "Interoperability and platform competition"
       ],
-      "url": "#affiliate-platform-governance",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/digital-services-act",
       "cta": "Explore platform policy"
     },
     {
@@ -79,7 +79,7 @@
         "Age verification mandates and privacy trade-offs",
         "Identity fraud and deepfake threats"
       ],
-      "url": "#affiliate-digital-identity",
+      "url": "https://www.nist.gov/identity-access-management",
       "cta": "Understand digital ID"
     },
     {
@@ -94,7 +94,7 @@
         "Sustainability and funding models",
         "Corporate open source strategies and risks"
       ],
-      "url": "#affiliate-open-source-policy",
+      "url": "https://opensource.org/",
       "cta": "Explore open source policy"
     },
     {
@@ -109,7 +109,7 @@
         "Impact assessments for high-risk AI systems",
         "Whistleblower protections for AI harms"
       ],
-      "url": "#affiliate-algorithmic-accountability",
+      "url": "https://algorithmwatch.org/en/",
       "cta": "Learn about accountability"
     }
   ],

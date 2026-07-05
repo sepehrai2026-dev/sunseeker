@@ -33,7 +33,7 @@
         "Transparent marketplace pricing"
       ],
       "pricing": "<strong>Market-based</strong> — pay per GH/day",
-      "url": "#affiliate-nicehash",
+      "url": "https://www.nicehash.com/",
       "cta": "Visit NiceHash",
       "featured": true
     },
@@ -50,7 +50,7 @@
         "Transparent facility locations"
       ],
       "pricing": "From <strong>$100</strong> — 12-24 month contracts",
-      "url": "#affiliate-genesis-mining",
+      "url": "https://www.genesis-mining.com/",
       "cta": "Visit Genesis Mining"
     },
     {
@@ -66,7 +66,7 @@
         "Portfolio tracking and analytics"
       ],
       "pricing": "From <strong>$50</strong> — flexible contract terms",
-      "url": "#affiliate-ecos",
+      "url": "https://ecos.am/",
       "cta": "Visit ECOS"
     },
     {
@@ -82,7 +82,7 @@
         "Multiple mining plans available"
       ],
       "pricing": "From <strong>$500</strong> — various contract durations",
-      "url": "#affiliate-bitdeer",
+      "url": "https://www.bitdeer.com/",
       "cta": "Visit Bitdeer",
       "featured": true
     },
@@ -99,7 +99,7 @@
         "Built-in crypto wallet"
       ],
       "pricing": "<strong>Free tier</strong> available — premium plans from <strong>$50</strong>",
-      "url": "#affiliate-stormgain",
+      "url": "https://stormgain.com/",
       "cta": "Visit StormGain"
     }
   ],

@@ -34,7 +34,7 @@
         "The role of nodes and the network",
         "Bitcoin vs. traditional banking"
       ],
-      "url": "#affiliate-bitcoin-guide",
+      "url": "https://bitcoin.org/en/how-it-works",
       "cta": "Learn about Bitcoin"
     },
     {
@@ -49,7 +49,7 @@
         "Liquidity pools and impermanent loss",
         "Risks and opportunities in DeFi"
       ],
-      "url": "#affiliate-defi-guide",
+      "url": "https://ethereum.org/en/defi/",
       "cta": "Explore DeFi"
     },
     {
@@ -64,7 +64,7 @@
         "Seed phrase security best practices",
         "Multi-signature wallet setups"
       ],
-      "url": "#affiliate-wallets-guide",
+      "url": "https://ethereum.org/en/wallets/",
       "cta": "Choose a wallet"
     },
     {
@@ -79,7 +79,7 @@
         "Immutability and transparency",
         "Real-world blockchain applications"
       ],
-      "url": "#affiliate-blockchain-guide",
+      "url": "https://www.ibm.com/think/topics/blockchain",
       "cta": "Learn blockchain"
     },
     {
@@ -94,7 +94,7 @@
         "Smart contract auditing and security",
         "Real-world use cases beyond crypto"
       ],
-      "url": "#affiliate-smartcontracts-guide",
+      "url": "https://ethereum.org/en/smart-contracts/",
       "cta": "Understand smart contracts"
     },
     {
@@ -109,7 +109,7 @@
         "Liquid staking and LSTs",
         "Evaluating yield farming risks"
       ],
-      "url": "#affiliate-staking-guide",
+      "url": "https://ethereum.org/en/staking/",
       "cta": "Start staking"
     }
   ],

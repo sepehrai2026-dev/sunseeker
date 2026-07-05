@@ -34,7 +34,7 @@
         "Largest network effect and liquidity",
         "Institutional adoption accelerating"
       ],
-      "url": "#affiliate-bitcoin",
+      "url": "https://bitcoin.org/",
       "cta": "Learn about Bitcoin"
     },
     {
@@ -49,7 +49,7 @@
         "Layer 2 rollup scaling roadmap",
         "Most active developer community"
       ],
-      "url": "#affiliate-ethereum",
+      "url": "https://ethereum.org/",
       "cta": "Learn about Ethereum"
     },
     {
@@ -64,7 +64,7 @@
         "Saga phone and mobile push",
         "Firedancer validator client for resilience"
       ],
-      "url": "#affiliate-solana",
+      "url": "https://solana.com/",
       "cta": "Learn about Solana"
     },
     {
@@ -79,7 +79,7 @@
         "Strong presence in developing nations",
         "Plutus smart contract platform"
       ],
-      "url": "#affiliate-cardano",
+      "url": "https://cardano.org/",
       "cta": "Learn about Cardano"
     },
     {
@@ -94,7 +94,7 @@
         "On-chain governance and treasury",
         "Substrate framework for chain building"
       ],
-      "url": "#affiliate-polkadot",
+      "url": "https://polkadot.com/",
       "cta": "Learn about Polkadot"
     },
     {
@@ -109,7 +109,7 @@
         "Strong institutional and enterprise adoption",
         "EVM-compatible C-Chain"
       ],
-      "url": "#affiliate-avalanche",
+      "url": "https://www.avax.network/",
       "cta": "Learn about Avalanche"
     }
   ],

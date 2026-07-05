@@ -33,7 +33,7 @@
         "USB-C charging"
       ],
       "pricing": "Device: <strong>$9.99</strong> — Pods: <strong>$6.49/2-pack</strong>",
-      "url": "#affiliate-juul",
+      "url": "https://www.juul.com/",
       "cta": "Shop JUUL",
       "featured": true
     },
@@ -50,7 +50,7 @@
         "Available in multiple nicotine strengths"
       ],
       "pricing": "Device: <strong>$1.00</strong> (with pods) — Pods: <strong>$5.99/2-pack</strong>",
-      "url": "#affiliate-vuse",
+      "url": "https://www.vusevapor.com/",
       "cta": "Shop Vuse",
       "featured": true
     },
@@ -67,7 +67,7 @@
         "Premium build quality"
       ],
       "pricing": "Device: <strong>$49.00</strong> — TEREA sticks: <strong>$7.50/pack</strong>",
-      "url": "#affiliate-iqos",
+      "url": "https://www.iqos.com/",
       "cta": "Shop IQOS"
     },
     {
@@ -83,7 +83,7 @@
         "5% nicotine salt"
       ],
       "pricing": "<strong>$12.99</strong> per device",
-      "url": "#affiliate-flum-float",
+      "url": "https://flumgio.com/float/",
       "cta": "Shop Flum Float"
     },
     {
@@ -99,7 +99,7 @@
         "Ergonomic design"
       ],
       "pricing": "From <strong>$10.99</strong> per device",
-      "url": "#affiliate-elf-bar",
+      "url": "https://www.elfbar.com/",
       "cta": "Shop Elf Bar"
     }
   ],

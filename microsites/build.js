@@ -113,6 +113,10 @@ function buildSite(name) {
     return val !== undefined ? String(val) : '';
   });
 
+  // privacy-friendly first-party pageview beacon (KV counters, no cookies, no PII)
+  const beacon = `<script>try{navigator.sendBeacon&&navigator.sendBeacon('https://microsite-hits.sepehrai2026.workers.dev/hit',new Blob([JSON.stringify({h:location.hostname,p:location.pathname,r:document.referrer})],{type:'application/json'}))}catch(e){}</script>`;
+  html = html.replace('</body>', beacon + '\n</body>');
+
   const distDir = path.join(siteDir, 'dist');
   if (!fs.existsSync(distDir)) fs.mkdirSync(distDir, { recursive: true });
   fs.writeFileSync(path.join(distDir, 'index.html'), html);

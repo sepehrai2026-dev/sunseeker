@@ -22,7 +22,7 @@
     {"name": "Probate savings", "icon": "🏠", "description": "See how much your estate could save by avoiding probate with a trust."},
     {"name": "Tax impact preview", "icon": "📋", "description": "Understand potential estate tax implications based on your estate size."},
     {"name": "Beneficiary planning", "icon": "👨‍👩‍👧‍👦", "description": "Plan how assets will be distributed among your beneficiaries."},
-    {"name": "Attorney matching", "icon": "🔍", "description": "Coming soon: get matched with estate planning attorneys in your area."}
+    {"name": "Attorney readiness checklist", "icon": "🔍", "description": "Know exactly what documents, account details, and beneficiary decisions to bring to your first meeting with an estate planning attorney."}
   ],
   "faqs": [
     {"q": "How accurate is this calculator?", "a": "This provides rough estimates for educational purposes. Actual costs vary significantly by state, complexity of your estate, and attorney fees. Use these numbers as a starting point for conversations with an estate planning professional."},
