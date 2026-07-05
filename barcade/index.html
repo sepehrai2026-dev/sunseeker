@@ -27,7 +27,7 @@
         <div id="hero-glow"></div>
         <div id="hero-diamond">◆</div>
         <h1>Every product is art<br>waiting to be discovered</h1>
-        <p>Scan any barcode. Watch it become a one-of-a-kind piece of art. Claim your edition free.</p>
+        <p>Scan any barcode. Watch it become a one-of-a-kind piece of art. Every UPC is a strict 1&nbsp;of&nbsp;1 — first to claim it owns it.</p>
         <button id="scan-btn" onclick="App.startScan()">
           <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M3 7V5a2 2 0 012-2h2M17 3h2a2 2 0 012 2v2M21 17v2a2 2 0 01-2 2h-2M7 21H5a2 2 0 01-2-2v-2"/>
@@ -54,38 +54,39 @@
           <div class="step">
             <div class="step-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3h12l3 6-9 12L3 9z"/><path d="M3 9h18M9 3l3 6 3-6M12 21L9 9M12 21l3-12"/></svg></div>
             <h3>Own</h3>
-            <p>Claim your edition free — limited copies per product</p>
+            <p>One mint per barcode, forever — first to scan it owns it</p>
           </div>
         </div>
       </div>
 
       <div id="rarity-section">
         <h2>Rarity Tiers</h2>
+        <p id="rarity-note">Every barcode mints exactly once. Rarity is the trait your artwork carries — it shapes the piece's aura, scores, and how rare a find your scan was.</p>
         <div class="rarity-grid">
           <div class="rarity-card legendary">
             <div class="rarity-badge">LEGENDARY</div>
-            <div class="rarity-count">1 mint only</div>
-            <div class="rarity-chance">~2% of products</div>
+            <div class="rarity-count">1 of 1</div>
+            <div class="rarity-chance">~2% of scans</div>
           </div>
           <div class="rarity-card epic">
             <div class="rarity-badge">EPIC</div>
-            <div class="rarity-count">5 mints max</div>
-            <div class="rarity-chance">~5% of products</div>
+            <div class="rarity-count">1 of 1</div>
+            <div class="rarity-chance">~5% of scans</div>
           </div>
           <div class="rarity-card rare">
             <div class="rarity-badge">RARE</div>
-            <div class="rarity-count">10 mints max</div>
-            <div class="rarity-chance">~13% of products</div>
+            <div class="rarity-count">1 of 1</div>
+            <div class="rarity-chance">~13% of scans</div>
           </div>
           <div class="rarity-card uncommon">
             <div class="rarity-badge">UNCOMMON</div>
-            <div class="rarity-count">25 mints max</div>
-            <div class="rarity-chance">~25% of products</div>
+            <div class="rarity-count">1 of 1</div>
+            <div class="rarity-chance">~25% of scans</div>
           </div>
           <div class="rarity-card common">
             <div class="rarity-badge">COMMON</div>
-            <div class="rarity-count">100 mints max</div>
-            <div class="rarity-chance">~55% of products</div>
+            <div class="rarity-count">1 of 1</div>
+            <div class="rarity-chance">~55% of scans</div>
           </div>
         </div>
       </div>
@@ -144,7 +145,7 @@
             <div id="mint-progress-text"></div>
           </div>
           <button id="mint-btn" onclick="App.mint()">
-            <span id="mint-btn-text">Mint to Wallet — Free</span>
+            <span id="mint-btn-text">Claim This 1 of 1 — Free</span>
             <span id="mint-btn-loading" class="hidden">Minting...</span>
           </button>
           <div id="mint-status"></div>
@@ -156,8 +157,8 @@
     <div id="screen-lookup" class="screen">
       <button class="back-btn" onclick="App.goHome()">← Back</button>
       <div id="lookup-container">
-        <h2>Check Mint Availability</h2>
-        <p>Enter any UPC code to see how many mints remain</p>
+        <h2>Check a Barcode</h2>
+        <p>Enter any UPC to see if its 1 of 1 is still unclaimed</p>
         <div id="lookup-input-wrap">
           <input type="text" id="lookup-input" placeholder="Enter UPC code" maxlength="13" inputmode="numeric">
           <button onclick="App.lookupUPC()">Check</button>

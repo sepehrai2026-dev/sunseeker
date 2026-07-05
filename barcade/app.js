@@ -336,8 +336,7 @@ const App = (() => {
   async function mint() {
     if (!currentUPC) return;
     const rarity = ArtEngine.getRarity(currentUPC);
-    const minted = getMintCount(currentUPC);
-    if (rarity.maxMints - minted <= 0) { showToast('This edition is fully claimed'); return; }
+    if (getMintCount(currentUPC) > 0) { showToast('This barcode has already been claimed'); return; }
 
     if (!walletAddress) {
       await connectWallet();
@@ -352,32 +351,25 @@ const App = (() => {
     mintBtn.disabled = true;
     mintText.classList.add('hidden');
     mintLoading.classList.remove('hidden');
-    mintStatus.textContent = 'Reserving your edition…';
+    mintStatus.textContent = 'Claiming this 1 of 1…';
     await delay(900);
 
-    const newCount = incrementMint(currentUPC);
-    const newRemaining = rarity.maxMints - newCount;
+    incrementMint(currentUPC);
 
     mintLoading.classList.add('hidden');
-    mintText.textContent = 'Reserved';
+    mintText.textContent = 'Claimed';
     mintText.classList.remove('hidden');
     mintBtn.classList.add('minted');
+    mintBtn.disabled = true;
     mintStatus.innerHTML =
-      `Edition ${newCount} of ${rarity.maxMints} reserved to ` +
-      `<strong>${escapeHtml(walletAddress.startsWith('guest-') ? 'guest profile' : walletAddress.slice(0, 6) + '…' + walletAddress.slice(-4))}</strong><br>` +
-      `<span class="mint-note">Off-chain demo reservation — on-chain minting on Base is coming soon. Your reservation is saved on this device.</span>`;
+      `This 1 of 1 is now claimed by ` +
+      `<strong>${escapeHtml(walletAddress.startsWith('guest-') ? 'your guest profile' : walletAddress.slice(0, 6) + '…' + walletAddress.slice(-4))}</strong><br>` +
+      `<span class="mint-note">Off-chain demo claim — on-chain minting on Base is coming soon. One mint per barcode, forever.</span>`;
 
-    document.getElementById('rarity-edition').textContent =
-      `Edition: ${newCount} / ${rarity.maxMints} claimed`;
-    const pct = (newCount / rarity.maxMints) * 100;
-    document.getElementById('mint-progress-fill').style.width = pct + '%';
-    document.getElementById('mint-progress-text').textContent =
-      `${newRemaining} of ${rarity.maxMints} remaining`;
-    if (newRemaining <= 0) {
-      mintBtn.disabled = true;
-      mintText.textContent = 'Fully Claimed';
-    }
-    showToast('Edition reserved');
+    document.getElementById('rarity-edition').textContent = 'Claimed — this barcode is taken';
+    document.getElementById('mint-progress-fill').style.width = '100%';
+    document.getElementById('mint-progress-text').textContent = '0 of 1 remaining';
+    showToast('Claimed — it is yours');
   }
 
   /* ================= screens / render ================= */
@@ -430,8 +422,7 @@ const App = (() => {
     const rarity = { tier: rarityData.tier, maxMints: rarityData.maxMints, color: rarityData.color, glow: rarityData.glow };
     const name = ArtEngine.getArtName(upc);
     const svg = ArtEngine.generate(upc);
-    const minted = getMintCount(upc);
-    const remaining = Math.max(0, rarity.maxMints - minted);
+    const claimed = getMintCount(upc) > 0;
 
     document.getElementById('art-display').innerHTML = svg;
     document.getElementById('art-name').textContent = name;
@@ -444,12 +435,11 @@ const App = (() => {
     badge.style.background = rarity.glow;
 
     document.getElementById('rarity-edition').textContent =
-      `Edition: ${minted} / ${rarity.maxMints} claimed`;
+      claimed ? 'Claimed — this barcode is taken' : '1 of 1 — still unclaimed';
 
-    const pct = (minted / rarity.maxMints) * 100;
-    document.getElementById('mint-progress-fill').style.width = pct + '%';
+    document.getElementById('mint-progress-fill').style.width = claimed ? '100%' : '0%';
     document.getElementById('mint-progress-text').textContent =
-      `${remaining} of ${rarity.maxMints} remaining`;
+      claimed ? '0 of 1 remaining' : '1 of 1 available — first to claim it owns it';
 
     const frame = document.getElementById('art-frame');
     frame.className = '';
@@ -458,11 +448,11 @@ const App = (() => {
     const mintBtn = document.getElementById('mint-btn');
     const mintText = document.getElementById('mint-btn-text');
     const mintLoading = document.getElementById('mint-btn-loading');
-    mintBtn.disabled = remaining === 0;
+    mintBtn.disabled = claimed;
     mintBtn.classList.remove('minted');
     mintText.classList.remove('hidden');
     mintLoading.classList.add('hidden');
-    mintText.textContent = remaining === 0 ? 'Fully Claimed' : 'Reserve This Edition — Free';
+    mintText.textContent = claimed ? 'Already Claimed' : 'Claim This 1 of 1 — Free';
     document.getElementById('mint-status').textContent = '';
 
     const breakdown = document.getElementById('rarity-breakdown');
@@ -491,9 +481,7 @@ const App = (() => {
     const rarity = { tier: rarityData.tier, maxMints: rarityData.maxMints, color: rarityData.color, glow: rarityData.glow };
     const name = ArtEngine.getArtName(upc);
     const svg = ArtEngine.generate(upc);
-    const minted = getMintCount(upc);
-    const remaining = Math.max(0, rarity.maxMints - minted);
-    const pct = (minted / rarity.maxMints) * 100;
+    const claimed = getMintCount(upc) > 0;
 
     const result = document.getElementById('lookup-result');
     result.classList.remove('hidden');
@@ -501,11 +489,11 @@ const App = (() => {
       <div class="lookup-art">${svg}</div>
       <div class="lookup-name">${escapeHtml(name)}</div>
       <span class="lookup-rarity" style="color:${rarity.color};background:${rarity.glow}">${rarity.tier}</span>
-      <div class="lookup-mints" style="color:${remaining > 0 ? 'var(--green)' : 'var(--red)'}">${remaining}</div>
-      <div class="lookup-mints-label">of ${rarity.maxMints} editions remaining (${minted} claimed)</div>
-      <div class="lookup-bar"><div class="lookup-bar-fill" style="width:${pct}%"></div></div>
+      <div class="lookup-mints" style="color:${claimed ? 'var(--red)' : 'var(--green)'}">${claimed ? 'CLAIMED' : 'AVAILABLE'}</div>
+      <div class="lookup-mints-label">${claimed ? 'this barcode is taken — every UPC is a 1 of 1' : '1 of 1 — first to claim it owns it'}</div>
+      <div class="lookup-bar"><div class="lookup-bar-fill" style="width:${claimed ? 100 : 0}%"></div></div>
       <div class="lookup-breakdown">${renderRarityBreakdown(null, rarityData.components)}</div>
-      ${remaining > 0 ? `<button class="lookup-scan-btn" onclick="App.revealArt('${escapeAttr(upc)}')">View &amp; Reserve This Art</button>` : ''}
+      ${claimed ? '' : `<button class="lookup-scan-btn" onclick="App.revealArt('${escapeAttr(upc)}')">View &amp; Claim This Art</button>`}
     `;
   }
 

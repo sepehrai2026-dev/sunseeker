@@ -583,12 +583,14 @@ ${gild}`;
 
   /* ---------- rarity ---------- */
 
+  // Every UPC is a strict 1-of-1 — first to claim a barcode owns it, forever.
+  // Tier is a cosmetic trait (visual treatment + score ranges), never a supply cap.
   const TIERS = [
     { tier: 'LEGENDARY', maxMints: 1, color: '#ffd76b', glow: 'rgba(255,215,107,0.16)', cut: 0.98 },
-    { tier: 'EPIC', maxMints: 5, color: '#d18aff', glow: 'rgba(209,138,255,0.16)', cut: 0.93 },
-    { tier: 'RARE', maxMints: 10, color: '#7fb8ff', glow: 'rgba(127,184,255,0.16)', cut: 0.80 },
-    { tier: 'UNCOMMON', maxMints: 25, color: '#8ce8a8', glow: 'rgba(140,232,168,0.16)', cut: 0.55 },
-    { tier: 'COMMON', maxMints: 100, color: '#9aa3b2', glow: 'rgba(154,163,178,0.16)', cut: 0 },
+    { tier: 'EPIC', maxMints: 1, color: '#d18aff', glow: 'rgba(209,138,255,0.16)', cut: 0.93 },
+    { tier: 'RARE', maxMints: 1, color: '#7fb8ff', glow: 'rgba(127,184,255,0.16)', cut: 0.80 },
+    { tier: 'UNCOMMON', maxMints: 1, color: '#8ce8a8', glow: 'rgba(140,232,168,0.16)', cut: 0.55 },
+    { tier: 'COMMON', maxMints: 1, color: '#9aa3b2', glow: 'rgba(154,163,178,0.16)', cut: 0 },
   ];
 
   // score ranges per tier so the visible breakdown justifies the tier

@@ -1,7 +1,7 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
-describe("ScanMintNFT (Barcade)", function () {
+describe("ScanMintNFT (Barcade) — strict 1-of-1 per UPC", function () {
   let nft, owner, alice, bob;
   const SVG = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><rect width="1000" height="1000" fill="#08080c"/></svg>';
 
@@ -10,7 +10,6 @@ describe("ScanMintNFT (Barcade)", function () {
     upc: "049000042566",
     svg: SVG,
     rarity: "RARE",
-    maxMints: 10,
     ...overrides,
   });
 
@@ -25,36 +24,31 @@ describe("ScanMintNFT (Barcade)", function () {
     expect(await nft.symbol()).to.equal("BRCDE");
   });
 
-  it("mints to the recipient and tracks editions per UPC", async () => {
+  it("mints a UPC to the recipient exactly once", async () => {
     await nft.mint(params());
-    await nft.mint(params({ to: bob.address }));
+    expect(await nft.ownerOf(0)).to.equal(alice.address);
+    expect(await nft.isClaimed("049000042566")).to.equal(true);
 
+    const [claimed, tokenId, rarity] = await nft.getUPCInfo("049000042566");
+    expect(claimed).to.equal(true);
+    expect(tokenId).to.equal(0);
+    expect(rarity).to.equal("RARE");
+  });
+
+  it("rejects a second mint of the same UPC — even to a different address with different params", async () => {
+    await nft.mint(params());
+    await expect(nft.mint(params({ to: bob.address, rarity: "LEGENDARY", svg: "<svg/>" })))
+      .to.be.revertedWith("This barcode has already been minted");
+  });
+
+  it("different UPCs mint independently", async () => {
+    await nft.mint(params({ upc: "111111111111" }));
+    await nft.mint(params({ upc: "222222222222", to: bob.address }));
     expect(await nft.ownerOf(0)).to.equal(alice.address);
     expect(await nft.ownerOf(1)).to.equal(bob.address);
-    expect(await nft.tokenEdition(0)).to.equal(1);
-    expect(await nft.tokenEdition(1)).to.equal(2);
-
-    const [maxMints, minted, rarity] = await nft.getUPCInfo("049000042566");
-    expect(maxMints).to.equal(10);
-    expect(minted).to.equal(2);
-    expect(rarity).to.equal("RARE");
-    expect(await nft.getRemainingMints("049000042566")).to.equal(8);
-  });
-
-  it("locks maxMints/rarity at first mint for a UPC", async () => {
-    await nft.mint(params());
-    // later mints can't change the registry entry
-    await nft.mint(params({ maxMints: 9999, rarity: "LEGENDARY" }));
-    const [maxMints, , rarity] = await nft.getUPCInfo("049000042566");
-    expect(maxMints).to.equal(10);
-    expect(rarity).to.equal("RARE");
-  });
-
-  it("enforces the edition cap", async () => {
-    await nft.mint(params({ maxMints: 1, upc: "111111111111", rarity: "LEGENDARY" }));
-    await expect(
-      nft.mint(params({ maxMints: 1, upc: "111111111111", rarity: "LEGENDARY" }))
-    ).to.be.revertedWith("Edition sold out");
+    expect(await nft.isClaimed("111111111111")).to.equal(true);
+    expect(await nft.isClaimed("222222222222")).to.equal(true);
+    expect(await nft.isClaimed("333333333333")).to.equal(false);
   });
 
   it("rejects mints from non-owners", async () => {
@@ -62,35 +56,37 @@ describe("ScanMintNFT (Barcade)", function () {
       .to.be.revertedWithCustomError(nft, "OwnableUnauthorizedAccount");
   });
 
-  it("emits Minted with the UPC and edition", async () => {
+  it("emits Minted with UPC and rarity", async () => {
     await expect(nft.mint(params()))
       .to.emit(nft, "Minted")
-      .withArgs(alice.address, 0, "049000042566", 1);
+      .withArgs(alice.address, 0, "049000042566", "RARE");
   });
 
-  it("returns fully on-chain base64 tokenURI with correct metadata", async () => {
+  it("reports unclaimed UPCs correctly", async () => {
+    expect(await nft.isClaimed("999999999999")).to.equal(false);
+    const [claimed, tokenId, rarity] = await nft.getUPCInfo("999999999999");
+    expect(claimed).to.equal(false);
+    expect(tokenId).to.equal(0);
+    expect(rarity).to.equal("");
+  });
+
+  it("returns fully on-chain 1-of-1 tokenURI metadata", async () => {
     await nft.mint(params());
     const uri = await nft.tokenURI(0);
     expect(uri).to.match(/^data:application\/json;base64,/);
     const json = JSON.parse(Buffer.from(uri.split(",")[1], "base64").toString());
     expect(json.name).to.equal("Barcade #0");
     expect(json.description).to.contain("049000042566");
-    expect(json.description).to.contain("Edition 1/10");
+    expect(json.description).to.contain("1 of 1");
     expect(json.image).to.match(/^data:image\/svg\+xml;base64,/);
-    const svg = Buffer.from(json.image.split(",")[1], "base64").toString();
-    expect(svg).to.equal(SVG);
+    expect(Buffer.from(json.image.split(",")[1], "base64").toString()).to.equal(SVG);
     const traits = Object.fromEntries(json.attributes.map(a => [a.trait_type, a.value]));
     expect(traits.UPC).to.equal("049000042566");
     expect(traits.Rarity).to.equal("RARE");
-    expect(traits.Edition).to.equal(1);
-    expect(traits["Max Supply"]).to.equal(10);
+    expect(traits.Edition).to.equal("1 of 1");
   });
 
   it("reverts tokenURI for nonexistent tokens", async () => {
     await expect(nft.tokenURI(42)).to.be.revertedWithCustomError(nft, "ERC721NonexistentToken");
-  });
-
-  it("returns 0 remaining for unknown UPCs", async () => {
-    expect(await nft.getRemainingMints("999999999999")).to.equal(0);
   });
 });

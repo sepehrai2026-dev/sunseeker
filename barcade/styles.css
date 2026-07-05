@@ -826,6 +826,15 @@ body {
   animation: glow 2s ease-in-out infinite;
 }
 
+#rarity-note {
+  font-size: 13px;
+  color: var(--text2);
+  max-width: 520px;
+  margin: 6px auto 18px;
+  text-align: center;
+  line-height: 1.5;
+}
+
 /* PRODUCT INFO */
 #product-info {
   display: flex;
