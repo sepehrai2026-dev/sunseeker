@@ -1,0 +1,128 @@
+{
+  "template": "a",
+  "domain": "lifestylearbiter.com",
+  "name": "Lifestyle Arbiter",
+  "logoIcon": "✦",
+  "title": "Lifestyle Arbiter — Curated Product Comparisons (2026)",
+  "metaDescription": "Curated lifestyle product comparisons for 2026. Expert reviews of the best standing desks, noise-canceling headphones, espresso machines, air purifiers, and robot vacuums.",
+  "metaKeywords": "best standing desk, best noise canceling headphones, best espresso machine, best air purifier, best robot vacuum, product comparison, lifestyle products",
+  "headline": "Every purchase, considered",
+  "subheadline": "Curated comparisons of the products that shape your daily life — we do the research so you can buy with confidence, not regret.",
+  "lastUpdated": "July 2026",
+  "year": "2026",
+  "introCopy": "You don't need more options — you need better information. We research, test, and compare the products that matter most in your daily life. No sponsored picks, no filler recommendations. Just honest, detailed comparisons to help you spend your money on things that actually improve your day.",
+  "comparisonTitle": "Featured product comparisons",
+  "guideTitle": "Our approach to product research",
+  "guideContent": "<h3>How we evaluate products</h3><p>Every comparison starts with extensive research — we analyze expert reviews, owner feedback, return rates, and long-term durability reports. We weight real-world performance over spec sheets because how a product performs after six months matters more than how it looks on day one.</p><h3>Value over price</h3><p>We don't always recommend the cheapest option. The best value considers build quality, warranty, long-term reliability, and total cost of ownership. Sometimes spending 30% more upfront saves you from replacing the product in two years.</p><h3>Independence matters</h3><p>We may earn commissions through affiliate links, but our recommendations are never influenced by which brand pays more. We recommend what we'd buy ourselves — and we frequently recommend products from brands with no affiliate programs at all.</p><h3>When to buy and when to wait</h3><p>Products follow predictable release and sale cycles. We note when a product is approaching a refresh (wait) or at its historical low price (buy now). This context helps you time your purchase for maximum value.</p>",
+  "disclaimer": "LifestyleArbiter.com provides independent product comparisons. We may earn a commission through affiliate links at no extra cost to you. Our recommendations are based on independent research and are not influenced by compensation.",
+  "affiliateDisclosure": "Some links on this site are affiliate links. We may earn a commission if you make a purchase.",
+  "accentColor": "#78716c",
+  "accentLight": "#f5f5f4",
+  "accentDark": "#57534e",
+  "items": [
+    {
+      "name": "Best Standing Desks",
+      "icon": "🖥️",
+      "tagline": "Work better on your feet",
+      "description": "Standing desks reduce sedentary time and can improve focus and energy throughout the day. We've compared the top electric sit-stand desks on build quality, motor reliability, stability at standing height, and value. Top picks include Uplift V2, Jarvis, and FlexiSpot E7.",
+      "features": [
+        "Electric dual-motor height adjustment",
+        "Programmable height presets",
+        "Stable at full standing height",
+        "Cable management included",
+        "10-15 year warranty standard"
+      ],
+      "pricing": "From <strong>$400-$900</strong> for top-rated options",
+      "url": "#affiliate-standing-desks",
+      "cta": "See Top Picks",
+      "featured": true
+    },
+    {
+      "name": "Best Noise-Canceling Headphones",
+      "icon": "🎧",
+      "tagline": "Silence the world, hear the music",
+      "description": "Active noise-canceling headphones have become essential for focus work, commuting, and travel. We've tested the latest models from Sony, Bose, Apple, and Sennheiser on ANC performance, sound quality, comfort for extended wear, and battery life.",
+      "features": [
+        "Active noise cancellation (ANC)",
+        "30-40 hour battery life",
+        "Multipoint Bluetooth connection",
+        "Comfortable for all-day wear",
+        "Spatial audio support"
+      ],
+      "pricing": "From <strong>$250-$400</strong> for top-rated options",
+      "url": "#affiliate-headphones",
+      "cta": "See Top Picks",
+      "featured": true
+    },
+    {
+      "name": "Best Espresso Machines",
+      "icon": "☕",
+      "tagline": "Cafe-quality espresso at home",
+      "description": "Making great espresso at home saves money and time. We've compared machines across the spectrum — from entry-level semi-automatics to super-automatics — evaluating shot quality, ease of use, milk steaming capability, and long-term reliability.",
+      "features": [
+        "15-20 bar pressure extraction",
+        "PID temperature control",
+        "Built-in grinder (super-automatics)",
+        "Steam wand for milk drinks",
+        "Quick heat-up time"
+      ],
+      "pricing": "From <strong>$300-$1,500</strong> depending on type",
+      "url": "#affiliate-espresso-machines",
+      "cta": "See Top Picks"
+    },
+    {
+      "name": "Best Air Purifiers",
+      "icon": "🌬️",
+      "tagline": "Cleaner air, better health",
+      "description": "Air purifiers remove allergens, pollutants, smoke particles, and VOCs from indoor air. We've compared the leading models on CADR (Clean Air Delivery Rate), filter costs, noise levels, smart features, and room coverage to find the best options for every budget.",
+      "features": [
+        "True HEPA H13 filtration",
+        "High CADR for room size",
+        "Low noise on sleep mode",
+        "Air quality sensor and auto mode",
+        "Reasonable replacement filter costs"
+      ],
+      "pricing": "From <strong>$100-$600</strong> depending on room size",
+      "url": "#affiliate-air-purifiers",
+      "cta": "See Top Picks"
+    },
+    {
+      "name": "Best Robot Vacuums",
+      "icon": "🤖",
+      "tagline": "Clean floors without the effort",
+      "description": "Robot vacuums have evolved dramatically — the best models now offer LiDAR navigation, self-emptying bases, mopping capability, and obstacle avoidance. We've compared models from Roborock, iRobot, Ecovacs, and Dreame on cleaning performance, navigation, and reliability.",
+      "features": [
+        "LiDAR or camera navigation",
+        "Self-emptying dock option",
+        "Vacuum and mop combo",
+        "AI obstacle avoidance",
+        "Multi-floor mapping"
+      ],
+      "pricing": "From <strong>$250-$1,200</strong> depending on features",
+      "url": "#affiliate-robot-vacuums",
+      "cta": "See Top Picks"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do you choose which products to compare?",
+      "a": "We focus on product categories where the buying decision is complex and the stakes are high enough to warrant research. We look for categories where there's a meaningful difference between options and where spending an extra hour researching can save you hundreds of dollars or years of frustration."
+    },
+    {
+      "q": "Do you actually test products?",
+      "a": "We combine hands-on testing with extensive analysis of long-term owner reviews, expert testing from publications like Wirecutter and RTINGS, and manufacturer specifications. This gives us a more complete picture than short-term testing alone."
+    },
+    {
+      "q": "How often are your comparisons updated?",
+      "a": "We update comparisons when significant new products launch, prices change materially, or we receive new long-term reliability data. Most comparisons are refreshed quarterly, with major updates during product release seasons."
+    },
+    {
+      "q": "Why don't you just recommend the cheapest option?",
+      "a": "The cheapest option is rarely the best value. We consider total cost of ownership — including durability, warranty, consumable costs (like filters or pods), and the likelihood you'll want to upgrade within a year. Sometimes the mid-range option provides 90% of the premium experience at 50% of the price."
+    },
+    {
+      "q": "Are your affiliate links more expensive?",
+      "a": "No. Affiliate links cost you exactly the same as buying directly. The retailer pays us a small commission from their marketing budget. You never pay extra for using our links, and we clearly disclose all affiliate relationships."
+    }
+  ]
+}

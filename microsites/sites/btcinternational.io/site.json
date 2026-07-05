@@ -1,0 +1,82 @@
+{
+  "template": "a",
+  "domain": "btcinternational.io",
+  "name": "BTC International",
+  "logoIcon": "🌍",
+  "title": "BTC International — Global Crypto Exchange Comparison",
+  "metaDescription": "Compare the best cryptocurrency exchanges available worldwide in 2026. Multi-currency support, global availability, and features compared.",
+  "metaKeywords": "best global crypto exchange, international crypto exchange, buy bitcoin worldwide, multi-currency crypto exchange",
+  "headline": "Buy bitcoin anywhere in the world",
+  "subheadline": "Global crypto exchanges compared — multi-currency support, worldwide availability, and the best options no matter where you are.",
+  "lastUpdated": "July 2026",
+  "year": "2026",
+  "introCopy": "Crypto is global by nature, but exchange availability varies dramatically by country. We've compared the top exchanges by geographic reach, supported currencies, and international features to help you find the right platform wherever you are.",
+  "comparisonTitle": "Best global crypto exchanges",
+  "guideTitle": "Choosing a global exchange",
+  "guideContent": "<h3>Check availability first</h3><p>Not every exchange operates in every country. Regulatory restrictions mean some platforms block users from certain jurisdictions entirely. Always verify your country is supported before creating an account.</p><h3>Currency support</h3><p>The best global exchanges support multiple fiat currencies and local payment methods. Look for your local currency pairs to avoid conversion fees. SEPA, Faster Payments, and local bank transfers are usually cheapest.</p><h3>KYC requirements</h3><p>Know Your Customer (KYC) requirements vary by exchange and jurisdiction. Most regulated exchanges require government ID verification. Some decentralized exchanges and certain P2P platforms require minimal or no KYC.</p>",
+  "disclaimer": "BTCInternational.io provides independent comparisons of global cryptocurrency exchanges. Cryptocurrency trading involves risk. Check local regulations.",
+  "affiliateDisclosure": "Some links are affiliate links. We may earn a commission at no extra cost to you.",
+  "accentColor": "#0891b2",
+  "accentLight": "#cffafe",
+  "accentDark": "#0e7490",
+  "items": [
+    {
+      "name": "Binance",
+      "icon": "🟡",
+      "tagline": "Available in 180+ countries",
+      "description": "The world's largest exchange by volume operates in more countries than any competitor. Supports dozens of local currencies, P2P trading in 100+ countries, and offers the widest selection of trading pairs.",
+      "features": ["Available in 180+ countries", "40+ local currencies supported", "P2P trading in 100+ countries", "350+ cryptocurrencies", "Lowest fees globally"],
+      "pricing": "Maker <strong>0.10%</strong> / Taker <strong>0.10%</strong>",
+      "url": "#affiliate-binance",
+      "cta": "Visit Binance",
+      "featured": true
+    },
+    {
+      "name": "Kraken",
+      "icon": "🐙",
+      "tagline": "Trusted in 190+ countries",
+      "description": "Kraken operates in nearly every country worldwide with a strong reputation for security and compliance. Supports EUR, USD, GBP, CAD, AUD, JPY, and CHF with competitive fees.",
+      "features": ["Available in 190+ countries", "7 major fiat currencies", "Never been hacked", "24/7 customer support", "Proof of reserves"],
+      "pricing": "Maker <strong>0.25%</strong> / Taker <strong>0.40%</strong>",
+      "url": "#affiliate-kraken",
+      "cta": "Visit Kraken",
+      "featured": true
+    },
+    {
+      "name": "Coinbase",
+      "icon": "🔵",
+      "tagline": "Regulated in 100+ countries",
+      "description": "Coinbase operates in over 100 countries with regulatory licenses in all major markets. The most trusted on-ramp for beginners worldwide with its simple buy interface and educational resources.",
+      "features": ["100+ countries supported", "NASDAQ-listed public company", "250+ cryptocurrencies", "Learn-and-earn programs", "Strong mobile app"],
+      "pricing": "Maker <strong>0.40%</strong> / Taker <strong>0.60%</strong>",
+      "url": "#affiliate-coinbase",
+      "cta": "Visit Coinbase"
+    },
+    {
+      "name": "KuCoin",
+      "icon": "🟢",
+      "tagline": "900+ coins, global reach",
+      "description": "KuCoin lists more altcoins than almost any other exchange and operates globally. P2P trading with local currencies, trading bots, and a full suite of trading products.",
+      "features": ["900+ cryptocurrencies", "P2P with 30+ currencies", "Built-in trading bots", "Spot, margin, and futures", "No mandatory KYC for basic trading"],
+      "pricing": "Maker <strong>0.10%</strong> / Taker <strong>0.10%</strong>",
+      "url": "#affiliate-kucoin",
+      "cta": "Visit KuCoin"
+    },
+    {
+      "name": "Uniswap",
+      "icon": "🦄",
+      "tagline": "Borderless decentralized exchange",
+      "description": "Uniswap has no geographic restrictions at all. No account, no KYC, no country blocks. Connect any wallet and trade. The ultimate global exchange for those who want full sovereignty.",
+      "features": ["No country restrictions", "No account needed", "Fully decentralized", "Self-custody trading", "Multi-chain support"],
+      "pricing": "<strong>0.3%</strong> swap fee",
+      "url": "#affiliate-uniswap",
+      "cta": "Visit Uniswap"
+    }
+  ],
+  "faqs": [
+    {"q": "Which exchange is available in the most countries?", "a": "Kraken operates in 190+ countries, followed by Binance at 180+. However, available features may vary by country. Decentralized exchanges like Uniswap have no geographic restrictions."},
+    {"q": "How do I avoid currency conversion fees?", "a": "Choose an exchange that supports your local currency for deposits and trading pairs. If your currency isn't supported, consider using a multi-currency bank account or depositing in a major currency like USD or EUR."},
+    {"q": "Do I need to verify my identity?", "a": "Most regulated exchanges require KYC verification. Some exchanges like KuCoin offer limited trading without full KYC. Decentralized exchanges require no identity verification at all."},
+    {"q": "What about crypto regulations in my country?", "a": "Crypto regulations vary dramatically by country. Some countries (El Salvador, UAE) are crypto-friendly, while others (China, Algeria) have strict bans. Always check your local regulations before trading."}
+  ]
+}

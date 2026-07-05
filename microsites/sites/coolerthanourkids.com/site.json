@@ -1,0 +1,90 @@
+{
+  "template": "e",
+  "domain": "coolerthanourkids.com",
+  "name": "Cooler Than Our Kids",
+  "logoIcon": "😎",
+  "title": "Cooler Than Our Kids — The Parenting Counterculture",
+  "metaDescription": "A tongue-in-cheek editorial for Gen X and Millennial parents who refuse to believe their best days are behind them. Retro tech, music taste defense, fashion comebacks, and nostalgic culture.",
+  "metaKeywords": "parenting humor, Gen X parents, millennial parents, retro culture, nostalgia, cool parents, 90s culture",
+  "tagline": "PARENTING COUNTERCULTURE",
+  "headline": "They Think We Are Embarrassing. They Are Wrong.",
+  "subheadline": "A magazine for parents who still own a working turntable, know every Beastie Boys lyric, and are absolutely certain that the 90s were peak civilization.",
+  "year": "2026",
+  "storiesTitle": "Latest Dispatches",
+  "aboutTitle": "About Cooler Than Our Kids",
+  "aboutContent": "<h3>We Were Here First</h3><p>Cooler Than Our Kids is the editorial safe space for parents whose children have the audacity to think they invented good taste. We were wearing vintage before it was called vintage. We were streaming before there was streaming. We had playlists on cassette tapes.</p><h3>Our Sacred Mission</h3><p>To document, defend, and celebrate the cultural superiority of people who grew up rewinding VHS tapes, memorizing phone numbers, and surviving dial-up internet. Our kids may have TikTok, but we have credibility.</p><h3>Who We Are</h3><p>We are the parents who get caught dancing in the kitchen. The ones whose kids pretend not to know us at school drop-off. The ones who still think cargo shorts have utility. And we are proud.</p>",
+  "newsletterTitle": "Join the Cool Parents Club",
+  "newsletterSub": "Weekly proof that you are, in fact, cooler than your children. Delivered to your inbox, which you check on a computer like a civilized person.",
+  "disclaimer": "No children were harmed in the making of this publication. Embarrassed, perhaps, but never harmed.",
+  "accentColor": "#db2777",
+  "accentLight": "#f472b6",
+  "accentDark": "#be185d",
+  "items": [
+    {
+      "icon": "📼",
+      "bannerBg": "linear-gradient(135deg, #701a75 0%, #a21caf 50%, #d946ef 100%)",
+      "tag": "Retro Tech",
+      "name": "Your Kids Do Not Understand How Hard It Was to Record a Song Off the Radio",
+      "description": "The precision timing, the DJ-dodging, the heartbreak of a late press on the record button. We had skills that no Spotify algorithm can replicate.",
+      "meta": "4 min read · June 2026"
+    },
+    {
+      "icon": "🎨",
+      "bannerBg": "linear-gradient(135deg, #831843 0%, #be185d 50%, #db2777 100%)",
+      "tag": "Fashion Comebacks",
+      "name": "Everything We Wore in 1997 Is Back and We Are Not Getting Credit",
+      "description": "Chunky sneakers, oversized flannels, tiny sunglasses. Gen Z thinks they discovered these. We have the photo albums to prove otherwise.",
+      "meta": "5 min read · June 2026"
+    },
+    {
+      "icon": "🎤",
+      "bannerBg": "linear-gradient(135deg, #1e1b4b 0%, #3730a3 50%, #6366f1 100%)",
+      "tag": "Music Defense",
+      "name": "A Definitive Argument That Your Playlist Is Better Than Your Teenager's",
+      "description": "Peer-reviewed evidence that the golden era of music ended approximately when your oldest child was born. Contains charts, graphs, and strong opinions.",
+      "meta": "7 min read · May 2026"
+    },
+    {
+      "icon": "🕹️",
+      "bannerBg": "linear-gradient(135deg, #14532d 0%, #166534 50%, #16a34a 100%)",
+      "tag": "Gaming",
+      "name": "We Beat Games Without Save Points and It Built Character",
+      "description": "Modern games have autosave, checkpoints, and difficulty sliders. We had one life, no continues, and a CRT television. Respect your elders.",
+      "meta": "5 min read · May 2026"
+    },
+    {
+      "icon": "📷",
+      "bannerBg": "linear-gradient(135deg, #78350f 0%, #a16207 50%, #ca8a04 100%)",
+      "tag": "Nostalgia",
+      "name": "The Lost Art of Not Knowing Things Immediately",
+      "description": "Before smartphones, disagreements at dinner could last for days. You had to go to the library to win an argument. It was character-building and we miss it.",
+      "meta": "4 min read · April 2026"
+    },
+    {
+      "icon": "👟",
+      "bannerBg": "linear-gradient(135deg, #4c1d95 0%, #6d28d9 50%, #8b5cf6 100%)",
+      "tag": "Style",
+      "name": "Cargo Shorts: A Hill We Will Die On",
+      "description": "They are practical. They are comfortable. They hold everything. Your children are wrong about them and history will vindicate us.",
+      "meta": "3 min read · April 2026"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Am I actually cooler than my kids?",
+      "a": "Absolutely. The data is clear. You grew up in an era of superior music, more durable fashion, and technology that required actual skill to operate. Your coolness is empirical."
+    },
+    {
+      "q": "My teenager says I am embarrassing. What should I do?",
+      "a": "Lean into it. Dance in the grocery store. Sing along to the radio at pickup. Use slang from 2003. The embarrassment is a feature, not a bug. It builds their character."
+    },
+    {
+      "q": "Is this site actually for parents?",
+      "a": "It is for anyone who remembers a time before smartphones and thinks that era produced objectively better humans. Parents just happen to have the most evidence, in the form of children who prove the point daily."
+    },
+    {
+      "q": "Will my kids find this site?",
+      "a": "Unlikely. It is on a website, not TikTok. Your secret is safe."
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "template": "b",
+  "domain": "internetofmoney.io",
+  "name": "Internet of Money",
+  "logoIcon": "💰",
+  "title": "Internet of Money — Your Crypto Education Hub",
+  "metaDescription": "Learn cryptocurrency from the ground up. Beginner-friendly guides to Bitcoin, DeFi, wallets, blockchain, smart contracts, and staking.",
+  "metaKeywords": "crypto education, learn bitcoin, defi explained, crypto wallets, blockchain basics, smart contracts, staking, yield farming",
+  "headline": "Understand crypto before you invest",
+  "subheadline": "Plain-English guides to Bitcoin, DeFi, wallets, and blockchain technology — built for beginners who want to learn before they leap.",
+  "lastUpdated": "July 2026",
+  "year": "2026",
+  "introCopy": "Cryptocurrency doesn't have to be confusing. Whether you're curious about Bitcoin, want to understand DeFi, or need to pick your first wallet, we break down every concept in clear, jargon-free language. No shilling, no hype — just honest education so you can make informed decisions with your money.",
+  "topicsTitle": "Start learning",
+  "guideTitle": "Your crypto learning roadmap",
+  "guideContent": "<h3>Step 1: Understand the basics</h3><p>Before buying anything, learn what blockchain actually is and why Bitcoin was created. Understanding the underlying technology helps you evaluate every other project and avoid scams.</p><h3>Step 2: Set up a secure wallet</h3><p>Your wallet is your bank. Learn the difference between custodial and non-custodial wallets, hot and cold storage, and why your seed phrase is the most important thing you'll ever write down.</p><h3>Step 3: Explore beyond Bitcoin</h3><p>Once you understand the fundamentals, explore DeFi protocols, smart contract platforms, and staking. Each topic builds on the last, and rushing ahead without the basics is how people lose money.</p><h3>Step 4: Practice with small amounts</h3><p>Start small. Use testnets to practice transactions, swap tiny amounts on a DEX, and stake a minimal position. Real experience teaches more than any guide.</p>",
+  "resourcesTitle": "Recommended resources",
+  "resourcesContent": "<h3>Bitcoin Whitepaper</h3><p>The original 9-page paper by Satoshi Nakamoto that started it all. Surprisingly readable. <a href=\"https://bitcoin.org/bitcoin.pdf\" target=\"_blank\" rel=\"noopener\">Read the whitepaper</a></p><h3>Ethereum.org Learn Hub</h3><p>Ethereum's official learning resources cover everything from basic concepts to advanced DeFi mechanics. <a href=\"https://ethereum.org/en/learn/\" target=\"_blank\" rel=\"noopener\">Visit Ethereum.org</a></p><h3>Andreas Antonopoulos — Mastering Bitcoin</h3><p>The definitive technical book on Bitcoin, available free online. Great for those who want to go deeper. <a href=\"https://github.com/bitcoinbook/bitcoinbook\" target=\"_blank\" rel=\"noopener\">Read on GitHub</a></p>",
+  "disclaimer": "InternetOfMoney.io provides educational content about cryptocurrency. This is not financial advice. Always do your own research before making investment decisions. We may earn commissions through affiliate links.",
+  "affiliateDisclosure": "Some links on this site are affiliate links. We may earn a commission if you make a purchase at no extra cost to you.",
+  "accentColor": "#f59e0b",
+  "accentLight": "#fef3c7",
+  "accentDark": "#d97706",
+  "items": [
+    {
+      "name": "What is Bitcoin",
+      "icon": "₿",
+      "tag": "Fundamentals",
+      "description": "Bitcoin is the original cryptocurrency — a decentralized digital currency that lets you send money anywhere in the world without banks or intermediaries. Learn how it works, why it has value, and what makes it different from traditional money.",
+      "features": [
+        "How Bitcoin transactions work",
+        "Proof of Work and mining explained",
+        "Bitcoin's fixed supply of 21 million coins",
+        "The role of nodes and the network",
+        "Bitcoin vs. traditional banking"
+      ],
+      "url": "#affiliate-bitcoin-guide",
+      "cta": "Learn about Bitcoin"
+    },
+    {
+      "name": "Understanding DeFi",
+      "icon": "🏦",
+      "tag": "Advanced",
+      "description": "Decentralized Finance (DeFi) recreates traditional financial services — lending, borrowing, trading — using smart contracts instead of banks. Understand how protocols like Aave, Uniswap, and Compound work under the hood.",
+      "features": [
+        "What decentralized finance actually means",
+        "Lending and borrowing protocols",
+        "Decentralized exchanges (DEXs)",
+        "Liquidity pools and impermanent loss",
+        "Risks and opportunities in DeFi"
+      ],
+      "url": "#affiliate-defi-guide",
+      "cta": "Explore DeFi"
+    },
+    {
+      "name": "Crypto Wallets Explained",
+      "icon": "👛",
+      "tag": "Essential",
+      "description": "Your crypto wallet is how you store, send, and receive digital assets. Learn the difference between hot wallets, cold wallets, custodial and non-custodial options, and how to keep your funds safe.",
+      "features": [
+        "Hot wallets vs. cold storage",
+        "Custodial vs. non-custodial wallets",
+        "Hardware wallet recommendations",
+        "Seed phrase security best practices",
+        "Multi-signature wallet setups"
+      ],
+      "url": "#affiliate-wallets-guide",
+      "cta": "Choose a wallet"
+    },
+    {
+      "name": "Blockchain Basics",
+      "icon": "⛓️",
+      "tag": "Fundamentals",
+      "description": "Blockchain is the technology underneath every cryptocurrency. Understand how blocks are created, how consensus works, and why this distributed ledger technology is being adopted far beyond crypto.",
+      "features": [
+        "How blocks and chains work",
+        "Consensus mechanisms explained",
+        "Public vs. private blockchains",
+        "Immutability and transparency",
+        "Real-world blockchain applications"
+      ],
+      "url": "#affiliate-blockchain-guide",
+      "cta": "Learn blockchain"
+    },
+    {
+      "name": "Smart Contracts 101",
+      "icon": "📜",
+      "tag": "Advanced",
+      "description": "Smart contracts are self-executing programs that run on a blockchain. They power DeFi, NFTs, and decentralized applications. Learn how they work and why they're revolutionizing agreements.",
+      "features": [
+        "What smart contracts do",
+        "How Ethereum smart contracts work",
+        "Solidity and contract development",
+        "Smart contract auditing and security",
+        "Real-world use cases beyond crypto"
+      ],
+      "url": "#affiliate-smartcontracts-guide",
+      "cta": "Understand smart contracts"
+    },
+    {
+      "name": "Staking and Yield",
+      "icon": "📈",
+      "tag": "Earning",
+      "description": "Staking lets you earn passive income by locking up your crypto to help secure a blockchain network. Learn how Proof of Stake works, where to stake, and how to evaluate yield opportunities safely.",
+      "features": [
+        "Proof of Stake explained",
+        "How staking rewards are calculated",
+        "Best staking platforms compared",
+        "Liquid staking and LSTs",
+        "Evaluating yield farming risks"
+      ],
+      "url": "#affiliate-staking-guide",
+      "cta": "Start staking"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I need money to start learning about crypto?",
+      "a": "No. You can learn everything about blockchain, Bitcoin, and DeFi without spending a cent. Many blockchains have testnets where you can practice transactions with free test tokens. Only invest real money once you truly understand what you're buying."
+    },
+    {
+      "q": "Is cryptocurrency a scam?",
+      "a": "Cryptocurrency itself is legitimate technology. However, the crypto space has many scams — fake tokens, rug pulls, and Ponzi schemes. That's exactly why education matters. Learning to evaluate projects, read smart contracts, and spot red flags is the best protection."
+    },
+    {
+      "q": "What's the safest way to store crypto?",
+      "a": "For long-term storage, a hardware wallet (like Ledger or Trezor) is the safest option. It keeps your private keys offline and immune to online hacks. Always back up your seed phrase on paper or metal and store it somewhere secure."
+    },
+    {
+      "q": "How is this site different from crypto YouTube?",
+      "a": "Most crypto YouTubers are incentivized to hype tokens they hold. We focus on education, not price predictions. Our guides explain how things work so you can make your own decisions — we don't tell you what to buy."
+    },
+    {
+      "q": "What should I learn first?",
+      "a": "Start with 'What is Bitcoin' and 'Blockchain Basics' to understand the foundation. Then move to wallets so you know how to store crypto safely. Only after that should you explore DeFi, smart contracts, and staking."
+    }
+  ]
+}

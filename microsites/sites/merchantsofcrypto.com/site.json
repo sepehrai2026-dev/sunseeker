@@ -1,0 +1,78 @@
+{
+  "template": "f",
+  "domain": "merchantsofcrypto.com",
+  "name": "Merchants of Crypto",
+  "logoIcon": "🏪",
+  "title": "Merchants of Crypto — Crypto-Native Commerce Platform",
+  "metaDescription": "Accept cryptocurrency payments seamlessly. Multi-chain support, instant settlement, merchant dashboard, and DeFi yield on holdings. Built for businesses ready to go crypto-native.",
+  "metaKeywords": "crypto payments, accept bitcoin, merchant crypto, cryptocurrency commerce, multi-chain payments, crypto invoicing, DeFi yield, crypto settlement",
+  "badge": "Coming 2026 · Crypto-Native Commerce",
+  "headline": "Commerce without borders, payments without banks",
+  "subheadline": "The all-in-one platform for merchants who want to accept crypto payments, settle instantly across chains, and earn yield on their holdings — no middlemen, no waiting, no friction.",
+  "ctaText": "Join Waitlist",
+  "year": "2026",
+  "featuresTitle": "Platform Features",
+  "visionTitle": "Our Vision",
+  "visionContent": "<h3>Making Crypto Commerce Mainstream</h3><p>Cryptocurrency was designed to be spent, not just held. Yet most merchants still can't accept it without clunky integrations, volatile settlement windows, and confusing tooling. Merchants of Crypto is building the infrastructure to change that — a single platform where any business can accept any major cryptocurrency as naturally as they accept credit cards today.</p><h3>Multi-Chain by Default</h3><p>The future of payments isn't one chain — it's every chain. Our platform supports Bitcoin, Ethereum, Solana, and major L2 networks out of the box, with automatic routing to give your customers the cheapest and fastest payment path. Merchants see one unified dashboard regardless of which chain the payment arrives on. No fragmentation, no missed transactions.</p><h3>Your Money Should Work While It Waits</h3><p>Traditional payment processors hold your funds for days. We settle instantly — and go one step further. Idle merchant balances can be allocated to vetted DeFi yield strategies, earning returns while you sleep. Fully opt-in, fully transparent, with institutional-grade risk management baked into every position.</p>",
+  "waitlistTitle": "Get Early Access",
+  "waitlistSub": "Be among the first merchants to accept crypto payments with zero friction. Join the waitlist for priority access and founder pricing.",
+  "waitlistNote": "We'll notify you when early access opens. No spam — only launch updates and founder perks.",
+  "disclaimer": "Merchants of Crypto is a product concept currently in development. Features described are planned and subject to change. This site does not constitute a financial product offering. Cryptocurrency payments involve risk including price volatility and regulatory uncertainty. No funds are being solicited.",
+  "accentColor": "#f59e0b",
+  "accentLight": "#fef3c7",
+  "accentDark": "#d97706",
+  "items": [
+    {
+      "icon": "💳",
+      "name": "Accept Crypto Payments",
+      "description": "Embed a checkout widget or generate payment links in minutes. Customers pay in their preferred cryptocurrency — you receive confirmed funds with no chargebacks and no processor fees."
+    },
+    {
+      "icon": "⛓️",
+      "name": "Multi-Chain Support",
+      "description": "Bitcoin, Ethereum, Solana, Polygon, Arbitrum, Base, and more. Accept payments on any major chain with automatic routing to minimize gas fees and confirmation times for your customers."
+    },
+    {
+      "icon": "⚡",
+      "name": "Instant Settlement",
+      "description": "No more waiting days for funds to clear. Payments settle to your merchant wallet in real-time as transactions confirm on-chain. Convert to stablecoins automatically to eliminate volatility."
+    },
+    {
+      "icon": "📊",
+      "name": "Merchant Dashboard",
+      "description": "Track payments, manage refunds, view analytics, and export reports from a single unified dashboard. Real-time transaction monitoring across all chains with webhook notifications."
+    },
+    {
+      "icon": "🧾",
+      "name": "Crypto Invoicing",
+      "description": "Generate professional invoices denominated in crypto or fiat with automatic conversion. Send payment links, set due dates, and track payment status — all with built-in tax reporting."
+    },
+    {
+      "icon": "📈",
+      "name": "DeFi Yield on Holdings",
+      "description": "Put idle merchant balances to work with opt-in DeFi yield strategies. Earn returns on stablecoin holdings through vetted lending protocols with institutional-grade risk controls."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What cryptocurrencies will be supported at launch?",
+      "a": "We're launching with support for Bitcoin (on-chain and Lightning), Ethereum, USDC, USDT, SOL, and MATIC. Additional chains and tokens will be added based on merchant demand, with a goal of supporting all major L1s and L2s within the first year."
+    },
+    {
+      "q": "How does instant settlement work?",
+      "a": "When a customer sends a payment, our system detects the transaction as soon as it hits the mempool and provides a risk-scored confirmation. For most transactions, funds are available in your merchant wallet within seconds. You can auto-convert to stablecoins to lock in value immediately."
+    },
+    {
+      "q": "What are the fees?",
+      "a": "We're targeting significantly lower fees than traditional payment processors — no percentage-based transaction fees. Waitlist members will receive founder pricing locked in for the first year. Exact fee structures will be announced closer to launch."
+    },
+    {
+      "q": "Is the DeFi yield feature safe?",
+      "a": "The yield feature is fully opt-in and uses only vetted, audited DeFi protocols with established track records. We implement strict risk limits, diversification rules, and real-time monitoring. Merchants can withdraw funds at any time with no lock-up periods."
+    },
+    {
+      "q": "Do I need crypto experience to use this?",
+      "a": "Not at all. The platform is designed for merchants who may be entirely new to crypto. Setup takes minutes, the dashboard works like any payment processor you've used before, and our support team handles any blockchain complexity behind the scenes."
+    }
+  ]
+}

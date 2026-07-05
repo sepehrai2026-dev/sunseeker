@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whisperlist — Anonymous Feedback & Lists</title>
+<meta name="description" content="Create anonymous feedback forms and shareable lists. Collect honest opinions from your team, friends, or community without revealing who said what.">
+<meta name="keywords" content="anonymous feedback tool, anonymous survey, collect honest feedback, anonymous list sharing">
+<meta property="og:title" content="Whisperlist — Anonymous Feedback & Lists">
+<meta property="og:description" content="Create anonymous feedback forms and shareable lists. Collect honest opinions from your team, friends, or community without revealing who said what.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://whisperlist.io">
+<link rel="canonical" href="https://whisperlist.io">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0a0a0a;
+  --bg-card: #101010;
+  --bg-surface: #141414;
+  --text: #ededed;
+  --text-secondary: #8f8f8f;
+  --text-muted: #5c5c5c;
+  --accent: var(--site-accent, #2563eb);
+  --accent-light: var(--site-accent-light, #93c5fd);
+  --accent-dark: var(--site-accent-dark, #1e40af);
+  --border: #1f1f1f;
+  --border-accent: #2c2c2c;
+  --glow: color-mix(in srgb, var(--accent) 28%, transparent);
+  --glow-soft: color-mix(in srgb, var(--accent) 12%, transparent);
+  --font-display: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  --max-w: 1040px;
+  --nav-h: 56px;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--nav-h) + 1rem); }
+
+body {
+  font-family: var(--font-display);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a { color: var(--accent); text-decoration: none; transition: color 0.15s ease; }
+a:hover { color: var(--text); }
+
+::selection { background: var(--accent); color: #0a0a0a; }
+
+:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px var(--glow-soft);
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 300;
+  background: var(--accent);
+  color: #0a0a0a;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 0.6rem 1rem;
+}
+.skip-link:focus { left: 0; color: #0a0a0a; }
+
+/* ---- FILM GRAIN ---- */
+.grain {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 160px 160px;
+}
+
+/* ---- GEOMETRIC MARKS ---- */
+.nav-mark, .label-tick {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  background: var(--accent);
+  margin-right: 0.6rem;
+  box-shadow: 0 0 10px var(--glow);
+}
+
+/* ---- NAV ---- */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: var(--nav-h);
+  background: rgba(10, 10, 10, 0.72);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  border-bottom: 1px solid var(--border);
+  transition: border-color 0.25s ease;
+}
+
+.nav.scrolled { border-bottom-color: var(--border-accent); }
+
+.nav-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.nav-links { display: flex; gap: 1.75rem; }
+
+.nav-links a {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.nav-links a:hover { color: var(--text); }
+
+.nav-idx { color: var(--accent); margin-right: 0.4rem; font-weight: 600; }
+
+.nav-status {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+}
+
+.status-led, .console-led {
+  width: 7px;
+  height: 7px;
+  background: var(--accent);
+  box-shadow: 0 0 8px var(--glow);
+  animation: led-pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes led-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+/* ---- HERO ---- */
+.hero {
+  position: relative;
+  padding-top: calc(var(--nav-h) + 6.5rem);
+  border-bottom: 1px solid var(--border);
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 72px 72px;
+  background-position: center top;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 80% 65% at 50% 0%, var(--glow-soft), transparent 70%),
+    linear-gradient(to bottom, transparent 30%, var(--bg) 96%);
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 1.5rem 5.5rem;
+}
+
+.hero-label {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--accent);
+  margin-bottom: 2rem;
+}
+
+.hero-title {
+  font-size: clamp(2.6rem, 7vw, 4.75rem);
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+  color: var(--text);
+  max-width: 820px;
+  text-wrap: balance;
+}
+
+.hero-sub {
+  margin-top: 1.75rem;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 580px;
+  line-height: 1.75;
+}
+
+.hero-cta {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.85rem 2.25rem;
+  background: var(--accent);
+  color: #0a0a0a;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: 1px solid var(--accent);
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  color: #0a0a0a;
+  box-shadow: 0 0 24px var(--glow);
+  transform: translateY(-1px);
+}
+
+.btn-ghost {
+  display: inline-block;
+  padding: 0.85rem 2.25rem;
+  background: transparent;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: 1px solid var(--border-accent);
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-ghost:hover { border-color: var(--accent); color: var(--text); }
+
+.hero-meta {
+  position: relative;
+  z-index: 1;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0.85rem 1.5rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---- CONTENT / SECTIONS ---- */
+.content {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 1.5rem 6rem;
+}
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.section-idx {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+}
+
+.section-title {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--text);
+  white-space: normal;
+}
+
+.section-rule {
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+  align-self: center;
+  min-width: 2rem;
+}
+
+/* ---- TOOL CONSOLE ---- */
+.tool-section {
+  padding-top: 4.5rem;
+  margin-bottom: 5.5rem;
+}
+
+.console {
+  position: relative;
+  border: 1px solid var(--border-accent);
+  background: var(--bg-card);
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.4), 0 24px 64px -32px var(--glow-soft);
+}
+
+.console::before, .console::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  pointer-events: none;
+}
+
+.console::before {
+  top: -1px;
+  left: -1px;
+  border-top: 2px solid var(--accent);
+  border-left: 2px solid var(--accent);
+}
+
+.console::after {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 2px solid var(--accent);
+  border-right: 2px solid var(--accent);
+}
+
+.console-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.65rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-surface);
+}
+
+.console-ticks { display: flex; gap: 5px; }
+
+.console-ticks i {
+  width: 6px;
+  height: 6px;
+  background: var(--border-accent);
+}
+
+.console-ticks i:first-child { background: var(--accent); }
+
+.console-label {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  color: var(--text-muted);
+  flex: 1;
+  text-align: center;
+}
+
+.console-foot {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.55rem 1.25rem;
+  border-top: 1px solid var(--border);
+  background: var(--bg-surface);
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+}
+
+.tool-area { background: var(--bg-card); }
+
+.tool-container {
+  padding: 2.5rem;
+  min-height: 320px;
+}
+
+.tool-container h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.015em;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.tool-container label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  margin-top: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.tool-container label::before {
+  content: '\25AA';
+  color: var(--accent);
+  margin-right: 0.45rem;
+  font-size: 0.6rem;
+}
+
+.tool-container label:first-of-type { margin-top: 0; }
+
+.tool-container input[type="text"],
+.tool-container input[type="number"],
+.tool-container input[type="email"],
+.tool-container select,
+.tool-container textarea {
+  width: 100%;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--border-accent);
+  font-size: 0.85rem;
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  background: var(--bg);
+  color: var(--text);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.tool-container input::placeholder,
+.tool-container textarea::placeholder { color: var(--text-muted); }
+
+.tool-container select {
+  cursor: pointer;
+  padding-right: 2.25rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23888888' stroke-width='1.5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.85rem center;
+}
+
+.tool-container select option { background: var(--bg); color: var(--text); }
+
+.tool-container input:focus,
+.tool-container select:focus,
+.tool-container textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--glow-soft), 0 0 18px -6px var(--glow);
+}
+
+.tool-container input[type="number"]::-webkit-inner-spin-button { opacity: 1; }
+
+/* Range sliders — instrument style */
+.tool-container input[type="range"] {
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  height: 2px;
+  background: var(--border-accent);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.tool-container input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 22px;
+  background: var(--accent);
+  border: none;
+  box-shadow: 0 0 12px var(--glow);
+  cursor: ew-resize;
+}
+
+.tool-container input[type="range"]::-moz-range-thumb {
+  width: 14px;
+  height: 22px;
+  background: var(--accent);
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 0 12px var(--glow);
+  cursor: ew-resize;
+}
+
+.tool-container input[type="range"]::-moz-range-track {
+  height: 2px;
+  background: var(--border-accent);
+}
+
+.tool-container input[type="range"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--glow-soft);
+}
+
+.tool-container button {
+  background: var(--accent);
+  color: #0a0a0a;
+  border: 1px solid var(--accent);
+  padding: 0.75rem 1.9rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.tool-container button:hover {
+  box-shadow: 0 0 20px var(--glow);
+  transform: translateY(-1px);
+}
+
+.tool-container button:active { transform: translateY(0); }
+
+/* Result readout */
+.tool-result {
+  margin-top: 1.75rem;
+  padding: 1.5rem;
+  background: var(--bg);
+  border: 1px solid var(--border-accent);
+  border-left: 2px solid var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  line-height: 1.75;
+  font-variant-numeric: tabular-nums;
+  position: relative;
+  animation: readout-in 0.35s ease both;
+}
+
+.tool-result::before {
+  content: 'OUTPUT';
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  font-size: 0.55rem;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+  border: 1px solid var(--border-accent);
+  border-top-color: transparent;
+  border-right-color: transparent;
+  padding: 0.2rem 0.6rem;
+  background: var(--bg-surface);
+}
+
+@keyframes readout-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.tool-result strong { font-weight: 600; color: var(--text); }
+
+.tool-row {
+  display: flex;
+  gap: 1rem;
+  align-items: end;
+}
+
+.tool-row > div { flex: 1; }
+
+/* ---- FEATURES: SPEC ROWS ---- */
+.features-section {
+  padding-top: 4.5rem;
+  margin-bottom: 5.5rem;
+}
+
+.feature-grid {
+  border-top: 1px solid var(--border);
+  counter-reset: feature;
+}
+
+.feature-card {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(180px, 240px) 1fr;
+  gap: 1.5rem;
+  align-items: baseline;
+  padding: 1.6rem 0.25rem;
+  border-bottom: 1px solid var(--border);
+  counter-increment: feature;
+  position: relative;
+  transition: background 0.2s ease;
+}
+
+.feature-card:hover { background: var(--glow-soft); }
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -1px;
+  height: 1px;
+  width: 0;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.feature-card:hover::before { width: 4.5rem; }
+
+.feature-num {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  font-variant-numeric: tabular-nums;
+}
+
+.feature-num::before { content: counter(feature, decimal-leading-zero); }
+
+.feature-name {
+  font-size: 1.02rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.feature-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.feature-icon { display: none; }
+
+/* ---- ABOUT ---- */
+.about {
+  padding-top: 4.5rem;
+  margin-bottom: 5.5rem;
+}
+
+.about-content {
+  color: var(--text-secondary);
+  line-height: 1.85;
+  max-width: 680px;
+}
+
+.about-content h3 {
+  color: var(--text);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 2.25rem 0 0.75rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--accent);
+}
+
+.about-content h3:first-child { margin-top: 0; }
+
+.about-content p { margin-bottom: 1rem; }
+
+/* ---- FAQ ---- */
+.faq {
+  padding-top: 4.5rem;
+  margin-bottom: 2rem;
+}
+
+.faq-list { border-top: 1px solid var(--border); }
+
+.faq-item { border-bottom: 1px solid var(--border); }
+
+.faq-q {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 1.3rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--font-display);
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  letter-spacing: -0.01em;
+  transition: color 0.15s ease;
+}
+
+.faq-q:hover { color: var(--accent); }
+
+.faq-q::after {
+  content: '+';
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  transition: color 0.15s ease, transform 0.25s ease;
+}
+
+.faq-q.open::after { content: '\2212'; color: var(--accent); }
+
+.faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-a.open { max-height: 500px; padding-bottom: 1.3rem; }
+
+.faq-a p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  max-width: 720px;
+}
+
+/* ---- FOOTER ---- */
+.footer {
+  border-top: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.footer-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.footer-disc {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 0.9rem;
+  max-width: 460px;
+  line-height: 1.7;
+}
+
+.footer-heading {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.footer-links { display: flex; flex-direction: column; gap: 6px; }
+
+.footer-links a { font-size: 0.85rem; color: var(--text-secondary); }
+.footer-links a:hover { color: var(--text); }
+
+.footer-bottom {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem 2.5rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+/* ---- REVEALS ---- */
+html.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+html.js [data-reveal].is-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  html.js [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .status-led, .console-led { animation: none; }
+  .tool-result { animation: none; }
+
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 720px) {
+  .hero { padding-top: calc(var(--nav-h) + 3.5rem); }
+
+  .hero-inner { padding-bottom: 3.5rem; }
+
+  .nav-links { display: none; }
+
+  .hero-meta-domain { display: none; }
+
+  .section-head { flex-wrap: wrap; gap: 0.75rem 1rem; }
+
+  .feature-card {
+    grid-template-columns: 3rem 1fr;
+    gap: 0.4rem 1rem;
+  }
+
+  .feature-desc { grid-column: 2; }
+
+  .tool-row { flex-direction: column; align-items: stretch; }
+
+  .tool-container { padding: 1.5rem 1.1rem; }
+
+  .console-foot span:nth-child(2) { display: none; }
+
+  .footer-inner { flex-direction: column; }
+
+  .tool-section, .features-section, .about, .faq {
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#tool">Skip to the tool</a>
+<div class="grain" aria-hidden="true"></div>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo"><span class="nav-mark" aria-hidden="true"></span>Whisperlist</a>
+    <div class="nav-links">
+      <a href="#tool"><span class="nav-idx" aria-hidden="true">01</span>Tool</a>
+      <a href="#features"><span class="nav-idx" aria-hidden="true">02</span>Features</a>
+      <a href="#about"><span class="nav-idx" aria-hidden="true">03</span>About</a>
+      <a href="#faq"><span class="nav-idx" aria-hidden="true">04</span>FAQ</a>
+    </div>
+    <div class="nav-status" aria-hidden="true"><span class="status-led"></span><span class="status-text">ONLINE</span></div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="hero-label" data-reveal><span class="label-tick" aria-hidden="true"></span>Whisperlist</p>
+    <h1 class="hero-title" data-reveal>Honest feedback, no names attached</h1>
+    <p class="hero-sub" data-reveal>Create anonymous feedback forms in seconds. Share a link, collect candid responses. No accounts, no tracking, no BS.</p>
+    <div class="hero-cta" data-reveal>
+      <a href="#tool" class="btn-primary" id="hero-cta-btn">Launch the tool</a>
+      <a href="#about" class="btn-ghost">Read the brief</a>
+    </div>
+  </div>
+  <div class="hero-meta" aria-hidden="true">
+    <span>SYS / 2026</span>
+    <span class="hero-meta-domain">whisperlist.io</span>
+    <span id="hero-clock">--:--:-- UTC</span>
+  </div>
+</header>
+
+<main class="content">
+
+  <section class="tool-section" id="tool">
+    <div class="section-head" data-reveal>
+      <span class="section-idx" aria-hidden="true">01</span>
+      <h2 class="section-title">Whisperlist</h2>
+      <span class="section-rule" aria-hidden="true"></span>
+    </div>
+    <div class="console" data-reveal>
+      <div class="console-bar" aria-hidden="true">
+        <span class="console-ticks"><i></i><i></i><i></i></span>
+        <span class="console-label">CONSOLE // INTERACTIVE</span>
+        <span class="console-led"></span>
+      </div>
+      <div class="tool-area" id="tool-area">
+        <div class="tool-container" id="tool-container"></div>
+      </div>
+      <div class="console-foot" aria-hidden="true">
+        <span>INPUT / LOCAL</span>
+        <span>PROC / CLIENT-SIDE</span>
+        <span>REV / 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-section" id="features">
+    <div class="section-head" data-reveal>
+      <span class="section-idx" aria-hidden="true">02</span>
+      <h2 class="section-title">What you can do</h2>
+      <span class="section-rule" aria-hidden="true"></span>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-card" data-reveal>
+  <span class="feature-num" aria-hidden="true"></span>
+  <div class="feature-name">Team retrospectives</div>
+  <div class="feature-desc">Run honest retros where everyone can flag issues without fear of judgment.</div>
+</div>
+
+<div class="feature-card" data-reveal>
+  <span class="feature-num" aria-hidden="true"></span>
+  <div class="feature-name">Product feedback</div>
+  <div class="feature-desc">Collect unfiltered user feedback on features, bugs, and priorities.</div>
+</div>
+
+<div class="feature-card" data-reveal>
+  <span class="feature-num" aria-hidden="true"></span>
+  <div class="feature-name">Event surveys</div>
+  <div class="feature-desc">Get real feedback after events, talks, or workshops.</div>
+</div>
+
+<div class="feature-card" data-reveal>
+  <span class="feature-num" aria-hidden="true"></span>
+  <div class="feature-name">Decision polls</div>
+  <div class="feature-desc">Run anonymous polls for group decisions — restaurant picks, gift ideas, anything.</div>
+</div>
+
+<div class="feature-card" data-reveal>
+  <span class="feature-num" aria-hidden="true"></span>
+  <div class="feature-name">Management reviews</div>
+  <div class="feature-desc">Enable upward feedback where reports can be candid about leadership.</div>
+</div>
+
+<div class="feature-card" data-reveal>
+  <span class="feature-num" aria-hidden="true"></span>
+  <div class="feature-name">Idea collection</div>
+  <div class="feature-desc">Gather ideas from your team without anchoring bias from who suggested what.</div>
+</div>
+
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="section-head" data-reveal>
+      <span class="section-idx" aria-hidden="true">03</span>
+      <h2 class="section-title">Why anonymous feedback matters</h2>
+      <span class="section-rule" aria-hidden="true"></span>
+    </div>
+    <div class="about-content" data-reveal><h3>People are more honest when they're anonymous</h3><p>Research consistently shows that people give more candid, useful feedback when their identity is protected. Whisperlist removes the social pressure so you get the truth — not what people think you want to hear.</p><h3>Use cases</h3><p>Team retrospectives where people can flag real issues. Product feedback from beta users. Honest friend polls for decisions. Event feedback without awkwardness. Management reviews where reports can speak freely.</p><h3>Privacy by design</h3><p>We don't track IP addresses, don't require accounts, and don't store identifying information. Responses are stored temporarily and auto-deleted after 30 days. Your whispers stay anonymous.</p></div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="section-head" data-reveal>
+      <span class="section-idx" aria-hidden="true">04</span>
+      <h2 class="section-title">Frequently asked questions</h2>
+      <span class="section-rule" aria-hidden="true"></span>
+    </div>
+    <div class="faq-list" id="faq-list"></div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo"><span class="nav-mark" aria-hidden="true"></span>Whisperlist</span>
+      <p class="footer-disc">Whisperlist.io is a free anonymous feedback tool. Responses are stored client-side in this demo version.</p>
+    </div>
+    <div class="footer-links">
+      <p class="footer-heading">Resources</p>
+      <a href="https://sepehr.ai" target="_blank" rel="noopener">sepehr.ai</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Whisperlist. All rights reserved.</p>
+    <p class="footer-coords" aria-hidden="true">whisperlist.io // EOF</p>
+  </div>
+</footer>
+
+<script>
+const SITE_CONFIG = {"faqs":[{"q":"Is it really anonymous?","a":"Yes. In this demo, all data stays in your browser (localStorage). There's no server, no IP logging, no cookies, no analytics. In a full version, responses would be stored on a server with no identifying metadata."},{"q":"How long are responses stored?","a":"In this demo, responses are stored in your browser's localStorage until you clear them. In a production version, responses would auto-delete after 30 days."},{"q":"Can I export the responses?","a":"You can copy all responses from the results view. A production version would support CSV export."},{"q":"Is there a response limit?","a":"No limit in this demo. Share your link and collect as many responses as you need."},{"q":"Can people respond more than once?","a":"This demo doesn't restrict multiple submissions since we don't track users. A production version could optionally limit to one response per browser session."}],"accentColor":"#7c3aed","accentLight":"#ede9fe","accentDark":"#6d28d9","ctaText":""};
+document.documentElement.classList.add('js');
+
+document.addEventListener('DOMContentLoaded', () => {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Set accent colors from config
+  if (SITE_CONFIG.accentColor) {
+    document.documentElement.style.setProperty('--site-accent', SITE_CONFIG.accentColor);
+    document.documentElement.style.setProperty('--site-accent-light', SITE_CONFIG.accentLight || SITE_CONFIG.accentColor);
+    document.documentElement.style.setProperty('--site-accent-dark', SITE_CONFIG.accentDark || SITE_CONFIG.accentColor);
+  }
+
+  // Optional CTA text override
+  const ctaBtn = document.getElementById('hero-cta-btn');
+  if (ctaBtn && SITE_CONFIG.ctaText) {
+    ctaBtn.textContent = SITE_CONFIG.ctaText;
+  }
+
+  // FAQ accordion
+  const faqList = document.getElementById('faq-list');
+  if (faqList && SITE_CONFIG.faqs) {
+    SITE_CONFIG.faqs.forEach((faq, i) => {
+      const item = document.createElement('div');
+      item.className = 'faq-item';
+      item.innerHTML = `
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a-${i}">${faq.q}</button>
+        <div class="faq-a" id="faq-a-${i}"><p>${faq.a}</p></div>
+      `;
+      const btn = item.querySelector('.faq-q');
+      const answer = item.querySelector('.faq-a');
+      btn.addEventListener('click', () => {
+        const open = btn.classList.toggle('open');
+        answer.classList.toggle('open', open);
+        btn.setAttribute('aria-expanded', String(open));
+      });
+      faqList.appendChild(item);
+    });
+  }
+
+  // Nav scroll state
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
+
+  // Live UTC clock readout
+  const clock = document.getElementById('hero-clock');
+  if (clock) {
+    const tick = () => {
+      const d = new Date();
+      const p = n => String(n).padStart(2, '0');
+      clock.textContent = `${p(d.getUTCHours())}:${p(d.getUTCMinutes())}:${p(d.getUTCSeconds())} UTC`;
+    };
+    tick();
+    setInterval(tick, 1000);
+  }
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', e => {
+      const target = document.querySelector(link.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
+      }
+    });
+  });
+
+  // IntersectionObserver reveals
+  const revealEls = document.querySelectorAll('[data-reveal]');
+  if (reduceMotion || !('IntersectionObserver' in window)) {
+    revealEls.forEach(el => el.classList.add('is-in'));
+  } else {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    revealEls.forEach(el => io.observe(el));
+  }
+
+  // Init tool if available
+  if (typeof initTool === 'function') {
+    initTool(document.getElementById('tool-container'));
+  }
+});
+
+function initTool(container) {
+  const stored = JSON.parse(localStorage.getItem('whisperlist_lists') || '{}');
+
+  function renderCreate() {
+    container.innerHTML = `
+      <h3>Create a whisperlist</h3>
+      <label for="wl-title">What do you want feedback on?</label>
+      <input type="text" id="wl-title" placeholder="e.g., How was the team offsite?">
+      <label for="wl-prompt">Prompt (what should people respond to?)</label>
+      <textarea id="wl-prompt" rows="3" placeholder="e.g., Share one thing that went well and one thing to improve"></textarea>
+      <button id="wl-create">Create whisperlist</button>
+      ${Object.keys(stored).length > 0 ? '<button id="wl-view-all" style="background:transparent;color:var(--accent);border:1px solid var(--border);margin-left:8px">View my lists</button>' : ''}
+    `;
+
+    document.getElementById('wl-create').addEventListener('click', () => {
+      const title = document.getElementById('wl-title').value.trim();
+      const prompt = document.getElementById('wl-prompt').value.trim();
+      if (!title) return;
+      const id = Math.random().toString(36).substring(2, 8);
+      stored[id] = { title, prompt, responses: [], created: new Date().toISOString() };
+      localStorage.setItem('whisperlist_lists', JSON.stringify(stored));
+      renderShare(id);
+    });
+
+    const viewAll = document.getElementById('wl-view-all');
+    if (viewAll) viewAll.addEventListener('click', renderListAll);
+  }
+
+  function renderShare(id) {
+    const list = stored[id];
+    const link = window.location.origin + '#respond-' + id;
+    container.innerHTML = `
+      <h3>Your whisperlist is ready</h3>
+      <div class="tool-result">
+        <strong>${list.title}</strong><br>
+        <p style="margin:0.5rem 0;font-size:0.9rem;color:var(--text-secondary)">${list.prompt}</p>
+        <label>Share this link to collect anonymous responses:</label>
+        <div style="display:flex;gap:8px;margin-top:4px">
+          <input type="text" id="wl-link" value="${link}" readonly style="flex:1">
+          <button id="wl-copy" style="margin-top:0;white-space:nowrap">Copy</button>
+        </div>
+        <p style="font-size:0.8rem;color:var(--text-muted);margin-top:8px">${list.responses.length} response${list.responses.length !== 1 ? 's' : ''} so far</p>
+      </div>
+      <div style="display:flex;gap:8px;margin-top:0">
+        <button id="wl-results">View responses</button>
+        <button id="wl-new" style="background:transparent;color:var(--accent);border:1px solid var(--border)">Create another</button>
+      </div>
+    `;
+    document.getElementById('wl-copy').addEventListener('click', () => {
+      navigator.clipboard.writeText(link).catch(() => {
+        document.getElementById('wl-link').select();
+      });
+      document.getElementById('wl-copy').textContent = 'Copied';
+    });
+    document.getElementById('wl-results').addEventListener('click', () => renderResults(id));
+    document.getElementById('wl-new').addEventListener('click', renderCreate);
+  }
+
+  function renderResults(id) {
+    const list = stored[id];
+    const responses = list.responses.length > 0
+      ? list.responses.map((r, i) => `<div style="padding:0.75rem;background:var(--bg);border-radius:8px;margin-bottom:8px"><span style="font-size:0.75rem;color:var(--text-muted)">#${i + 1}</span><p style="margin:4px 0 0;font-size:0.9rem">${r.text}</p></div>`).join('')
+      : '<p style="color:var(--text-muted);font-size:0.9rem">No responses yet. Share the link to start collecting feedback.</p>';
+
+    container.innerHTML = `
+      <h3>${list.title}</h3>
+      <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:1rem">${list.responses.length} response${list.responses.length !== 1 ? 's' : ''}</p>
+      <div>${responses}</div>
+      <div style="display:flex;gap:8px">
+        <button id="wl-back-share">Share link</button>
+        <button id="wl-new2" style="background:transparent;color:var(--accent);border:1px solid var(--border)">Create new</button>
+      </div>
+    `;
+    document.getElementById('wl-back-share').addEventListener('click', () => renderShare(id));
+    document.getElementById('wl-new2').addEventListener('click', renderCreate);
+  }
+
+  function renderRespond(id) {
+    const list = stored[id];
+    if (!list) {
+      container.innerHTML = '<div class="tool-result">This whisperlist was not found or has expired.</div>';
+      return;
+    }
+    container.innerHTML = `
+      <h3>${list.title}</h3>
+      <p style="color:var(--text-secondary);margin-bottom:1rem;font-size:0.95rem">${list.prompt}</p>
+      <label for="wl-response">Your anonymous response</label>
+      <textarea id="wl-response" rows="4" placeholder="Type your response here... it's completely anonymous"></textarea>
+      <button id="wl-submit">Submit anonymously</button>
+    `;
+    document.getElementById('wl-submit').addEventListener('click', () => {
+      const text = document.getElementById('wl-response').value.trim();
+      if (!text) return;
+      list.responses.push({ text, ts: new Date().toISOString() });
+      localStorage.setItem('whisperlist_lists', JSON.stringify(stored));
+      container.innerHTML = `
+        <div class="tool-result">
+          <strong>Response submitted anonymously</strong><br>
+          <p style="margin-top:8px;font-size:0.9rem">Your feedback has been recorded. No one will know it was you.</p>
+        </div>
+        <button id="wl-another">Submit another response</button>
+      `;
+      document.getElementById('wl-another').addEventListener('click', () => renderRespond(id));
+    });
+  }
+
+  function renderListAll() {
+    const ids = Object.keys(stored);
+    const items = ids.map(id => {
+      const l = stored[id];
+      return `<div style="padding:0.75rem;background:var(--bg);border-radius:8px;margin-bottom:8px;cursor:pointer" data-id="${id}">
+        <strong>${l.title}</strong>
+        <span style="font-size:0.8rem;color:var(--text-muted);margin-left:8px">${l.responses.length} responses</span>
+      </div>`;
+    }).join('');
+
+    container.innerHTML = `
+      <h3>Your whisperlists</h3>
+      <div id="wl-list">${items}</div>
+      <button id="wl-new3" style="background:transparent;color:var(--accent);border:1px solid var(--border)">Create new</button>
+    `;
+    document.querySelectorAll('[data-id]').forEach(el => {
+      el.addEventListener('click', () => renderShare(el.dataset.id));
+    });
+    document.getElementById('wl-new3').addEventListener('click', renderCreate);
+  }
+
+  const hash = window.location.hash;
+  if (hash.startsWith('#respond-')) {
+    renderRespond(hash.replace('#respond-', ''));
+  } else {
+    renderCreate();
+  }
+}
+
+</script>
+</body>
+</html>

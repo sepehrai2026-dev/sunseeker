@@ -1,0 +1,76 @@
+{
+  "template": "d",
+  "domain": "gizempilates.com",
+  "name": "Gizem's Pilates",
+  "logoIcon": "🧘",
+  "title": "Gizem's Pilates — Boutique Pilates Studio",
+  "metaDescription": "Welcome to Gizem's Pilates, a warm and welcoming boutique studio offering mat pilates, reformer pilates, prenatal pilates, private sessions, group classes, and rehabilitation.",
+  "metaKeywords": "pilates studio, mat pilates, reformer pilates, prenatal pilates, private pilates sessions, group pilates classes, pilates rehabilitation, boutique fitness",
+  "headline": "Move better. Feel stronger. Live fully.",
+  "subheadline": "Welcome to Gizem's Pilates, a boutique studio where every session is designed around you. Whether you are a beginner or an experienced practitioner, you will find a supportive space to build strength, flexibility, and confidence.",
+  "ctaText": "Book a Class",
+  "year": "2026",
+  "servicesTitle": "Classes & Sessions",
+  "aboutTitle": "About Gizem's Pilates",
+  "aboutContent": "<h3>A Studio That Feels Like Home</h3><p>Gizem's Pilates is a warm, welcoming space where movement meets mindfulness. Founded by Gizem with a passion for helping people feel their best, our boutique studio offers personalized attention in an intimate setting. Every client is seen, supported, and celebrated.</p><h3>Expert Instruction, Every Class</h3><p>With years of training and certification in classical and contemporary Pilates methods, Gizem and her team bring expertise and genuine care to every session. We focus on proper form, breath work, and progressive challenge to help you build a strong, balanced body safely.</p><h3>Your Journey, Your Pace</h3><p>Whether you are recovering from an injury, preparing for motherhood, or simply looking for a practice that makes you feel amazing, we tailor every experience to meet you where you are. No intimidation, no pressure, just thoughtful movement that transforms how you feel.</p>",
+  "contactTitle": "Come Say Hello",
+  "contactSub": "We would love to hear from you. Book your first class, ask about our schedule, or just stop by to see the studio. New clients are always welcome.",
+  "disclaimer": "Please consult your physician before beginning any new exercise program. Gizem's Pilates instructors are certified professionals but do not provide medical advice. Participation in classes is at your own risk.",
+  "accentColor": "#e11d48",
+  "accentLight": "#ffe4e6",
+  "accentDark": "#be123c",
+  "items": [
+    {
+      "icon": "🧘",
+      "name": "Mat Pilates",
+      "description": "Classic mat-based Pilates focusing on core strength, flexibility, and body awareness using your own body weight and small props in a supportive group setting."
+    },
+    {
+      "icon": "💪",
+      "name": "Reformer Pilates",
+      "description": "Dynamic reformer sessions that use spring resistance to build lean muscle, improve posture, and challenge your body in new ways with guided, controlled movements."
+    },
+    {
+      "icon": "🤰",
+      "name": "Prenatal Pilates",
+      "description": "Gentle, safe sessions designed for expecting mothers to maintain strength, ease discomfort, and prepare the body for birth with modified exercises and expert guidance."
+    },
+    {
+      "icon": "🌟",
+      "name": "Private Sessions",
+      "description": "One-on-one sessions tailored entirely to your goals, whether you are working through an injury, training for a specific event, or simply want personalized attention."
+    },
+    {
+      "icon": "👯",
+      "name": "Group Classes",
+      "description": "Energizing small-group classes with a community atmosphere. Our intimate class sizes mean you still get individual corrections and a personal experience."
+    },
+    {
+      "icon": "🩹",
+      "name": "Rehabilitation",
+      "description": "Specialized sessions for injury recovery and chronic pain management, working alongside your healthcare provider to restore movement and rebuild strength safely."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I need experience to start Pilates?",
+      "a": "Not at all! Many of our clients begin with no prior experience. We offer beginner-friendly classes and our instructors provide modifications so you can work at your own level. Everyone starts somewhere."
+    },
+    {
+      "q": "What should I wear and bring?",
+      "a": "Wear comfortable, form-fitting clothing that allows you to move freely. Grip socks are recommended for reformer classes. We provide all equipment, mats, and props. Just bring water and yourself!"
+    },
+    {
+      "q": "How often should I do Pilates?",
+      "a": "We recommend two to three sessions per week to see meaningful improvements in strength, flexibility, and posture. Even one session a week can make a difference. We will help you find a schedule that fits your life."
+    },
+    {
+      "q": "Is Pilates safe during pregnancy?",
+      "a": "Yes, when guided by a qualified instructor. Our prenatal Pilates classes are specifically designed for expecting mothers with appropriate modifications for each trimester. We recommend getting clearance from your healthcare provider before starting."
+    },
+    {
+      "q": "Can Pilates help with back pain?",
+      "a": "Many clients come to us specifically for back pain relief. Pilates strengthens the deep core muscles that support the spine, improves posture, and increases flexibility. We work carefully with clients managing pain and can coordinate with your physiotherapist or doctor."
+    }
+  ]
+}

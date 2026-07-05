@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Techmocracy — Tech Policy and Digital Rights</title>
+<meta name="description" content="Independent analysis of technology policy and digital rights. AI regulation, data privacy laws, platform governance, digital identity, open source policy, and algorithmic accountability.">
+<meta name="keywords" content="tech policy, ai regulation, data privacy, platform governance, digital identity, open source policy, algorithmic accountability, digital rights">
+<meta property="og:title" content="Techmocracy — Tech Policy and Digital Rights">
+<meta property="og:description" content="Independent analysis of technology policy and digital rights. AI regulation, data privacy laws, platform governance, digital identity, open source policy, and algorithmic accountability.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://techmocracy.io">
+<link rel="canonical" href="https://techmocracy.io">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0a0a0a;
+  --bg-raise: #0e0e0e;
+  --bg-card: #101010;
+  --ink: #ececec;
+  --ink-2: #b4b4b4;
+  --ink-3: #7c7c7c;
+  --hairline: #1f1f1f;
+  --hairline-strong: #2c2c2c;
+  --accent: #4f46e5;
+  --accent-dark: #4338ca;
+  --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
+  --measure: 70ch;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+
+body {
+  font-family: var(--sans);
+  font-size: 1.0625rem;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Grain overlay */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+::selection { background: var(--accent); color: #0a0a0a; }
+
+/* ── Reading progress ── */
+.progress {
+  position: fixed;
+  top: 0; left: 0;
+  height: 2px;
+  width: 100%;
+  z-index: 300;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+}
+
+/* ── Nav ── */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 200;
+  background: rgba(10, 10, 10, 0.72);
+  backdrop-filter: blur(14px) saturate(1.4);
+  -webkit-backdrop-filter: blur(14px) saturate(1.4);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.nav.scrolled { border-bottom-color: var(--hairline); }
+
+.nav-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.wordmark {
+  font-family: var(--serif);
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.wordmark:hover { text-decoration: none; color: var(--ink); }
+
+.wordmark-tick {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: var(--accent);
+  flex: none;
+  display: inline-block;
+}
+
+.nav-meta {
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+
+/* ── Hero ── */
+.hero {
+  position: relative;
+  padding: 11rem 1.5rem 5.5rem;
+  border-bottom: 1px solid var(--hairline);
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  left: 55%;
+  width: 44rem;
+  height: 44rem;
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--accent) 11%, transparent), transparent 70%);
+  pointer-events: none;
+}
+
+.hero-inner {
+  position: relative;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.hero-kicker {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--ink-3);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.kicker-rule {
+  width: 2.5rem;
+  height: 1px;
+  background: var(--accent);
+  display: inline-block;
+  flex: none;
+}
+
+.hero-title {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(2.6rem, 6.4vw, 4.75rem);
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  max-width: 18ch;
+  text-wrap: balance;
+}
+
+.hero-sub {
+  margin-top: 1.75rem;
+  max-width: 58ch;
+  font-size: clamp(1.0625rem, 1.6vw, 1.25rem);
+  line-height: 1.65;
+  color: var(--ink-2);
+}
+
+.hero-foot {
+  margin-top: 3.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--ink-3);
+}
+
+.hero-foot-rule {
+  width: 1px;
+  height: 0.875rem;
+  background: var(--hairline-strong);
+}
+
+/* ── Layout: TOC + main ── */
+.layout {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 15rem minmax(0, 1fr);
+  gap: 4rem;
+  align-items: start;
+}
+
+.toc { padding-top: 5rem; }
+
+.toc-sticky {
+  position: sticky;
+  top: 6rem;
+}
+
+.toc-label {
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--ink-3);
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--hairline);
+  margin-bottom: 1rem;
+}
+
+.toc-list {
+  list-style: none;
+  counter-reset: toc;
+}
+
+.toc-list li { counter-increment: toc; }
+
+.toc-link {
+  display: flex;
+  gap: 0.7rem;
+  align-items: baseline;
+  padding: 0.45rem 0 0.45rem 0.85rem;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: var(--ink-3);
+  border-left: 1px solid var(--hairline);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.toc-link::before {
+  content: counter(toc, decimal-leading-zero);
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  color: var(--ink-3);
+  flex: none;
+}
+
+.toc-link:hover { color: var(--ink); text-decoration: none; }
+
+.toc-link.active {
+  color: var(--ink);
+  border-left-color: var(--accent);
+}
+
+.toc-link.active::before { color: var(--accent); }
+
+/* ── Sections ── */
+.main {
+  padding: 5rem 0 6rem;
+  min-width: 0;
+}
+
+.section {
+  padding: 0 0 5rem;
+  margin-bottom: 5rem;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.section:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  margin-bottom: 2.75rem;
+}
+
+.section-no {
+  font-family: var(--mono);
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 400;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--ink-3);
+  flex: none;
+}
+
+.section-title {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(1.6rem, 3vw, 2.25rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+/* ── Intro / drop cap ── */
+.intro-copy {
+  max-width: var(--measure);
+  font-size: 1.1875rem;
+  line-height: 1.8;
+  color: var(--ink-2);
+}
+
+.intro-copy::first-letter {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 4.4em;
+  line-height: 0.78;
+  float: left;
+  padding: 0.08em 0.14em 0 0;
+  color: var(--accent);
+}
+
+/* ── Index cards (curriculum rows) ── */
+.index-list { counter-reset: entry; }
+
+.index-card {
+  counter-increment: entry;
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr);
+  gap: 1.5rem;
+  padding: 2.25rem 0;
+  border-top: 1px solid var(--hairline);
+  transition: background 0.25s ease;
+}
+
+.index-card:last-child { border-bottom: 1px solid var(--hairline); }
+
+.index-card:hover { background: linear-gradient(90deg, var(--bg-raise), transparent); }
+
+.index-card-no::before {
+  content: counter(entry, decimal-leading-zero);
+  font-family: var(--mono);
+  font-size: 1.5rem;
+  color: var(--ink-3);
+  line-height: 1.2;
+}
+
+.index-card-main { min-width: 0; }
+
+.index-card-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.index-card-name {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.index-card-tag {
+  font-family: var(--mono);
+  font-size: 0.6563rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--accent);
+  border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+  padding: 0.25rem 0.55rem;
+  white-space: nowrap;
+}
+
+.index-card-desc {
+  max-width: var(--measure);
+  color: var(--ink-2);
+  margin-bottom: 1.25rem;
+}
+
+.index-card-points {
+  list-style: none;
+  max-width: var(--measure);
+  margin-bottom: 1.5rem;
+  border-top: 1px solid var(--hairline);
+}
+
+.index-card-points li {
+  position: relative;
+  padding: 0.55rem 0 0.55rem 1.4rem;
+  border-bottom: 1px solid var(--hairline);
+  font-size: 0.9375rem;
+  color: var(--ink-2);
+}
+
+.index-card-points li::before {
+  content: "";
+  position: absolute;
+  left: 0.15rem;
+  top: 1.05rem;
+  width: 0.45rem;
+  height: 1px;
+  background: var(--accent);
+}
+
+.index-card-link {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--ink);
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 0.3rem;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.index-card-link:hover { text-decoration: none; color: var(--accent); }
+
+.link-arrow { transition: transform 0.2s ease; display: inline-block; }
+
+.index-card-link:hover .link-arrow { transform: translateX(4px); }
+
+/* Featured card */
+.card-featured {
+  border-left: 2px solid var(--accent);
+  padding-left: 1.5rem;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--accent) 5%, transparent), transparent 55%);
+}
+
+/* ── Prose (guide + resources) ── */
+.prose { max-width: var(--measure); }
+
+.prose h3 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.375rem;
+  line-height: 1.25;
+  letter-spacing: -0.005em;
+  margin: 2.5rem 0 0.9rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--hairline);
+}
+
+.prose h3:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+
+.prose p { color: var(--ink-2); margin-bottom: 1.1rem; }
+
+.prose p:last-child { margin-bottom: 0; }
+
+.prose a {
+  color: var(--accent);
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
+.prose a:hover { text-decoration: none; border-bottom-color: var(--accent); }
+
+.prose ul, .prose ol { margin: 0 0 1.1rem 1.25rem; color: var(--ink-2); }
+
+/* ── FAQ ── */
+.faq-list {
+  max-width: var(--measure);
+  border-top: 1px solid var(--hairline);
+}
+
+.faq-item { border-bottom: 1px solid var(--hairline); }
+
+.faq-q {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.35rem 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--serif);
+  font-size: 1.1875rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--ink);
+  transition: color 0.2s ease;
+}
+
+.faq-q:hover { color: var(--accent); }
+
+.faq-q:focus-visible { outline: 1px solid var(--accent); outline-offset: 4px; }
+
+.faq-marker {
+  position: relative;
+  flex: none;
+  width: 0.85rem;
+  height: 0.85rem;
+}
+
+.faq-marker::before,
+.faq-marker::after {
+  content: "";
+  position: absolute;
+  background: var(--ink-3);
+  transition: transform 0.3s ease, background 0.2s ease;
+}
+
+.faq-marker::before {
+  left: 0; right: 0; top: 50%;
+  height: 1px;
+  margin-top: -0.5px;
+}
+
+.faq-marker::after {
+  top: 0; bottom: 0; left: 50%;
+  width: 1px;
+  margin-left: -0.5px;
+}
+
+.faq-q[aria-expanded="true"] .faq-marker::after { transform: scaleY(0); }
+
+.faq-q[aria-expanded="true"] .faq-marker::before { background: var(--accent); }
+
+.faq-a {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.35s ease;
+}
+
+.faq-a p {
+  color: var(--ink-2);
+  padding: 0 2.5rem 1.5rem 0;
+  max-width: 62ch;
+}
+
+/* ── Footer ── */
+.footer {
+  border-top: 1px solid var(--hairline);
+  background: var(--bg-raise);
+}
+
+.footer-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 2.5rem;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.footer-brand { max-width: 34rem; }
+
+.wordmark--footer { font-size: 1.25rem; margin-bottom: 1rem; }
+
+.footer-disclaimer {
+  font-size: 0.8125rem;
+  line-height: 1.7;
+  color: var(--ink-3);
+}
+
+.footer-links { display: flex; flex-direction: column; gap: 0.6rem; }
+
+.footer-links-heading {
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--ink-3);
+}
+
+.footer-links a { font-size: 0.875rem; color: var(--ink-2); }
+
+.footer-links a:hover { color: var(--accent); }
+
+.footer-bottom { padding-top: 2rem; }
+
+.footer-bottom p {
+  font-size: 0.75rem;
+  line-height: 1.7;
+  color: var(--ink-3);
+}
+
+/* ── Reveal animations ── */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .reveal.in { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
+
+/* ── Responsive ── */
+@media (max-width: 1023px) {
+  .layout { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .toc { display: none; }
+  .main { padding-top: 4rem; }
+}
+
+@media (max-width: 720px) {
+  body { font-size: 1rem; }
+  .hero { padding: 8.5rem 1.25rem 4rem; }
+  .hero-foot { margin-top: 2.5rem; flex-wrap: wrap; }
+  .layout { padding: 0 1.25rem; }
+  .section { padding-bottom: 3.5rem; margin-bottom: 3.5rem; }
+  .section-head { gap: 1rem; margin-bottom: 2rem; }
+  .index-card { grid-template-columns: minmax(0, 1fr); gap: 0.9rem; padding: 1.75rem 0; }
+  .index-card-no::before { font-size: 1.125rem; }
+  .card-featured { padding-left: 1.1rem; }
+  .faq-a p { padding-right: 1rem; }
+  .footer-inner { padding: 3rem 1.25rem 2rem; }
+  .nav-meta { display: none; }
+}
+
+</style>
+</head>
+<body>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="/" class="wordmark"><span class="wordmark-tick" aria-hidden="true"></span>Techmocracy</a>
+    <span class="nav-meta">Updated July 2026</span>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="hero-kicker"><span class="kicker-rule" aria-hidden="true"></span>techmocracy.io &middot; A field guide</p>
+    <h1 class="hero-title">Technology is too important for technologists alone</h1>
+    <p class="hero-sub">Independent analysis of AI regulation, data privacy, platform governance, and digital rights — making tech policy accessible to everyone it affects.</p>
+    <div class="hero-foot">
+      <span>Edition 2026</span>
+      <span class="hero-foot-rule" aria-hidden="true"></span>
+      <span>Last revised July 2026</span>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+
+  <aside class="toc" aria-label="Table of contents">
+    <div class="toc-sticky">
+      <p class="toc-label">Contents</p>
+      <ol class="toc-list" id="toc">
+        <li><a href="#introduction" class="toc-link">Introduction</a></li>
+        <li><a href="#index" class="toc-link">Policy topics</a></li>
+        <li><a href="#guide" class="toc-link">Why tech policy matters to you</a></li>
+        <li><a href="#resources" class="toc-link">Stay informed</a></li>
+        <li><a href="#faq" class="toc-link">Questions</a></li>
+      </ol>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <section class="section reveal" id="introduction">
+      <header class="section-head">
+        <span class="section-no">01</span>
+        <h2 class="section-title">Introduction</h2>
+      </header>
+      <p class="intro-copy">Every major technology decision is now a policy decision. Who gets to train AI on your data? Which platforms can silence speech? How should algorithms that determine your creditworthiness be regulated? These questions are being decided right now — in legislatures, regulatory bodies, and corporate boardrooms — and most people affected by the outcomes have no idea what's at stake. Techmocracy translates tech policy into plain language so you can follow, understand, and participate in the debates that shape your digital life.</p>
+    </section>
+
+    <section class="section reveal" id="index">
+      <header class="section-head">
+        <span class="section-no">02</span>
+        <h2 class="section-title">Policy topics</h2>
+      </header>
+      <div class="index-list">
+        <article class="index-card">
+  <div class="index-card-no" aria-hidden="true"></div>
+  <div class="index-card-main">
+    <header class="index-card-head">
+      <h3 class="index-card-name">AI Regulation</h3>
+      <span class="index-card-tag">Legislation</span>
+    </header>
+    <p class="index-card-desc">The global race to regulate artificial intelligence is accelerating. From the EU AI Act's risk-based framework to the US executive orders and China's algorithmic governance rules, we break down what's being proposed, what's law, and what it means for developers and users.</p>
+    <ul class="index-card-points">
+      EU AI Act: risk tiers and compliance requirements,US federal and state AI regulation tracker,China's AI governance framework analysis,Frontier model regulation and safety standards,Impact on open-source AI development
+    </ul>
+    <a class="index-card-link" href="#affiliate-ai-regulation" target="_blank" rel="noopener nofollow">Understand AI regulation <span class="link-arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+</article>
+
+<article class="index-card">
+  <div class="index-card-no" aria-hidden="true"></div>
+  <div class="index-card-main">
+    <header class="index-card-head">
+      <h3 class="index-card-name">Data Privacy Laws</h3>
+      <span class="index-card-tag">Privacy</span>
+    </header>
+    <p class="index-card-desc">GDPR, CCPA, CPRA, PIPEDA, and dozens more — data privacy law is a patchwork of overlapping, sometimes contradictory regulations. We compare frameworks, track enforcement actions, and explain what these laws actually require and protect.</p>
+    <ul class="index-card-points">
+      GDPR vs. US state privacy laws comparison,Data broker regulation and opt-out rights,Cross-border data transfer rules,Enforcement actions and penalty tracker,Children's privacy (COPPA, Age Appropriate Design)
+    </ul>
+    <a class="index-card-link" href="#affiliate-privacy-laws" target="_blank" rel="noopener nofollow">Compare privacy laws <span class="link-arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+</article>
+
+<article class="index-card">
+  <div class="index-card-no" aria-hidden="true"></div>
+  <div class="index-card-main">
+    <header class="index-card-head">
+      <h3 class="index-card-name">Platform Governance</h3>
+      <span class="index-card-tag">Big Tech</span>
+    </header>
+    <p class="index-card-desc">How should social media platforms moderate content, curate feeds, and handle disinformation? We analyze the policy frameworks, legislative proposals, and self-regulatory efforts shaping how platforms govern the digital public square.</p>
+    <ul class="index-card-points">
+      Section 230 reform proposals analyzed,EU Digital Services Act requirements,Content moderation transparency reports,Algorithmic amplification and recommendation,Interoperability and platform competition
+    </ul>
+    <a class="index-card-link" href="#affiliate-platform-governance" target="_blank" rel="noopener nofollow">Explore platform policy <span class="link-arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+</article>
+
+<article class="index-card">
+  <div class="index-card-no" aria-hidden="true"></div>
+  <div class="index-card-main">
+    <header class="index-card-head">
+      <h3 class="index-card-name">Digital Identity</h3>
+      <span class="index-card-tag">Infrastructure</span>
+    </header>
+    <p class="index-card-desc">Digital identity systems are being deployed worldwide — government-issued digital IDs, biometric databases, self-sovereign identity on blockchain, and age verification mandates. The design choices made now will define privacy and access for decades.</p>
+    <ul class="index-card-points">
+      Government digital ID programs compared,Biometric data collection and risks,Self-sovereign identity (SSI) and verifiable credentials,Age verification mandates and privacy trade-offs,Identity fraud and deepfake threats
+    </ul>
+    <a class="index-card-link" href="#affiliate-digital-identity" target="_blank" rel="noopener nofollow">Understand digital ID <span class="link-arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+</article>
+
+<article class="index-card">
+  <div class="index-card-no" aria-hidden="true"></div>
+  <div class="index-card-main">
+    <header class="index-card-head">
+      <h3 class="index-card-name">Open Source Policy</h3>
+      <span class="index-card-tag">Innovation</span>
+    </header>
+    <p class="index-card-desc">Open source software powers the internet, but its policy status is increasingly contested. From AI model licensing to government procurement mandates and export controls, open source is a policy battleground with enormous stakes.</p>
+    <ul class="index-card-points">
+      Open source AI model licensing debates,Government open source procurement policies,Export control implications for open source,Sustainability and funding models,Corporate open source strategies and risks
+    </ul>
+    <a class="index-card-link" href="#affiliate-open-source-policy" target="_blank" rel="noopener nofollow">Explore open source policy <span class="link-arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+</article>
+
+<article class="index-card">
+  <div class="index-card-no" aria-hidden="true"></div>
+  <div class="index-card-main">
+    <header class="index-card-head">
+      <h3 class="index-card-name">Algorithmic Accountability</h3>
+      <span class="index-card-tag">Accountability</span>
+    </header>
+    <p class="index-card-desc">When an algorithm denies your loan, rejects your resume, or flags you as a security risk — who's responsible? Algorithmic accountability laws are emerging to require transparency, auditing, and redress for automated decision-making.</p>
+    <ul class="index-card-points">
+      Algorithmic audit requirements by jurisdiction,Bias detection and fairness metrics,Automated decision-making rights (GDPR Art. 22),Impact assessments for high-risk AI systems,Whistleblower protections for AI harms
+    </ul>
+    <a class="index-card-link" href="#affiliate-algorithmic-accountability" target="_blank" rel="noopener nofollow">Learn about accountability <span class="link-arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+</article>
+
+      </div>
+    </section>
+
+    <section class="section reveal" id="guide">
+      <header class="section-head">
+        <span class="section-no">03</span>
+        <h2 class="section-title">Why tech policy matters to you</h2>
+      </header>
+      <div class="prose"><h3>Algorithms decide more than you think</h3><p>From your social media feed to your insurance premiums, loan approvals, and job applications, algorithms are making decisions about your life. Understanding how these systems are (or aren't) regulated helps you advocate for accountability.</p><h3>Your data is a political issue</h3><p>Data privacy isn't just a personal preference — it's a civil rights issue. Where your data goes, who can buy it, and how it's used to profile you are all questions with political answers. Privacy laws vary wildly between jurisdictions, and the gaps are by design.</p><h3>Platforms are the new public square</h3><p>Social media platforms control the information environment for billions of people. Their content moderation decisions, algorithmic amplification choices, and terms of service are de facto communication regulations — made by private companies with no democratic oversight.</p><h3>AI regulation is being written now</h3><p>The EU AI Act, US executive orders, China's AI regulations — governments worldwide are racing to regulate artificial intelligence. The frameworks being established today will determine how AI is developed, deployed, and governed for decades to come.</p></div>
+    </section>
+
+    <section class="section reveal" id="resources">
+      <header class="section-head">
+        <span class="section-no">04</span>
+        <h2 class="section-title">Stay informed</h2>
+      </header>
+      <div class="prose"><h3>Electronic Frontier Foundation (EFF)</h3><p>The leading nonprofit defending civil liberties in the digital world. Excellent coverage of surveillance, free speech, privacy, and innovation policy. <a href="https://www.eff.org" target="_blank" rel="noopener">Visit EFF</a></p><h3>AI Policy Observatory (OECD)</h3><p>The OECD's comprehensive tracker of AI policies and strategies across member countries. Essential for understanding the global regulatory landscape. <a href="https://oecd.ai" target="_blank" rel="noopener">Visit OECD.AI</a></p><h3>Lawfare</h3><p>Rigorous legal analysis of national security, technology, and law. Their tech policy coverage bridges the gap between legal scholarship and public understanding. <a href="https://www.lawfaremedia.org" target="_blank" rel="noopener">Visit Lawfare</a></p></div>
+    </section>
+
+    <section class="section reveal" id="faq">
+      <header class="section-head">
+        <span class="section-no">05</span>
+        <h2 class="section-title">Questions, answered</h2>
+      </header>
+      <div class="faq-list" id="faq-list"></div>
+    </section>
+
+  </main>
+
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="wordmark wordmark--footer"><span class="wordmark-tick" aria-hidden="true"></span>Techmocracy</span>
+        <p class="footer-disclaimer">Techmocracy.io provides independent analysis of technology policy and digital rights. Our analysis is educational and does not constitute legal or political advice. We may earn commissions through affiliate links to books and courses.</p>
+      </div>
+      <div class="footer-links">
+        <span class="footer-links-heading">Elsewhere</span>
+        <a href="https://sepehr.ai" target="_blank" rel="noopener">sepehr.ai</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Techmocracy. All rights reserved. Some links on this site are affiliate links. We may earn a commission if you make a purchase at no extra cost to you.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const SITE_CONFIG = {"faqs":[{"q":"Is this site politically biased?","a":"We aim for analytical neutrality. Tech policy doesn't map neatly onto left-right politics — privacy advocates span the entire spectrum, and both free-market conservatives and progressive regulators have legitimate concerns about Big Tech. We present the arguments and evidence; you decide where you stand."},{"q":"Why should I care about tech policy?","a":"Because it directly affects your daily life. Tech policy determines whether your employer can use AI to screen your resume, whether your health data can be sold to advertisers, whether you can repair your own devices, and whether your social media feed shows you accurate information. Opting out of caring doesn't opt you out of the consequences."},{"q":"How can I get involved in tech policy?","a":"Start by following organizations like EFF, Access Now, and the Center for Democracy and Technology. Comment on proposed regulations during public comment periods. Contact your elected representatives about tech issues you care about. Support journalists and researchers covering tech policy. Informed citizens are the best check on both corporate and government overreach."},{"q":"What's the most important tech policy issue right now?","a":"AI regulation is arguably the most consequential, simply because of the speed and scale of AI deployment. The frameworks being established in 2025-2026 — the EU AI Act, US executive orders, China's regulations — will shape how this technology develops for decades. But data privacy and platform governance remain critically important ongoing issues."},{"q":"Do you accept funding from tech companies?","a":"No. Techmocracy is independently funded through affiliate links to books, courses, and tools. We do not accept sponsorships, grants, or advertising from technology companies whose policies we analyze. Editorial independence is non-negotiable."}],"accentColor":"#4f46e5","accentLight":"#e0e7ff","accentDark":"#4338ca","ctaText":""};
+document.addEventListener('DOMContentLoaded', () => {
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Accent color (runtime fallback; primary value is compiled into CSS)
+  if (SITE_CONFIG.accentColor) {
+    document.documentElement.style.setProperty('--accent', SITE_CONFIG.accentColor);
+    document.documentElement.style.setProperty('--accent-dark', SITE_CONFIG.accentDark || SITE_CONFIG.accentColor);
+  }
+
+  // Rebuild feature lists: build injects features as a comma-joined string
+  // (items are joined with "," while commas inside a feature are ", ").
+  document.querySelectorAll('.index-card-points').forEach(ul => {
+    if (ul.querySelector('li')) return;
+    const raw = ul.textContent.trim();
+    ul.textContent = '';
+    if (!raw) { ul.remove(); return; }
+    raw.split(/,(?=\S)/).forEach(part => {
+      const li = document.createElement('li');
+      li.textContent = part.trim();
+      ul.appendChild(li);
+    });
+  });
+
+  // Reading progress hairline
+  const progress = document.getElementById('progress');
+  if (progress) {
+    let ticking = false;
+    const update = () => {
+      const doc = document.documentElement;
+      const max = doc.scrollHeight - window.innerHeight;
+      const ratio = max > 0 ? Math.min(window.scrollY / max, 1) : 0;
+      progress.style.transform = 'scaleX(' + ratio + ')';
+      ticking = false;
+    };
+    window.addEventListener('scroll', () => {
+      if (!ticking) { ticking = true; requestAnimationFrame(update); }
+    }, { passive: true });
+    update();
+  }
+
+  // Nav hairline on scroll
+  const nav = document.getElementById('nav');
+  if (nav) {
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+  }
+
+  // Table of contents scroll tracking
+  const tocLinks = Array.from(document.querySelectorAll('.toc-link'));
+  const sections = tocLinks
+    .map(link => document.getElementById(link.getAttribute('href').slice(1)))
+    .filter(Boolean);
+  if (sections.length && 'IntersectionObserver' in window) {
+    const setActive = id => {
+      tocLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+      });
+    };
+    const visible = new Map();
+    const spy = new IntersectionObserver(entries => {
+      entries.forEach(e => visible.set(e.target.id, e.isIntersecting));
+      const current = sections.find(s => visible.get(s.id));
+      if (current) setActive(current.id);
+    }, { rootMargin: '-15% 0px -55% 0px' });
+    sections.forEach(s => spy.observe(s));
+  }
+
+  // Section reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  if (revealEls.length && !reducedMotion && 'IntersectionObserver' in window) {
+    const revealer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          revealer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -5% 0px' });
+    revealEls.forEach(el => revealer.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('in'));
+  }
+
+  // FAQ accordion
+  const faqList = document.getElementById('faq-list');
+  if (SITE_CONFIG.faqs && SITE_CONFIG.faqs.length && faqList) {
+    SITE_CONFIG.faqs.forEach((faq, i) => {
+      const item = document.createElement('div');
+      item.className = 'faq-item';
+      const qId = 'faq-q-' + i;
+      const aId = 'faq-a-' + i;
+      const btn = document.createElement('button');
+      btn.className = 'faq-q';
+      btn.id = qId;
+      btn.setAttribute('aria-expanded', 'false');
+      btn.setAttribute('aria-controls', aId);
+      const label = document.createElement('span');
+      label.textContent = faq.q;
+      const marker = document.createElement('span');
+      marker.className = 'faq-marker';
+      marker.setAttribute('aria-hidden', 'true');
+      btn.appendChild(label);
+      btn.appendChild(marker);
+      const answer = document.createElement('div');
+      answer.className = 'faq-a';
+      answer.id = aId;
+      answer.setAttribute('role', 'region');
+      answer.setAttribute('aria-labelledby', qId);
+      const p = document.createElement('p');
+      p.textContent = faq.a;
+      answer.appendChild(p);
+      btn.addEventListener('click', () => {
+        const open = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!open));
+        answer.style.maxHeight = open ? '0px' : answer.scrollHeight + 'px';
+      });
+      item.appendChild(btn);
+      item.appendChild(answer);
+      faqList.appendChild(item);
+    });
+  }
+});
+
+
+</script>
+</body>
+</html>

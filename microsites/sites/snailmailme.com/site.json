@@ -1,0 +1,34 @@
+{
+  "template": "c",
+  "domain": "snailmailme.com",
+  "name": "Snail Mail Me",
+  "logoIcon": "🐌",
+  "title": "Snail Mail Me — Send Real Letters & Postcards Online",
+  "metaDescription": "Send physical postcards and letters from your browser. Design your card, type your message, and we'll print, stamp, and mail it anywhere in the world.",
+  "metaKeywords": "send postcard online, mail a letter online, send physical card, print and mail service",
+  "headline": "Send a real letter from your browser",
+  "subheadline": "Design a postcard or letter, type your message, and we'll print, stamp, and mail it to anyone in the world. Because some things are better on paper.",
+  "year": "2026",
+  "aboutTitle": "Why snail mail still matters",
+  "aboutContent": "<h3>The power of physical mail</h3><p>In a world of instant messages and email, receiving a physical letter or postcard is special. Studies show that physical mail is opened 90% of the time, compared to 20-30% for email. It's tangible, personal, and memorable.</p><h3>Perfect for</h3><p>Thank you notes that actually get displayed on a fridge. Birthday cards when you forgot until the last minute. Travel postcards when you're too busy enjoying the trip. Love letters that can be kept in a drawer forever. Business thank-yous that stand out from the digital noise.</p><h3>How it works</h3><p>Choose a design or upload your own image. Write your message. Enter the recipient's address. We print your card on premium cardstock, add a stamp, and drop it in the mail within 1 business day. Delivery takes 3-7 days domestically, 7-14 days internationally.</p>",
+  "featuresTitle": "What makes us different",
+  "disclaimer": "SnailMailMe.com is a concept demo. In a full version, cards would be printed and mailed via a print-and-mail API.",
+  "accentColor": "#ea580c",
+  "accentLight": "#ffedd5",
+  "accentDark": "#c2410c",
+  "items": [
+    {"name": "Premium cardstock", "icon": "🖼️", "description": "Printed on thick, high-quality cardstock that feels great in your hands."},
+    {"name": "Worldwide delivery", "icon": "✈️", "description": "Mail to any address in the world. We handle the stamps and postage."},
+    {"name": "Custom photos", "icon": "📷", "description": "Upload your own photos or choose from our curated design library."},
+    {"name": "Handwritten fonts", "icon": "✍️", "description": "Messages are printed in fonts that look handwritten. Nobody has to know."},
+    {"name": "Scheduled sends", "icon": "📅", "description": "Schedule cards in advance for birthdays, anniversaries, and holidays."},
+    {"name": "No app needed", "icon": "🌐", "description": "Everything happens in your browser. No downloads, no accounts required."}
+  ],
+  "faqs": [
+    {"q": "How much does it cost?", "a": "In a production version, postcards would start at $2.99 and letters at $3.99, including printing, envelope, stamp, and domestic postage. International postage varies by destination."},
+    {"q": "How long does delivery take?", "a": "Cards are printed and mailed within 1 business day. Domestic delivery typically takes 3-7 business days. International delivery takes 7-14 business days depending on the destination."},
+    {"q": "Can I upload my own design?", "a": "In a full version, yes. You'd be able to upload any image to use as your postcard front. We'd print it edge-to-edge on premium cardstock."},
+    {"q": "Is this demo functional?", "a": "This is a concept demo — you can design a card and preview it, but it won't actually be printed or mailed. The full version would integrate with a print-and-mail API to handle physical delivery."},
+    {"q": "Can I send internationally?", "a": "In the full version, we'd mail to any postal address in the world. We handle the correct postage for each destination country."}
+  ]
+}

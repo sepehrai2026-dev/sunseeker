@@ -1,0 +1,82 @@
+{
+  "template": "a",
+  "domain": "btcusa.io",
+  "name": "BTC USA",
+  "logoIcon": "🇺🇸",
+  "title": "BTC USA — Best Crypto Exchanges for Americans",
+  "metaDescription": "Compare the best cryptocurrency exchanges available in the United States for 2026. US-regulated, FDIC-insured, and compliant platforms reviewed.",
+  "metaKeywords": "buy bitcoin USA, best crypto exchange US, US regulated crypto exchange, buy cryptocurrency America",
+  "headline": "Buy bitcoin in the United States",
+  "subheadline": "US-regulated crypto exchanges compared — FDIC-insured, tax-reporting friendly, and available in all 50 states.",
+  "lastUpdated": "July 2026",
+  "year": "2026",
+  "introCopy": "Buying crypto in the US means navigating a patchwork of state regulations, tax obligations, and platform restrictions. We've reviewed every major exchange available to American residents, focusing on regulatory compliance, state availability, fiat on-ramps, and tax reporting features.",
+  "comparisonTitle": "Best US crypto exchanges",
+  "guideTitle": "Buying crypto in the US: what you need to know",
+  "guideContent": "<h3>Regulation matters</h3><p>US-regulated exchanges register as Money Service Businesses with FinCEN and comply with state-level money transmitter licenses. Some states like New York require a separate BitLicense. Regulated exchanges provide 1099 tax forms and FDIC insurance on USD deposits.</p><h3>Tax reporting</h3><p>The IRS treats crypto as property. Every trade, swap, and sale is a taxable event. Choose an exchange that provides clear transaction history and integrates with tax software like TurboTax, CoinTracker, or Koinly.</p><h3>Payment methods</h3><p>ACH bank transfers are free on most US exchanges. Wire transfers are faster but cost $10-25. Debit/credit cards work but carry 2-4% fees. Some exchanges now support Apple Pay and PayPal.</p>",
+  "disclaimer": "BTCUSA.io provides independent comparisons of cryptocurrency exchanges available in the United States. Cryptocurrency trading involves risk. This is not financial advice.",
+  "affiliateDisclosure": "Some links are affiliate links. We may earn a commission at no extra cost to you.",
+  "accentColor": "#1d4ed8",
+  "accentLight": "#dbeafe",
+  "accentDark": "#1e40af",
+  "items": [
+    {
+      "name": "Coinbase",
+      "icon": "🔵",
+      "tagline": "Largest US-regulated exchange",
+      "description": "Publicly traded on NASDAQ, fully regulated in all 50 states, and the most trusted exchange for US users. FDIC-insured USD balances, 1099 tax reporting, and a beginner-friendly app.",
+      "features": ["Available in all 50 states", "FDIC-insured USD deposits", "1099 tax reporting", "250+ supported cryptocurrencies", "Coinbase One subscription for zero-fee trading"],
+      "pricing": "Maker <strong>0.40%</strong> / Taker <strong>0.60%</strong>",
+      "url": "#affiliate-coinbase",
+      "cta": "Visit Coinbase",
+      "featured": true
+    },
+    {
+      "name": "Kraken",
+      "icon": "🐙",
+      "tagline": "Security-first US exchange",
+      "description": "Operating since 2011 with zero security breaches. Kraken offers competitive fees, excellent customer support, and a wide range of trading pairs. Available in most US states.",
+      "features": ["Never been hacked", "24/7 live support", "Proof of reserves audits", "Low maker/taker fees", "Staking available (where permitted)"],
+      "pricing": "Maker <strong>0.25%</strong> / Taker <strong>0.40%</strong>",
+      "url": "#affiliate-kraken",
+      "cta": "Visit Kraken",
+      "featured": true
+    },
+    {
+      "name": "Gemini",
+      "icon": "♊",
+      "tagline": "New York regulated & insured",
+      "description": "Founded by the Winklevoss twins, Gemini is a New York trust company regulated by NYDFS. SOC 2 certified with insurance on custodied crypto. The go-to for security-conscious US investors.",
+      "features": ["NYDFS regulated trust company", "SOC 2 Type 2 certified", "Insured crypto custody", "Gemini Credit Card with crypto rewards", "ActiveTrader for advanced users"],
+      "pricing": "Maker <strong>0.20%</strong> / Taker <strong>0.40%</strong>",
+      "url": "#affiliate-gemini",
+      "cta": "Visit Gemini"
+    },
+    {
+      "name": "Robinhood Crypto",
+      "icon": "🪶",
+      "tagline": "Commission-free crypto trading",
+      "description": "If you already use Robinhood for stocks, adding crypto is seamless. Zero commission trades, though the spread markup is higher than dedicated exchanges. Now supports transfers to external wallets.",
+      "features": ["Zero commission trades", "Integrated with stocks and ETFs", "Wallet transfers supported", "Simple mobile-first interface", "Available in most US states"],
+      "pricing": "<strong>$0</strong> commission (spread markup applies)",
+      "url": "#affiliate-robinhood",
+      "cta": "Visit Robinhood"
+    },
+    {
+      "name": "Cash App",
+      "icon": "💵",
+      "tagline": "Easiest way to buy bitcoin",
+      "description": "Cash App makes buying bitcoin as simple as sending money. Lightning Network support for instant, low-fee transfers. Limited to bitcoin only — no altcoins. Great for beginners who just want BTC.",
+      "features": ["Buy bitcoin in seconds", "Lightning Network support", "Auto-invest (recurring buys)", "Send bitcoin to any wallet", "Free tax reporting with Cash App Taxes"],
+      "pricing": "Spread-based pricing (~<strong>1.5-2%</strong>)",
+      "url": "#affiliate-cashapp",
+      "cta": "Visit Cash App"
+    }
+  ],
+  "faqs": [
+    {"q": "Is it legal to buy bitcoin in the US?", "a": "Yes, buying and owning bitcoin is fully legal in the United States. Crypto exchanges must register with FinCEN and comply with state money transmitter laws. You are required to report crypto gains on your taxes."},
+    {"q": "Do I have to pay taxes on crypto in the US?", "a": "Yes. The IRS treats cryptocurrency as property. You owe capital gains tax when you sell, trade, or spend crypto at a profit. Holding for over a year qualifies for lower long-term capital gains rates. Most US exchanges provide tax forms."},
+    {"q": "What's the minimum amount to buy bitcoin?", "a": "Most exchanges let you buy as little as $1-5 worth of bitcoin. You don't need to buy a whole coin — bitcoin is divisible to 8 decimal places (satoshis)."},
+    {"q": "Which exchange is best for beginners?", "a": "Coinbase and Cash App are the most beginner-friendly. Coinbase offers a wider selection of cryptocurrencies, while Cash App is the simplest option if you only want bitcoin."}
+  ]
+}

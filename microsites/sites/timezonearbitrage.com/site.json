@@ -1,0 +1,34 @@
+{
+  "template": "c",
+  "domain": "timezonearbitrage.com",
+  "name": "Timezone Arbitrage",
+  "logoIcon": "🌐",
+  "title": "Timezone Arbitrage — Find Overlapping Work Hours",
+  "metaDescription": "Free timezone overlap calculator for remote teams. Find shared working hours across cities, plan meetings, and learn timezone arbitrage strategies.",
+  "metaKeywords": "timezone overlap calculator, remote team time zones, meeting planner across timezones, timezone arbitrage",
+  "headline": "Find your team's shared hours",
+  "subheadline": "Calculate timezone overlaps instantly. Plan meetings across continents and discover timezone arbitrage strategies for remote work.",
+  "year": "2026",
+  "aboutTitle": "What is timezone arbitrage?",
+  "aboutContent": "<h3>The remote work advantage</h3><p>Timezone arbitrage is the practice of leveraging time zone differences for competitive advantage. Hire developers in UTC+5 who start their workday as your US team finishes — your product gets built around the clock. Or trade markets that open while your local exchange sleeps.</p><h3>For remote teams</h3><p>Distributed teams need overlapping hours for real-time collaboration. The sweet spot is 3-4 hours of overlap. This calculator helps you find those hours so you can schedule standups, pair programming sessions, and meetings when everyone's awake.</p><h3>For traders and freelancers</h3><p>Freelancers can charge premium rates by being available during their client's business hours while enjoying lower cost of living elsewhere. Traders can access Asian, European, and American market sessions from anywhere.</p>",
+  "featuresTitle": "Use cases",
+  "disclaimer": "TimezoneArbitrage.com is a free tool for remote teams and professionals. Timezone data may not reflect recent DST changes.",
+  "accentColor": "#0891b2",
+  "accentLight": "#cffafe",
+  "accentDark": "#0e7490",
+  "items": [
+    {"name": "Remote team planning", "icon": "👥", "description": "Find shared working hours across your distributed team's locations."},
+    {"name": "Meeting scheduler", "icon": "📅", "description": "Plan meetings at times that work for participants in different cities."},
+    {"name": "Hiring strategy", "icon": "💼", "description": "Identify time zones that complement your existing team's coverage."},
+    {"name": "Market access", "icon": "📈", "description": "See when global financial markets overlap for multi-session trading."},
+    {"name": "Follow-the-sun support", "icon": "☀️", "description": "Design 24/7 customer support coverage with timezone-distributed teams."},
+    {"name": "Freelance optimization", "icon": "🏖️", "description": "Find locations where your work hours align with high-paying client markets."}
+  ],
+  "faqs": [
+    {"q": "How does the timezone calculator work?", "a": "Enter two or more cities and the tool displays each location's working hours (9am-5pm local time) on a 24-hour timeline. Overlapping sections are highlighted, showing you the shared window for scheduling meetings or collaboration."},
+    {"q": "Does it account for daylight saving time?", "a": "The calculator uses the IANA timezone database which includes DST transitions. However, DST rules change periodically — if you notice an error, please let us know."},
+    {"q": "What is follow-the-sun development?", "a": "Follow-the-sun is a workflow where work is handed off between teams in different timezones so development continues 24 hours a day. A team in Asia hands off to Europe, which hands off to the Americas, creating continuous progress."},
+    {"q": "How many overlap hours do remote teams need?", "a": "Most successful remote teams aim for 3-4 hours of overlap for synchronous communication. The rest of the day is for focused async work. Less than 2 hours of overlap makes real-time collaboration difficult."},
+    {"q": "Can timezone arbitrage save money?", "a": "Yes. Companies can reduce costs by hiring skilled professionals in regions with lower cost of living while maintaining quality. Individuals can earn higher wages from markets with higher pay while living in more affordable locations."}
+  ]
+}

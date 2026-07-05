@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{site.title}}</title>
+<meta name="description" content="{{site.metaDescription}}">
+<meta name="keywords" content="{{site.metaKeywords}}">
+<meta property="og:title" content="{{site.title}}">
+<meta property="og:description" content="{{site.metaDescription}}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://{{site.domain}}">
+<link rel="canonical" href="https://{{site.domain}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* {{styles}} */
+</style>
+</head>
+<body>
+<a class="skip-link" href="#tool">Skip to the tool</a>
+<div class="grain" aria-hidden="true"></div>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo"><span class="nav-mark" aria-hidden="true"></span>{{site.name}}</a>
+    <div class="nav-links">
+      <a href="#tool"><span class="nav-idx" aria-hidden="true">01</span>Tool</a>
+      <a href="#features"><span class="nav-idx" aria-hidden="true">02</span>Features</a>
+      <a href="#about"><span class="nav-idx" aria-hidden="true">03</span>About</a>
+      <a href="#faq"><span class="nav-idx" aria-hidden="true">04</span>FAQ</a>
+    </div>
+    <div class="nav-status" aria-hidden="true"><span class="status-led"></span><span class="status-text">ONLINE</span></div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="hero-label" data-reveal><span class="label-tick" aria-hidden="true"></span>{{site.name}}</p>
+    <h1 class="hero-title" data-reveal>{{site.headline}}</h1>
+    <p class="hero-sub" data-reveal>{{site.subheadline}}</p>
+    <div class="hero-cta" data-reveal>
+      <a href="#tool" class="btn-primary" id="hero-cta-btn">Launch the tool</a>
+      <a href="#about" class="btn-ghost">Read the brief</a>
+    </div>
+  </div>
+  <div class="hero-meta" aria-hidden="true">
+    <span>SYS / {{site.year}}</span>
+    <span class="hero-meta-domain">{{site.domain}}</span>
+    <span id="hero-clock">--:--:-- UTC</span>
+  </div>
+</header>
+
+<main class="content">
+
+  <section class="tool-section" id="tool">
+    <div class="section-head" data-reveal>
+      <span class="section-idx" aria-hidden="true">01</span>
+      <h2 class="section-title">{{site.name}}</h2>
+      <span class="section-rule" aria-hidden="true"></span>
+    </div>
+    <div class="console" data-reveal>
+      <div class="console-bar" aria-hidden="true">
+        <span class="console-ticks"><i></i><i></i><i></i></span>
+        <span class="console-label">CONSOLE // INTERACTIVE</span>
+        <span class="console-led"></span>
+      </div>
+      <div class="tool-area" id="tool-area">
+        <div class="tool-container" id="tool-container"></div>
+      </div>
+      <div class="console-foot" aria-hidden="true">
+        <span>INPUT / LOCAL</span>
+        <span>PROC / CLIENT-SIDE</span>
+        <span>REV / {{site.year}}</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-section" id="features">
+    <div class="section-head" data-reveal>
+      <span class="section-idx" aria-hidden="true">02</span>
+      <h2 class="section-title">{{site.featuresTitle}}</h2>
+      <span class="section-rule" aria-hidden="true"></span>
+    </div>
+    <div class="feature-grid">
+      {{items}}
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="section-head" data-reveal>
+      <span class="section-idx" aria-hidden="true">03</span>
+      <h2 class="section-title">{{site.aboutTitle}}</h2>
+      <span class="section-rule" aria-hidden="true"></span>
+    </div>
+    <div class="about-content" data-reveal>{{site.aboutContent}}</div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="section-head" data-reveal>
+      <span class="section-idx" aria-hidden="true">04</span>
+      <h2 class="section-title">Frequently asked questions</h2>
+      <span class="section-rule" aria-hidden="true"></span>
+    </div>
+    <div class="faq-list" id="faq-list"></div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo"><span class="nav-mark" aria-hidden="true"></span>{{site.name}}</span>
+      <p class="footer-disc">{{site.disclaimer}}</p>
+    </div>
+    <div class="footer-links">
+      <p class="footer-heading">Resources</p>
+      <a href="https://sepehr.ai" target="_blank" rel="noopener">sepehr.ai</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; {{site.year}} {{site.name}}. All rights reserved.</p>
+    <p class="footer-coords" aria-hidden="true">{{site.domain}} // EOF</p>
+  </div>
+</footer>
+
+<script>
+const SITE_CONFIG = {{site._jsonBlob}};
+// {{script}}
+</script>
+</body>
+</html>

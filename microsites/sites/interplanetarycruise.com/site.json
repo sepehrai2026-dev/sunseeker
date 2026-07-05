@@ -1,0 +1,94 @@
+{
+  "template": "e",
+  "domain": "interplanetarycruise.com",
+  "name": "Interplanetary Cruise",
+  "logoIcon": "☄️",
+  "title": "Interplanetary Cruise — Voyages Beyond Earth Orbit",
+  "metaDescription": "The editorial home for deep space travel. Mars voyages, asteroid belt tours, Jupiter flybys, and the cruise lines planning to take humanity to the outer planets.",
+  "metaKeywords": "interplanetary cruise, Mars voyage, space cruise, asteroid belt tour, Jupiter flyby, deep space travel",
+  "tagline": "DEEP SPACE VOYAGES",
+  "headline": "Cruise the Solar System",
+  "subheadline": "Mars is just the first port of call. We cover the ships, the routes, and the visionaries building cruise lines for the interplanetary age.",
+  "year": "2026",
+  "storiesTitle": "Voyage Reports",
+  "aboutTitle": "About Interplanetary Cruise",
+  "aboutContent": "<h3>Beyond Low Earth Orbit</h3><p>Interplanetary Cruise covers the bold frontier of deep space travel. While orbital tourism grabs headlines today, the real revolution is in the ships and routes being designed to carry passengers between planets. We are here for the long haul, literally.</p><h3>The Cruise Line Model</h3><p>The future of interplanetary travel looks less like Apollo and more like Cunard. Multi-month voyages with onboard entertainment, observation decks, and ports of call at moons and asteroids. We track every company and concept making this vision real.</p><h3>Our Mission</h3><p>We believe humanity's greatest adventure is ahead of us. Interplanetary Cruise exists to document, analyze, and celebrate every step of the journey from Earth-bound species to solar system civilization.</p>",
+  "newsletterTitle": "Boarding Passes",
+  "newsletterSub": "Subscribe for deep space voyage updates, route announcements, and exclusive mission coverage.",
+  "disclaimer": "All content is speculative editorial and entertainment. No interplanetary cruises are currently available for commercial booking.",
+  "accentColor": "#ea580c",
+  "accentLight": "#fb923c",
+  "accentDark": "#c2410c",
+  "items": [
+    {
+      "icon": "🟠",
+      "bannerBg": "linear-gradient(135deg, #431407 0%, #7c2d12 50%, #ea580c 100%)",
+      "tag": "Mars Voyages",
+      "name": "The 7-Month Mars Cruise: What Life Aboard Will Actually Look Like",
+      "description": "Forget cramped capsules. The latest Mars transit habitat designs feature gyms, gardens, and panoramic observation lounges. We toured the full-scale mockup.",
+      "meta": "10 min read · June 2026"
+    },
+    {
+      "icon": "☄️",
+      "bannerBg": "linear-gradient(135deg, #1c1917 0%, #44403c 50%, #78716c 100%)",
+      "tag": "Asteroid Belt",
+      "name": "Asteroid Belt Tours: Mining Towns and Micro-Gravity Excursions",
+      "description": "Several companies envision cruise routes through the asteroid belt, with shore excursions to mining outposts and close encounters with house-sized rocks.",
+      "meta": "7 min read · June 2026"
+    },
+    {
+      "icon": "🪐",
+      "bannerBg": "linear-gradient(135deg, #451a03 0%, #92400e 50%, #d97706 100%)",
+      "tag": "Jupiter System",
+      "name": "Jupiter Flyby: The Grand Tour Route That Could Launch by 2040",
+      "description": "A proposed 3-year cruise would slingshot past Jupiter, offering views of the Great Red Spot and close passes of Europa and Ganymede. Here is the flight plan.",
+      "meta": "8 min read · May 2026"
+    },
+    {
+      "icon": "🛠️",
+      "bannerBg": "linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%)",
+      "tag": "Ship Design",
+      "name": "Nuclear Thermal Propulsion: The Engine That Makes Cruises Possible",
+      "description": "Chemical rockets cannot sustain cruise-style travel. Nuclear thermal engines cut Mars transit to 3 months and open the outer solar system. We explain the technology.",
+      "meta": "6 min read · May 2026"
+    },
+    {
+      "icon": "🌚",
+      "bannerBg": "linear-gradient(135deg, #18181b 0%, #3f3f46 50%, #52525b 100%)",
+      "tag": "Lunar Layovers",
+      "name": "The Moon as a Cruise Port: Refueling Stops and Surface Excursions",
+      "description": "Most interplanetary routes will include a lunar layover for refueling and provisioning. We look at the Moon bases doubling as cruise terminals.",
+      "meta": "5 min read · April 2026"
+    },
+    {
+      "icon": "🎉",
+      "bannerBg": "linear-gradient(135deg, #4a1942 0%, #6b2149 50%, #c2185b 100%)",
+      "tag": "Onboard Life",
+      "name": "Entertainment in Deep Space: How Cruise Lines Plan to Fill 7 Months",
+      "description": "From virtual reality suites to hydroponic cooking classes and zero-G sports leagues, cruise designers are getting creative about keeping passengers happy between planets.",
+      "meta": "6 min read · April 2026"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Are interplanetary cruises actually possible with current technology?",
+      "a": "The core technology exists in various stages of development. Nuclear thermal propulsion, life support systems, and radiation shielding are all being actively worked on. Most experts project the first crewed Mars transits in the 2030s, with cruise-style travel following in the 2040s."
+    },
+    {
+      "q": "How long would a Mars cruise take?",
+      "a": "With current chemical propulsion, about 7-9 months each way. Nuclear thermal engines could reduce that to 3-4 months. Round trips including surface time would likely be 2-3 years total."
+    },
+    {
+      "q": "What about radiation exposure during deep space travel?",
+      "a": "Radiation is the biggest health challenge for interplanetary travel. Current solutions include water-shielded crew quarters, magnetic deflection systems, and pharmaceutical countermeasures. Cruise ships would need robust shielding throughout the passenger areas."
+    },
+    {
+      "q": "Will interplanetary cruises be affordable?",
+      "a": "Not initially. Early voyages will likely cost tens of millions of dollars per passenger. However, if the orbital tourism model is any guide, prices could drop significantly within a decade of commercial operations beginning."
+    },
+    {
+      "q": "Can I book an interplanetary cruise right now?",
+      "a": "No. No company is currently accepting bookings for interplanetary travel. This publication tracks the companies and technologies working toward making it a reality. We will be the first to report when bookings open."
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "template": "a",
+  "domain": "buytokens.io",
+  "name": "BuyTokens",
+  "logoIcon": "🚀",
+  "title": "BuyTokens — Best Token Launchpads Compared (2026)",
+  "metaDescription": "Compare the best crypto token launchpads for 2026. Expert reviews of Binance Launchpad, KuCoin Spotlight, DAO Maker, Seedify, and Polkastarter.",
+  "metaKeywords": "token launchpad, crypto IDO, best launchpad comparison, Binance Launchpad, DAO Maker, Seedify, Polkastarter, token sale",
+  "headline": "Get in early on new tokens",
+  "subheadline": "Independent comparisons of the top token launchpads — track records, requirements, ROI data, and how to participate in IDOs and token sales.",
+  "lastUpdated": "July 2026",
+  "year": "2026",
+  "introCopy": "Token launchpads give early investors access to new crypto projects before they hit public exchanges. The best launchpads vet projects thoroughly, offer fair allocation models, and have strong track records of successful launches. But not all launchpads are equal — we've compared the top platforms on project quality, average ROI, staking requirements, and user experience.",
+  "comparisonTitle": "Top token launchpads compared",
+  "guideTitle": "How to participate in token launchpads",
+  "guideContent": "<h3>How launchpads work</h3><p>Token launchpads host Initial DEX Offerings (IDOs) or token sales for new crypto projects. Users typically need to hold or stake the launchpad's native token to qualify for allocations. The more you stake, the higher your allocation tier — and the more tokens you can purchase at the launch price.</p><h3>Evaluating project quality</h3><p>Look at the launchpad's vetting process and track record. How many projects have they launched? What's the average ROI? How many projects are still active 6-12 months post-launch? The best launchpads reject most applicants and conduct thorough due diligence.</p><h3>Understanding allocation tiers</h3><p>Most launchpads use a tiered system based on how many native tokens you stake. Higher tiers get guaranteed allocations while lower tiers enter a lottery. Calculate whether the staking requirement justifies the potential allocation — sometimes the opportunity cost of staking isn't worth it.</p><h3>Risk management</h3><p>Even on reputable launchpads, not every project succeeds. Many tokens drop below their launch price. Never invest more than you can afford to lose, diversify across multiple launches, and take profits when available rather than holding indefinitely.</p>",
+  "disclaimer": "BuyTokens.io provides independent comparisons of token launchpads. We may earn a commission through affiliate links at no extra cost to you. Token launches carry significant risk including total loss. This is not financial advice. Always do your own research.",
+  "affiliateDisclosure": "Some links on this site are affiliate links. We may earn a commission if you make a purchase.",
+  "accentColor": "#6366f1",
+  "accentLight": "#e0e7ff",
+  "accentDark": "#4f46e5",
+  "items": [
+    {
+      "name": "Binance Launchpad",
+      "icon": "🟡",
+      "tagline": "Largest exchange-backed launchpad",
+      "description": "Binance Launchpad is the token launch platform of the world's largest crypto exchange. Projects launched here get instant access to Binance's massive user base and liquidity. Strong track record with major projects like Axie Infinity and Sandbox.",
+      "features": [
+        "Backed by Binance (largest exchange)",
+        "BNB staking for allocations",
+        "Rigorous project vetting",
+        "Immediate Binance listing post-launch",
+        "Strong historical average ROI"
+      ],
+      "pricing": "<strong>Stake BNB</strong> — allocation based on BNB holdings",
+      "url": "#affiliate-binance-launchpad",
+      "cta": "Visit Binance Launchpad",
+      "featured": true
+    },
+    {
+      "name": "KuCoin Spotlight",
+      "icon": "🔵",
+      "tagline": "Exchange launchpad with low barriers",
+      "description": "KuCoin Spotlight offers token launches on KuCoin exchange with relatively accessible participation requirements. Known for discovering promising mid-cap projects and providing multiple participation methods including lotteries.",
+      "features": [
+        "Multiple participation methods",
+        "Lower staking requirements than Binance",
+        "KCS token benefits",
+        "Strong mid-cap project selection",
+        "Quick listing after token generation"
+      ],
+      "pricing": "<strong>Hold KCS</strong> — lottery and first-come-first-served options",
+      "url": "#affiliate-kucoin-spotlight",
+      "cta": "Visit KuCoin Spotlight"
+    },
+    {
+      "name": "DAO Maker",
+      "icon": "🏗️",
+      "tagline": "Community-driven token launches",
+      "description": "DAO Maker is a dedicated launchpad platform focused on community building and sustainable token launches. Their Strong Holder Offering (SHO) model prioritizes committed holders over speculators, leading to better post-launch price stability.",
+      "features": [
+        "Strong Holder Offering (SHO) model",
+        "DAO staking for tier access",
+        "Focus on community-driven projects",
+        "Refund policy on select launches",
+        "Cross-chain project support"
+      ],
+      "pricing": "<strong>Stake DAO</strong> — tiered allocation system",
+      "url": "#affiliate-dao-maker",
+      "cta": "Visit DAO Maker",
+      "featured": true
+    },
+    {
+      "name": "Seedify",
+      "icon": "🌱",
+      "tagline": "Gaming and metaverse launchpad",
+      "description": "Seedify has carved out a niche as the leading launchpad for blockchain gaming and metaverse projects. Their SFUND staking model and focus on the gaming vertical have produced some of the sector's best-performing launches.",
+      "features": [
+        "Specialized in gaming and metaverse",
+        "SFUND staking for allocations",
+        "Strong gaming project pipeline",
+        "IGO (Initial Game Offering) format",
+        "NFT launchpad integration"
+      ],
+      "pricing": "<strong>Stake SFUND</strong> — 9-tier allocation system",
+      "url": "#affiliate-seedify",
+      "cta": "Visit Seedify"
+    },
+    {
+      "name": "Polkastarter",
+      "icon": "⚪",
+      "tagline": "Cross-chain decentralized launchpad",
+      "description": "Polkastarter is a decentralized launchpad supporting launches across Ethereum, BNB Chain, Polygon, and other networks. Their permissionless pool creation and cross-chain support make them a favorite for DeFi-native projects.",
+      "features": [
+        "Cross-chain support (ETH, BNB, Polygon)",
+        "Decentralized and permissionless",
+        "POLS staking for whitelist access",
+        "Fixed-swap token pools",
+        "Strong DeFi project focus"
+      ],
+      "pricing": "<strong>Stake POLS</strong> — whitelist and lottery system",
+      "url": "#affiliate-polkastarter",
+      "cta": "Visit Polkastarter"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a token launchpad?",
+      "a": "A token launchpad is a platform that hosts initial token sales for new crypto projects. It connects early-stage projects with investors who want to buy tokens before they're listed on public exchanges. Think of it as a crypto version of an IPO platform."
+    },
+    {
+      "q": "How much money do I need to participate?",
+      "a": "Requirements vary by platform. Binance Launchpad requires holding BNB (value varies by project). DAO Maker and Seedify require staking their native tokens — typically $500-$5,000 worth for meaningful allocations. Some platforms offer lottery tiers with lower minimums."
+    },
+    {
+      "q": "What's the average ROI from launchpad tokens?",
+      "a": "Average ROI varies dramatically by platform and market conditions. During bull markets, top launchpads have seen average ATH returns of 10-50x. However, many tokens eventually fall below launch price. Past performance doesn't guarantee future results — always invest carefully."
+    },
+    {
+      "q": "Are token launchpads safe?",
+      "a": "Reputable launchpads vet projects, but they can't guarantee success. Even well-vetted projects can fail. The launchpad platform itself may be secure, but the tokens you purchase carry significant risk. Never invest more than you can afford to lose."
+    },
+    {
+      "q": "What's the difference between an IDO, ICO, and IEO?",
+      "a": "An ICO (Initial Coin Offering) is a direct token sale by the project. An IEO (Initial Exchange Offering) is hosted by a centralized exchange like Binance. An IDO (Initial DEX Offering) is hosted by a decentralized launchpad. IEOs and IDOs generally offer more investor protection than ICOs."
+    }
+  ]
+}

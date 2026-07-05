@@ -1,0 +1,138 @@
+{
+  "template": "b",
+  "domain": "tokenmonkey.com",
+  "name": "Token Monkey",
+  "logoIcon": "🐵",
+  "title": "Token Monkey — Your Meme Coin Field Guide",
+  "metaDescription": "The irreverent guide to meme coins. Dogecoin, Shiba Inu, PEPE, BONK, WIF, FLOKI — we track the chaos so you don't have to.",
+  "metaKeywords": "meme coins, dogecoin, shiba inu, pepe coin, bonk, wif, floki, meme token tracker, degen crypto",
+  "headline": "Apes together... informed?",
+  "subheadline": "The only meme coin guide honest enough to admit this is all slightly unhinged. We track the biggest meme tokens so you can degen responsibly.",
+  "lastUpdated": "July 2026",
+  "year": "2026",
+  "introCopy": "Let's be real: meme coins are the Wild West of crypto. No roadmaps, no revenue, no rational valuation models — just vibes, community, and the occasional 1000x that makes everyone lose their minds. We're not here to pretend this is serious investing. We're here to document the madness, explain what each meme coin actually is, and maybe — just maybe — help you lose less money than the next ape.",
+  "topicsTitle": "The meme coin zoo",
+  "guideTitle": "How to survive meme coin season",
+  "guideContent": "<h3>Rule 1: Only gamble what you can lose</h3><p>This isn't investing advice because meme coins aren't investments. They're lottery tickets with better memes. Set a degen budget — money you'd be fine lighting on fire — and stick to it. The moment you put in rent money, the market will humble you.</p><h3>Rule 2: Understand the game you're playing</h3><p>Meme coins are PvP (player vs. player). For you to make money, someone else has to buy after you at a higher price. There's no product generating revenue. Know what you're signing up for.</p><h3>Rule 3: Check the basics</h3><p>Even in meme coin land, check liquidity depth, holder distribution (is one wallet holding 90%?), contract renouncement, and whether the LP is locked. Rug pulls are distressingly common. A 30-second scan of the token contract can save you everything.</p><h3>Rule 4: Take profits</h3><p>If you're up 5x and thinking 'but what if it goes 100x?' — take some off the table. Nobody ever went broke taking profits. The ones who hold forever end up with screenshots of unrealized gains and a bag of worthless tokens.</p>",
+  "resourcesTitle": "Degen toolkit",
+  "resourcesContent": "<h3>DEX Screener</h3><p>Real-time charts and liquidity data for meme coins across every chain. If a new token is pumping, you'll see it here first. <a href=\"https://dexscreener.com\" target=\"_blank\" rel=\"noopener\">Visit DEX Screener</a></p><h3>BubbleMaps</h3><p>Visualize token holder distribution to spot insider clusters and potential rug pulls. If five wallets hold 80% of supply, you should probably run. <a href=\"https://app.bubblemaps.io\" target=\"_blank\" rel=\"noopener\">Visit BubbleMaps</a></p><h3>RugCheck</h3><p>Quick safety scans for Solana tokens. Checks for mint authority, freeze authority, LP status, and top holder concentration. Not foolproof, but better than nothing. <a href=\"https://rugcheck.xyz\" target=\"_blank\" rel=\"noopener\">Visit RugCheck</a></p>",
+  "disclaimer": "TokenMonkey.com is entertainment and educational content about meme coins. This is absolutely not financial advice. Meme coins are extremely high-risk, speculative assets that can lose 100% of their value overnight. Never invest money you can't afford to lose. We may earn commissions through affiliate links.",
+  "affiliateDisclosure": "Some links on this site are affiliate links. We may earn a commission if you click them. We still think most meme coins go to zero.",
+  "accentColor": "#eab308",
+  "accentLight": "#fef9c3",
+  "accentDark": "#ca8a04",
+  "items": [
+    {
+      "name": "Dogecoin",
+      "icon": "🐕",
+      "tag": "OG Meme",
+      "description": "The original meme coin. Created in 2013 as a literal joke about a Shiba Inu dog, Dogecoin somehow became a top-10 cryptocurrency with endorsements from Elon Musk. It has its own Proof of Work blockchain and genuinely fast, cheap transactions.",
+      "features": [
+        "The original meme coin (2013)",
+        "Own blockchain with 1-minute blocks",
+        "Infinite supply (inflationary by design)",
+        "Elon Musk's favorite shitcoin",
+        "Actual community tipping and payments use"
+      ],
+      "url": "#affiliate-dogecoin",
+      "cta": "Much learn, very crypto"
+    },
+    {
+      "name": "Shiba Inu",
+      "icon": "🐕‍🦺",
+      "tag": "Ecosystem",
+      "description": "What started as a 'Dogecoin killer' has evolved into a surprisingly ambitious ecosystem. Shibarium (its own L2), ShibaSwap (DEX), and SHIB: The Metaverse are all real products. Whether they justify the valuation is another question entirely.",
+      "features": [
+        "ERC-20 token on Ethereum",
+        "Shibarium Layer 2 network",
+        "ShibaSwap decentralized exchange",
+        "Burn mechanism reducing supply",
+        "One of the largest crypto communities"
+      ],
+      "url": "#affiliate-shiba-inu",
+      "cta": "Explore the Shib army"
+    },
+    {
+      "name": "PEPE",
+      "icon": "🐸",
+      "tag": "Culture",
+      "description": "Born from the Pepe the Frog meme, PEPE launched in 2023 and speedran to a multi-billion dollar market cap on pure memetic energy. No utility, no roadmap, no pretense — just a frog and a dream. The purest meme coin thesis in the game.",
+      "features": [
+        "ERC-20 token, no utility whatsoever",
+        "Reached $10B+ market cap on vibes",
+        "Zero tax on transactions",
+        "Massive social media presence",
+        "The meme coin that meme-coined the hardest"
+      ],
+      "url": "#affiliate-pepe",
+      "cta": "Feels good man"
+    },
+    {
+      "name": "BONK",
+      "icon": "🦴",
+      "tag": "Solana",
+      "description": "The Solana ecosystem's answer to Dogecoin. BONK was airdropped to Solana community members during the 2022 bear market and helped revive the chain's DeFi ecosystem. It's become the unofficial mascot of Solana's comeback.",
+      "features": [
+        "SPL token on Solana",
+        "Community airdrop origin story",
+        "Integrated across Solana DeFi",
+        "Sub-penny transaction fees",
+        "Credited with helping Solana's revival"
+      ],
+      "url": "#affiliate-bonk",
+      "cta": "BONK!"
+    },
+    {
+      "name": "WIF",
+      "icon": "🧢",
+      "tag": "Solana",
+      "description": "Dogwifhat. A Shiba Inu wearing a pink knitted beanie. That's it. That's the entire value proposition. And somehow it reached a $4B+ market cap. WIF is proof that in crypto, the dumbest idea executed with perfect timing can outperform every serious project.",
+      "features": [
+        "SPL token on Solana",
+        "Dog with hat — that's the whole thing",
+        "Fastest meme coin to $1B market cap",
+        "Strong Solana DEX trading volume",
+        "Peak absurdity as an asset class"
+      ],
+      "url": "#affiliate-wif",
+      "cta": "Behold the hat"
+    },
+    {
+      "name": "FLOKI",
+      "icon": "⚔️",
+      "tag": "Utility Meme",
+      "description": "Named after Elon Musk's Shiba Inu dog, FLOKI has pivoted harder toward utility than any other meme coin — launching FlokiFi (DeFi), Valhalla (P2E game), and a merchandise line. Whether it's a meme coin with utility or a utility token with meme marketing is genuinely unclear.",
+      "features": [
+        "Multi-chain (ETH and BNB Chain)",
+        "FlokiFi DeFi products",
+        "Valhalla play-to-earn game",
+        "Real merchandise and partnerships",
+        "Aggressive marketing (London buses, anyone?)"
+      ],
+      "url": "#affiliate-floki",
+      "cta": "Enter Valhalla"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Should I buy meme coins?",
+      "a": "Honestly? Probably not. The vast majority of meme coins go to zero. If you do decide to gamble, use only money you're genuinely comfortable losing completely. This isn't false modesty — most people who buy meme coins lose money."
+    },
+    {
+      "q": "How do meme coins have any value?",
+      "a": "The same way a baseball card or limited-edition sneaker has value — because enough people agree it does. Meme coins have no cash flows, no products (mostly), and no intrinsic value. Their price is determined entirely by supply, demand, and collective delusion."
+    },
+    {
+      "q": "What's the difference between a meme coin and a scam?",
+      "a": "Legitimate meme coins have open-source contracts, renounced ownership, locked liquidity, and distributed holder bases. Scams have backdoors in the contract (mint functions, hidden fees, honeypots). Always check the contract before buying. Even legitimate meme coins can still go to zero — that's not a scam, that's just how this works."
+    },
+    {
+      "q": "Can you actually make money with meme coins?",
+      "a": "Some people have made life-changing money. Many more have lost everything. Survivorship bias is extreme in this space — you hear about the guy who turned $500 into $500K, not the thousands who turned $500 into $5. The odds are not in your favor."
+    },
+    {
+      "q": "Why do you cover meme coins if they're so risky?",
+      "a": "Because people are going to buy them regardless, and informed degens lose less money than uninformed ones. We'd rather you understand liquidity, holder distribution, and rug pull red flags than go in completely blind. Harm reduction, basically."
+    }
+  ]
+}

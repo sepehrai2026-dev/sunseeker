@@ -1,0 +1,144 @@
+{
+  "template": "a",
+  "domain": "blockexchange.io",
+  "name": "BlockExchange",
+  "logoIcon": "⛓️",
+  "title": "BlockExchange — Best Crypto Exchanges Compared",
+  "metaDescription": "Compare the best cryptocurrency exchanges for 2026. Fees, security, supported coins, and features reviewed for Coinbase, Kraken, Binance, and more.",
+  "metaKeywords": "best crypto exchange, cryptocurrency exchange comparison, Coinbase vs Binance, lowest fee crypto exchange",
+  "headline": "Find the right exchange",
+  "subheadline": "Independent comparisons of cryptocurrency exchanges — fees, security, coin selection, and user experience ranked so you can trade with confidence.",
+  "lastUpdated": "July 2026",
+  "year": "2026",
+  "introCopy": "Choosing a crypto exchange isn't just about fees. Security track record, regulatory compliance, supported assets, and withdrawal options all matter. We've analyzed the top exchanges across every dimension that affects your money and your experience.",
+  "comparisonTitle": "Top crypto exchanges compared",
+  "guideTitle": "How to choose a crypto exchange",
+  "guideContent": "<h3>Security first</h3><p>Check if the exchange has been hacked before and how they handled it. Look for proof of reserves, cold storage policies, and insurance on custodied assets. Two-factor authentication should be mandatory, not optional.</p><h3>Understand the fee structure</h3><p>Maker/taker fees are just the start. Watch for deposit fees, withdrawal fees, spread markups on \"simple buy\" interfaces, and conversion fees between currencies. Some exchanges offer fee discounts for holding their native token or trading at higher volumes.</p><h3>Regulatory compliance matters</h3><p>Regulated exchanges provide deposit insurance, clear tax reporting, and legal recourse if something goes wrong. Unregulated offshore exchanges may offer more coins and higher leverage, but at significantly higher risk.</p><h3>Consider your use case</h3><p>Casual buyers need a simple interface and fiat on-ramps. Active traders need advanced order types, charting tools, and API access. DeFi users need good withdrawal options and support for multiple networks.</p>",
+  "disclaimer": "BlockExchange.io provides independent comparisons of cryptocurrency exchanges. Cryptocurrency trading involves significant risk. We may earn referral commissions through partner links.",
+  "affiliateDisclosure": "Some links on this site are affiliate links. We may earn a commission if you sign up through our links.",
+  "accentColor": "#f59e0b",
+  "accentLight": "#fef3c7",
+  "accentDark": "#d97706",
+  "items": [
+    {
+      "name": "Coinbase",
+      "icon": "🔵",
+      "tagline": "Most trusted US exchange",
+      "description": "Coinbase is the largest US-based exchange and publicly traded on NASDAQ. Known for its beginner-friendly interface, strong regulatory compliance, and institutional-grade custody. The Advanced Trade platform offers competitive fees for active traders.",
+      "features": [
+        "Publicly traded (NASDAQ: COIN)",
+        "FDIC-insured USD balances",
+        "250+ supported cryptocurrencies",
+        "Advanced Trade with maker/taker fees",
+        "Coinbase Wallet for self-custody"
+      ],
+      "pricing": "Maker <strong>0.40%</strong> / Taker <strong>0.60%</strong> (volume discounts available)",
+      "url": "#affiliate-coinbase",
+      "cta": "Visit Coinbase",
+      "featured": true
+    },
+    {
+      "name": "Kraken",
+      "icon": "🐙",
+      "tagline": "Security-focused veteran exchange",
+      "description": "Kraken has never been hacked in over a decade of operation. Known for excellent security practices, transparent proof of reserves, and a wide selection of trading pairs including fiat currencies from around the world.",
+      "features": [
+        "Never been hacked (founded 2011)",
+        "Proof of reserves audits",
+        "Kraken Pro with advanced trading",
+        "Staking for 20+ cryptocurrencies",
+        "24/7 live customer support"
+      ],
+      "pricing": "Maker <strong>0.25%</strong> / Taker <strong>0.40%</strong>",
+      "url": "#affiliate-kraken",
+      "cta": "Visit Kraken",
+      "featured": true
+    },
+    {
+      "name": "Binance",
+      "icon": "🟡",
+      "tagline": "Largest exchange by volume",
+      "description": "Binance is the world's largest crypto exchange by trading volume, offering the widest selection of coins and trading pairs. Lowest fees in the industry, especially when paying with BNB. Available in most countries (US users must use Binance.US).",
+      "features": [
+        "350+ cryptocurrencies",
+        "Lowest trading fees in the industry",
+        "BNB fee discount (25% off)",
+        "Futures, options, and margin trading",
+        "Binance Earn passive income products"
+      ],
+      "pricing": "Maker <strong>0.10%</strong> / Taker <strong>0.10%</strong> (before BNB discount)",
+      "url": "#affiliate-binance",
+      "cta": "Visit Binance"
+    },
+    {
+      "name": "Gemini",
+      "icon": "♊",
+      "tagline": "Regulated and insured",
+      "description": "Founded by the Winklevoss twins, Gemini is a New York-regulated exchange with SOC 2 certification and insurance on custodied assets. Known for its security-first approach and the Gemini Credit Card with crypto rewards.",
+      "features": [
+        "SOC 2 Type 2 certified",
+        "New York trust company (NYDFS regulated)",
+        "Insurance on custodied crypto",
+        "Gemini Dollar (GUSD) stablecoin",
+        "ActiveTrader platform for advanced users"
+      ],
+      "pricing": "Maker <strong>0.20%</strong> / Taker <strong>0.40%</strong>",
+      "url": "#affiliate-gemini",
+      "cta": "Visit Gemini"
+    },
+    {
+      "name": "KuCoin",
+      "icon": "🟢",
+      "tagline": "Altcoin paradise",
+      "description": "KuCoin lists new tokens faster than almost any major exchange, making it the go-to for altcoin traders. Offers spot, margin, futures, and even a built-in trading bot marketplace. Not available to US users without VPN.",
+      "features": [
+        "900+ cryptocurrencies listed",
+        "Built-in trading bot marketplace",
+        "Spot, margin, and futures trading",
+        "KCS token for fee discounts and dividends",
+        "P2P trading available"
+      ],
+      "pricing": "Maker <strong>0.10%</strong> / Taker <strong>0.10%</strong>",
+      "url": "#affiliate-kucoin",
+      "cta": "Visit KuCoin"
+    },
+    {
+      "name": "Uniswap",
+      "icon": "🦄",
+      "tagline": "Leading decentralized exchange",
+      "description": "Uniswap is the largest decentralized exchange (DEX) on Ethereum. No account needed — connect your wallet and trade directly from self-custody. No KYC, no withdrawal limits, no counterparty risk. You hold your keys at all times.",
+      "features": [
+        "No account or KYC required",
+        "Trade directly from your wallet",
+        "No counterparty risk",
+        "Thousands of ERC-20 tokens",
+        "Multi-chain (Ethereum, Polygon, Arbitrum, etc.)"
+      ],
+      "pricing": "<strong>0.30%</strong> swap fee (varies by pool)",
+      "url": "#affiliate-uniswap",
+      "cta": "Visit Uniswap"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Which exchange has the lowest fees?",
+      "a": "Binance has the lowest base trading fees at 0.10% maker/taker, with further discounts for BNB holders. KuCoin matches this rate. However, fees aren't everything — consider security, regulation, and supported assets alongside cost."
+    },
+    {
+      "q": "Are my funds safe on an exchange?",
+      "a": "No exchange is 100% safe. Major exchanges like Coinbase and Gemini offer insurance on custodied assets and are regulated. For maximum security, consider moving large holdings to a hardware wallet (self-custody) and only keeping trading amounts on exchanges."
+    },
+    {
+      "q": "What's the difference between a CEX and a DEX?",
+      "a": "A centralized exchange (CEX) like Coinbase holds your funds and facilitates trades — you trust the company. A decentralized exchange (DEX) like Uniswap lets you trade directly from your wallet with no intermediary — you trust the smart contract code. CEXs are easier to use; DEXs give you full control."
+    },
+    {
+      "q": "Do I need to report crypto taxes?",
+      "a": "In most countries, yes. Crypto trades are taxable events. US-regulated exchanges like Coinbase and Kraken provide tax forms (1099-MISC, 1099-B). Tools like CoinTracker and Koinly can import your trade history and generate tax reports."
+    },
+    {
+      "q": "Can I buy crypto with a credit card?",
+      "a": "Most exchanges accept credit and debit cards, but card purchases typically carry a 2-4% fee premium. Bank transfers (ACH in the US, SEPA in Europe) are usually free or low-cost. Some exchanges also support Apple Pay and Google Pay."
+    }
+  ]
+}

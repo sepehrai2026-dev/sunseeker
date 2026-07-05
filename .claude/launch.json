@@ -2,10 +2,58 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "sunseeker",
-      "runtimeExecutable": "/usr/bin/python3",
-      "runtimeArgs": ["-c", "import http.server,socketserver,os;os.chdir('/Users/sradjpoust/Documents/Claude/Projects/Sunseeker');httpd=socketserver.TCPServer(('',8080),http.server.SimpleHTTPRequestHandler);httpd.serve_forever()"],
-      "port": 8080
+      "name": "gallery",
+      "runtimeExecutable": "/Users/sradjpoust/.nvm/versions/node/v22.23.1/bin/node",
+      "runtimeArgs": ["/Users/sradjpoust/Documents/Claude/Projects/Sunseeker/microsites/gallery.js", "8090"],
+      "port": 8090
+    },
+    {
+      "name": "terpenebible-dist",
+      "runtimeExecutable": "/Users/sradjpoust/.nvm/versions/node/v22.23.1/bin/node",
+      "runtimeArgs": ["/private/tmp/claude-501/-Users-sradjpoust-Documents-Claude-Projects-Sunseeker/a2ff541a-62a3-4f53-ac87-27bc004179a0/scratchpad/serve-dist.js", "/Users/sradjpoust/Documents/Claude/Projects/Sunseeker/microsites/sites/terpenebible.com/dist", "8741"],
+      "port": 8741
+    },
+    {
+      "name": "gizem-dist",
+      "runtimeExecutable": "/Users/sradjpoust/.nvm/versions/node/v22.23.1/bin/node",
+      "runtimeArgs": ["/private/tmp/claude-501/-Users-sradjpoust-Documents-Claude-Projects-Sunseeker/a2ff541a-62a3-4f53-ac87-27bc004179a0/scratchpad/serve-dist.js", "/Users/sradjpoust/Documents/Claude/Projects/Sunseeker/microsites/sites/gizem.ai/dist", "8791"],
+      "port": 8791
+    },
+    {
+      "name": "moc-dist",
+      "runtimeExecutable": "/Users/sradjpoust/.nvm/versions/node/v22.23.1/bin/node",
+      "runtimeArgs": ["/private/tmp/claude-501/-Users-sradjpoust-Documents-Claude-Projects-Sunseeker/a2ff541a-62a3-4f53-ac87-27bc004179a0/scratchpad/serve-dist.js", "/Users/sradjpoust/Documents/Claude/Projects/Sunseeker/microsites/sites/merchantsofcrypto.com/dist", "8792"],
+      "port": 8792
+    },
+    {
+      "name": "hio-dist",
+      "runtimeExecutable": "/Users/sradjpoust/.nvm/versions/node/v22.23.1/bin/node",
+      "runtimeArgs": ["/private/tmp/claude-501/-Users-sradjpoust-Documents-Claude-Projects-Sunseeker/a2ff541a-62a3-4f53-ac87-27bc004179a0/scratchpad/serve-dist.js", "/Users/sradjpoust/Documents/Claude/Projects/Sunseeker/microsites/sites/holidayinorbit.com/dist", "8794"],
+      "port": 8794
+    },
+    {
+      "name": "blockmine-dist",
+      "runtimeExecutable": "/Users/sradjpoust/.nvm/versions/node/v22.23.1/bin/node",
+      "runtimeArgs": ["/private/tmp/claude-501/-Users-sradjpoust-Documents-Claude-Projects-Sunseeker/a2ff541a-62a3-4f53-ac87-27bc004179a0/scratchpad/serve-dist.js", "/Users/sradjpoust/Documents/Claude/Projects/Sunseeker/microsites/sites/blockmine.io/dist", "8796"],
+      "port": 8796
+    },
+    {
+      "name": "caa-dist",
+      "runtimeExecutable": "/Users/sradjpoust/.nvm/versions/node/v22.23.1/bin/node",
+      "runtimeArgs": ["/private/tmp/claude-501/-Users-sradjpoust-Documents-Claude-Projects-Sunseeker/a2ff541a-62a3-4f53-ac87-27bc004179a0/scratchpad/serve-dist.js", "/Users/sradjpoust/Documents/Claude/Projects/Sunseeker/microsites/sites/cryptoassetadvisors.com/dist", "8797"],
+      "port": 8797
+    },
+    {
+      "name": "barcade",
+      "runtimeExecutable": "/Users/sradjpoust/.nvm/versions/node/v22.23.1/bin/node",
+      "runtimeArgs": ["/private/tmp/claude-501/-Users-sradjpoust-Documents-Claude-Projects-Sunseeker/a2ff541a-62a3-4f53-ac87-27bc004179a0/scratchpad/serve-dist.js", "/Users/sradjpoust/Documents/Claude/Projects/Sunseeker/barcade", "8085"],
+      "port": 8085
+    },
+    {
+      "name": "artsheet",
+      "runtimeExecutable": "/Users/sradjpoust/.nvm/versions/node/v22.23.1/bin/node",
+      "runtimeArgs": ["/private/tmp/claude-501/-Users-sradjpoust-Documents-Claude-Projects-Sunseeker/a2ff541a-62a3-4f53-ac87-27bc004179a0/scratchpad/serve-dist.js", "/private/tmp/claude-501/-Users-sradjpoust-Documents-Claude-Projects-Sunseeker/a2ff541a-62a3-4f53-ac87-27bc004179a0/scratchpad", "8086"],
+      "port": 8086
     }
   ]
 }

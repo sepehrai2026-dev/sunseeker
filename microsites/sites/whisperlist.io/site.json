@@ -1,0 +1,34 @@
+{
+  "template": "c",
+  "domain": "whisperlist.io",
+  "name": "Whisperlist",
+  "logoIcon": "🤫",
+  "title": "Whisperlist — Anonymous Feedback & Lists",
+  "metaDescription": "Create anonymous feedback forms and shareable lists. Collect honest opinions from your team, friends, or community without revealing who said what.",
+  "metaKeywords": "anonymous feedback tool, anonymous survey, collect honest feedback, anonymous list sharing",
+  "headline": "Honest feedback, no names attached",
+  "subheadline": "Create anonymous feedback forms in seconds. Share a link, collect candid responses. No accounts, no tracking, no BS.",
+  "year": "2026",
+  "aboutTitle": "Why anonymous feedback matters",
+  "aboutContent": "<h3>People are more honest when they're anonymous</h3><p>Research consistently shows that people give more candid, useful feedback when their identity is protected. Whisperlist removes the social pressure so you get the truth — not what people think you want to hear.</p><h3>Use cases</h3><p>Team retrospectives where people can flag real issues. Product feedback from beta users. Honest friend polls for decisions. Event feedback without awkwardness. Management reviews where reports can speak freely.</p><h3>Privacy by design</h3><p>We don't track IP addresses, don't require accounts, and don't store identifying information. Responses are stored temporarily and auto-deleted after 30 days. Your whispers stay anonymous.</p>",
+  "featuresTitle": "What you can do",
+  "disclaimer": "Whisperlist.io is a free anonymous feedback tool. Responses are stored client-side in this demo version.",
+  "accentColor": "#7c3aed",
+  "accentLight": "#ede9fe",
+  "accentDark": "#6d28d9",
+  "items": [
+    {"name": "Team retrospectives", "icon": "👥", "description": "Run honest retros where everyone can flag issues without fear of judgment."},
+    {"name": "Product feedback", "icon": "📦", "description": "Collect unfiltered user feedback on features, bugs, and priorities."},
+    {"name": "Event surveys", "icon": "🎤", "description": "Get real feedback after events, talks, or workshops."},
+    {"name": "Decision polls", "icon": "🗳️", "description": "Run anonymous polls for group decisions — restaurant picks, gift ideas, anything."},
+    {"name": "Management reviews", "icon": "📊", "description": "Enable upward feedback where reports can be candid about leadership."},
+    {"name": "Idea collection", "icon": "💡", "description": "Gather ideas from your team without anchoring bias from who suggested what."}
+  ],
+  "faqs": [
+    {"q": "Is it really anonymous?", "a": "Yes. In this demo, all data stays in your browser (localStorage). There's no server, no IP logging, no cookies, no analytics. In a full version, responses would be stored on a server with no identifying metadata."},
+    {"q": "How long are responses stored?", "a": "In this demo, responses are stored in your browser's localStorage until you clear them. In a production version, responses would auto-delete after 30 days."},
+    {"q": "Can I export the responses?", "a": "You can copy all responses from the results view. A production version would support CSV export."},
+    {"q": "Is there a response limit?", "a": "No limit in this demo. Share your link and collect as many responses as you need."},
+    {"q": "Can people respond more than once?", "a": "This demo doesn't restrict multiple submissions since we don't track users. A production version could optionally limit to one response per browser session."}
+  ]
+}

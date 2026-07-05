@@ -1,0 +1,138 @@
+{
+  "template": "b",
+  "domain": "terpenebible.com",
+  "name": "Terpene Bible",
+  "logoIcon": "🌿",
+  "title": "Terpene Bible — The Complete Guide to Terpenes",
+  "metaDescription": "Comprehensive terpene guide. Learn about myrcene, limonene, linalool, pinene, caryophyllene, and terpinolene — aromas, effects, and where to find them.",
+  "metaKeywords": "terpenes guide, myrcene, limonene, linalool, pinene, caryophyllene, terpinolene, terpene effects, aromatherapy, cannabis terpenes",
+  "headline": "The science behind the scent",
+  "subheadline": "A comprehensive guide to terpenes — the aromatic compounds that shape flavor, fragrance, and experience in plants, food, and wellness.",
+  "lastUpdated": "July 2026",
+  "year": "2026",
+  "introCopy": "Terpenes are aromatic compounds found in virtually every plant. They give lavender its calming scent, citrus its zing, and pine forests their freshness. Beyond aroma, terpenes have documented biological effects — anti-inflammatory, anxiolytic, analgesic, and more. Whether you're into aromatherapy, cannabis, cooking, or botanical science, understanding terpenes transforms how you experience the plant world.",
+  "topicsTitle": "Terpene profiles",
+  "guideTitle": "Understanding terpenes",
+  "guideContent": "<h3>What are terpenes?</h3><p>Terpenes are organic hydrocarbons produced by plants as part of their essential oils. They evolved as defense mechanisms against herbivores and to attract pollinators. Over 20,000 terpenes have been identified, but a handful dominate most plants we interact with daily.</p><h3>The entourage effect</h3><p>Terpenes don't work in isolation. Research suggests they interact synergistically with other plant compounds, modulating and enhancing effects. This 'entourage effect' is why whole-plant extracts often feel different from isolated compounds.</p><h3>How to identify terpenes</h3><p>Your nose is your best tool. Each terpene has a distinct aroma profile — earthy, citrusy, floral, piney, spicy, or herbal. With practice, you can identify dominant terpenes in essential oils, herbs, and other botanical products by scent alone.</p><h3>Terpenes in everyday life</h3><p>You encounter terpenes constantly — in the zest of a lemon (limonene), the scent of a pine tree (pinene), the earthiness of fresh hops (myrcene), and the spice of black pepper (caryophyllene). Understanding them enriches cooking, gardening, and wellness.</p>",
+  "resourcesTitle": "Further reading",
+  "resourcesContent": "<h3>PubChem Terpene Database</h3><p>NIH's comprehensive chemical database with detailed molecular data, safety profiles, and research citations for every known terpene. <a href=\"https://pubchem.ncbi.nlm.nih.gov\" target=\"_blank\" rel=\"noopener\">Search PubChem</a></p><h3>Leafly Terpene Guide</h3><p>An accessible introduction to how terpenes influence cannabis experiences, with strain-specific terpene profiles. <a href=\"https://www.leafly.com/news/cannabis-101/terpenes-the-flavors-of-cannabis-aromatherapy\" target=\"_blank\" rel=\"noopener\">Read on Leafly</a></p><h3>National Association for Holistic Aromatherapy</h3><p>Professional resources on aromatherapy, essential oil safety, and the therapeutic applications of plant compounds. <a href=\"https://naha.org\" target=\"_blank\" rel=\"noopener\">Visit NAHA</a></p>",
+  "disclaimer": "TerpeneBible.com provides educational content about terpenes and aromatic compounds. This is not medical advice. Consult a healthcare professional before using terpenes therapeutically. We may earn commissions through affiliate links.",
+  "affiliateDisclosure": "Some links on this site are affiliate links. We may earn a commission if you make a purchase at no extra cost to you.",
+  "accentColor": "#16a34a",
+  "accentLight": "#dcfce7",
+  "accentDark": "#15803d",
+  "items": [
+    {
+      "name": "Myrcene",
+      "icon": "🥭",
+      "tag": "Earthy",
+      "description": "The most abundant terpene in cannabis and hops, myrcene delivers an earthy, musky aroma with hints of ripe fruit. It's associated with relaxing, sedative effects and is believed to enhance the absorption of other compounds.",
+      "features": [
+        "Aroma: earthy, musky, herbal, fruity",
+        "Found in: mangoes, hops, lemongrass, thyme",
+        "Research: anti-inflammatory, analgesic properties",
+        "Boiling point: 167°C (332°F)",
+        "Most common terpene in modern cannabis"
+      ],
+      "url": "#affiliate-myrcene",
+      "cta": "Learn about myrcene"
+    },
+    {
+      "name": "Limonene",
+      "icon": "🍋",
+      "tag": "Citrus",
+      "description": "The quintessential citrus terpene, limonene gives oranges, lemons, and grapefruits their bright, uplifting aroma. It's one of the most well-studied terpenes, with research suggesting mood-elevating and stress-reducing properties.",
+      "features": [
+        "Aroma: bright citrus, orange, lemon",
+        "Found in: citrus rinds, juniper, rosemary",
+        "Research: anxiolytic, anti-depressant effects",
+        "Boiling point: 176°C (349°F)",
+        "High bioavailability when inhaled"
+      ],
+      "url": "#affiliate-limonene",
+      "cta": "Learn about limonene"
+    },
+    {
+      "name": "Linalool",
+      "icon": "💜",
+      "tag": "Floral",
+      "description": "The signature terpene of lavender, linalool has a sweet, floral aroma that has been used for centuries in traditional relaxation and sleep remedies. It's one of the most extensively researched terpenes for calming effects.",
+      "features": [
+        "Aroma: floral, sweet, lavender, spicy",
+        "Found in: lavender, coriander, mint, cinnamon",
+        "Research: anxiolytic, sedative, anti-convulsant",
+        "Boiling point: 198°C (388°F)",
+        "Used extensively in perfumery"
+      ],
+      "url": "#affiliate-linalool",
+      "cta": "Learn about linalool"
+    },
+    {
+      "name": "Pinene",
+      "icon": "🌲",
+      "tag": "Fresh",
+      "description": "The most widely occurring terpene in nature, pinene is what makes pine forests smell so refreshing. It exists in two forms — alpha-pinene (pine scent) and beta-pinene (herbal, dill-like). Research suggests it may support respiratory function and alertness.",
+      "features": [
+        "Aroma: sharp pine, fresh, woody",
+        "Found in: pine needles, rosemary, basil, dill",
+        "Research: bronchodilator, anti-inflammatory",
+        "Boiling point: 155°C (311°F)",
+        "Most abundant terpene in the natural world"
+      ],
+      "url": "#affiliate-pinene",
+      "cta": "Learn about pinene"
+    },
+    {
+      "name": "Caryophyllene",
+      "icon": "🫚",
+      "tag": "Spicy",
+      "description": "Unique among terpenes, beta-caryophyllene can bind to CB2 cannabinoid receptors, making it the only terpene that acts as a dietary cannabinoid. It delivers a warm, spicy, peppery aroma and is abundant in black pepper, cloves, and cinnamon.",
+      "features": [
+        "Aroma: spicy, peppery, woody, warm",
+        "Found in: black pepper, cloves, cinnamon, oregano",
+        "Research: CB2 receptor agonist, anti-inflammatory",
+        "Boiling point: 130°C (266°F)",
+        "Only terpene that binds cannabinoid receptors"
+      ],
+      "url": "#affiliate-caryophyllene",
+      "cta": "Learn about caryophyllene"
+    },
+    {
+      "name": "Terpinolene",
+      "icon": "🌸",
+      "tag": "Complex",
+      "description": "The least common of the major terpenes, terpinolene has a complex, multi-layered aroma that combines floral, herbal, piney, and slightly citrusy notes. It's found in lilacs, tea tree, and nutmeg, and is associated with uplifting, energetic effects.",
+      "features": [
+        "Aroma: floral, herbal, piney, citrusy",
+        "Found in: lilac, tea tree, nutmeg, apples",
+        "Research: antioxidant, mildly sedative at high doses",
+        "Boiling point: 186°C (366°F)",
+        "Rarest of the primary terpenes"
+      ],
+      "url": "#affiliate-terpinolene",
+      "cta": "Learn about terpinolene"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Are terpenes safe?",
+      "a": "Terpenes are naturally occurring compounds found in many foods and plants you already consume daily. They're Generally Recognized As Safe (GRAS) by the FDA in food applications. However, concentrated essential oils should be used with care — some can irritate skin or mucous membranes if used undiluted."
+    },
+    {
+      "q": "Can I use terpenes for aromatherapy?",
+      "a": "Yes, terpenes are the active aromatic compounds in essential oils used for aromatherapy. Lavender oil's calming effect comes from linalool, citrus oils' uplifting quality from limonene. Use a diffuser or dilute in a carrier oil for topical application."
+    },
+    {
+      "q": "What is the entourage effect?",
+      "a": "The entourage effect is the theory that terpenes, cannabinoids, and other plant compounds work together synergistically — producing effects that differ from any single compound alone. It's why whole-plant products often feel different from isolated extracts."
+    },
+    {
+      "q": "How are terpenes different from essential oils?",
+      "a": "Essential oils are complex mixtures of many compounds extracted from plants, while terpenes are specific individual molecules within those oils. Lavender essential oil contains linalool, linalyl acetate, and dozens of other compounds — linalool alone is a single terpene."
+    },
+    {
+      "q": "Do terpenes have medical benefits?",
+      "a": "Preclinical research has shown promising anti-inflammatory, anxiolytic, analgesic, and antimicrobial properties for various terpenes. However, most human clinical trials are still ongoing. Terpenes should not be used as a substitute for medical treatment."
+    }
+  ]
+}

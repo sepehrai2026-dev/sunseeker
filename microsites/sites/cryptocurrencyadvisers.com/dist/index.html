@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cryptocurrency Advisers — Expert Crypto Consulting & Strategy</title>
+<meta name="description" content="Professional cryptocurrency consulting services. Trading strategy, wallet security, token evaluation, regulatory guidance, and blockchain integration for businesses and individuals.">
+<meta name="keywords" content="cryptocurrency consulting, crypto trading strategy, wallet security, token evaluation, ICO advisory, blockchain integration, regulatory guidance">
+<meta property="og:title" content="Cryptocurrency Advisers — Expert Crypto Consulting & Strategy">
+<meta property="og:description" content="Professional cryptocurrency consulting services. Trading strategy, wallet security, token evaluation, regulatory guidance, and blockchain integration for businesses and individuals.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cryptocurrencyadvisers.com">
+<link rel="canonical" href="https://cryptocurrencyadvisers.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --accent:#059669;
+  --accent-light:#d1fae5;
+  --accent-dark:#047857;
+  --bg:#0a0a0a;
+  --bg-raised:#0d0d0c;
+  --ink:#ececea;
+  --ink-2:#a6a6a2;
+  --ink-3:#7c7c78;
+  --hairline:rgba(255,255,255,.09);
+  --hairline-strong:rgba(255,255,255,.18);
+  --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  --sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  font-family:var(--sans);background:var(--bg);color:var(--ink);
+  font-size:16px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility
+}
+[hidden]{display:none !important}
+.glyph{display:none}
+::selection{background:var(--accent);color:#fff}
+:focus-visible{outline:1px solid var(--accent-light);outline-offset:3px}
+.num{font-variant-numeric:tabular-nums;font-feature-settings:'tnum' 1}
+
+/* --- Film grain --- */
+body::after{
+  content:'';position:fixed;inset:0;z-index:2000;pointer-events:none;opacity:.045;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")
+}
+
+/* --- Skip link --- */
+.skip-link{
+  position:absolute;left:1rem;top:-4rem;z-index:3000;
+  background:var(--bg-raised);color:var(--ink);border:1px solid var(--hairline-strong);
+  padding:.6rem 1.2rem;font-size:.75rem;letter-spacing:.08em;text-decoration:none;
+  transition:top .2s
+}
+.skip-link:focus{top:1rem}
+
+/* --- Layout --- */
+.container{max-width:1180px;margin:0 auto;padding:0 2.5rem}
+.section{padding:8.5rem 0}
+[id]{scroll-margin-top:6rem}
+
+/* --- Small caps kicker --- */
+.kicker{
+  font-size:.6875rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--ink-3)
+}
+.kicker-rule{display:flex;align-items:center;gap:1.25rem}
+.kicker-rule::before{content:'';width:2.5rem;height:1px;background:var(--accent);flex:0 0 auto}
+.kicker-center{text-align:center}
+.kicker-count{color:var(--accent);margin-left:.75rem}
+.kicker-count:empty{display:none}
+
+/* --- Nav --- */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  border-bottom:1px solid transparent;
+  transition:background .4s ease,border-color .4s ease
+}
+.nav-scrolled{
+  background:rgba(10,10,10,.78);
+  -webkit-backdrop-filter:blur(16px) saturate(1.4);backdrop-filter:blur(16px) saturate(1.4);
+  border-bottom-color:var(--hairline)
+}
+.nav-inner{
+  max-width:1180px;margin:0 auto;padding:1.35rem 2.5rem;
+  display:flex;justify-content:space-between;align-items:baseline
+}
+.nav-brand{
+  font-family:var(--serif);font-size:1.35rem;font-weight:500;letter-spacing:.01em;
+  color:var(--ink);text-decoration:none
+}
+.nav-links{display:flex;align-items:baseline;gap:2.75rem}
+.nav-links a{
+  font-size:.6875rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--ink-2);text-decoration:none;transition:color .25s
+}
+.nav-links a:hover{color:var(--ink)}
+.nav-cta{
+  color:var(--ink) !important;
+  border-bottom:1px solid var(--accent);padding-bottom:3px;
+  transition:color .25s,border-color .25s
+}
+.nav-cta:hover{color:var(--accent-light) !important}
+
+/* --- Hero --- */
+.hero{padding:11.5rem 0 0}
+.hero-kicker{margin-bottom:2.5rem}
+.hero-title{
+  font-family:var(--serif);font-weight:500;
+  font-size:clamp(2.75rem,7vw,5.25rem);line-height:1.04;letter-spacing:-.01em;
+  max-width:900px;margin-bottom:2.25rem;text-wrap:balance
+}
+.hero-sub{
+  max-width:580px;color:var(--ink-2);font-size:1.0625rem;line-height:1.75;
+  margin-bottom:3.25rem
+}
+.hero-actions{display:flex;align-items:center;gap:2.75rem;flex-wrap:wrap;margin-bottom:7rem}
+.hero-meta{
+  display:flex;justify-content:space-between;gap:2rem;
+  border-top:1px solid var(--hairline);padding:1.5rem 0 2.5rem;
+  font-size:.6875rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--ink-3)
+}
+
+/* --- Buttons & quiet links --- */
+.btn{
+  display:inline-block;padding:1.05rem 2.6rem;
+  border:1px solid var(--hairline-strong);color:var(--ink);
+  font-size:.6875rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase;
+  text-decoration:none;background:transparent;cursor:pointer;
+  transition:border-color .3s,color .3s,background .3s
+}
+.btn:hover{border-color:var(--accent);color:#fff;background:rgba(255,255,255,.02)}
+.btn-accent{border-color:var(--accent)}
+.btn-accent:hover{border-color:var(--accent-light)}
+.link-quiet{
+  position:relative;font-size:.6875rem;font-weight:600;letter-spacing:.24em;
+  text-transform:uppercase;color:var(--ink-2);text-decoration:none;
+  padding-bottom:4px;transition:color .3s
+}
+.link-quiet::after{
+  content:'';position:absolute;left:0;right:0;bottom:0;height:1px;
+  background:var(--hairline-strong);transform-origin:left;
+  transition:background .3s,transform .4s ease
+}
+.link-quiet:hover{color:var(--ink)}
+.link-quiet:hover::after{background:var(--accent);transform:scaleX(.6)}
+
+/* --- Capabilities band --- */
+.band{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);padding:1.6rem 0;background:var(--bg-raised)}
+.band-list{
+  list-style:none;display:flex;flex-wrap:wrap;align-items:center;
+  column-gap:2.5rem;row-gap:.9rem
+}
+.band-list li{
+  font-size:.6875rem;font-weight:500;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--ink-3);display:flex;align-items:center
+}
+.band-list li+li::before{
+  content:'';width:1px;height:10px;background:var(--hairline-strong);
+  margin-right:2.5rem;flex:0 0 auto
+}
+
+/* --- Section head --- */
+.section-head{margin-bottom:4.5rem}
+.section-title{
+  font-family:var(--serif);font-weight:500;
+  font-size:clamp(2rem,4vw,3rem);line-height:1.12;letter-spacing:-.005em;
+  margin-top:1.5rem;max-width:680px;text-wrap:balance
+}
+
+/* --- Services index --- */
+.index{border-top:1px solid var(--hairline);counter-reset:svc}
+.card{
+  display:grid;grid-template-columns:8rem 1fr 1.3fr;gap:3rem;align-items:start;
+  padding:2.75rem 0;border-bottom:1px solid var(--hairline);
+  counter-increment:svc;position:relative;transition:background .35s ease
+}
+.card:hover{background:rgba(255,255,255,.015)}
+.card-num{
+  font-family:var(--serif);font-style:italic;font-weight:500;font-size:1.3rem;
+  line-height:1.3;letter-spacing:.06em;color:var(--accent)
+}
+.card-num::before{content:counter(svc,upper-roman)}
+.card-name{
+  font-family:var(--serif);font-weight:500;font-size:1.75rem;line-height:1.18;
+  letter-spacing:.002em;color:var(--ink);transition:color .3s
+}
+.card:hover .card-name{color:#fff}
+.card-desc{font-size:.9375rem;color:var(--ink-2);line-height:1.8;max-width:56ch}
+.card-featured::before{
+  content:'';position:absolute;left:0;top:-1px;width:3rem;height:1px;background:var(--accent)
+}
+.card-featured .card-name{color:var(--accent-light)}
+
+/* --- About --- */
+.about-content{
+  max-width:820px;border-left:1px solid var(--hairline);padding-left:3.5rem
+}
+.about-content h3{
+  font-family:var(--serif);font-weight:500;font-size:1.65rem;line-height:1.2;
+  color:var(--ink);margin:3rem 0 1rem
+}
+.about-content h3:first-child{margin-top:0}
+.about-content p{color:var(--ink-2);font-size:.9375rem;line-height:1.85;margin-bottom:1.35rem;max-width:66ch}
+.about-content p:last-child{margin-bottom:0}
+.about-content strong{color:var(--ink);font-weight:600}
+.about-content ul,.about-content ol{margin:0 0 1.35rem 1.2rem;color:var(--ink-2);font-size:.9375rem}
+.about-content li{margin-bottom:.5rem;line-height:1.75}
+.about-content a{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+
+/* --- FAQ --- */
+.faq-list{border-top:1px solid var(--hairline);max-width:820px}
+.faq-item{border-bottom:1px solid var(--hairline)}
+.faq-item summary{
+  list-style:none;cursor:pointer;
+  display:flex;justify-content:space-between;align-items:center;gap:2.5rem;
+  padding:1.85rem 0
+}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-q{
+  font-family:var(--serif);font-weight:500;font-size:1.3rem;line-height:1.3;
+  color:var(--ink);transition:color .3s
+}
+.faq-item summary:hover .faq-q{color:#fff}
+.faq-marker{position:relative;flex:0 0 auto;width:11px;height:11px}
+.faq-marker::before,.faq-marker::after{
+  content:'';position:absolute;background:var(--ink-3);transition:transform .3s ease
+}
+.faq-marker::before{left:0;right:0;top:5px;height:1px}
+.faq-marker::after{top:0;bottom:0;left:5px;width:1px}
+.faq-item[open] .faq-marker::after{transform:scaleY(0)}
+.faq-a{padding:0 0 2rem}
+.faq-a p{max-width:62ch;color:var(--ink-2);font-size:.9375rem;line-height:1.8}
+
+/* --- Contact --- */
+.about,.faq,.contact{border-top:1px solid var(--hairline)}
+.contact{background:var(--bg-raised)}
+.contact-inner{max-width:760px;margin:0 auto;text-align:center}
+.contact-title{
+  font-family:var(--serif);font-weight:500;
+  font-size:clamp(2.25rem,4.5vw,3.4rem);line-height:1.1;letter-spacing:-.005em;
+  margin:1.75rem 0 1.5rem;text-wrap:balance
+}
+.contact-sub{color:var(--ink-2);font-size:1rem;line-height:1.75;max-width:52ch;margin:0 auto 3rem}
+.contact-actions{margin-bottom:2.25rem}
+.contact-alt{font-size:.8125rem;color:var(--ink-3);letter-spacing:.02em}
+.contact-alt a{color:var(--ink-2);text-decoration:underline;text-underline-offset:3px;transition:color .25s}
+.contact-alt a:hover{color:var(--ink)}
+
+/* --- Footer --- */
+.footer{border-top:1px solid var(--hairline);padding:4rem 0 3rem}
+.footer-top{
+  display:flex;justify-content:space-between;align-items:baseline;gap:2rem;
+  margin-bottom:3rem
+}
+.footer-brand{font-family:var(--serif);font-size:1.35rem;font-weight:500;color:var(--ink)}
+.footer-link{
+  font-size:.6875rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--ink-3);text-decoration:none;transition:color .25s
+}
+.footer-link:hover{color:var(--ink-2)}
+.footer-bottom{border-top:1px solid var(--hairline);padding-top:1.75rem}
+.footer-bottom p{font-size:.71875rem;color:var(--ink-3);line-height:1.75}
+
+/* --- Reveal --- */
+.reveal{
+  opacity:0;transform:translateY(26px);
+  transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)
+}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@media(prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+}
+
+/* --- Responsive --- */
+@media(max-width:860px){
+  .container{padding:0 1.4rem}
+  .nav-inner{padding:1.1rem 1.4rem}
+  .nav-links{gap:1.5rem}
+  .nav-links a:not(.nav-cta){display:none}
+  .hero{padding-top:8.5rem}
+  .hero-actions{margin-bottom:4.5rem;gap:2rem}
+  .section{padding:5.5rem 0}
+  .section-head{margin-bottom:3rem}
+  .card{grid-template-columns:1fr;gap:.9rem;padding:2.25rem 0}
+  .card-desc{max-width:none}
+  .about-content{border-left:0;padding-left:0}
+  .band-list{column-gap:1.5rem}
+  .band-list li+li::before{margin-right:1.5rem}
+  .footer-top{flex-direction:column;align-items:flex-start;gap:1rem}
+}
+
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <div class="nav-inner">
+    <a href="/" class="nav-brand"><span class="glyph" hidden aria-hidden="true">💹</span>Cryptocurrency Advisers</a>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="nav-cta">Get in Touch</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <p class="kicker kicker-rule hero-kicker reveal">Cryptocurrency Advisers</p>
+    <h1 class="hero-title reveal">Expert cryptocurrency consulting you can trust</h1>
+    <p class="hero-sub reveal">From trading strategy to regulatory compliance, our advisers help you make informed decisions in the fast-moving cryptocurrency market.</p>
+    <div class="hero-actions reveal">
+      <a href="#contact" class="btn">Get in Touch</a>
+      <a href="#services" class="link-quiet">View services</a>
+    </div>
+    <div class="hero-meta num">
+      <span>cryptocurrencyadvisers.com</span>
+      <span>&copy; 2026</span>
+    </div>
+  </div>
+</header>
+
+<aside class="band" aria-hidden="true">
+  <div class="container">
+    <ul class="band-list" id="band"></ul>
+  </div>
+</aside>
+
+<main id="main">
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="kicker kicker-rule">Services <span class="kicker-count num" id="service-count"></span></p>
+        <h2 class="section-title">Consulting Services</h2>
+      </div>
+      <div class="index">
+        <article class="card">
+  <span class="glyph" hidden aria-hidden="true">📈</span>
+  <span class="card-num" aria-hidden="true"></span>
+  <h3 class="card-name">Trading Strategy</h3>
+  <p class="card-desc">Data-driven trading frameworks including technical analysis, market timing, position sizing, and risk management for active cryptocurrency traders.</p>
+</article>
+
+<article class="card">
+  <span class="glyph" hidden aria-hidden="true">🔒</span>
+  <span class="card-num" aria-hidden="true"></span>
+  <h3 class="card-name">Wallet Security</h3>
+  <p class="card-desc">Comprehensive security audits of your crypto storage, hardware wallet setup, multi-signature configurations, and best practices for protecting your digital assets.</p>
+</article>
+
+<article class="card">
+  <span class="glyph" hidden aria-hidden="true">🪙</span>
+  <span class="card-num" aria-hidden="true"></span>
+  <h3 class="card-name">Token Evaluation</h3>
+  <p class="card-desc">Rigorous fundamental analysis of cryptocurrency tokens including tokenomics review, team assessment, technology audit, and market positioning evaluation.</p>
+</article>
+
+<article class="card">
+  <span class="glyph" hidden aria-hidden="true">⚖️</span>
+  <span class="card-num" aria-hidden="true"></span>
+  <h3 class="card-name">Regulatory Guidance</h3>
+  <p class="card-desc">Navigate the evolving regulatory landscape with clarity. We help you understand compliance obligations, licensing requirements, and reporting standards.</p>
+</article>
+
+<article class="card">
+  <span class="glyph" hidden aria-hidden="true">🚀</span>
+  <span class="card-num" aria-hidden="true"></span>
+  <h3 class="card-name">ICO Advisory</h3>
+  <p class="card-desc">End-to-end advisory for token launches including token design, legal structuring, marketing strategy, and post-launch community management.</p>
+</article>
+
+<article class="card">
+  <span class="glyph" hidden aria-hidden="true">⛓️</span>
+  <span class="card-num" aria-hidden="true"></span>
+  <h3 class="card-name">Blockchain Integration</h3>
+  <p class="card-desc">Strategic guidance for businesses looking to integrate blockchain technology into operations, from supply chain to payments and beyond.</p>
+</article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="kicker kicker-rule">Profile</p>
+        <h2 class="section-title">About Cryptocurrency Advisers</h2>
+      </div>
+      <div class="about-content reveal"><h3>Practical Expertise, Not Hype</h3><p>Cryptocurrency Advisers was founded on the principle that sound crypto strategy requires clear thinking, not speculation. We cut through the noise to deliver actionable guidance grounded in market fundamentals and technical analysis.</p><h3>Comprehensive Crypto Support</h3><p>Our consulting covers the full spectrum of cryptocurrency needs, from securing your first wallet to evaluating complex token offerings and navigating the regulatory landscape. We meet clients where they are and guide them forward.</p><h3>Security as a Foundation</h3><p>In an industry where security breaches cost billions annually, we prioritize protecting your assets above all else. Every strategy we recommend starts with a robust security framework.</p></div>
+    </div>
+  </section>
+
+  <section class="section faq" id="faq" hidden>
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="kicker kicker-rule">Questions</p>
+        <h2 class="section-title">Frequently asked questions</h2>
+      </div>
+      <div class="faq-list" id="faq-list"></div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-inner reveal">
+        <p class="kicker kicker-center">Enquiries</p>
+        <h2 class="contact-title">Let's Talk Crypto</h2>
+        <p class="contact-sub">Reach out to discuss your cryptocurrency needs. Whether you are just getting started or looking to optimize existing holdings, we are here to help.</p>
+        <div class="contact-actions">
+          <a class="btn btn-accent" href="mailto:contact@cryptocurrencyadvisers.com">Get in Touch</a>
+        </div>
+        <p class="contact-alt">Or write directly to <a href="mailto:contact@cryptocurrencyadvisers.com">contact@cryptocurrencyadvisers.com</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <span class="footer-brand"><span class="glyph" hidden aria-hidden="true">💹</span>Cryptocurrency Advisers</span>
+      <a class="footer-link" href="https://sepehr.ai" target="_blank" rel="noopener">sepehr.ai</a>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span class="num">2026</span> Cryptocurrency Advisers. All rights reserved. Cryptocurrency Advisers provides consulting and educational services only. Cryptocurrency markets are highly volatile and speculative. Nothing on this website constitutes financial, legal, or tax advice. Always conduct your own research and consult qualified professionals before making investment decisions.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const SITE_CONFIG = {"faqs":[{"q":"Do you manage crypto portfolios directly?","a":"We provide consulting and strategic guidance but do not directly manage or take custody of client funds. We help you develop strategies that you execute through your preferred platforms."},{"q":"What cryptocurrencies do you cover?","a":"We cover all major cryptocurrencies and can evaluate emerging tokens on request. Our analysis spans Bitcoin, Ethereum, and the broader altcoin market including DeFi and layer-2 protocols."},{"q":"How do I know if my wallet setup is secure?","a":"We offer security assessments that review your current storage setup, identify vulnerabilities, and recommend improvements. This includes hardware wallet configuration, backup procedures, and operational security practices."},{"q":"Can you help my business accept cryptocurrency payments?","a":"Yes. We advise on payment processor selection, wallet infrastructure, accounting integration, and compliance considerations for businesses looking to accept crypto payments."}],"accentColor":"#059669","accentLight":"#d1fae5","accentDark":"#047857","ctaText":"Get in Touch"};
+/* Template D runtime — nav state, capabilities band, FAQ, reveal animations */
+(function () {
+  'use strict';
+
+  var prefersReduced = window.matchMedia &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* Sticky nav scroll state */
+  var nav = document.getElementById('nav');
+  if (nav) {
+    var scrolledState = null;
+    var ticking = false;
+    var updateNav = function () {
+      var scrolled = window.scrollY > 24;
+      if (scrolled !== scrolledState) {
+        nav.classList.toggle('nav-scrolled', scrolled);
+        scrolledState = scrolled;
+      }
+      ticking = false;
+    };
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        requestAnimationFrame(updateNav);
+        ticking = true;
+      }
+    }, { passive: true });
+    updateNav();
+  }
+
+  /* Capabilities band + service count, derived from the rendered index */
+  var names = [];
+  var nameEls = document.querySelectorAll('.card-name');
+  for (var i = 0; i < nameEls.length; i++) {
+    var t = nameEls[i].textContent.replace(/^\s+|\s+$/g, '');
+    if (t) names.push(t);
+  }
+  var bandList = document.getElementById('band');
+  if (bandList) {
+    var bandWrap = bandList.closest ? bandList.closest('.band') : null;
+    if (names.length) {
+      names.forEach(function (n) {
+        var li = document.createElement('li');
+        li.textContent = n;
+        bandList.appendChild(li);
+      });
+    } else if (bandWrap) {
+      bandWrap.hidden = true;
+    }
+  }
+  var countEl = document.getElementById('service-count');
+  if (countEl && names.length) {
+    countEl.textContent = (names.length < 10 ? '0' : '') + names.length;
+  }
+
+  /* FAQ accordion, rendered from SITE_CONFIG */
+  var cfg = (typeof SITE_CONFIG !== 'undefined' && SITE_CONFIG) || {};
+  var faqs = cfg.faqs || [];
+  var faqSection = document.getElementById('faq');
+  var faqList = document.getElementById('faq-list');
+  if (faqSection && faqList && faqs.length) {
+    faqs.forEach(function (f) {
+      if (!f || !f.q || !f.a) return;
+      var item = document.createElement('details');
+      item.className = 'faq-item';
+      var summary = document.createElement('summary');
+      var q = document.createElement('span');
+      q.className = 'faq-q';
+      q.textContent = f.q;
+      var marker = document.createElement('span');
+      marker.className = 'faq-marker';
+      marker.setAttribute('aria-hidden', 'true');
+      summary.appendChild(q);
+      summary.appendChild(marker);
+      var answer = document.createElement('div');
+      answer.className = 'faq-a';
+      var p = document.createElement('p');
+      p.textContent = f.a;
+      answer.appendChild(p);
+      item.appendChild(summary);
+      item.appendChild(answer);
+      faqList.appendChild(item);
+    });
+    faqSection.hidden = false;
+  }
+
+  /* Slow reveal on scroll */
+  var cards = document.querySelectorAll('.index .card');
+  for (var c = 0; c < cards.length; c++) {
+    cards[c].classList.add('reveal');
+    if (!prefersReduced) {
+      cards[c].style.transitionDelay = Math.min(c * 60, 360) + 'ms';
+    }
+  }
+  var revealEls = document.querySelectorAll('.reveal');
+  if (prefersReduced || !('IntersectionObserver' in window)) {
+    for (var r = 0; r < revealEls.length; r++) {
+      revealEls[r].classList.add('visible');
+    }
+  } else {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    for (var e = 0; e < revealEls.length; e++) {
+      observer.observe(revealEls[e]);
+    }
+  }
+})();
+
+
+</script>
+</body>
+</html>

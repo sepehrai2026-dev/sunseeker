@@ -1,0 +1,9 @@
+node_modules/
+.wrangler/
+.DS_Store
+*.log
+contracts/artifacts/
+contracts/cache/
+contracts/.env
+.env
+.env.*

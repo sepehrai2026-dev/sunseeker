@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terpene Bible — The Complete Guide to Terpenes</title>
+<meta name="description" content="Comprehensive terpene guide. Learn about myrcene, limonene, linalool, pinene, caryophyllene, and terpinolene — aromas, effects, and where to find them.">
+<meta name="keywords" content="terpenes guide, myrcene, limonene, linalool, pinene, caryophyllene, terpinolene, terpene effects, aromatherapy, cannabis terpenes">
+<meta property="og:title" content="Terpene Bible — The Complete Guide to Terpenes">
+<meta property="og:description" content="Comprehensive terpene guide. Learn about myrcene, limonene, linalool, pinene, caryophyllene, and terpinolene — aromas, effects, and where to find them.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://terpenebible.com">
+<link rel="canonical" href="https://terpenebible.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0a0a0a;
+  --bg-raise: #0e0e0e;
+  --bg-card: #101010;
+  --ink: #ececec;
+  --ink-2: #b4b4b4;
+  --ink-3: #7c7c7c;
+  --hairline: #1f1f1f;
+  --hairline-strong: #2c2c2c;
+  --accent: #16a34a;
+  --accent-dark: #15803d;
+  --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
+  --measure: 70ch;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+
+body {
+  font-family: var(--sans);
+  font-size: 1.0625rem;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Grain overlay */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+::selection { background: var(--accent); color: #0a0a0a; }
+
+/* ── Reading progress ── */
+.progress {
+  position: fixed;
+  top: 0; left: 0;
+  height: 2px;
+  width: 100%;
+  z-index: 300;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+}
+
+/* ── Nav ── */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 200;
+  background: rgba(10, 10, 10, 0.72);
+  backdrop-filter: blur(14px) saturate(1.4);
+  -webkit-backdrop-filter: blur(14px) saturate(1.4);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.nav.scrolled { border-bottom-color: var(--hairline); }
+
+.nav-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.wordmark {
+  font-family: var(--serif);
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.wordmark:hover { text-decoration: none; color: var(--ink); }
+
+.wordmark-tick {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: var(--accent);
+  flex: none;
+  display: inline-block;
+}
+
+.nav-meta {
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+
+/* ── Hero ── */
+.hero {
+  position: relative;
+  padding: 11rem 1.5rem 5.5rem;
+  border-bottom: 1px solid var(--hairline);
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  left: 55%;
+  width: 44rem;
+  height: 44rem;
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--accent) 11%, transparent), transparent 70%);
+  pointer-events: none;
+}
+
+.hero-inner {
+  position: relative;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.hero-kicker {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--ink-3);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.kicker-rule {
+  width: 2.5rem;
+  height: 1px;
+  background: var(--accent);
+  display: inline-block;
+  flex: none;
+}
+
+.hero-title {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(2.6rem, 6.4vw, 4.75rem);
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  max-width: 18ch;
+  text-wrap: balance;
+}
+
+.hero-sub {
+  margin-top: 1.75rem;
+  max-width: 58ch;
+  font-size: clamp(1.0625rem, 1.6vw, 1.25rem);
+  line-height: 1.65;
+  color: var(--ink-2);
+}
+
+.hero-foot {
+  margin-top: 3.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--ink-3);
+}
+
+.hero-foot-rule {
+  width: 1px;
+  height: 0.875rem;
+  background: var(--hairline-strong);
+}
+
+/* ── Layout: TOC + main ── */
+.layout {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 15rem minmax(0, 1fr);
+  gap: 4rem;
+  align-items: start;
+}
+
+.toc { padding-top: 5rem; }
+
+.toc-sticky {
+  position: sticky;
+  top: 6rem;
+}
+
+.toc-label {
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--ink-3);
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--hairline);
+  margin-bottom: 1rem;
+}
+
+.toc-list {
+  list-style: none;
+  counter-reset: toc;
+}
+
+.toc-list li { counter-increment: toc; }
+
+.toc-link {
+  display: flex;
+  gap: 0.7rem;
+  align-items: baseline;
+  padding: 0.45rem 0 0.45rem 0.85rem;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: var(--ink-3);
+  border-left: 1px solid var(--hairline);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.toc-link::before {
+  content: counter(toc, decimal-leading-zero);
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  color: var(--ink-3);
+  flex: none;
+}
+
+.toc-link:hover { color: var(--ink); text-decoration: none; }
+
+.toc-link.active {
+  color: var(--ink);
+  border-left-color: var(--accent);
+}
+
+.toc-link.active::before { color: var(--accent); }
+
+/* ── Sections ── */
+.main {
+  padding: 5rem 0 6rem;
+  min-width: 0;
+}
+
+.section {
+  padding: 0 0 5rem;
+  margin-bottom: 5rem;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.section:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  margin-bottom: 2.75rem;
+}
+
+.section-no {
+  font-family: var(--mono);
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 400;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--ink-3);
+  flex: none;
+}
+
+.section-title {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(1.6rem, 3vw, 2.25rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+/* ── Intro / drop cap ── */
+.intro-copy {
+  max-width: var(--measure);
+  font-size: 1.1875rem;
+  line-height: 1.8;
+  color: var(--ink-2);
+}
+
+.intro-copy::first-letter {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 4.4em;
+  line-height: 0.78;
+  float: left;
+  padding: 0.08em 0.14em 0 0;
+  color: var(--accent);
+}
+
+/* ── Index cards (curriculum rows) ── */
+.index-list { counter-reset: entry; }
+
+.index-card {
+  counter-increment: entry;
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr);
+  gap: 1.5rem;
+  padding: 2.25rem 0;
+  border-top: 1px solid var(--hairline);
+  transition: background 0.25s ease;
+}
+
+.index-card:last-child { border-bottom: 1px solid var(--hairline); }
+
+.index-card:hover { background: linear-gradient(90deg, var(--bg-raise), transparent); }
+
+.index-card-no::before {
+  content: counter(entry, decimal-leading-zero);
+  font-family: var(--mono);
+  font-size: 1.5rem;
+  color: var(--ink-3);
+  line-height: 1.2;
+}
+
+.index-card-main { min-width: 0; }
+
+.index-card-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.index-card-name {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.index-card-tag {
+  font-family: var(--mono);
+  font-size: 0.6563rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--accent);
+  border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+  padding: 0.25rem 0.55rem;
+  white-space: nowrap;
+}
+
+.index-card-desc {
+  max-width: var(--measure);
+  color: var(--ink-2);
+  margin-bottom: 1.25rem;
+}
+
+.index-card-points {
+  list-style: none;
+  max-width: var(--measure);
+  margin-bottom: 1.5rem;
+  border-top: 1px solid var(--hairline);
+}
+
+.index-card-points li {
+  position: relative;
+  padding: 0.55rem 0 0.55rem 1.4rem;
+  border-bottom: 1px solid var(--hairline);
+  font-size: 0.9375rem;
+  color: var(--ink-2);
+}
+
+.index-card-points li::before {
+  content: "";
+  position: absolute;
+  left: 0.15rem;
+  top: 1.05rem;
+  width: 0.45rem;
+  height: 1px;
+  background: var(--accent);
+}
+
+.index-card-link {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--ink);
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 0.3rem;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.index-card-link:hover { text-decoration: none; color: var(--accent); }
+
+.link-arrow { transition: transform 0.2s ease; display: inline-block; }
+
+.index-card-link:hover .link-arrow { transform: translateX(4px); }
+
+/* Featured card */
+.card-featured {
+  border-left: 2px solid var(--accent);
+  padding-left: 1.5rem;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--accent) 5%, transparent), transparent 55%);
+}
+
+/* ── Prose (guide + resources) ── */
+.prose { max-width: var(--measure); }
+
+.prose h3 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.375rem;
+  line-height: 1.25;
+  letter-spacing: -0.005em;
+  margin: 2.5rem 0 0.9rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--hairline);
+}
+
+.prose h3:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+
+.prose p { color: var(--ink-2); margin-bottom: 1.1rem; }
+
+.prose p:last-child { margin-bottom: 0; }
+
+.prose a {
+  color: var(--accent);
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
+.prose a:hover { text-decoration: none; border-bottom-color: var(--accent); }
+
+.prose ul, .prose ol { margin: 0 0 1.1rem 1.25rem; color: var(--ink-2); }
+
+/* ── FAQ ── */
+.faq-list {
+  max-width: var(--measure);
+  border-top: 1px solid var(--hairline);
+}
+
+.faq-item { border-bottom: 1px solid var(--hairline); }
+
+.faq-q {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.35rem 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--serif);
+  font-size: 1.1875rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--ink);
+  transition: color 0.2s ease;
+}
+
+.faq-q:hover { color: var(--accent); }
+
+.faq-q:focus-visible { outline: 1px solid var(--accent); outline-offset: 4px; }
+
+.faq-marker {
+  position: relative;
+  flex: none;
+  width: 0.85rem;
+  height: 0.85rem;
+}
+
+.faq-marker::before,
+.faq-marker::after {
+  content: "";
+  position: absolute;
+  background: var(--ink-3);
+  transition: transform 0.3s ease, background 0.2s ease;
+}
+
+.faq-marker::before {
+  left: 0; right: 0; top: 50%;
+  height: 1px;
+  margin-top: -0.5px;
+}
+
+.faq-marker::after {
+  top: 0; bottom: 0; left: 50%;
+  width: 1px;
+  margin-left: -0.5px;
+}
+
+.faq-q[aria-expanded="true"] .faq-marker::after { transform: scaleY(0); }
+
+.faq-q[aria-expanded="true"] .faq-marker::before { background: var(--accent); }
+
+.faq-a {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.35s ease;
+}
+
+.faq-a p {
+  color: var(--ink-2);
+  padding: 0 2.5rem 1.5rem 0;
+  max-width: 62ch;
+}
+
+/* ── Footer ── */
+.footer {
+  border-top: 1px solid var(--hairline);
+  background: var(--bg-raise);
+}
+
+.footer-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 2.5rem;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.footer-brand { max-width: 34rem; }
+
+.wordmark--footer { font-size: 1.25rem; margin-bottom: 1rem; }
+
+.footer-disclaimer {
+  font-size: 0.8125rem;
+  line-height: 1.7;
+  color: var(--ink-3);
+}
+
+.footer-links { display: flex; flex-direction: column; gap: 0.6rem; }
+
+.footer-links-heading {
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--ink-3);
+}
+
+.footer-links a { font-size: 0.875rem; color: var(--ink-2); }
+
+.footer-links a:hover { color: var(--accent); }
+
+.footer-bottom { padding-top: 2rem; }
+
+.footer-bottom p {
+  font-size: 0.75rem;
+  line-height: 1.7;
+  color: var(--ink-3);
+}
+
+/* ── Reveal animations ── */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .reveal.in { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
+
+/* ── Responsive ── */
+@media (max-width: 1023px) {
+  .layout { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .toc { display: none; }
+  .main { padding-top: 4rem; }
+}
+
+@media (max-width: 720px) {
+  body { font-size: 1rem; }
+  .hero { padding: 8.5rem 1.25rem 4rem; }
+  .hero-foot { margin-top: 2.5rem; flex-wrap: wrap; }
+  .layout { padding: 0 1.25rem; }
+  .section { padding-bottom: 3.5rem; margin-bottom: 3.5rem; }
+  .section-head { gap: 1rem; margin-bottom: 2rem; }
+  .index-card { grid-template-columns: minmax(0, 1fr); gap: 0.9rem; padding: 1.75rem 0; }
+  .index-card-no::before { font-size: 1.125rem; }
+  .card-featured { padding-left: 1.1rem; }
+  .faq-a p { padding-right: 1rem; }
+  .footer-inner { padding: 3rem 1.25rem 2rem; }
+  .nav-meta { display: none; }
+}
+
+</style>
+</head>
+<body>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="/" class="wordmark"><span class="wordmark-tick" aria-hidden="true"></span>Terpene Bible</a>
+    <span class="nav-meta">Updated July 2026</span>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="hero-kicker"><span class="kicker-rule" aria-hidden="true"></span>terpenebible.com &middot; A field guide</p>
+    <h1 class="hero-title">The science behind the scent</h1>
+    <p class="hero-sub">A comprehensive guide to terpenes — the aromatic compounds that shape flavor, fragrance, and experience in plants, food, and wellness.</p>
+    <div class="hero-foot">
+      <span>Edition 2026</span>
+      <span class="hero-foot-rule" aria-hidden="true"></span>
+      <span>Last revised July 2026</span>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+
+  <aside class="toc" aria-label="Table of contents">
+    <div class="toc-sticky">
+      <p class="toc-label">Contents</p>
+      <ol class="toc-list" id="toc">
+        <li><a href="#introduction" class="toc-link">Introduction</a></li>
+        <li><a href="#index" class="toc-link">Terpene profiles</a></li>
+        <li><a href="#guide" class="toc-link">Understanding terpenes</a></li>
+        <li><a href="#resources" class="toc-link">Further reading</a></li>
+        <li><a href="#faq" class="toc-link">Questions</a></li>
+      </ol>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <section class="section reveal" id="introduction">
+      <header class="section-head">
+        <span class="section-no">01</span>
+        <h2 class="section-title">Introduction</h2>
+      </header>
+      <p class="intro-copy">Terpenes are aromatic compounds found in virtually every plant. They give lavender its calming scent, citrus its zing, and pine forests their freshness. Beyond aroma, terpenes have documented biological effects — anti-inflammatory, anxiolytic, analgesic, and more. Whether you're into aromatherapy, cannabis, cooking, or botanical science, understanding terpenes transforms how you experience the plant world.</p>
+    </section>
+
+    <section class="section reveal" id="index">
+      <header class="section-head">
+        <span class="section-no">02</span>
+        <h2 class="section-title">Terpene profiles</h2>
+      </header>
+      <div class="index-list">
+        <article class="index-card">
+  <div class="index-card-no" aria-hidden="true"></div>
+  <div class="index-card-main">
+    <header class="index-card-head">
+      <h3 class="index-card-name">Myrcene</h3>
+      <span class="index-card-tag">Earthy</span>
+    </header>
+    <p class="index-card-desc">The most abundant terpene in cannabis and hops, myrcene delivers an earthy, musky aroma with hints of ripe fruit. It's associated with relaxing, sedative effects and is believed to enhance the absorption of other compounds.</p>
+    <ul class="index-card-points">
+      Aroma: earthy, musky, herbal, fruity,Found in: mangoes, hops, lemongrass, thyme,Research: anti-inflammatory, analgesic properties,Boiling point: 167°C (332°F),Most common terpene in modern cannabis
+    </ul>
+    <a class="index-card-link" href="#affiliate-myrcene" target="_blank" rel="noopener nofollow">Learn about myrcene <span class="link-arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+</article>
+
+<article class="index-card">
+  <div class="index-card-no" aria-hidden="true"></div>
+  <div class="index-card-main">
+    <header class="index-card-head">
+      <h3 class="index-card-name">Limonene</h3>
+      <span class="index-card-tag">Citrus</span>
+    </header>
+    <p class="index-card-desc">The quintessential citrus terpene, limonene gives oranges, lemons, and grapefruits their bright, uplifting aroma. It's one of the most well-studied terpenes, with research suggesting mood-elevating and stress-reducing properties.</p>
+    <ul class="index-card-points">
+      Aroma: bright citrus, orange, lemon,Found in: citrus rinds, juniper, rosemary,Research: anxiolytic, anti-depressant effects,Boiling point: 176°C (349°F),High bioavailability when inhaled
+    </ul>
+    <a class="index-card-link" href="#affiliate-limonene" target="_blank" rel="noopener nofollow">Learn about limonene <span class="link-arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+</article>
+
+<article class="index-card">
+  <div class="index-card-no" aria-hidden="true"></div>
+  <div class="index-card-main">
+    <header class="index-card-head">
+      <h3 class="index-card-name">Linalool</h3>
+      <span class="index-card-tag">Floral</span>
+    </header>
+    <p class="index-card-desc">The signature terpene of lavender, linalool has a sweet, floral aroma that has been used for centuries in traditional relaxation and sleep remedies. It's one of the most extensively researched terpenes for calming effects.</p>
+    <ul class="index-card-points">
+      Aroma: floral, sweet, lavender, spicy,Found in: lavender, coriander, mint, cinnamon,Research: anxiolytic, sedative, anti-convulsant,Boiling point: 198°C (388°F),Used extensively in perfumery
+    </ul>
+    <a class="index-card-link" href="#affiliate-linalool" target="_blank" rel="noopener nofollow">Learn about linalool <span class="link-arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+</article>
+
+<article class="index-card">
+  <div class="index-card-no" aria-hidden="true"></div>
+  <div class="index-card-main">
+    <header class="index-card-head">
+      <h3 class="index-card-name">Pinene</h3>
+      <span class="index-card-tag">Fresh</span>
+    </header>
+    <p class="index-card-desc">The most widely occurring terpene in nature, pinene is what makes pine forests smell so refreshing. It exists in two forms — alpha-pinene (pine scent) and beta-pinene (herbal, dill-like). Research suggests it may support respiratory function and alertness.</p>
+    <ul class="index-card-points">
+      Aroma: sharp pine, fresh, woody,Found in: pine needles, rosemary, basil, dill,Research: bronchodilator, anti-inflammatory,Boiling point: 155°C (311°F),Most abundant terpene in the natural world
+    </ul>
+    <a class="index-card-link" href="#affiliate-pinene" target="_blank" rel="noopener nofollow">Learn about pinene <span class="link-arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+</article>
+
+<article class="index-card">
+  <div class="index-card-no" aria-hidden="true"></div>
+  <div class="index-card-main">
+    <header class="index-card-head">
+      <h3 class="index-card-name">Caryophyllene</h3>
+      <span class="index-card-tag">Spicy</span>
+    </header>
+    <p class="index-card-desc">Unique among terpenes, beta-caryophyllene can bind to CB2 cannabinoid receptors, making it the only terpene that acts as a dietary cannabinoid. It delivers a warm, spicy, peppery aroma and is abundant in black pepper, cloves, and cinnamon.</p>
+    <ul class="index-card-points">
+      Aroma: spicy, peppery, woody, warm,Found in: black pepper, cloves, cinnamon, oregano,Research: CB2 receptor agonist, anti-inflammatory,Boiling point: 130°C (266°F),Only terpene that binds cannabinoid receptors
+    </ul>
+    <a class="index-card-link" href="#affiliate-caryophyllene" target="_blank" rel="noopener nofollow">Learn about caryophyllene <span class="link-arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+</article>
+
+<article class="index-card">
+  <div class="index-card-no" aria-hidden="true"></div>
+  <div class="index-card-main">
+    <header class="index-card-head">
+      <h3 class="index-card-name">Terpinolene</h3>
+      <span class="index-card-tag">Complex</span>
+    </header>
+    <p class="index-card-desc">The least common of the major terpenes, terpinolene has a complex, multi-layered aroma that combines floral, herbal, piney, and slightly citrusy notes. It's found in lilacs, tea tree, and nutmeg, and is associated with uplifting, energetic effects.</p>
+    <ul class="index-card-points">
+      Aroma: floral, herbal, piney, citrusy,Found in: lilac, tea tree, nutmeg, apples,Research: antioxidant, mildly sedative at high doses,Boiling point: 186°C (366°F),Rarest of the primary terpenes
+    </ul>
+    <a class="index-card-link" href="#affiliate-terpinolene" target="_blank" rel="noopener nofollow">Learn about terpinolene <span class="link-arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+</article>
+
+      </div>
+    </section>
+
+    <section class="section reveal" id="guide">
+      <header class="section-head">
+        <span class="section-no">03</span>
+        <h2 class="section-title">Understanding terpenes</h2>
+      </header>
+      <div class="prose"><h3>What are terpenes?</h3><p>Terpenes are organic hydrocarbons produced by plants as part of their essential oils. They evolved as defense mechanisms against herbivores and to attract pollinators. Over 20,000 terpenes have been identified, but a handful dominate most plants we interact with daily.</p><h3>The entourage effect</h3><p>Terpenes don't work in isolation. Research suggests they interact synergistically with other plant compounds, modulating and enhancing effects. This 'entourage effect' is why whole-plant extracts often feel different from isolated compounds.</p><h3>How to identify terpenes</h3><p>Your nose is your best tool. Each terpene has a distinct aroma profile — earthy, citrusy, floral, piney, spicy, or herbal. With practice, you can identify dominant terpenes in essential oils, herbs, and other botanical products by scent alone.</p><h3>Terpenes in everyday life</h3><p>You encounter terpenes constantly — in the zest of a lemon (limonene), the scent of a pine tree (pinene), the earthiness of fresh hops (myrcene), and the spice of black pepper (caryophyllene). Understanding them enriches cooking, gardening, and wellness.</p></div>
+    </section>
+
+    <section class="section reveal" id="resources">
+      <header class="section-head">
+        <span class="section-no">04</span>
+        <h2 class="section-title">Further reading</h2>
+      </header>
+      <div class="prose"><h3>PubChem Terpene Database</h3><p>NIH's comprehensive chemical database with detailed molecular data, safety profiles, and research citations for every known terpene. <a href="https://pubchem.ncbi.nlm.nih.gov" target="_blank" rel="noopener">Search PubChem</a></p><h3>Leafly Terpene Guide</h3><p>An accessible introduction to how terpenes influence cannabis experiences, with strain-specific terpene profiles. <a href="https://www.leafly.com/news/cannabis-101/terpenes-the-flavors-of-cannabis-aromatherapy" target="_blank" rel="noopener">Read on Leafly</a></p><h3>National Association for Holistic Aromatherapy</h3><p>Professional resources on aromatherapy, essential oil safety, and the therapeutic applications of plant compounds. <a href="https://naha.org" target="_blank" rel="noopener">Visit NAHA</a></p></div>
+    </section>
+
+    <section class="section reveal" id="faq">
+      <header class="section-head">
+        <span class="section-no">05</span>
+        <h2 class="section-title">Questions, answered</h2>
+      </header>
+      <div class="faq-list" id="faq-list"></div>
+    </section>
+
+  </main>
+
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="wordmark wordmark--footer"><span class="wordmark-tick" aria-hidden="true"></span>Terpene Bible</span>
+        <p class="footer-disclaimer">TerpeneBible.com provides educational content about terpenes and aromatic compounds. This is not medical advice. Consult a healthcare professional before using terpenes therapeutically. We may earn commissions through affiliate links.</p>
+      </div>
+      <div class="footer-links">
+        <span class="footer-links-heading">Elsewhere</span>
+        <a href="https://sepehr.ai" target="_blank" rel="noopener">sepehr.ai</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Terpene Bible. All rights reserved. Some links on this site are affiliate links. We may earn a commission if you make a purchase at no extra cost to you.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const SITE_CONFIG = {"faqs":[{"q":"Are terpenes safe?","a":"Terpenes are naturally occurring compounds found in many foods and plants you already consume daily. They're Generally Recognized As Safe (GRAS) by the FDA in food applications. However, concentrated essential oils should be used with care — some can irritate skin or mucous membranes if used undiluted."},{"q":"Can I use terpenes for aromatherapy?","a":"Yes, terpenes are the active aromatic compounds in essential oils used for aromatherapy. Lavender oil's calming effect comes from linalool, citrus oils' uplifting quality from limonene. Use a diffuser or dilute in a carrier oil for topical application."},{"q":"What is the entourage effect?","a":"The entourage effect is the theory that terpenes, cannabinoids, and other plant compounds work together synergistically — producing effects that differ from any single compound alone. It's why whole-plant products often feel different from isolated extracts."},{"q":"How are terpenes different from essential oils?","a":"Essential oils are complex mixtures of many compounds extracted from plants, while terpenes are specific individual molecules within those oils. Lavender essential oil contains linalool, linalyl acetate, and dozens of other compounds — linalool alone is a single terpene."},{"q":"Do terpenes have medical benefits?","a":"Preclinical research has shown promising anti-inflammatory, anxiolytic, analgesic, and antimicrobial properties for various terpenes. However, most human clinical trials are still ongoing. Terpenes should not be used as a substitute for medical treatment."}],"accentColor":"#16a34a","accentLight":"#dcfce7","accentDark":"#15803d","ctaText":""};
+document.addEventListener('DOMContentLoaded', () => {
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Accent color (runtime fallback; primary value is compiled into CSS)
+  if (SITE_CONFIG.accentColor) {
+    document.documentElement.style.setProperty('--accent', SITE_CONFIG.accentColor);
+    document.documentElement.style.setProperty('--accent-dark', SITE_CONFIG.accentDark || SITE_CONFIG.accentColor);
+  }
+
+  // Rebuild feature lists: build injects features as a comma-joined string
+  // (items are joined with "," while commas inside a feature are ", ").
+  document.querySelectorAll('.index-card-points').forEach(ul => {
+    if (ul.querySelector('li')) return;
+    const raw = ul.textContent.trim();
+    ul.textContent = '';
+    if (!raw) { ul.remove(); return; }
+    raw.split(/,(?=\S)/).forEach(part => {
+      const li = document.createElement('li');
+      li.textContent = part.trim();
+      ul.appendChild(li);
+    });
+  });
+
+  // Reading progress hairline
+  const progress = document.getElementById('progress');
+  if (progress) {
+    let ticking = false;
+    const update = () => {
+      const doc = document.documentElement;
+      const max = doc.scrollHeight - window.innerHeight;
+      const ratio = max > 0 ? Math.min(window.scrollY / max, 1) : 0;
+      progress.style.transform = 'scaleX(' + ratio + ')';
+      ticking = false;
+    };
+    window.addEventListener('scroll', () => {
+      if (!ticking) { ticking = true; requestAnimationFrame(update); }
+    }, { passive: true });
+    update();
+  }
+
+  // Nav hairline on scroll
+  const nav = document.getElementById('nav');
+  if (nav) {
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+  }
+
+  // Table of contents scroll tracking
+  const tocLinks = Array.from(document.querySelectorAll('.toc-link'));
+  const sections = tocLinks
+    .map(link => document.getElementById(link.getAttribute('href').slice(1)))
+    .filter(Boolean);
+  if (sections.length && 'IntersectionObserver' in window) {
+    const setActive = id => {
+      tocLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+      });
+    };
+    const visible = new Map();
+    const spy = new IntersectionObserver(entries => {
+      entries.forEach(e => visible.set(e.target.id, e.isIntersecting));
+      const current = sections.find(s => visible.get(s.id));
+      if (current) setActive(current.id);
+    }, { rootMargin: '-15% 0px -55% 0px' });
+    sections.forEach(s => spy.observe(s));
+  }
+
+  // Section reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  if (revealEls.length && !reducedMotion && 'IntersectionObserver' in window) {
+    const revealer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          revealer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -5% 0px' });
+    revealEls.forEach(el => revealer.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('in'));
+  }
+
+  // FAQ accordion
+  const faqList = document.getElementById('faq-list');
+  if (SITE_CONFIG.faqs && SITE_CONFIG.faqs.length && faqList) {
+    SITE_CONFIG.faqs.forEach((faq, i) => {
+      const item = document.createElement('div');
+      item.className = 'faq-item';
+      const qId = 'faq-q-' + i;
+      const aId = 'faq-a-' + i;
+      const btn = document.createElement('button');
+      btn.className = 'faq-q';
+      btn.id = qId;
+      btn.setAttribute('aria-expanded', 'false');
+      btn.setAttribute('aria-controls', aId);
+      const label = document.createElement('span');
+      label.textContent = faq.q;
+      const marker = document.createElement('span');
+      marker.className = 'faq-marker';
+      marker.setAttribute('aria-hidden', 'true');
+      btn.appendChild(label);
+      btn.appendChild(marker);
+      const answer = document.createElement('div');
+      answer.className = 'faq-a';
+      answer.id = aId;
+      answer.setAttribute('role', 'region');
+      answer.setAttribute('aria-labelledby', qId);
+      const p = document.createElement('p');
+      p.textContent = faq.a;
+      answer.appendChild(p);
+      btn.addEventListener('click', () => {
+        const open = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!open));
+        answer.style.maxHeight = open ? '0px' : answer.scrollHeight + 'px';
+      });
+      item.appendChild(btn);
+      item.appendChild(answer);
+      faqList.appendChild(item);
+    });
+  }
+});
+
+
+</script>
+</body>
+</html>

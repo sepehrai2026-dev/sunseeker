@@ -1,0 +1,138 @@
+{
+  "template": "b",
+  "domain": "digitalassetreview.io",
+  "name": "Digital Asset Review",
+  "logoIcon": "📊",
+  "title": "Digital Asset Review — DeFi, Layer 2s, and Digital Asset Analysis",
+  "metaDescription": "Independent reviews of DeFi protocols, Layer 2 solutions, NFT platforms, stablecoins, bridges, and real-world assets. In-depth analysis for informed investors.",
+  "metaKeywords": "defi review, layer 2, arbitrum, optimism, nft platforms, stablecoin comparison, bridge protocols, real world assets, rwa crypto",
+  "headline": "Reviews you can actually trust",
+  "subheadline": "Independent, technical analysis of DeFi protocols, Layer 2 solutions, NFT platforms, and emerging digital asset categories — no sponsored content, no token bags.",
+  "lastUpdated": "July 2026",
+  "year": "2026",
+  "introCopy": "The digital asset space moves at breakneck speed. New protocols launch daily, Layer 2s compete for dominance, and entirely new asset categories like RWAs are emerging. We cut through the noise with independent, technically grounded reviews that help you understand what these protocols actually do, how they compare, and where the real risks lie.",
+  "topicsTitle": "Latest reviews",
+  "guideTitle": "How we evaluate digital assets",
+  "guideContent": "<h3>Technical architecture</h3><p>We examine the underlying technology — consensus mechanisms, smart contract design, security audits, and code quality. A protocol is only as strong as its foundation.</p><h3>Team and governance</h3><p>Who built it, who controls it, and how are decisions made? We look at team backgrounds, token distribution, DAO governance participation, and treasury management.</p><h3>Adoption metrics</h3><p>Real usage matters more than market cap. We track TVL, daily active users, transaction volume, and developer activity to separate genuine traction from vapor.</p><h3>Risk assessment</h3><p>Every protocol has risks. We identify smart contract risks, centralization vectors, regulatory exposure, and economic attack surfaces so you can make informed decisions.</p>",
+  "resourcesTitle": "Analysis tools",
+  "resourcesContent": "<h3>DeFi Llama</h3><p>The gold standard for DeFi analytics. Track TVL, yields, stablecoin flows, and protocol comparisons across every chain. <a href=\"https://defillama.com\" target=\"_blank\" rel=\"noopener\">Visit DeFi Llama</a></p><h3>L2Beat</h3><p>The definitive resource for Layer 2 analysis. Detailed risk assessments, TVL tracking, and technical breakdowns of every rollup and validium. <a href=\"https://l2beat.com\" target=\"_blank\" rel=\"noopener\">Visit L2Beat</a></p><h3>Dune Analytics</h3><p>Community-built dashboards with on-chain data for virtually every protocol. Create your own queries or explore thousands of existing analyses. <a href=\"https://dune.com\" target=\"_blank\" rel=\"noopener\">Visit Dune Analytics</a></p>",
+  "disclaimer": "DigitalAssetReview.io provides independent analysis of digital asset protocols. This is not financial advice. Always do your own research. We may earn commissions through affiliate links.",
+  "affiliateDisclosure": "Some links on this site are affiliate links. We may earn a commission if you make a purchase at no extra cost to you.",
+  "accentColor": "#0891b2",
+  "accentLight": "#cffafe",
+  "accentDark": "#0e7490",
+  "items": [
+    {
+      "name": "DeFi Protocols (Aave, Uniswap)",
+      "icon": "🏛️",
+      "tag": "DeFi",
+      "description": "The two pillars of decentralized finance. Aave dominates lending with over $20B in deposits, while Uniswap pioneered automated market making and still processes the most DEX volume. We compare their architectures, fee models, and risk profiles.",
+      "features": [
+        "Aave V3 multi-chain lending analysis",
+        "Uniswap V4 hooks and concentrated liquidity",
+        "Fee structures and revenue comparison",
+        "Smart contract audit history",
+        "Governance and token utility breakdown"
+      ],
+      "url": "#affiliate-defi-protocols",
+      "cta": "Read DeFi review"
+    },
+    {
+      "name": "Layer 2s (Arbitrum, Optimism)",
+      "icon": "🔗",
+      "tag": "Infrastructure",
+      "description": "Layer 2 rollups are scaling Ethereum by processing transactions off-chain while inheriting its security. Arbitrum and Optimism lead the space, but they take fundamentally different approaches to fraud proofs, governance, and ecosystem development.",
+      "features": [
+        "Optimistic rollup architecture compared",
+        "Arbitrum Nitro vs. OP Stack technical deep dive",
+        "Fee savings vs. Ethereum mainnet",
+        "Decentralization progress and sequencer risk",
+        "Ecosystem and developer adoption metrics"
+      ],
+      "url": "#affiliate-layer2-review",
+      "cta": "Read L2 review"
+    },
+    {
+      "name": "NFT Platforms",
+      "icon": "🎨",
+      "tag": "Digital Collectibles",
+      "description": "The NFT market has evolved far beyond profile pictures. We review the leading platforms for buying, selling, and creating NFTs — comparing fees, creator tools, royalty enforcement, and chain support.",
+      "features": [
+        "Marketplace fee and royalty comparisons",
+        "Creator tools and minting platforms",
+        "Cross-chain NFT support",
+        "On-chain vs. off-chain metadata storage",
+        "Market volume and liquidity analysis"
+      ],
+      "url": "#affiliate-nft-platforms",
+      "cta": "Read NFT review"
+    },
+    {
+      "name": "Stablecoin Comparison",
+      "icon": "💵",
+      "tag": "Stablecoins",
+      "description": "Stablecoins are the backbone of DeFi, but they're not all created equal. We compare USDT, USDC, DAI, and newer entrants on reserves transparency, peg stability, regulatory status, and decentralization.",
+      "features": [
+        "Reserve backing and audit transparency",
+        "Peg stability during market stress",
+        "Regulatory status by jurisdiction",
+        "Centralized vs. algorithmic vs. CDP models",
+        "Integration across DeFi protocols"
+      ],
+      "url": "#affiliate-stablecoins",
+      "cta": "Read stablecoin review"
+    },
+    {
+      "name": "Bridge Protocols",
+      "icon": "🌉",
+      "tag": "Cross-Chain",
+      "description": "Bridges let you move assets between blockchains, but they've been the source of billions in hacks. We analyze leading bridge protocols on security architecture, supported chains, fees, and historical track record.",
+      "features": [
+        "Security architecture comparisons",
+        "Hack history and post-mortem analysis",
+        "Supported chains and asset coverage",
+        "Fee and speed benchmarks",
+        "Trust assumptions and verification methods"
+      ],
+      "url": "#affiliate-bridge-protocols",
+      "cta": "Read bridge review"
+    },
+    {
+      "name": "Real World Assets (RWA)",
+      "icon": "🏢",
+      "tag": "RWA",
+      "description": "Tokenizing real-world assets — treasuries, real estate, commodities, private credit — is one of the fastest-growing sectors in crypto. We review the platforms and protocols bringing traditional assets on-chain.",
+      "features": [
+        "Treasury tokenization (Ondo, Backed)",
+        "On-chain private credit markets",
+        "Real estate tokenization platforms",
+        "Regulatory framework and compliance",
+        "Institutional adoption and TVL growth"
+      ],
+      "url": "#affiliate-rwa-review",
+      "cta": "Read RWA review"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do you ensure reviews are independent?",
+      "a": "We do not accept payment for reviews, hold tokens of protocols we review during the analysis period, or allow protocols to preview our findings. Revenue comes from affiliate links to exchanges and tools, not from the projects themselves."
+    },
+    {
+      "q": "How often are reviews updated?",
+      "a": "We update reviews when significant changes occur — major protocol upgrades, security incidents, governance changes, or market shifts. Each review shows its last-updated date so you know how current the analysis is."
+    },
+    {
+      "q": "Should I invest based on these reviews?",
+      "a": "No. Our reviews are educational analysis, not financial advice. Use them as one input in your own research process. We identify strengths and risks, but your investment decisions should factor in your personal risk tolerance, portfolio allocation, and financial situation."
+    },
+    {
+      "q": "Why don't you cover every protocol?",
+      "a": "We focus on protocols with significant TVL, active development, and meaningful adoption. Covering everything would dilute quality. If a protocol you're interested in isn't listed, it may not yet meet our coverage threshold — or it may be in our pipeline."
+    },
+    {
+      "q": "What does TVL mean and why does it matter?",
+      "a": "Total Value Locked (TVL) measures how much capital is deposited in a DeFi protocol. It's a rough proxy for trust and adoption — if people are willing to lock significant funds in a smart contract, it suggests confidence in the protocol's security and utility."
+    }
+  ]
+}

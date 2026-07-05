@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>BARCADE — Scan. Create. Own.</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%2308080c'/><g fill='%23a855f7'><rect x='18' y='25' width='6' height='50'/><rect x='30' y='25' width='3' height='50'/><rect x='39' y='25' width='9' height='50'/><rect x='54' y='25' width='4' height='50'/><rect x='64' y='25' width='7' height='50'/><rect x='77' y='25' width='3' height='50'/></g></svg>">
+</head>
+<body>
+  <div id="app">
+
+    <header id="header">
+      <div id="logo">
+        <div id="logo-icon">◆</div>
+        <span id="logo-text">BARCADE</span>
+      </div>
+      <button id="wallet-btn" onclick="App.connectWallet()">
+        <span id="wallet-icon">⬡</span>
+        <span id="wallet-text">Connect Wallet</span>
+      </button>
+    </header>
+
+    <!-- HOME -->
+    <div id="screen-home" class="screen active">
+      <div id="hero">
+        <div id="hero-glow"></div>
+        <div id="hero-diamond">◆</div>
+        <h1>Every product is art<br>waiting to be discovered</h1>
+        <p>Scan any barcode. Watch it become a one-of-a-kind piece of art. Claim your edition free.</p>
+        <button id="scan-btn" onclick="App.startScan()">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 7V5a2 2 0 012-2h2M17 3h2a2 2 0 012 2v2M21 17v2a2 2 0 01-2 2h-2M7 21H5a2 2 0 01-2-2v-2"/>
+            <line x1="7" y1="12" x2="17" y2="12"/>
+          </svg>
+          Scan a Product
+        </button>
+        <button id="manual-btn" onclick="App.showManualEntry()">or enter UPC manually</button>
+      </div>
+
+      <div id="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7V5a2 2 0 012-2h2M17 3h2a2 2 0 012 2v2M21 17v2a2 2 0 01-2 2h-2M7 21H5a2 2 0 01-2-2v-2"/><line x1="8" y1="8" x2="8" y2="16"/><line x1="11" y1="8" x2="11" y2="16"/><line x1="14" y1="8" x2="14" y2="16"/><line x1="16.5" y1="8" x2="16.5" y2="16"/></svg></div>
+            <h3>Scan</h3>
+            <p>Point your camera at any product barcode</p>
+          </div>
+          <div class="step">
+            <div class="step-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 010 18"/><path d="M12 7a5 5 0 010 10"/></svg></div>
+            <h3>Create</h3>
+            <p>One-of-a-kind generative art, born from the code itself</p>
+          </div>
+          <div class="step">
+            <div class="step-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3h12l3 6-9 12L3 9z"/><path d="M3 9h18M9 3l3 6 3-6M12 21L9 9M12 21l3-12"/></svg></div>
+            <h3>Own</h3>
+            <p>Claim your edition free — limited copies per product</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="rarity-section">
+        <h2>Rarity Tiers</h2>
+        <div class="rarity-grid">
+          <div class="rarity-card legendary">
+            <div class="rarity-badge">LEGENDARY</div>
+            <div class="rarity-count">1 mint only</div>
+            <div class="rarity-chance">~2% of products</div>
+          </div>
+          <div class="rarity-card epic">
+            <div class="rarity-badge">EPIC</div>
+            <div class="rarity-count">5 mints max</div>
+            <div class="rarity-chance">~5% of products</div>
+          </div>
+          <div class="rarity-card rare">
+            <div class="rarity-badge">RARE</div>
+            <div class="rarity-count">10 mints max</div>
+            <div class="rarity-chance">~13% of products</div>
+          </div>
+          <div class="rarity-card uncommon">
+            <div class="rarity-badge">UNCOMMON</div>
+            <div class="rarity-count">25 mints max</div>
+            <div class="rarity-chance">~25% of products</div>
+          </div>
+          <div class="rarity-card common">
+            <div class="rarity-badge">COMMON</div>
+            <div class="rarity-count">100 mints max</div>
+            <div class="rarity-chance">~55% of products</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCANNER -->
+    <div id="screen-scanner" class="screen">
+      <button class="back-btn" onclick="App.goHome()">← Back</button>
+      <div id="scanner-container">
+        <video id="scan-video" playsinline muted autoplay></video>
+        <div id="scanner-frame">
+          <div class="corner tl"></div>
+          <div class="corner tr"></div>
+          <div class="corner bl"></div>
+          <div class="corner br"></div>
+          <div id="scan-line"></div>
+        </div>
+        <button id="torch-btn" class="hidden" onclick="App.toggleTorch()" aria-label="Toggle flashlight">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L4.5 13.5H11L10 22l8.5-11.5H12z"/></svg>
+        </button>
+        <p id="scanner-hint">Starting camera…</p>
+        <div id="camera-fallback" class="hidden">
+          <label id="photo-btn" class="photo-btn">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg>
+            Photograph the barcode
+            <input type="file" accept="image/*" capture="environment" onchange="App.scanFromPhoto(this)" hidden>
+          </label>
+        </div>
+      </div>
+      <div id="manual-entry" class="hidden">
+        <input type="text" id="upc-input" placeholder="Enter barcode number (e.g. 012345678905)" maxlength="14" inputmode="numeric">
+        <button id="upc-submit" onclick="App.submitManualUPC()">Generate Art</button>
+      </div>
+    </div>
+
+    <!-- ART REVEAL -->
+    <div id="screen-art" class="screen">
+      <button class="back-btn" onclick="App.goHome()">← Back</button>
+      <div id="art-container">
+        <div id="art-frame">
+          <div id="art-display"></div>
+        </div>
+        <div id="art-info">
+          <div id="art-name"></div>
+          <div id="art-upc-display"></div>
+          <div id="product-info" class="hidden"></div>
+          <div id="art-rarity">
+            <span id="rarity-badge-display"></span>
+            <span id="rarity-edition"></span>
+          </div>
+          <div id="rarity-breakdown" class="hidden"></div>
+          <div id="mint-progress">
+            <div id="mint-progress-bar">
+              <div id="mint-progress-fill"></div>
+            </div>
+            <div id="mint-progress-text"></div>
+          </div>
+          <button id="mint-btn" onclick="App.mint()">
+            <span id="mint-btn-text">Mint to Wallet — Free</span>
+            <span id="mint-btn-loading" class="hidden">Minting...</span>
+          </button>
+          <div id="mint-status"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LOOKUP -->
+    <div id="screen-lookup" class="screen">
+      <button class="back-btn" onclick="App.goHome()">← Back</button>
+      <div id="lookup-container">
+        <h2>Check Mint Availability</h2>
+        <p>Enter any UPC code to see how many mints remain</p>
+        <div id="lookup-input-wrap">
+          <input type="text" id="lookup-input" placeholder="Enter UPC code" maxlength="13" inputmode="numeric">
+          <button onclick="App.lookupUPC()">Check</button>
+        </div>
+        <div id="lookup-result" class="hidden"></div>
+      </div>
+    </div>
+
+    <div id="toast" class="hidden"></div>
+
+    <nav id="nav">
+      <button class="nav-btn active" onclick="App.goHome()" data-screen="home">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+        <span>Home</span>
+      </button>
+      <button class="nav-btn" onclick="App.startScan()" data-screen="scanner">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7V5a2 2 0 012-2h2M17 3h2a2 2 0 012 2v2M21 17v2a2 2 0 01-2 2h-2M7 21H5a2 2 0 01-2-2v-2"/><line x1="7" y1="12" x2="17" y2="12"/></svg>
+        <span>Scan</span>
+      </button>
+      <button class="nav-btn" onclick="App.showLookup()" data-screen="lookup">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <span>Lookup</span>
+      </button>
+    </nav>
+
+  </div>
+
+  <script src="art.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

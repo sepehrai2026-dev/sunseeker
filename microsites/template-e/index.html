@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{site.title}}</title>
+<meta name="description" content="{{site.metaDescription}}">
+<meta name="keywords" content="{{site.metaKeywords}}">
+<meta property="og:title" content="{{site.title}}">
+<meta property="og:description" content="{{site.metaDescription}}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://{{site.domain}}">
+<link rel="canonical" href="https://{{site.domain}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* {{styles}} */
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+
+<nav class="nav" id="nav" aria-label="Main">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">{{site.name}}</a>
+    <div class="nav-links">
+      <a href="#stories">Stories</a>
+      <a href="#about">About</a>
+      <a href="#subscribe" class="nav-cta">Subscribe</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <canvas class="hero-field" id="hero-field" aria-hidden="true"></canvas>
+  <div class="hero-nebula" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="kicker"><span class="kicker-rule" aria-hidden="true"></span>{{site.tagline}}</p>
+    <h1 class="hero-headline">{{site.headline}}</h1>
+    <p class="hero-sub">{{site.subheadline}}</p>
+  </div>
+  <div class="hero-foot" aria-hidden="true">
+    <span class="mono">{{site.name}}</span>
+    <span class="mono">VOL. {{site.year}}</span>
+    <span class="mono hero-scroll">SCROLL<span class="scroll-line"></span></span>
+  </div>
+</header>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <div class="ticker-group">
+      <span>{{site.tagline}}</span><span class="tick-sep">/</span>
+      <span>{{site.name}}</span><span class="tick-sep">/</span>
+      <span>{{site.tagline}}</span><span class="tick-sep">/</span>
+      <span>{{site.name}}</span><span class="tick-sep">/</span>
+      <span>{{site.tagline}}</span><span class="tick-sep">/</span>
+      <span>{{site.name}}</span><span class="tick-sep">/</span>
+    </div>
+    <div class="ticker-group">
+      <span>{{site.tagline}}</span><span class="tick-sep">/</span>
+      <span>{{site.name}}</span><span class="tick-sep">/</span>
+      <span>{{site.tagline}}</span><span class="tick-sep">/</span>
+      <span>{{site.name}}</span><span class="tick-sep">/</span>
+      <span>{{site.tagline}}</span><span class="tick-sep">/</span>
+      <span>{{site.name}}</span><span class="tick-sep">/</span>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+  <section class="section stories" id="stories">
+    <div class="section-head">
+      <span class="sec-num mono" aria-hidden="true">01</span>
+      <h2 class="sec-title">{{site.storiesTitle}}</h2>
+      <span class="sec-rule" aria-hidden="true"></span>
+    </div>
+    <div class="rows">
+      {{items}}
+    </div>
+  </section>
+
+  <section class="section about" id="about">
+    <div class="section-head">
+      <span class="sec-num mono" aria-hidden="true">02</span>
+      <h2 class="sec-title">{{site.aboutTitle}}</h2>
+      <span class="sec-rule" aria-hidden="true"></span>
+    </div>
+    <div class="about-content">{{site.aboutContent}}</div>
+  </section>
+
+  <section class="section faq" id="faq" hidden>
+    <div class="section-head">
+      <span class="sec-num mono" aria-hidden="true">03</span>
+      <h2 class="sec-title">Questions</h2>
+      <span class="sec-rule" aria-hidden="true"></span>
+    </div>
+    <div class="faq-list" id="faq-list"></div>
+  </section>
+
+  <section class="section subscribe" id="subscribe">
+    <div class="section-head">
+      <span class="sec-num mono" aria-hidden="true">04</span>
+      <h2 class="sec-title">Subscribe</h2>
+      <span class="sec-rule" aria-hidden="true"></span>
+    </div>
+    <div class="subscribe-inner">
+      <h3 class="sub-headline">{{site.newsletterTitle}}</h3>
+      <p class="sub-text">{{site.newsletterSub}}</p>
+      <a class="sub-cta" href="mailto:contact@{{site.domain}}?subject=Subscribe">Subscribe via email</a>
+      <p class="sub-addr mono">Write to contact@{{site.domain}} and we will keep you posted.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <span class="footer-logo">{{site.name}}</span>
+      <a href="https://sepehr.ai" class="footer-link mono" target="_blank" rel="noopener">sepehr.ai</a>
+    </div>
+    <div class="footer-bottom mono">
+      <p>&copy; {{site.year}} {{site.name}}. {{site.disclaimer}}</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const SITE_CONFIG = {{site._jsonBlob}};
+// {{script}}
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+{
+  "template": "a",
+  "domain": "btcrussia.io",
+  "name": "BTC Russia",
+  "logoIcon": "🇷🇺",
+  "title": "BTC Russia — Crypto Access Guide for Russia",
+  "metaDescription": "How to buy cryptocurrency in Russia in 2026. P2P platforms, ruble on-ramps, and the current regulatory landscape.",
+  "metaKeywords": "buy bitcoin Russia, crypto exchange Russia, P2P crypto RUB, bitcoin Russia legal",
+  "headline": "Cryptocurrency access in Russia",
+  "subheadline": "Crypto platforms available in Russia — P2P ruble on-ramps, regulatory status, and practical access methods.",
+  "lastUpdated": "July 2026",
+  "year": "2026",
+  "introCopy": "Russia's crypto landscape is complex — the country legalized cryptocurrency as property in 2020 but has restricted its use for payments. International sanctions have limited access to some global exchanges, making P2P platforms and domestic services the primary access points for Russian users.",
+  "comparisonTitle": "Available crypto platforms",
+  "guideTitle": "Buying crypto in Russia",
+  "guideContent": "<h3>Legal status</h3><p>Russia's 'Digital Financial Assets' law (2020) recognizes crypto as property but prohibits using it for payments. Trading and holding are legal. Mining was legalized with tax requirements. The regulatory framework continues to evolve.</p><h3>Sanctions impact</h3><p>Many global exchanges have restricted or exited the Russian market due to international sanctions. Available options are primarily P2P platforms and exchanges that continue to serve Russian users. Always check the current status of platform availability.</p><h3>Ruble on-ramps</h3><p>P2P trading with ruble payments via bank transfer (Sberbank, Tinkoff) remains the most common on-ramp. Some platforms support SBP (Faster Payments System) for instant ruble deposits.</p>",
+  "disclaimer": "BTCRussia.io provides informational content. This is not legal or financial advice. Cryptocurrency regulations and sanctions are subject to change. Comply with all applicable laws.",
+  "affiliateDisclosure": "Some links are affiliate links.",
+  "accentColor": "#1d4ed8",
+  "accentLight": "#dbeafe",
+  "accentDark": "#1e40af",
+  "items": [
+    {
+      "name": "Bybit P2P",
+      "icon": "🔶",
+      "tagline": "Popular exchange for Russian users",
+      "description": "Bybit has become one of the most popular exchanges for Russian users, with an active P2P marketplace supporting ruble payments via Russian banks including Sberbank and Tinkoff.",
+      "features": ["RUB P2P trading", "Sberbank and Tinkoff support", "SBP (fast transfers)", "300+ crypto assets", "Competitive P2P rates"],
+      "pricing": "<strong>0% fee</strong> on P2P trades",
+      "url": "#affiliate-bybit",
+      "cta": "Visit Bybit",
+      "featured": true
+    },
+    {
+      "name": "OKX P2P",
+      "icon": "⭕",
+      "tagline": "Major exchange with RUB support",
+      "description": "OKX maintains P2P trading with ruble support. High liquidity, verified merchants, and multiple payment options make it a reliable on-ramp for Russian users.",
+      "features": ["RUB P2P trading", "Bank transfer support", "Verified merchants", "Escrow protection", "Large spot market"],
+      "pricing": "<strong>0% fee</strong> on P2P trades",
+      "url": "#affiliate-okx",
+      "cta": "Visit OKX"
+    },
+    {
+      "name": "Garantex",
+      "icon": "🟠",
+      "tagline": "Russia-focused exchange",
+      "description": "Garantex is a Russia-based exchange that operates within the Russian regulatory framework. Note: Garantex has been sanctioned by OFAC, which limits its utility for international transfers.",
+      "features": ["Ruble deposits and withdrawals", "Russia-based operations", "P2P and spot trading", "Lower KYC requirements", "SBP and bank transfer"],
+      "pricing": "Maker <strong>0.10%</strong> / Taker <strong>0.10%</strong>",
+      "url": "#affiliate-garantex",
+      "cta": "Visit Garantex"
+    },
+    {
+      "name": "Uniswap (DEX)",
+      "icon": "🦄",
+      "tagline": "Decentralized, sanctions-resistant",
+      "description": "Decentralized exchanges operate without centralized control and cannot enforce geographic restrictions. Connect a self-custody wallet and trade directly. No KYC or identity verification required.",
+      "features": ["No geographic restrictions", "No KYC required", "Self-custody trading", "Cannot be sanctioned", "Access any ERC-20 token"],
+      "pricing": "<strong>0.3%</strong> swap fee",
+      "url": "#affiliate-uniswap",
+      "cta": "Visit Uniswap"
+    }
+  ],
+  "faqs": [
+    {"q": "Is crypto legal in Russia?", "a": "Yes. Russia legalized cryptocurrency as property under the Digital Financial Assets law in 2020. You can legally buy, sell, hold, and mine crypto. However, using crypto for payments within Russia is prohibited."},
+    {"q": "Can I use Binance in Russia?", "a": "Binance sold its Russian operations to CommEX in 2023. Russian users should check current availability of global exchanges, as the situation changes frequently due to sanctions and regulatory developments."},
+    {"q": "How do I buy crypto with rubles?", "a": "P2P platforms on Bybit and OKX are the most common method. You find a seller, pay via bank transfer (Sberbank, Tinkoff, SBP), and the crypto is released from escrow once payment is confirmed."},
+    {"q": "Are there tax obligations?", "a": "Yes. Crypto is treated as property and gains are subject to personal income tax (13% for residents, 30% for non-residents). You must declare crypto holdings and transactions in your tax return."}
+  ]
+}

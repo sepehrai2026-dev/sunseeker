@@ -1,0 +1,132 @@
+{
+  "template": "a",
+  "domain": "madamecbd.com",
+  "name": "Madame CBD",
+  "logoIcon": "🌿",
+  "title": "Madame CBD — Best CBD Products for Women (2026)",
+  "metaDescription": "Compare the best CBD products for women in 2026. Expert reviews of Charlotte's Web, Joy Organics, Lazarus Naturals, CBDistillery, and Medterra.",
+  "metaKeywords": "CBD for women, best CBD products, CBD oil reviews, women's wellness CBD, Charlotte's Web review, Joy Organics review",
+  "headline": "CBD wellness, curated for women",
+  "subheadline": "Independent reviews of the best CBD brands — tested for quality, potency, and transparency so you can find products that actually work.",
+  "lastUpdated": "July 2026",
+  "year": "2026",
+  "introCopy": "The CBD market is flooded with thousands of products making bold claims. Most aren't third-party tested, many contain less CBD than advertised, and some contain contaminants. We've cut through the noise to compare the most reputable CBD brands on quality, transparency, formulation, and value — with a focus on products that address women's wellness needs.",
+  "comparisonTitle": "Top CBD brands compared",
+  "guideTitle": "How to choose the right CBD product",
+  "guideContent": "<h3>Full-spectrum vs. broad-spectrum vs. isolate</h3><p>Full-spectrum CBD contains all cannabinoids including trace THC (under 0.3%), which may enhance effectiveness through the \"entourage effect.\" Broad-spectrum removes THC but keeps other cannabinoids. Isolate is pure CBD only. If you're subject to drug testing, choose broad-spectrum or isolate.</p><h3>Third-party testing is non-negotiable</h3><p>Reputable brands publish Certificates of Analysis (COAs) from independent labs. These verify CBD content, confirm THC levels are within legal limits, and screen for pesticides, heavy metals, and solvents. Never buy from a brand that doesn't provide current COAs.</p><h3>Dosing and delivery methods</h3><p>Start low (10-15mg) and increase gradually. Tinctures offer precise dosing and fast absorption. Capsules provide consistent doses. Topicals target localized discomfort. Gummies are convenient but take longer to take effect due to digestion.</p><h3>What to look for on the label</h3><p>Check for total CBD per container (not just per serving), hemp source, extraction method (CO2 is preferred), and a clear list of other ingredients. Organic hemp and clean formulations without artificial additives are ideal.</p>",
+  "disclaimer": "MadameCBD.com provides independent comparisons of CBD products. We may earn a commission through affiliate links at no extra cost to you. CBD products are not intended to diagnose, treat, cure, or prevent any disease. Consult your healthcare provider before use.",
+  "affiliateDisclosure": "Some links on this site are affiliate links. We may earn a commission if you make a purchase.",
+  "accentColor": "#ec4899",
+  "accentLight": "#fce7f3",
+  "accentDark": "#db2777",
+  "items": [
+    {
+      "name": "Charlotte's Web",
+      "icon": "🌸",
+      "tagline": "The original CBD brand",
+      "description": "Charlotte's Web is the brand that started the CBD movement, known for their proprietary hemp genetics and rigorous quality standards. Their products are made from whole-plant extracts grown on their own Colorado farms.",
+      "features": [
+        "Proprietary hemp genetics",
+        "Vertically integrated (seed to shelf)",
+        "Full-spectrum and isolate options",
+        "Extensive third-party testing",
+        "B Corp certified company"
+      ],
+      "pricing": "From <strong>$29.99</strong> for 17mg/ml tinctures",
+      "url": "#affiliate-charlottes-web",
+      "cta": "Shop Charlotte's Web",
+      "featured": true
+    },
+    {
+      "name": "Joy Organics",
+      "icon": "💜",
+      "tagline": "Premium broad-spectrum CBD",
+      "description": "Joy Organics specializes in broad-spectrum CBD products — all the benefits without THC. Founded by Joy Smith, they focus on quality formulations and have a strong reputation for customer service and transparency.",
+      "features": [
+        "Broad-spectrum (0.0% THC)",
+        "USDA certified organic options",
+        "Nanoemulsion for better absorption",
+        "30-day money-back guarantee",
+        "Softgels, tinctures, gummies, and topicals"
+      ],
+      "pricing": "From <strong>$24.95</strong> for gummies",
+      "url": "#affiliate-joy-organics",
+      "cta": "Shop Joy Organics",
+      "featured": true
+    },
+    {
+      "name": "Lazarus Naturals",
+      "icon": "🌻",
+      "tagline": "High-potency CBD at accessible prices",
+      "description": "Lazarus Naturals offers some of the most affordable high-quality CBD on the market. They provide 60% discounts for veterans, people on disability, and low-income households. All products are third-party tested with COAs readily available.",
+      "features": [
+        "Significantly below-market pricing",
+        "60% assistance program discount",
+        "High-potency formulations",
+        "In-house production and testing",
+        "Full-spectrum and isolate options"
+      ],
+      "pricing": "From <strong>$12.00</strong> for capsules",
+      "url": "#affiliate-lazarus-naturals",
+      "cta": "Shop Lazarus Naturals"
+    },
+    {
+      "name": "CBDistillery",
+      "icon": "🧴",
+      "tagline": "Wide selection of CBD formats",
+      "description": "CBDistillery offers one of the widest product selections in the CBD space — tinctures, gummies, capsules, topicals, isolates, and even pet products. U.S. Hemp Authority certified with transparent third-party testing.",
+      "features": [
+        "Wide product selection",
+        "U.S. Hemp Authority certified",
+        "Full-spectrum, broad-spectrum, and isolate",
+        "Competitive pricing",
+        "Subscribe and save options"
+      ],
+      "pricing": "From <strong>$20.00</strong> for tinctures",
+      "url": "#affiliate-cbdistillery",
+      "cta": "Shop CBDistillery"
+    },
+    {
+      "name": "Medterra",
+      "icon": "💧",
+      "tagline": "Clinical-grade CBD formulations",
+      "description": "Medterra partners with scientists and universities to develop research-backed CBD formulations. Their clinical line targets specific needs like sleep, recovery, and immune support with complementary active ingredients.",
+      "features": [
+        "Research-backed formulations",
+        "Clinical line with targeted benefits",
+        "THC-free isolate options",
+        "NSF and U.S. Hemp Authority certified",
+        "Liposomal delivery technology"
+      ],
+      "pricing": "From <strong>$27.99</strong> for gel capsules",
+      "url": "#affiliate-medterra",
+      "cta": "Shop Medterra"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Will CBD make me feel high?",
+      "a": "No. CBD is non-intoxicating and does not produce a \"high.\" THC is the cannabinoid responsible for intoxication, and legal CBD products contain less than 0.3% THC — far too little to have any psychoactive effect. Broad-spectrum and isolate products contain zero THC."
+    },
+    {
+      "q": "Will CBD show up on a drug test?",
+      "a": "Full-spectrum CBD products contain trace THC (under 0.3%) which could potentially trigger a positive result with heavy, prolonged use. If you're concerned about drug testing, choose broad-spectrum or isolate products with 0.0% THC and verify with the product's COA."
+    },
+    {
+      "q": "How much CBD should I take?",
+      "a": "There's no universal dose. Most people start with 10-25mg per day and adjust based on their response. Factors like body weight, the condition being addressed, and individual metabolism all play a role. Start low, go slow, and give each dose level at least a week before increasing."
+    },
+    {
+      "q": "Is CBD legal?",
+      "a": "Hemp-derived CBD with less than 0.3% THC is federally legal in the United States under the 2018 Farm Bill. However, some states have additional restrictions. Check your state and local laws before purchasing."
+    },
+    {
+      "q": "How long does it take for CBD to work?",
+      "a": "It depends on the delivery method. Sublingual tinctures typically take effect within 15-30 minutes. Gummies and capsules take 30-90 minutes as they pass through digestion. Topicals work within minutes on localized areas. Many people notice cumulative benefits after consistent use over 2-4 weeks."
+    },
+    {
+      "q": "Can I take CBD with my medications?",
+      "a": "CBD can interact with certain medications, particularly those metabolized by the liver's CYP450 enzyme system. If you take prescription medications, especially blood thinners, seizure medications, or immunosuppressants, consult your healthcare provider before using CBD."
+    }
+  ]
+}

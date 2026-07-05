@@ -1,0 +1,72 @@
+{
+  "template": "d",
+  "domain": "globalcryptoadvisors.com",
+  "name": "Global Crypto Advisors",
+  "logoIcon": "🌎",
+  "title": "Global Crypto Advisors — Digital Asset Wealth Management",
+  "metaDescription": "Global crypto investment advisory specializing in wealth management, estate planning for digital assets, tax-loss harvesting, staking optimization, and risk assessment.",
+  "metaKeywords": "crypto wealth management, digital asset estate planning, tax-loss harvesting crypto, staking optimization, crypto risk assessment, market intelligence",
+  "headline": "Wealth management for the digital asset era",
+  "subheadline": "Comprehensive investment advisory combining traditional wealth management principles with deep expertise in digital assets, from estate planning to staking optimization.",
+  "ctaText": "Book a Consultation",
+  "year": "2026",
+  "servicesTitle": "Investment Advisory Services",
+  "aboutTitle": "About Global Crypto Advisors",
+  "aboutContent": "<h3>Where Traditional Finance Meets Digital Assets</h3><p>Global Crypto Advisors bridges the gap between conventional wealth management and the digital asset frontier. We apply time-tested investment principles to the emerging crypto asset class, helping clients build and preserve wealth across both worlds.</p><h3>Long-Term Wealth Preservation</h3><p>Our approach goes beyond trading and speculation. We focus on long-term wealth building through diversified allocations, tax efficiency, estate planning, and risk-managed exposure to digital asset opportunities.</p><h3>Research-Driven Decisions</h3><p>Every recommendation is backed by rigorous research and analysis. Our market intelligence team monitors macro trends, on-chain data, protocol developments, and regulatory shifts to keep your strategy informed and adaptive.</p>",
+  "contactTitle": "Plan Your Future",
+  "contactSub": "Take the first step toward a comprehensive digital asset strategy. Our advisors are ready to discuss your wealth management goals.",
+  "disclaimer": "Global Crypto Advisors provides advisory services for informational purposes. Digital asset investments are speculative and involve substantial risk of loss. Past performance does not guarantee future results. This is not financial advice. Consult with qualified financial, tax, and legal professionals before making investment decisions.",
+  "accentColor": "#475569",
+  "accentLight": "#e2e8f0",
+  "accentDark": "#334155",
+  "items": [
+    {
+      "icon": "💰",
+      "name": "Wealth Management",
+      "description": "Holistic wealth management integrating digital and traditional assets with personalized allocation strategies, performance monitoring, and periodic portfolio reviews."
+    },
+    {
+      "icon": "📜",
+      "name": "Estate Planning",
+      "description": "Ensure your digital assets are protected and transferable with comprehensive estate planning including key management protocols, succession frameworks, and trust structures."
+    },
+    {
+      "icon": "📉",
+      "name": "Tax-Loss Harvesting",
+      "description": "Systematic identification of tax-loss harvesting opportunities across your crypto portfolio to offset gains and minimize your overall tax liability."
+    },
+    {
+      "icon": "⚡",
+      "name": "Staking Optimization",
+      "description": "Maximize yield from proof-of-stake assets with optimized validator selection, liquid staking strategies, and risk-adjusted staking allocation across protocols."
+    },
+    {
+      "icon": "🛡️",
+      "name": "Risk Assessment",
+      "description": "Comprehensive risk analysis covering market risk, protocol risk, counterparty risk, and regulatory risk with clear frameworks for position sizing and exposure management."
+    },
+    {
+      "icon": "📡",
+      "name": "Market Intelligence",
+      "description": "Proprietary research and market analysis including on-chain metrics, macro trend reports, and protocol deep-dives to keep your investment thesis current."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do you approach crypto estate planning?",
+      "a": "We develop comprehensive succession plans for digital assets including secure key management protocols, documentation of holdings, trust structures where appropriate, and coordination with your estate attorney to ensure your crypto wealth is preserved and transferable."
+    },
+    {
+      "q": "What is tax-loss harvesting in crypto?",
+      "a": "Tax-loss harvesting involves strategically selling underperforming digital assets to realize losses that offset capital gains elsewhere in your portfolio. Unlike traditional securities, crypto does not have wash sale restrictions in many jurisdictions, creating additional optimization opportunities."
+    },
+    {
+      "q": "How do you manage risk in a volatile asset class?",
+      "a": "We employ position sizing frameworks, diversification across uncorrelated protocols, stop-loss strategies, and regular portfolio stress testing. Our goal is to capture upside while defining and limiting downside exposure to levels consistent with your risk tolerance."
+    },
+    {
+      "q": "Can you integrate crypto advisory with my existing wealth management?",
+      "a": "Absolutely. We work alongside your existing financial advisor, CPA, and estate attorney to ensure your digital asset strategy complements your broader financial plan. We can also provide consolidated reporting across traditional and digital assets."
+    }
+  ]
+}

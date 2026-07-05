@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bay Street Crypto — Canadian Crypto Market Analysis</title>
+<meta name="description" content="Canadian cryptocurrency analysis and guides. Crypto tax rules, best Canadian exchanges, TSX crypto ETFs, mining in Canada, and Canadian regulations explained.">
+<meta name="keywords" content="canadian crypto, crypto tax canada, best canadian exchanges, crypto etf tsx, bitcoin mining canada, cra cryptocurrency, canadian crypto regulations">
+<meta property="og:title" content="Bay Street Crypto — Canadian Crypto Market Analysis">
+<meta property="og:description" content="Canadian cryptocurrency analysis and guides. Crypto tax rules, best Canadian exchanges, TSX crypto ETFs, mining in Canada, and Canadian regulations explained.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://baystreetcrypto.com">
+<link rel="canonical" href="https://baystreetcrypto.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0a0a0a;
+  --bg-raise: #0e0e0e;
+  --bg-card: #101010;
+  --ink: #ececec;
+  --ink-2: #b4b4b4;
+  --ink-3: #7c7c7c;
+  --hairline: #1f1f1f;
+  --hairline-strong: #2c2c2c;
+  --accent: #dc2626;
+  --accent-dark: #b91c1c;
+  --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
+  --measure: 70ch;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+
+body {
+  font-family: var(--sans);
+  font-size: 1.0625rem;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Grain overlay */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+::selection { background: var(--accent); color: #0a0a0a; }
+
+/* ── Reading progress ── */
+.progress {
+  position: fixed;
+  top: 0; left: 0;
+  height: 2px;
+  width: 100%;
+  z-index: 300;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+}
+
+/* ── Nav ── */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 200;
+  background: rgba(10, 10, 10, 0.72);
+  backdrop-filter: blur(14px) saturate(1.4);
+  -webkit-backdrop-filter: blur(14px) saturate(1.4);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.nav.scrolled { border-bottom-color: var(--hairline); }
+
+.nav-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.wordmark {
+  font-family: var(--serif);
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.wordmark:hover { text-decoration: none; color: var(--ink); }
+
+.wordmark-tick {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: var(--accent);
+  flex: none;
+  display: inline-block;
+}
+
+.nav-meta {
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+
+/* ── Hero ── */
+.hero {
+  position: relative;
+  padding: 11rem 1.5rem 5.5rem;
+  border-bottom: 1px solid var(--hairline);
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  left: 55%;
+  width: 44rem;
+  height: 44rem;
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--accent) 11%, transparent), transparent 70%);
+  pointer-events: none;
+}
+
+.hero-inner {
+  position: relative;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.hero-kicker {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--ink-3);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.kicker-rule {
+  width: 2.5rem;
+  height: 1px;
+  background: var(--accent);
+  display: inline-block;
+  flex: none;
+}
+
+.hero-title {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(2.6rem, 6.4vw, 4.75rem);
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  max-width: 18ch;
+  text-wrap: balance;
+}
+
+.hero-sub {
+  margin-top: 1.75rem;
+  max-width: 58ch;
+  font-size: clamp(1.0625rem, 1.6vw, 1.25rem);
+  line-height: 1.65;
+  color: var(--ink-2);
+}
+
+.hero-foot {
+  margin-top: 3.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--ink-3);
+}
+
+.hero-foot-rule {
+  width: 1px;
+  height: 0.875rem;
+  background: var(--hairline-strong);
+}
+
+/* ── Layout: TOC + main ── */
+.layout {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 15rem minmax(0, 1fr);
+  gap: 4rem;
+  align-items: start;
+}
+
+.toc { padding-top: 5rem; }
+
+.toc-sticky {
+  position: sticky;
+  top: 6rem;
+}
+
+.toc-label {
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--ink-3);
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--hairline);
+  margin-bottom: 1rem;
+}
+
+.toc-list {
+  list-style: none;
+  counter-reset: toc;
+}
+
+.toc-list li { counter-increment: toc; }
+
+.toc-link {
+  display: flex;
+  gap: 0.7rem;
+  align-items: baseline;
+  padding: 0.45rem 0 0.45rem 0.85rem;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: var(--ink-3);
+  border-left: 1px solid var(--hairline);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.toc-link::before {
+  content: counter(toc, decimal-leading-zero);
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  color: var(--ink-3);
+  flex: none;
+}
+
+.toc-link:hover { color: var(--ink); text-decoration: none; }
+
+.toc-link.active {
+  color: var(--ink);
+  border-left-color: var(--accent);
+}
+
+.toc-link.active::before { color: var(--accent); }
+
+/* ── Sections ── */
+.main {
+  padding: 5rem 0 6rem;
+  min-width: 0;
+}
+
+.section {
+  padding: 0 0 5rem;
+  margin-bottom: 5rem;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.section:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  margin-bottom: 2.75rem;
+}
+
+.section-no {
+  font-family: var(--mono);
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 400;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--ink-3);
+  flex: none;
+}
+
+.section-title {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(1.6rem, 3vw, 2.25rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+/* ── Intro / drop cap ── */
+.intro-copy {
+  max-width: var(--measure);
+  font-size: 1.1875rem;
+  line-height: 1.8;
+  color: var(--ink-2);
+}
+
+.intro-copy::first-letter {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 4.4em;
+  line-height: 0.78;
+  float: left;
+  padding: 0.08em 0.14em 0 0;
+  color: var(--accent);
+}
+
+/* ── Index cards (curriculum rows) ── */
+.index-list { counter-reset: entry; }
+
+.index-card {
+  counter-increment: entry;
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr);
+  gap: 1.5rem;
+  padding: 2.25rem 0;
+  border-top: 1px solid var(--hairline);
+  transition: background 0.25s ease;
+}
+
+.index-card:last-child { border-bottom: 1px solid var(--hairline); }
+
+.index-card:hover { background: linear-gradient(90deg, var(--bg-raise), transparent); }
+
+.index-card-no::before {
+  content: counter(entry, decimal-leading-zero);
+  font-family: var(--mono);
+  font-size: 1.5rem;
+  color: var(--ink-3);
+  line-height: 1.2;
+}
+
+.index-card-main { min-width: 0; }
+
+.index-card-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.index-card-name {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.index-card-tag {
+  font-family: var(--mono);
+  font-size: 0.6563rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--accent);
+  border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+  padding: 0.25rem 0.55rem;
+  white-space: nowrap;
+}
+
+.index-card-desc {
+  max-width: var(--measure);
+  color: var(--ink-2);
+  margin-bottom: 1.25rem;
+}
+
+.index-card-points {
+  list-style: none;
+  max-width: var(--measure);
+  margin-bottom: 1.5rem;
+  border-top: 1px solid var(--hairline);
+}
+
+.index-card-points li {
+  position: relative;
+  padding: 0.55rem 0 0.55rem 1.4rem;
+  border-bottom: 1px solid var(--hairline);
+  font-size: 0.9375rem;
+  color: var(--ink-2);
+}
+
+.index-card-points li::before {
+  content: "";
+  position: absolute;
+  left: 0.15rem;
+  top: 1.05rem;
+  width: 0.45rem;
+  height: 1px;
+  background: var(--accent);
+}
+
+.index-card-link {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--ink);
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 0.3rem;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.index-card-link:hover { text-decoration: none; color: var(--accent); }
+
+.link-arrow { transition: transform 0.2s ease; display: inline-block; }
+
+.index-card-link:hover .link-arrow { transform: translateX(4px); }
+
+/* Featured card */
+.card-featured {
+  border-left: 2px solid var(--accent);
+  padding-left: 1.5rem;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--accent) 5%, transparent), transparent 55%);
+}
+
+/* ── Prose (guide + resources) ── */
+.prose { max-width: var(--measure); }
+
+.prose h3 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.375rem;
+  line-height: 1.25;
+  letter-spacing: -0.005em;
+  margin: 2.5rem 0 0.9rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--hairline);
+}
+
+.prose h3:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+
+.prose p { color: var(--ink-2); margin-bottom: 1.1rem; }
+
+.prose p:last-child { margin-bottom: 0; }
+
+.prose a {
+  color: var(--accent);
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
+.prose a:hover { text-decoration: none; border-bottom-color: var(--accent); }
+
+.prose ul, .prose ol { margin: 0 0 1.1rem 1.25rem; color: var(--ink-2); }
+
+/* ── FAQ ── */
+.faq-list {
+  max-width: var(--measure);
+  border-top: 1px solid var(--hairline);
+}
+
+.faq-item { border-bottom: 1px solid var(--hairline); }
+
+.faq-q {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.35rem 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--serif);
+  font-size: 1.1875rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--ink);
+  transition: color 0.2s ease;
+}
+
+.faq-q:hover { color: var(--accent); }
+
+.faq-q:focus-visible { outline: 1px solid var(--accent); outline-offset: 4px; }
+
+.faq-marker {
+  position: relative;
+  flex: none;
+  width: 0.85rem;
+  height: 0.85rem;
+}
+
+.faq-marker::before,
+.faq-marker::after {
+  content: "";
+  position: absolute;
+  background: var(--ink-3);
+  transition: transform 0.3s ease, background 0.2s ease;
+}
+
+.faq-marker::before {
+  left: 0; right: 0; top: 50%;
+  height: 1px;
+  margin-top: -0.5px;
+}
+
+.faq-marker::after {
+  top: 0; bottom: 0; left: 50%;
+  width: 1px;
+  margin-left: -0.5px;
+}
+
+.faq-q[aria-expanded="true"] .faq-marker::after { transform: scaleY(0); }
+
+.faq-q[aria-expanded="true"] .faq-marker::before { background: var(--accent); }
+
+.faq-a {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.35s ease;
+}
+
+.faq-a p {
+  color: var(--ink-2);
+  padding: 0 2.5rem 1.5rem 0;
+  max-width: 62ch;
+}
+
+/* ── Footer ── */
+.footer {
+  border-top: 1px solid var(--hairline);
+  background: var(--bg-raise);
+}
+
+.footer-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 2.5rem;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.footer-brand { max-width: 34rem; }
+
+.wordmark--footer { font-size: 1.25rem; margin-bottom: 1rem; }
+
+.footer-disclaimer {
+  font-size: 0.8125rem;
+  line-height: 1.7;
+  color: var(--ink-3);
+}
+
+.footer-links { display: flex; flex-direction: column; gap: 0.6rem; }
+
+.footer-links-heading {
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--ink-3);
+}
+
+.footer-links a { font-size: 0.875rem; color: var(--ink-2); }
+
+.footer-links a:hover { color: var(--accent); }
+
+.footer-bottom { padding-top: 2rem; }
+
+.footer-bottom p {
+  font-size: 0.75rem;
+  line-height: 1.7;
+  color: var(--ink-3);
+}
+
+/* ── Reveal animations ── */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .reveal.in { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
+
+/* ── Responsive ── */
+@media (max-width: 1023px) {
+  .layout { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .toc { display: none; }
+  .main { padding-top: 4rem; }
+}
+
+@media (max-width: 720px) {
+  body { font-size: 1rem; }
+  .hero { padding: 8.5rem 1.25rem 4rem; }
+  .hero-foot { margin-top: 2.5rem; flex-wrap: wrap; }
+  .layout { padding: 0 1.25rem; }
+  .section { padding-bottom: 3.5rem; margin-bottom: 3.5rem; }
+  .section-head { gap: 1rem; margin-bottom: 2rem; }
+  .index-card { grid-template-columns: minmax(0, 1fr); gap: 0.9rem; padding: 1.75rem 0; }
+  .index-card-no::before { font-size: 1.125rem; }
+  .card-featured { padding-left: 1.1rem; }
+  .faq-a p { padding-right: 1rem; }
+  .footer-inner { padding: 3rem 1.25rem 2rem; }
+  .nav-meta { display: none; }
+}
+
+</style>
+</head>
+<body>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="/" class="wordmark"><span class="wordmark-tick" aria-hidden="true"></span>Bay Street Crypto</a>
+    <span class="nav-meta">Updated July 2026</span>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="hero-kicker"><span class="kicker-rule" aria-hidden="true"></span>baystreetcrypto.com &middot; A field guide</p>
+    <h1 class="hero-title">Crypto for Canadians, by Canadians</h1>
+    <p class="hero-sub">Tax guides, exchange reviews, ETF analysis, and regulatory updates tailored specifically for the Canadian cryptocurrency market.</p>
+    <div class="hero-foot">
+      <span>Edition 2026</span>
+      <span class="hero-foot-rule" aria-hidden="true"></span>
+      <span>Last revised July 2026</span>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+
+  <aside class="toc" aria-label="Table of contents">
+    <div class="toc-sticky">
+      <p class="toc-label">Contents</p>
+      <ol class="toc-list" id="toc">
+        <li><a href="#introduction" class="toc-link">Introduction</a></li>
+        <li><a href="#index" class="toc-link">Canadian crypto topics</a></li>
+        <li><a href="#guide" class="toc-link">Getting started with crypto in Canada</a></li>
+        <li><a href="#resources" class="toc-link">Canadian crypto resources</a></li>
+        <li><a href="#faq" class="toc-link">Questions</a></li>
+      </ol>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <section class="section reveal" id="introduction">
+      <header class="section-head">
+        <span class="section-no">01</span>
+        <h2 class="section-title">Introduction</h2>
+      </header>
+      <p class="intro-copy">Canada has one of the most developed cryptocurrency markets in the world — home to the first Bitcoin ETF, a clear (if complex) tax framework, and abundant cheap energy for mining. But navigating the Canadian crypto landscape requires Canada-specific knowledge. CRA rules aren't the same as IRS rules. Our exchanges aren't the same as American ones. This site covers everything Canadian crypto investors need to know.</p>
+    </section>
+
+    <section class="section reveal" id="index">
+      <header class="section-head">
+        <span class="section-no">02</span>
+        <h2 class="section-title">Canadian crypto topics</h2>
+      </header>
+      <div class="index-list">
+        <article class="index-card">
+  <div class="index-card-no" aria-hidden="true"></div>
+  <div class="index-card-main">
+    <header class="index-card-head">
+      <h3 class="index-card-name">Canadian Crypto Tax Guide</h3>
+      <span class="index-card-tag">Tax</span>
+    </header>
+    <p class="index-card-desc">The CRA treats cryptocurrency as a commodity, making every disposal a taxable event. Our guide covers capital gains vs. business income classification, cost basis tracking, TFSA and RRSP implications, and common filing mistakes Canadians make.</p>
+    <ul class="index-card-points">
+      Capital gains vs. business income rules,ACB (Adjusted Cost Base) calculation,TFSA and RRSP crypto ETF strategies,CRA reporting requirements for crypto,Common audit triggers to avoid
+    </ul>
+    <a class="index-card-link" href="#affiliate-tax-guide" target="_blank" rel="noopener nofollow">Read tax guide <span class="link-arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+</article>
+
+<article class="index-card">
+  <div class="index-card-no" aria-hidden="true"></div>
+  <div class="index-card-main">
+    <header class="index-card-head">
+      <h3 class="index-card-name">Best Canadian Exchanges</h3>
+      <span class="index-card-tag">Exchanges</span>
+    </header>
+    <p class="index-card-desc">Not all crypto exchanges are legal in Canada. We review CSA-registered platforms — comparing fees, available coins, CAD funding options, security practices, and customer support for Canadian users.</p>
+    <ul class="index-card-points">
+      CSA registration status verified,CAD deposit and withdrawal options,Trading fee comparisons,Available cryptocurrencies,Security and insurance coverage
+    </ul>
+    <a class="index-card-link" href="#affiliate-exchanges" target="_blank" rel="noopener nofollow">Compare exchanges <span class="link-arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+</article>
+
+<article class="index-card">
+  <div class="index-card-no" aria-hidden="true"></div>
+  <div class="index-card-main">
+    <header class="index-card-head">
+      <h3 class="index-card-name">Crypto ETFs on TSX</h3>
+      <span class="index-card-tag">Investing</span>
+    </header>
+    <p class="index-card-desc">Canada was the first country to approve spot Bitcoin and Ethereum ETFs. We analyze the available TSX-listed crypto ETFs — management fees (MERs), holdings, tax treatment, and whether they belong in your TFSA, RRSP, or taxable account.</p>
+    <ul class="index-card-points">
+      All TSX-listed crypto ETF profiles,MER comparison and fee analysis,TFSA vs. RRSP tax implications,Spot vs. futures-based ETF differences,Performance tracking and benchmarking
+    </ul>
+    <a class="index-card-link" href="#affiliate-etfs" target="_blank" rel="noopener nofollow">Explore ETFs <span class="link-arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+</article>
+
+<article class="index-card">
+  <div class="index-card-no" aria-hidden="true"></div>
+  <div class="index-card-main">
+    <header class="index-card-head">
+      <h3 class="index-card-name">Mining in Canada</h3>
+      <span class="index-card-tag">Mining</span>
+    </header>
+    <p class="index-card-desc">Canada's abundant hydroelectric power and cold climate make it ideal for cryptocurrency mining. We cover the economics of mining operations, provincial energy rates, regulatory requirements, and environmental considerations.</p>
+    <ul class="index-card-points">
+      Provincial energy rate comparisons,Mining profitability calculators,Regulatory requirements by province,Environmental and sustainability factors,Home mining vs. hosted mining options
+    </ul>
+    <a class="index-card-link" href="#affiliate-mining" target="_blank" rel="noopener nofollow">Learn about mining <span class="link-arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+</article>
+
+<article class="index-card">
+  <div class="index-card-no" aria-hidden="true"></div>
+  <div class="index-card-main">
+    <header class="index-card-head">
+      <h3 class="index-card-name">Canadian Regulations</h3>
+      <span class="index-card-tag">Regulation</span>
+    </header>
+    <p class="index-card-desc">Canada's crypto regulatory framework involves federal and provincial bodies — CSA, FINTRAC, OSFI, and more. We break down what's regulated, what's coming, and how Canadian rules compare to other jurisdictions.</p>
+    <ul class="index-card-points">
+      CSA registration requirements,FINTRAC money services business rules,Provincial securities commission roles,Upcoming regulatory proposals,Canada vs. US regulatory comparison
+    </ul>
+    <a class="index-card-link" href="#affiliate-regulations" target="_blank" rel="noopener nofollow">Understand regulations <span class="link-arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+</article>
+
+<article class="index-card">
+  <div class="index-card-no" aria-hidden="true"></div>
+  <div class="index-card-main">
+    <header class="index-card-head">
+      <h3 class="index-card-name">Quebec Hydro Mining</h3>
+      <span class="index-card-tag">Mining</span>
+    </header>
+    <p class="index-card-desc">Quebec's Hydro-Quebec offers some of the cheapest electricity in North America, making it a global hotspot for Bitcoin mining. We cover current rates, Hydro-Quebec's policies on crypto miners, and how to set up operations in the province.</p>
+    <ul class="index-card-points">
+      Hydro-Quebec rate structures for miners,Application process and requirements,Cold climate cooling advantages,Environmental impact and green mining,Major mining operations in Quebec
+    </ul>
+    <a class="index-card-link" href="#affiliate-quebec-mining" target="_blank" rel="noopener nofollow">Explore Quebec mining <span class="link-arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+</article>
+
+      </div>
+    </section>
+
+    <section class="section reveal" id="guide">
+      <header class="section-head">
+        <span class="section-no">03</span>
+        <h2 class="section-title">Getting started with crypto in Canada</h2>
+      </header>
+      <div class="prose"><h3>Choose a registered Canadian exchange</h3><p>Canadian Securities Administrators (CSA) require crypto trading platforms to register. Using a registered exchange ensures your platform meets Canadian regulatory standards and your assets have some baseline protections.</p><h3>Understand your CRA obligations</h3><p>The CRA treats crypto as a commodity. Every trade, swap, and spend is a taxable event. Keep meticulous records from day one — retroactively tracking cost basis across multiple exchanges and wallets is a nightmare.</p><h3>Consider crypto ETFs for simplicity</h3><p>Canada pioneered spot Bitcoin and Ethereum ETFs, available on the TSX. If you want crypto exposure without managing wallets and keys, ETFs in your TFSA or RRSP can be a tax-efficient option.</p><h3>Explore mining opportunities</h3><p>Canada's cheap hydroelectric power — especially in Quebec, Manitoba, and British Columbia — makes it one of the best countries in the world for Bitcoin mining. Understand the regulatory and energy landscape before investing in hardware.</p></div>
+    </section>
+
+    <section class="section reveal" id="resources">
+      <header class="section-head">
+        <span class="section-no">04</span>
+        <h2 class="section-title">Canadian crypto resources</h2>
+      </header>
+      <div class="prose"><h3>CRA Cryptocurrency Guide</h3><p>The official Canada Revenue Agency guidance on how cryptocurrency is taxed, including capital gains, business income, and mining income. <a href="https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/compliance/digital-currency/cryptocurrency-guide.html" target="_blank" rel="noopener">Read CRA guide</a></p><h3>CSA Registered Platforms</h3><p>The Canadian Securities Administrators maintain a list of registered and pre-registered crypto trading platforms operating legally in Canada. <a href="https://www.securities-administrators.ca/crypto-trading-platforms-regulation-and-enforcement-actions/" target="_blank" rel="noopener">View registered platforms</a></p><h3>TMX Group (TSX)</h3><p>The Toronto Stock Exchange lists multiple crypto ETFs. Research available products directly on the TMX website. <a href="https://www.tmx.com" target="_blank" rel="noopener">Visit TMX</a></p></div>
+    </section>
+
+    <section class="section reveal" id="faq">
+      <header class="section-head">
+        <span class="section-no">05</span>
+        <h2 class="section-title">Questions, answered</h2>
+      </header>
+      <div class="faq-list" id="faq-list"></div>
+    </section>
+
+  </main>
+
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="wordmark wordmark--footer"><span class="wordmark-tick" aria-hidden="true"></span>Bay Street Crypto</span>
+        <p class="footer-disclaimer">BayStreetCrypto.com provides Canadian cryptocurrency market analysis and educational content. This is not financial or tax advice. Consult a qualified Canadian tax professional for your specific situation. We may earn commissions through affiliate links.</p>
+      </div>
+      <div class="footer-links">
+        <span class="footer-links-heading">Elsewhere</span>
+        <a href="https://sepehr.ai" target="_blank" rel="noopener">sepehr.ai</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Bay Street Crypto. All rights reserved. Some links on this site are affiliate links. We may earn a commission if you make a purchase at no extra cost to you.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const SITE_CONFIG = {"faqs":[{"q":"Do I have to pay taxes on crypto in Canada?","a":"Yes. The CRA considers cryptocurrency a commodity. When you sell, trade, or spend crypto, you trigger a taxable event. Capital gains are 50% taxable (included in income at half the gain). If the CRA considers you a crypto trader rather than an investor, 100% of your gains may be taxable as business income."},{"q":"Can I hold crypto in my TFSA?","a":"You can't hold crypto directly in a TFSA, but you can hold crypto ETFs listed on the TSX. This gives you crypto exposure with tax-free gains. Be aware that the CRA has warned against frequent trading in TFSAs — passive holding is safer from a tax perspective."},{"q":"Which Canadian exchanges are legal?","a":"Only exchanges registered with the Canadian Securities Administrators (CSA) are legally operating in Canada. Major registered platforms include Bitbuy, Coinsquare, and Wealthsimple Crypto. Using an unregistered exchange isn't illegal for users but comes with significantly less regulatory protection."},{"q":"Is Bitcoin mining profitable in Canada?","a":"It can be, depending on your electricity rate and hardware costs. Quebec and Manitoba have some of the cheapest power in North America, which is why major mining operations locate there. Home mining profitability depends heavily on your provincial electricity rate — run the numbers before investing in hardware."},{"q":"How does Canada compare to the US for crypto?","a":"Canada has been more progressive in some areas — we had spot Bitcoin ETFs years before the US. However, the CSA's registration requirements are strict, and fewer exchanges operate here compared to the US. Tax treatment is broadly similar (capital gains), but the mechanics differ between CRA and IRS rules."}],"accentColor":"#dc2626","accentLight":"#fee2e2","accentDark":"#b91c1c","ctaText":""};
+document.addEventListener('DOMContentLoaded', () => {
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Accent color (runtime fallback; primary value is compiled into CSS)
+  if (SITE_CONFIG.accentColor) {
+    document.documentElement.style.setProperty('--accent', SITE_CONFIG.accentColor);
+    document.documentElement.style.setProperty('--accent-dark', SITE_CONFIG.accentDark || SITE_CONFIG.accentColor);
+  }
+
+  // Rebuild feature lists: build injects features as a comma-joined string
+  // (items are joined with "," while commas inside a feature are ", ").
+  document.querySelectorAll('.index-card-points').forEach(ul => {
+    if (ul.querySelector('li')) return;
+    const raw = ul.textContent.trim();
+    ul.textContent = '';
+    if (!raw) { ul.remove(); return; }
+    raw.split(/,(?=\S)/).forEach(part => {
+      const li = document.createElement('li');
+      li.textContent = part.trim();
+      ul.appendChild(li);
+    });
+  });
+
+  // Reading progress hairline
+  const progress = document.getElementById('progress');
+  if (progress) {
+    let ticking = false;
+    const update = () => {
+      const doc = document.documentElement;
+      const max = doc.scrollHeight - window.innerHeight;
+      const ratio = max > 0 ? Math.min(window.scrollY / max, 1) : 0;
+      progress.style.transform = 'scaleX(' + ratio + ')';
+      ticking = false;
+    };
+    window.addEventListener('scroll', () => {
+      if (!ticking) { ticking = true; requestAnimationFrame(update); }
+    }, { passive: true });
+    update();
+  }
+
+  // Nav hairline on scroll
+  const nav = document.getElementById('nav');
+  if (nav) {
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+  }
+
+  // Table of contents scroll tracking
+  const tocLinks = Array.from(document.querySelectorAll('.toc-link'));
+  const sections = tocLinks
+    .map(link => document.getElementById(link.getAttribute('href').slice(1)))
+    .filter(Boolean);
+  if (sections.length && 'IntersectionObserver' in window) {
+    const setActive = id => {
+      tocLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+      });
+    };
+    const visible = new Map();
+    const spy = new IntersectionObserver(entries => {
+      entries.forEach(e => visible.set(e.target.id, e.isIntersecting));
+      const current = sections.find(s => visible.get(s.id));
+      if (current) setActive(current.id);
+    }, { rootMargin: '-15% 0px -55% 0px' });
+    sections.forEach(s => spy.observe(s));
+  }
+
+  // Section reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  if (revealEls.length && !reducedMotion && 'IntersectionObserver' in window) {
+    const revealer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          revealer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -5% 0px' });
+    revealEls.forEach(el => revealer.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('in'));
+  }
+
+  // FAQ accordion
+  const faqList = document.getElementById('faq-list');
+  if (SITE_CONFIG.faqs && SITE_CONFIG.faqs.length && faqList) {
+    SITE_CONFIG.faqs.forEach((faq, i) => {
+      const item = document.createElement('div');
+      item.className = 'faq-item';
+      const qId = 'faq-q-' + i;
+      const aId = 'faq-a-' + i;
+      const btn = document.createElement('button');
+      btn.className = 'faq-q';
+      btn.id = qId;
+      btn.setAttribute('aria-expanded', 'false');
+      btn.setAttribute('aria-controls', aId);
+      const label = document.createElement('span');
+      label.textContent = faq.q;
+      const marker = document.createElement('span');
+      marker.className = 'faq-marker';
+      marker.setAttribute('aria-hidden', 'true');
+      btn.appendChild(label);
+      btn.appendChild(marker);
+      const answer = document.createElement('div');
+      answer.className = 'faq-a';
+      answer.id = aId;
+      answer.setAttribute('role', 'region');
+      answer.setAttribute('aria-labelledby', qId);
+      const p = document.createElement('p');
+      p.textContent = faq.a;
+      answer.appendChild(p);
+      btn.addEventListener('click', () => {
+        const open = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!open));
+        answer.style.maxHeight = open ? '0px' : answer.scrollHeight + 'px';
+      });
+      item.appendChild(btn);
+      item.appendChild(answer);
+      faqList.appendChild(item);
+    });
+  }
+});
+
+
+</script>
+</body>
+</html>

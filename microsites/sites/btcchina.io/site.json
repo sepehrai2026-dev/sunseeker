@@ -1,0 +1,71 @@
+{
+  "template": "a",
+  "domain": "btcchina.io",
+  "name": "BTC China",
+  "logoIcon": "🇨🇳",
+  "title": "BTC China — Crypto Access Guide for China",
+  "metaDescription": "How to access cryptocurrency from China in 2026. P2P trading platforms, VPN options, and regulatory landscape explained.",
+  "metaKeywords": "buy bitcoin China, crypto exchange China, P2P crypto China, bitcoin China legal",
+  "headline": "Cryptocurrency access in China",
+  "subheadline": "Understanding the Chinese crypto landscape — P2P platforms, regulatory status, and safe access methods for Chinese users.",
+  "lastUpdated": "July 2026",
+  "year": "2026",
+  "introCopy": "China banned crypto exchanges and mining in 2021, but individual ownership of cryptocurrency remains technically legal. Millions of Chinese users continue to access crypto markets through P2P platforms, offshore exchanges, and decentralized services. Here's what you need to know.",
+  "comparisonTitle": "Available crypto access methods",
+  "guideTitle": "Navigating crypto in China",
+  "guideContent": "<h3>The regulatory landscape</h3><p>The PBoC banned financial institutions from providing crypto services and all domestic exchanges were shut down in 2021. However, holding cryptocurrency as personal property is not explicitly illegal. The legal grey area means users should proceed with caution.</p><h3>P2P trading</h3><p>Peer-to-peer platforms remain the primary on-ramp for Chinese users. These platforms connect buyers and sellers directly, with the platform providing escrow. Payment is typically via WeChat Pay, Alipay, or bank transfer.</p><h3>Risk considerations</h3><p>Using VPNs to access offshore exchanges carries legal risk. Bank accounts linked to frequent crypto P2P transactions may be frozen temporarily for investigation. Keep transaction amounts reasonable and maintain clean records.</p>",
+  "disclaimer": "BTCChina.io provides informational content about cryptocurrency access. This is not legal or financial advice. Cryptocurrency regulations in China are complex and subject to change. Comply with all local laws.",
+  "affiliateDisclosure": "Some links are affiliate links.",
+  "accentColor": "#dc2626",
+  "accentLight": "#fee2e2",
+  "accentDark": "#b91c1c",
+  "items": [
+    {
+      "name": "OKX P2P",
+      "icon": "⭕",
+      "tagline": "Largest P2P platform for Chinese users",
+      "description": "OKX (formerly OKEx) has the largest P2P trading volume from Chinese users. Supports CNY payments via WeChat, Alipay, and bank transfer. Strong escrow protection and merchant verification system.",
+      "features": ["CNY P2P trading with escrow", "WeChat Pay and Alipay support", "Verified merchant system", "Mobile app available", "300+ crypto assets on the exchange"],
+      "pricing": "<strong>0% fee</strong> on P2P trades",
+      "url": "#affiliate-okx",
+      "cta": "Visit OKX",
+      "featured": true
+    },
+    {
+      "name": "Binance P2P",
+      "icon": "🟡",
+      "tagline": "Global exchange with CNY P2P",
+      "description": "Binance's P2P platform supports CNY with multiple payment methods. High liquidity, competitive rates, and a robust dispute resolution system.",
+      "features": ["CNY P2P trading", "Multiple payment methods", "Dispute resolution system", "High liquidity", "Access to Binance's full exchange"],
+      "pricing": "<strong>0% fee</strong> on P2P trades",
+      "url": "#affiliate-binance",
+      "cta": "Visit Binance"
+    },
+    {
+      "name": "Bybit P2P",
+      "icon": "🔶",
+      "tagline": "Growing P2P alternative",
+      "description": "Bybit has been expanding its P2P service with competitive rates and CNY support. Known for derivatives trading, the platform also offers a solid spot market and P2P on-ramp.",
+      "features": ["CNY P2P trading", "Competitive rates", "Bank transfer and Alipay", "Growing merchant network", "Strong derivatives platform"],
+      "pricing": "<strong>0% fee</strong> on P2P trades",
+      "url": "#affiliate-bybit",
+      "cta": "Visit Bybit"
+    },
+    {
+      "name": "Uniswap (DEX)",
+      "icon": "🦄",
+      "tagline": "Decentralized, no KYC",
+      "description": "Decentralized exchanges like Uniswap require no account or identity verification. Connect a wallet, swap tokens. No central authority can restrict access. Requires some technical knowledge and a VPN from mainland China.",
+      "features": ["No account or KYC needed", "Cannot be shut down", "Swap any ERC-20 token", "Self-custody only", "Access via VPN + wallet"],
+      "pricing": "<strong>0.3%</strong> swap fee",
+      "url": "#affiliate-uniswap",
+      "cta": "Visit Uniswap"
+    }
+  ],
+  "faqs": [
+    {"q": "Is it legal to own bitcoin in China?", "a": "Holding cryptocurrency as personal property is not explicitly illegal in China. What is banned is operating exchanges, offering crypto financial services, and mining. Individual ownership exists in a legal grey area — proceed with caution and stay informed about regulatory changes."},
+    {"q": "Can I use Binance from China?", "a": "Binance is not officially available in mainland China, but many users access it through VPNs. Binance's P2P platform supports CNY trades. Note that using VPNs to access blocked services carries legal risk in China."},
+    {"q": "Will my bank account get frozen?", "a": "Bank accounts involved in frequent crypto-related P2P transactions may be temporarily frozen for investigation. To reduce risk, use dedicated accounts for P2P trading, keep transactions at reasonable sizes, and avoid patterns that look like money laundering."},
+    {"q": "What payment methods work for P2P?", "a": "WeChat Pay, Alipay, and bank transfers are the most common payment methods on P2P platforms. Some merchants also accept cash deposits. Always use the platform's escrow service — never send payment outside the P2P system."}
+  ]
+}

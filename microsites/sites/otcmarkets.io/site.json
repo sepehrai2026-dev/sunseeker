@@ -1,0 +1,128 @@
+{
+  "template": "a",
+  "domain": "otcmarkets.io",
+  "name": "OTC Markets",
+  "logoIcon": "🏦",
+  "title": "OTC Markets — Best OTC Crypto Trading Desks Compared",
+  "metaDescription": "Compare the top OTC crypto trading desks for 2026. Expert reviews of Genesis Trading, Circle Trade, Cumberland, Galaxy Digital, and B2C2.",
+  "metaKeywords": "OTC crypto trading, over the counter crypto, OTC desk comparison, institutional crypto trading, large block trades",
+  "headline": "Trade crypto at institutional scale",
+  "subheadline": "Independent comparisons of the top OTC trading desks — deep liquidity, competitive spreads, and white-glove execution for large block trades.",
+  "lastUpdated": "July 2026",
+  "year": "2026",
+  "introCopy": "When you need to move serious size in crypto — six, seven, or eight figures — exchange order books fall short. Slippage eats into your trade, and the market moves against you. OTC desks solve this with deep liquidity pools, fixed quotes, and private execution. We've compared the leading OTC trading desks so you can find the right partner for your institutional or high-net-worth trading needs.",
+  "comparisonTitle": "Top OTC trading desks compared",
+  "guideTitle": "How to choose an OTC trading desk",
+  "guideContent": "<h3>Why trade OTC?</h3><p>OTC desks let you execute large trades without moving the market. Instead of placing orders on a public exchange — where your size signals intent and causes slippage — an OTC desk matches you with private liquidity at a fixed price. This is how institutions, funds, and treasuries move crypto.</p><h3>Key factors to evaluate</h3><p>Look at minimum trade sizes, supported assets, settlement speed, and counterparty risk. The best desks offer 24/7 coverage, competitive spreads, and settlement within hours. Regulatory compliance and custody solutions also matter — especially for institutional mandates.</p><h3>Spreads and pricing</h3><p>OTC spreads vary by asset, size, and market conditions. Most desks offer tighter spreads for larger trades and major assets like BTC and ETH. Always request quotes from multiple desks to ensure you're getting competitive pricing.</p><h3>Settlement and custody</h3><p>Settlement typically occurs same-day or next-day. Some desks offer integrated custody through partners like Fireblocks or BitGo, while others settle to your own wallet. Understand the settlement process and counterparty risk before committing capital.</p>",
+  "disclaimer": "OTCMarkets.io provides independent comparisons of OTC crypto trading desks. We may earn a commission through affiliate links at no extra cost to you. Our reviews are not influenced by compensation. This is not financial advice.",
+  "affiliateDisclosure": "Some links on this site are affiliate links. We may earn a commission if you make a purchase.",
+  "accentColor": "#0891b2",
+  "accentLight": "#cffafe",
+  "accentDark": "#0e7490",
+  "items": [
+    {
+      "name": "Genesis Trading",
+      "icon": "🌐",
+      "tagline": "Institutional-grade OTC and lending",
+      "description": "Genesis is one of the longest-running institutional crypto trading desks, offering OTC spot, derivatives, and lending. Known for deep liquidity across major and mid-cap assets with 24/7 trading coverage.",
+      "features": [
+        "24/7 OTC trading desk",
+        "Spot, derivatives, and lending",
+        "Deep liquidity in 60+ assets",
+        "Institutional-grade compliance",
+        "Dedicated relationship managers"
+      ],
+      "pricing": "<strong>Custom spreads</strong> — based on volume and asset",
+      "url": "#affiliate-genesis-trading",
+      "cta": "Contact Genesis",
+      "featured": true
+    },
+    {
+      "name": "Circle Trade",
+      "icon": "⭕",
+      "tagline": "Backed by the USDC issuer",
+      "description": "Circle Trade is the OTC arm of Circle, the company behind USDC. With direct access to stablecoin liquidity and strong banking relationships, they offer seamless fiat on/off ramps alongside crypto execution.",
+      "features": [
+        "Direct USDC/fiat liquidity",
+        "Tight spreads on major pairs",
+        "Strong regulatory standing",
+        "Seamless fiat settlement",
+        "Institutional onboarding support"
+      ],
+      "pricing": "<strong>Custom spreads</strong> — competitive on stablecoin pairs",
+      "url": "#affiliate-circle-trade",
+      "cta": "Contact Circle Trade",
+      "featured": true
+    },
+    {
+      "name": "Cumberland",
+      "icon": "🏛️",
+      "tagline": "DRW-backed crypto liquidity provider",
+      "description": "Cumberland is the crypto arm of DRW, one of the world's largest proprietary trading firms. They bring traditional finance rigor to crypto OTC trading with deep balance sheet liquidity and sophisticated risk management.",
+      "features": [
+        "Backed by DRW (est. 1992)",
+        "Deep principal liquidity",
+        "24/7 global trading coverage",
+        "100+ supported assets",
+        "Institutional compliance framework"
+      ],
+      "pricing": "<strong>Custom spreads</strong> — volume-tiered pricing",
+      "url": "#affiliate-cumberland",
+      "cta": "Contact Cumberland"
+    },
+    {
+      "name": "Galaxy Digital",
+      "icon": "🌌",
+      "tagline": "Full-service crypto financial services",
+      "description": "Galaxy Digital offers OTC trading as part of a full-service institutional crypto platform including asset management, investment banking, and mining. Led by Mike Novogratz with deep market relationships.",
+      "features": [
+        "Full-service institutional platform",
+        "OTC, derivatives, and structured products",
+        "Asset management integration",
+        "Strong market-making capabilities",
+        "Public company transparency"
+      ],
+      "pricing": "<strong>Custom spreads</strong> — based on relationship and size",
+      "url": "#affiliate-galaxy-digital",
+      "cta": "Contact Galaxy Digital"
+    },
+    {
+      "name": "B2C2",
+      "icon": "⚡",
+      "tagline": "Electronic OTC liquidity provider",
+      "description": "B2C2 pioneered electronic OTC crypto trading, offering 24/7 algorithmic pricing with no manual intervention. Their API-first approach makes them ideal for firms that need programmatic access to deep liquidity.",
+      "features": [
+        "Fully electronic pricing engine",
+        "API-first trading access",
+        "24/7 automated quoting",
+        "Tight, consistent spreads",
+        "SBI Group backed"
+      ],
+      "pricing": "<strong>Custom spreads</strong> — algorithmic pricing",
+      "url": "#affiliate-b2c2",
+      "cta": "Contact B2C2"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is OTC crypto trading?",
+      "a": "OTC (over-the-counter) crypto trading lets you buy or sell large amounts of cryptocurrency directly with a counterparty, rather than through a public exchange order book. This prevents slippage and market impact, making it the preferred method for institutional and high-net-worth traders."
+    },
+    {
+      "q": "What is the minimum trade size for OTC desks?",
+      "a": "Most OTC desks have minimums ranging from $100,000 to $1 million, though some will accommodate smaller sizes for established relationships. If you're trading under $100K, you're generally better off using a standard exchange."
+    },
+    {
+      "q": "How do OTC spreads compare to exchange fees?",
+      "a": "OTC spreads are typically wider than exchange maker fees but narrower than the slippage you'd experience placing a large order on an exchange. For trades above $500K, OTC execution usually results in better all-in pricing than exchange execution."
+    },
+    {
+      "q": "Is OTC trading safe?",
+      "a": "OTC trading involves counterparty risk — you're trusting the desk to settle the trade. Reputable desks mitigate this through escrow, regulated custodians, and compliance frameworks. Always verify the desk's regulatory status and settlement procedures before trading."
+    },
+    {
+      "q": "How fast is OTC settlement?",
+      "a": "Most OTC desks offer same-day or next-business-day settlement. Crypto-to-crypto trades can settle within hours, while trades involving fiat may take 1-2 business days depending on banking rails."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "template": "d",
+  "domain": "globalcryptoadvisers.com",
+  "name": "Global Crypto Advisers",
+  "logoIcon": "🌐",
+  "title": "Global Crypto Advisers — International Digital Asset Advisory",
+  "metaDescription": "International cryptocurrency advisory specializing in cross-border compliance, global portfolio allocation, jurisdiction analysis, and institutional custody solutions.",
+  "metaKeywords": "international crypto advisory, cross-border compliance, global crypto portfolio, jurisdiction analysis, institutional custody, OTC crypto, regulatory mapping",
+  "headline": "International crypto advisory for a borderless market",
+  "subheadline": "Navigating multi-jurisdiction compliance, global portfolio allocation, and institutional-grade infrastructure for clients operating across borders.",
+  "ctaText": "Schedule a Call",
+  "year": "2026",
+  "servicesTitle": "Global Advisory Services",
+  "aboutTitle": "About Global Crypto Advisers",
+  "aboutContent": "<h3>Built for International Complexity</h3><p>Global Crypto Advisers specializes in the unique challenges of operating across multiple jurisdictions. Cryptocurrency regulation varies dramatically by country, and what is permitted in one jurisdiction may be restricted in another. We help clients navigate this complexity with confidence.</p><h3>Institutional-Grade Infrastructure</h3><p>We work with leading custodians, OTC desks, and compliance platforms to ensure our clients have access to the same infrastructure used by the world's largest digital asset managers, regardless of where they are based.</p><h3>Multi-Jurisdiction Expertise</h3><p>Our advisory team maintains current knowledge of regulatory frameworks across major markets including the US, EU, UK, Singapore, Hong Kong, UAE, and Switzerland, enabling us to provide informed guidance on jurisdiction selection and compliance strategy.</p>",
+  "contactTitle": "Connect With Our Team",
+  "contactSub": "Operating internationally requires specialized guidance. Reach out to discuss how we can help you navigate the global crypto landscape.",
+  "disclaimer": "Global Crypto Advisers provides advisory and consulting services only. This website does not constitute an offer or solicitation in any jurisdiction where such activity would be unlawful. Cryptocurrency investments carry substantial risk. Regulatory requirements vary by jurisdiction and are subject to change. Consult local legal counsel for jurisdiction-specific advice.",
+  "accentColor": "#4f46e5",
+  "accentLight": "#e0e7ff",
+  "accentDark": "#4338ca",
+  "items": [
+    {
+      "icon": "🌍",
+      "name": "Cross-Border Compliance",
+      "description": "Navigate multi-jurisdiction regulatory requirements with frameworks designed for international crypto operations, fund flows, and reporting obligations."
+    },
+    {
+      "icon": "📊",
+      "name": "Global Portfolio Allocation",
+      "description": "Diversified digital asset portfolios optimized across geographies, currencies, and regulatory environments to manage risk and capture global opportunities."
+    },
+    {
+      "icon": "🏛️",
+      "name": "Jurisdiction Analysis",
+      "description": "Detailed analysis of crypto-friendly jurisdictions including tax treatment, licensing requirements, banking access, and operational feasibility for your specific use case."
+    },
+    {
+      "icon": "🔐",
+      "name": "Institutional Custody",
+      "description": "Guidance on selecting and implementing institutional-grade custody solutions including multi-signature setups, insurance coverage, and geographic diversification of key storage."
+    },
+    {
+      "icon": "💱",
+      "name": "OTC Desk Access",
+      "description": "Facilitated access to vetted over-the-counter trading desks for large-volume transactions with competitive pricing, settlement assurance, and counterparty due diligence."
+    },
+    {
+      "icon": "🗺️",
+      "name": "Regulatory Mapping",
+      "description": "Comprehensive mapping of regulatory landscapes across target markets, tracking legislative developments and enforcement trends that may impact your operations."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Which jurisdictions do you cover?",
+      "a": "We maintain active expertise across major crypto markets including the United States, European Union member states, United Kingdom, Singapore, Hong Kong, UAE, Switzerland, and the Cayman Islands. We can also research additional jurisdictions on request."
+    },
+    {
+      "q": "Can you help with entity structuring for international crypto operations?",
+      "a": "We provide advisory on jurisdiction selection and regulatory considerations for entity structuring. We work alongside your legal team to ensure structures are optimized for compliance, tax efficiency, and operational needs."
+    },
+    {
+      "q": "What is the minimum engagement size?",
+      "a": "Given the complexity of international advisory, our engagements typically start at a scope that reflects multi-jurisdiction analysis. We discuss specific requirements and pricing during an initial consultation."
+    },
+    {
+      "q": "How do you stay current on changing regulations?",
+      "a": "Our team continuously monitors regulatory developments across all covered jurisdictions through direct engagement with regulators, legal networks, and industry working groups. Clients receive regular updates on changes that affect their operations."
+    },
+    {
+      "q": "Do you provide ongoing compliance monitoring?",
+      "a": "Yes. We offer retained advisory engagements that include ongoing regulatory monitoring, periodic compliance reviews, and proactive alerts when regulatory changes require action."
+    }
+  ]
+}

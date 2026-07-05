@@ -1,0 +1,138 @@
+{
+  "template": "b",
+  "domain": "techmocracy.io",
+  "name": "Techmocracy",
+  "logoIcon": "⚖️",
+  "title": "Techmocracy — Tech Policy and Digital Rights",
+  "metaDescription": "Independent analysis of technology policy and digital rights. AI regulation, data privacy laws, platform governance, digital identity, open source policy, and algorithmic accountability.",
+  "metaKeywords": "tech policy, ai regulation, data privacy, platform governance, digital identity, open source policy, algorithmic accountability, digital rights",
+  "headline": "Technology is too important for technologists alone",
+  "subheadline": "Independent analysis of AI regulation, data privacy, platform governance, and digital rights — making tech policy accessible to everyone it affects.",
+  "lastUpdated": "July 2026",
+  "year": "2026",
+  "introCopy": "Every major technology decision is now a policy decision. Who gets to train AI on your data? Which platforms can silence speech? How should algorithms that determine your creditworthiness be regulated? These questions are being decided right now — in legislatures, regulatory bodies, and corporate boardrooms — and most people affected by the outcomes have no idea what's at stake. Techmocracy translates tech policy into plain language so you can follow, understand, and participate in the debates that shape your digital life.",
+  "topicsTitle": "Policy topics",
+  "guideTitle": "Why tech policy matters to you",
+  "guideContent": "<h3>Algorithms decide more than you think</h3><p>From your social media feed to your insurance premiums, loan approvals, and job applications, algorithms are making decisions about your life. Understanding how these systems are (or aren't) regulated helps you advocate for accountability.</p><h3>Your data is a political issue</h3><p>Data privacy isn't just a personal preference — it's a civil rights issue. Where your data goes, who can buy it, and how it's used to profile you are all questions with political answers. Privacy laws vary wildly between jurisdictions, and the gaps are by design.</p><h3>Platforms are the new public square</h3><p>Social media platforms control the information environment for billions of people. Their content moderation decisions, algorithmic amplification choices, and terms of service are de facto communication regulations — made by private companies with no democratic oversight.</p><h3>AI regulation is being written now</h3><p>The EU AI Act, US executive orders, China's AI regulations — governments worldwide are racing to regulate artificial intelligence. The frameworks being established today will determine how AI is developed, deployed, and governed for decades to come.</p>",
+  "resourcesTitle": "Stay informed",
+  "resourcesContent": "<h3>Electronic Frontier Foundation (EFF)</h3><p>The leading nonprofit defending civil liberties in the digital world. Excellent coverage of surveillance, free speech, privacy, and innovation policy. <a href=\"https://www.eff.org\" target=\"_blank\" rel=\"noopener\">Visit EFF</a></p><h3>AI Policy Observatory (OECD)</h3><p>The OECD's comprehensive tracker of AI policies and strategies across member countries. Essential for understanding the global regulatory landscape. <a href=\"https://oecd.ai\" target=\"_blank\" rel=\"noopener\">Visit OECD.AI</a></p><h3>Lawfare</h3><p>Rigorous legal analysis of national security, technology, and law. Their tech policy coverage bridges the gap between legal scholarship and public understanding. <a href=\"https://www.lawfaremedia.org\" target=\"_blank\" rel=\"noopener\">Visit Lawfare</a></p>",
+  "disclaimer": "Techmocracy.io provides independent analysis of technology policy and digital rights. Our analysis is educational and does not constitute legal or political advice. We may earn commissions through affiliate links to books and courses.",
+  "affiliateDisclosure": "Some links on this site are affiliate links. We may earn a commission if you make a purchase at no extra cost to you.",
+  "accentColor": "#4f46e5",
+  "accentLight": "#e0e7ff",
+  "accentDark": "#4338ca",
+  "items": [
+    {
+      "name": "AI Regulation",
+      "icon": "🤖",
+      "tag": "Legislation",
+      "description": "The global race to regulate artificial intelligence is accelerating. From the EU AI Act's risk-based framework to the US executive orders and China's algorithmic governance rules, we break down what's being proposed, what's law, and what it means for developers and users.",
+      "features": [
+        "EU AI Act: risk tiers and compliance requirements",
+        "US federal and state AI regulation tracker",
+        "China's AI governance framework analysis",
+        "Frontier model regulation and safety standards",
+        "Impact on open-source AI development"
+      ],
+      "url": "#affiliate-ai-regulation",
+      "cta": "Understand AI regulation"
+    },
+    {
+      "name": "Data Privacy Laws",
+      "icon": "🔒",
+      "tag": "Privacy",
+      "description": "GDPR, CCPA, CPRA, PIPEDA, and dozens more — data privacy law is a patchwork of overlapping, sometimes contradictory regulations. We compare frameworks, track enforcement actions, and explain what these laws actually require and protect.",
+      "features": [
+        "GDPR vs. US state privacy laws comparison",
+        "Data broker regulation and opt-out rights",
+        "Cross-border data transfer rules",
+        "Enforcement actions and penalty tracker",
+        "Children's privacy (COPPA, Age Appropriate Design)"
+      ],
+      "url": "#affiliate-privacy-laws",
+      "cta": "Compare privacy laws"
+    },
+    {
+      "name": "Platform Governance",
+      "icon": "📱",
+      "tag": "Big Tech",
+      "description": "How should social media platforms moderate content, curate feeds, and handle disinformation? We analyze the policy frameworks, legislative proposals, and self-regulatory efforts shaping how platforms govern the digital public square.",
+      "features": [
+        "Section 230 reform proposals analyzed",
+        "EU Digital Services Act requirements",
+        "Content moderation transparency reports",
+        "Algorithmic amplification and recommendation",
+        "Interoperability and platform competition"
+      ],
+      "url": "#affiliate-platform-governance",
+      "cta": "Explore platform policy"
+    },
+    {
+      "name": "Digital Identity",
+      "icon": "🪪",
+      "tag": "Infrastructure",
+      "description": "Digital identity systems are being deployed worldwide — government-issued digital IDs, biometric databases, self-sovereign identity on blockchain, and age verification mandates. The design choices made now will define privacy and access for decades.",
+      "features": [
+        "Government digital ID programs compared",
+        "Biometric data collection and risks",
+        "Self-sovereign identity (SSI) and verifiable credentials",
+        "Age verification mandates and privacy trade-offs",
+        "Identity fraud and deepfake threats"
+      ],
+      "url": "#affiliate-digital-identity",
+      "cta": "Understand digital ID"
+    },
+    {
+      "name": "Open Source Policy",
+      "icon": "📖",
+      "tag": "Innovation",
+      "description": "Open source software powers the internet, but its policy status is increasingly contested. From AI model licensing to government procurement mandates and export controls, open source is a policy battleground with enormous stakes.",
+      "features": [
+        "Open source AI model licensing debates",
+        "Government open source procurement policies",
+        "Export control implications for open source",
+        "Sustainability and funding models",
+        "Corporate open source strategies and risks"
+      ],
+      "url": "#affiliate-open-source-policy",
+      "cta": "Explore open source policy"
+    },
+    {
+      "name": "Algorithmic Accountability",
+      "icon": "🔍",
+      "tag": "Accountability",
+      "description": "When an algorithm denies your loan, rejects your resume, or flags you as a security risk — who's responsible? Algorithmic accountability laws are emerging to require transparency, auditing, and redress for automated decision-making.",
+      "features": [
+        "Algorithmic audit requirements by jurisdiction",
+        "Bias detection and fairness metrics",
+        "Automated decision-making rights (GDPR Art. 22)",
+        "Impact assessments for high-risk AI systems",
+        "Whistleblower protections for AI harms"
+      ],
+      "url": "#affiliate-algorithmic-accountability",
+      "cta": "Learn about accountability"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is this site politically biased?",
+      "a": "We aim for analytical neutrality. Tech policy doesn't map neatly onto left-right politics — privacy advocates span the entire spectrum, and both free-market conservatives and progressive regulators have legitimate concerns about Big Tech. We present the arguments and evidence; you decide where you stand."
+    },
+    {
+      "q": "Why should I care about tech policy?",
+      "a": "Because it directly affects your daily life. Tech policy determines whether your employer can use AI to screen your resume, whether your health data can be sold to advertisers, whether you can repair your own devices, and whether your social media feed shows you accurate information. Opting out of caring doesn't opt you out of the consequences."
+    },
+    {
+      "q": "How can I get involved in tech policy?",
+      "a": "Start by following organizations like EFF, Access Now, and the Center for Democracy and Technology. Comment on proposed regulations during public comment periods. Contact your elected representatives about tech issues you care about. Support journalists and researchers covering tech policy. Informed citizens are the best check on both corporate and government overreach."
+    },
+    {
+      "q": "What's the most important tech policy issue right now?",
+      "a": "AI regulation is arguably the most consequential, simply because of the speed and scale of AI deployment. The frameworks being established in 2025-2026 — the EU AI Act, US executive orders, China's regulations — will shape how this technology develops for decades. But data privacy and platform governance remain critically important ongoing issues."
+    },
+    {
+      "q": "Do you accept funding from tech companies?",
+      "a": "No. Techmocracy is independently funded through affiliate links to books, courses, and tools. We do not accept sponsorships, grants, or advertising from technology companies whose policies we analyze. Editorial independence is non-negotiable."
+    }
+  ]
+}

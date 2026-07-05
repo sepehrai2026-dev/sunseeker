@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{site.title}}</title>
+<meta name="description" content="{{site.metaDescription}}">
+<meta name="keywords" content="{{site.metaKeywords}}">
+<meta property="og:title" content="{{site.title}}">
+<meta property="og:description" content="{{site.metaDescription}}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://{{site.domain}}">
+<link rel="canonical" href="https://{{site.domain}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* {{styles}} */
+</style>
+</head>
+<body>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="/" class="wordmark"><span class="wordmark-tick" aria-hidden="true"></span>{{site.name}}</a>
+    <span class="nav-meta">Updated {{site.lastUpdated}}</span>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="hero-kicker"><span class="kicker-rule" aria-hidden="true"></span>{{site.domain}} &middot; A field guide</p>
+    <h1 class="hero-title">{{site.headline}}</h1>
+    <p class="hero-sub">{{site.subheadline}}</p>
+    <div class="hero-foot">
+      <span>Edition {{site.year}}</span>
+      <span class="hero-foot-rule" aria-hidden="true"></span>
+      <span>Last revised {{site.lastUpdated}}</span>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+
+  <aside class="toc" aria-label="Table of contents">
+    <div class="toc-sticky">
+      <p class="toc-label">Contents</p>
+      <ol class="toc-list" id="toc">
+        <li><a href="#introduction" class="toc-link">Introduction</a></li>
+        <li><a href="#index" class="toc-link">{{site.topicsTitle}}</a></li>
+        <li><a href="#guide" class="toc-link">{{site.guideTitle}}</a></li>
+        <li><a href="#resources" class="toc-link">{{site.resourcesTitle}}</a></li>
+        <li><a href="#faq" class="toc-link">Questions</a></li>
+      </ol>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <section class="section reveal" id="introduction">
+      <header class="section-head">
+        <span class="section-no">01</span>
+        <h2 class="section-title">Introduction</h2>
+      </header>
+      <p class="intro-copy">{{site.introCopy}}</p>
+    </section>
+
+    <section class="section reveal" id="index">
+      <header class="section-head">
+        <span class="section-no">02</span>
+        <h2 class="section-title">{{site.topicsTitle}}</h2>
+      </header>
+      <div class="index-list">
+        {{items}}
+      </div>
+    </section>
+
+    <section class="section reveal" id="guide">
+      <header class="section-head">
+        <span class="section-no">03</span>
+        <h2 class="section-title">{{site.guideTitle}}</h2>
+      </header>
+      <div class="prose">{{site.guideContent}}</div>
+    </section>
+
+    <section class="section reveal" id="resources">
+      <header class="section-head">
+        <span class="section-no">04</span>
+        <h2 class="section-title">{{site.resourcesTitle}}</h2>
+      </header>
+      <div class="prose">{{site.resourcesContent}}</div>
+    </section>
+
+    <section class="section reveal" id="faq">
+      <header class="section-head">
+        <span class="section-no">05</span>
+        <h2 class="section-title">Questions, answered</h2>
+      </header>
+      <div class="faq-list" id="faq-list"></div>
+    </section>
+
+  </main>
+
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="wordmark wordmark--footer"><span class="wordmark-tick" aria-hidden="true"></span>{{site.name}}</span>
+        <p class="footer-disclaimer">{{site.disclaimer}}</p>
+      </div>
+      <div class="footer-links">
+        <span class="footer-links-heading">Elsewhere</span>
+        <a href="https://sepehr.ai" target="_blank" rel="noopener">sepehr.ai</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; {{site.year}} {{site.name}}. All rights reserved. {{site.affiliateDisclosure}}</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const SITE_CONFIG = {{site._jsonBlob}};
+// {{script}}
+</script>
+</body>
+</html>

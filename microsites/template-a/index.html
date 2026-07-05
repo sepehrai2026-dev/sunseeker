@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{site.title}}</title>
+<meta name="description" content="{{site.metaDescription}}">
+<meta name="keywords" content="{{site.metaKeywords}}">
+<meta name="theme-color" content="#0a0a0a">
+<meta property="og:title" content="{{site.title}}">
+<meta property="og:description" content="{{site.metaDescription}}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://{{site.domain}}">
+<link rel="canonical" href="https://{{site.domain}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* {{styles}} */
+</style>
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-brand">{{site.name}}</a>
+    <div class="nav-links">
+      <a href="#compare">Compare</a>
+      <a href="#guide">Guide</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <span class="status-chip nav-updated"><span class="status-dot" aria-hidden="true"></span>Updated {{site.lastUpdated}}</span>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="hero-eyebrow">{{site.name}} &mdash; independent comparison</p>
+    <h1 class="hero-title">{{site.headline}}</h1>
+    <p class="hero-sub">{{site.subheadline}}</p>
+    <div class="hero-meta">
+      <span class="status-chip"><span class="mono-num" id="hero-count">&ndash;&ndash;</span>&nbsp;options benchmarked</span>
+      <span class="status-chip"><span class="status-dot" aria-hidden="true"></span>Updated {{site.lastUpdated}}</span>
+    </div>
+    <div class="hero-actions">
+      <a href="#compare" class="btn btn-solid" id="hero-cta"><span id="hero-cta-label">View the comparison</span><svg class="btn-arrow" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5"/></svg></a>
+      <a href="#guide" class="btn btn-ghost">Read the guide</a>
+    </div>
+  </div>
+</header>
+
+<main class="content">
+  <section class="intro">
+    <div class="section-wrap">
+      <p class="intro-copy" data-reveal>{{site.introCopy}}</p>
+    </div>
+  </section>
+
+  <section class="comparison" id="compare">
+    <div class="section-wrap">
+      <div class="section-head" data-reveal>
+        <span class="section-index">01</span>
+        <span class="section-label">Comparison</span>
+        <span class="section-rule" aria-hidden="true"></span>
+      </div>
+      <h2 class="section-title" data-reveal>{{site.comparisonTitle}}</h2>
+      <div class="cards">
+        {{items}}
+      </div>
+    </div>
+  </section>
+
+  <section class="guide" id="guide">
+    <div class="section-wrap">
+      <div class="section-head" data-reveal>
+        <span class="section-index">02</span>
+        <span class="section-label">Guide</span>
+        <span class="section-rule" aria-hidden="true"></span>
+      </div>
+      <h2 class="section-title" data-reveal>{{site.guideTitle}}</h2>
+      <div class="guide-content" data-reveal>{{site.guideContent}}</div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="section-wrap">
+      <div class="section-head" data-reveal>
+        <span class="section-index">03</span>
+        <span class="section-label">FAQ</span>
+        <span class="section-rule" aria-hidden="true"></span>
+      </div>
+      <h2 class="section-title" data-reveal>Frequently asked questions</h2>
+      <div class="faq-list" id="faq-list"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="footer-name">{{site.name}}</span>
+        <p class="footer-disc">{{site.disclaimer}}</p>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-label">Index</span>
+        <a href="#compare">Comparison</a>
+        <a href="#guide">Guide</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-label">Network</span>
+        <a href="https://sepehr.ai" target="_blank" rel="noopener">sepehr.ai</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; {{site.year}} {{site.name}}</p>
+      <p class="footer-affiliate">{{site.affiliateDisclosure}}</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const SITE_CONFIG = {{site._jsonBlob}};
+// {{script}}
+</script>
+</body>
+</html>

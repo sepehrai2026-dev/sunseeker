@@ -1,0 +1,94 @@
+{
+  "template": "e",
+  "domain": "holidayinorbit.com",
+  "name": "Holiday in Orbit",
+  "logoIcon": "🚀",
+  "title": "Holiday in Orbit — Your Guide to Space Tourism",
+  "metaDescription": "Explore the future of space tourism. Orbital hotels, lunar getaways, zero-gravity experiences, and everything you need to plan your first holiday in orbit.",
+  "metaKeywords": "space tourism, orbital hotel, lunar vacation, zero gravity, space travel, space holiday",
+  "tagline": "SPACE TRAVEL",
+  "headline": "Your Next Vacation Is 400km Up",
+  "subheadline": "From orbital suites with Earth views to lunar resort packages, space tourism is no longer science fiction. We cover every launch, every destination, every experience.",
+  "year": "2026",
+  "storiesTitle": "Latest Stories",
+  "aboutTitle": "About Holiday in Orbit",
+  "aboutContent": "<h3>The Final Frontier of Travel</h3><p>Holiday in Orbit is the premier editorial destination for space tourism enthusiasts, future astronauts, and anyone who has ever looked up at the stars and wondered what it would be like to float among them. We track every development in commercial spaceflight and off-world hospitality.</p><h3>What We Cover</h3><p>From the engineering marvels of orbital habitats to the surprisingly tricky logistics of zero-gravity room service, we bring you in-depth reporting on the companies, technologies, and experiences shaping humanity's next great travel frontier.</p><h3>Join the Journey</h3><p>Whether you are saving up for a suborbital hop or dreaming of a week on the Moon, Holiday in Orbit is your launchpad. Subscribe to stay ahead of every booking window, price drop, and maiden voyage.</p>",
+  "newsletterTitle": "Get Launch Alerts",
+  "newsletterSub": "Be the first to know when new orbital destinations open for bookings. No spam, just stars.",
+  "disclaimer": "All content is for informational and entertainment purposes. We are not a travel agency and do not sell tickets to space.",
+  "accentColor": "#7c3aed",
+  "accentLight": "#a78bfa",
+  "accentDark": "#5b21b6",
+  "items": [
+    {
+      "icon": "🏨",
+      "bannerBg": "linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4c1d95 100%)",
+      "tag": "Orbital Hotels",
+      "name": "Inside Voyager Station: The First Hotel With an Earth View",
+      "description": "A deep dive into the rotating space station promising artificial gravity, fine dining, and sunrises every 90 minutes. We toured the prototype module.",
+      "meta": "8 min read · June 2026"
+    },
+    {
+      "icon": "🌙",
+      "bannerBg": "linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%)",
+      "tag": "Lunar Getaways",
+      "name": "Lunar Gateway Lodge Announces 2028 Booking Window",
+      "description": "The first lunar surface hotel has opened reservations for its inaugural season. Here is what a week on the Moon will actually look like and cost.",
+      "meta": "6 min read · June 2026"
+    },
+    {
+      "icon": "🧑‍🚀",
+      "bannerBg": "linear-gradient(135deg, #2e1065 0%, #581c87 50%, #7c3aed 100%)",
+      "tag": "Zero-G Experiences",
+      "name": "We Tried Zero-Gravity Yoga and It Changed Everything",
+      "description": "Our editor spent three days floating through poses in microgravity. The results were equal parts transcendent and hilarious.",
+      "meta": "5 min read · May 2026"
+    },
+    {
+      "icon": "🌍",
+      "bannerBg": "linear-gradient(135deg, #042f2e 0%, #134e4a 50%, #0f766e 100%)",
+      "tag": "Earth Views",
+      "name": "The 10 Most Photographed Sights From Low Earth Orbit",
+      "description": "From the aurora borealis seen from above to city grids glowing at night, these are the views that make every astronaut reach for their camera.",
+      "meta": "4 min read · May 2026"
+    },
+    {
+      "icon": "🍽️",
+      "bannerBg": "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
+      "tag": "Space Dining",
+      "name": "Michelin Stars in Microgravity: The Rise of Orbital Fine Dining",
+      "description": "Three celebrity chefs are designing menus for space stations. We got an exclusive taste of dishes engineered for floating consumption.",
+      "meta": "7 min read · April 2026"
+    },
+    {
+      "icon": "💰",
+      "bannerBg": "linear-gradient(135deg, #172554 0%, #1e3a5f 50%, #1d4ed8 100%)",
+      "tag": "Pricing",
+      "name": "Space Tourism Price Tracker: What It Actually Costs in 2026",
+      "description": "A comprehensive breakdown of every commercial space experience currently available, from 10-minute suborbital flights to two-week orbital stays.",
+      "meta": "10 min read · June 2026"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can regular people actually go to space right now?",
+      "a": "Yes. Several companies now offer suborbital flights for civilians, and orbital stays are available for those with deeper pockets. Prices start around $250,000 for suborbital hops and go up from there."
+    },
+    {
+      "q": "How long is a typical space holiday?",
+      "a": "Suborbital flights last about 10-15 minutes of weightlessness. Orbital stays currently range from 3 days to 2 weeks, though longer-duration tourism modules are in development for 2027-2028."
+    },
+    {
+      "q": "Do you need astronaut training to be a space tourist?",
+      "a": "You will need some preparation, but it is far less intensive than professional astronaut training. Most programs include 3-7 days of safety briefings, G-force acclimatization, and basic spacecraft familiarization."
+    },
+    {
+      "q": "Is Holiday in Orbit a travel agency?",
+      "a": "No. We are an editorial publication covering the space tourism industry. We do not sell tickets or make bookings, but we do link to official providers when covering their offerings."
+    },
+    {
+      "q": "What is the best time of year to visit space?",
+      "a": "Space does not have seasons, but launch windows vary by destination and provider. Orbital hotels are accessible year-round, while lunar trips are currently planned around specific alignment windows."
+    }
+  ]
+}

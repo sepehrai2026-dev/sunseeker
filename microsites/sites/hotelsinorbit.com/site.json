@@ -1,0 +1,90 @@
+{
+  "template": "e",
+  "domain": "hotelsinorbit.com",
+  "name": "Hotels in Orbit",
+  "logoIcon": "🌟",
+  "title": "Hotels in Orbit — The Guide to Space Accommodation",
+  "metaDescription": "Your comprehensive guide to orbital hotels, space stations, and off-world accommodation. Reviews, comparisons, and booking timelines for every planned space hotel.",
+  "metaKeywords": "space hotel, orbital hotel, space station hotel, space accommodation, orbital habitat, space living",
+  "tagline": "ORBITAL LIVING",
+  "headline": "Where Will You Stay Among the Stars?",
+  "subheadline": "A comprehensive guide to every orbital hotel concept, planned space station, and off-world accommodation currently in development. The hospitality industry's boldest frontier.",
+  "year": "2026",
+  "storiesTitle": "Featured Guides",
+  "aboutTitle": "About Hotels in Orbit",
+  "aboutContent": "<h3>Hospitality Beyond Earth</h3><p>Hotels in Orbit is the definitive resource for anyone tracking the emerging space hospitality industry. We cover every planned orbital habitat, review concept designs, interview the companies building them, and keep a running tally of projected opening dates and pricing.</p><h3>Why Space Hotels Matter</h3><p>The race to build habitable space stations is not just about tourism. These facilities will serve as research platforms, manufacturing hubs, and the first permanent communities off Earth. Understanding them now means understanding where humanity lives next.</p><h3>Our Coverage</h3><p>We publish in-depth profiles of every major space hotel project, track regulatory developments, compare accommodation concepts, and break down the engineering challenges of making a comfortable bed in zero gravity.</p>",
+  "newsletterTitle": "Room Availability Alerts",
+  "newsletterSub": "Get notified when orbital hotels announce new booking windows and early access programs.",
+  "disclaimer": "All content is editorial and informational. We do not operate hotels or accept reservations for space accommodation.",
+  "accentColor": "#0891b2",
+  "accentLight": "#22d3ee",
+  "accentDark": "#0e7490",
+  "items": [
+    {
+      "icon": "🛸",
+      "bannerBg": "linear-gradient(135deg, #0c4a6e 0%, #0369a1 50%, #0284c7 100%)",
+      "tag": "Station Profiles",
+      "name": "Voyager Station: Artificial Gravity and Art Deco in Low Earth Orbit",
+      "description": "The rotating wheel station promises 1/6th Earth gravity, 24 guest modules, and a design aesthetic inspired by golden-age ocean liners. We break down the engineering.",
+      "meta": "9 min read · June 2026"
+    },
+    {
+      "icon": "🏗️",
+      "bannerBg": "linear-gradient(135deg, #042f2e 0%, #115e59 50%, #0891b2 100%)",
+      "tag": "Under Construction",
+      "name": "Axiom Station Modules: Progress Report and 2027 Timeline",
+      "description": "Axiom Space continues attaching commercial modules to the ISS. We visited the factory floor and got an update on the standalone station roadmap.",
+      "meta": "7 min read · June 2026"
+    },
+    {
+      "icon": "🛏️",
+      "bannerBg": "linear-gradient(135deg, #164e63 0%, #155e75 50%, #0e7490 100%)",
+      "tag": "Accommodation",
+      "name": "Space Hotel Room Comparison: What You Get for Your Money",
+      "description": "From inflatable modules to rigid capsules, we compare every announced space hotel room type by size, amenities, views, and projected nightly rate.",
+      "meta": "6 min read · May 2026"
+    },
+    {
+      "icon": "🚀",
+      "bannerBg": "linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #3730a3 100%)",
+      "tag": "Transportation",
+      "name": "Getting There: Which Rockets Serve Which Hotels",
+      "description": "A practical guide to the launch vehicles that will ferry guests to orbital accommodations, including ride-share options and transfer logistics.",
+      "meta": "5 min read · May 2026"
+    },
+    {
+      "icon": "🌊",
+      "bannerBg": "linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #475569 100%)",
+      "tag": "Concepts",
+      "name": "The Orbital Reef: Bezos and Sierra Space's Mixed-Use Station",
+      "description": "Part hotel, part research lab, part film studio. We unpack the most ambitious commercial space station proposal and its implications for orbital tourism.",
+      "meta": "8 min read · April 2026"
+    },
+    {
+      "icon": "⚖️",
+      "bannerBg": "linear-gradient(135deg, #1a2744 0%, #1e3a5f 50%, #2563eb 100%)",
+      "tag": "Regulation",
+      "name": "Who Regulates a Hotel in Space? The Legal Landscape Explained",
+      "description": "Jurisdiction, liability, health codes, and emergency protocols. The legal framework for orbital hospitality is being written right now, and it is complicated.",
+      "meta": "6 min read · April 2026"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Are any space hotels actually open for bookings?",
+      "a": "As of 2026, no permanent commercial space hotel is fully operational. However, several companies have announced booking windows for 2027-2029, and short orbital stays aboard existing spacecraft are available now."
+    },
+    {
+      "q": "How much will a night in a space hotel cost?",
+      "a": "Current projections range from $500,000 to $5 million for a multi-day stay, depending on the facility and duration. Prices are expected to decrease as capacity increases and competition grows."
+    },
+    {
+      "q": "Will space hotels have artificial gravity?",
+      "a": "Some designs, like Voyager Station, use rotation to create partial gravity. Others embrace microgravity as a feature. Both approaches have trade-offs in terms of comfort, cost, and engineering complexity."
+    },
+    {
+      "q": "How do basic amenities work in a space hotel?",
+      "a": "Showers use enclosed water reclamation systems, toilets use suction, and meals are specially prepared for consumption in low or zero gravity. Each hotel concept handles these challenges differently."
+    }
+  ]
+}

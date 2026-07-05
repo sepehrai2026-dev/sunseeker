@@ -1,0 +1,78 @@
+{
+  "template": "f",
+  "domain": "gizem.ai",
+  "name": "Gizem AI",
+  "logoIcon": "🧠",
+  "title": "Gizem — AI Researcher & Engineer",
+  "metaDescription": "Gizem is an AI researcher and engineer building responsible, cutting-edge artificial intelligence. Specializing in model development, AI safety, and bridging research with real-world applications.",
+  "metaKeywords": "AI researcher, machine learning engineer, AI safety, model development, AI consulting, deep learning, responsible AI, artificial intelligence",
+  "badge": "AI Research · Building the Future",
+  "headline": "Advancing AI with purpose and precision",
+  "subheadline": "AI researcher and engineer dedicated to building intelligent systems that are powerful, safe, and genuinely useful. From foundational model development to responsible deployment — turning cutting-edge research into real-world impact.",
+  "ctaText": "Get in Touch",
+  "year": "2026",
+  "featuresTitle": "What I Do",
+  "visionTitle": "Research Philosophy",
+  "visionContent": "<h3>Building AI That Serves Humanity</h3><p>The most exciting AI breakthroughs mean nothing if they can't be deployed responsibly. My work focuses on developing models that are not only state-of-the-art in performance but also aligned with human values, transparent in their reasoning, and robust against misuse. Every system I build starts with the question: who does this help, and how do we make sure it stays that way?</p><h3>Bridging Research and Application</h3><p>Too much brilliant research never leaves the lab. I specialize in taking novel architectures, training techniques, and safety methods from academic papers and turning them into production-ready systems. Whether it's fine-tuning foundation models for specific domains or designing evaluation frameworks that catch failure modes before deployment, the goal is always the same — make the research real.</p><h3>Open Knowledge, Shared Progress</h3><p>AI progress accelerates when knowledge flows freely. I actively contribute to open-source projects, publish research openly, and speak at conferences to share findings with the broader community. Collaboration isn't just a value — it's a strategy for building AI that works for everyone, not just the organizations with the largest compute budgets.</p>",
+  "waitlistTitle": "Let's Connect",
+  "waitlistSub": "Interested in collaboration, consulting, or speaking engagements? Drop your email and I'll be in touch.",
+  "waitlistNote": "I typically respond within 48 hours. Your email is never shared with third parties.",
+  "disclaimer": "Gizem.ai is a personal portfolio and research hub. Views expressed are my own and do not represent any affiliated organization. Content is provided for informational purposes only.",
+  "accentColor": "#8b5cf6",
+  "accentLight": "#ede9fe",
+  "accentDark": "#7c3aed",
+  "items": [
+    {
+      "icon": "🔬",
+      "name": "AI Model Development",
+      "description": "Designing and training novel architectures from scratch — transformer variants, mixture-of-experts systems, and domain-specific foundation models optimized for performance and efficiency."
+    },
+    {
+      "icon": "📄",
+      "name": "Research Publications",
+      "description": "Peer-reviewed papers on model alignment, efficient training methods, and evaluation frameworks. Published in top-tier venues including NeurIPS, ICML, and AAAI."
+    },
+    {
+      "icon": "💼",
+      "name": "AI Consulting",
+      "description": "Helping organizations adopt AI responsibly — from strategy and architecture reviews to hands-on model development, fine-tuning, and deployment pipeline design."
+    },
+    {
+      "icon": "🎤",
+      "name": "Speaking Engagements",
+      "description": "Keynotes and technical talks at industry conferences, academic symposiums, and corporate events covering AI trends, safety research, and practical implementation strategies."
+    },
+    {
+      "icon": "🌐",
+      "name": "Open-Source Contributions",
+      "description": "Maintaining and contributing to open-source ML libraries, training frameworks, and evaluation toolkits. Making state-of-the-art techniques accessible to researchers and engineers everywhere."
+    },
+    {
+      "icon": "🛡️",
+      "name": "AI Safety Research",
+      "description": "Developing alignment techniques, red-teaming methodologies, and robustness evaluations to ensure AI systems behave as intended and remain safe under adversarial conditions."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What types of consulting projects do you take on?",
+      "a": "I work with organizations on AI strategy, model development, safety audits, and deployment architecture. Projects range from short-term advisory engagements to multi-month embedded work building custom AI systems. I'm particularly interested in projects where safety and capability need to coexist."
+    },
+    {
+      "q": "Are you available for speaking engagements?",
+      "a": "Yes. I speak at conferences, corporate events, and academic institutions on topics including AI safety, model development, responsible deployment, and the future of artificial intelligence. Reach out with event details and I'll confirm availability."
+    },
+    {
+      "q": "Do you collaborate on research projects?",
+      "a": "Absolutely. I actively seek collaborations with academic labs, industry research teams, and independent researchers. If you're working on alignment, efficient training, or evaluation methodology and want to explore joint work, I'd love to hear about it."
+    },
+    {
+      "q": "What is your approach to AI safety?",
+      "a": "I believe safety isn't a constraint on capability — it's a prerequisite for it. My approach combines technical methods like RLHF, constitutional AI techniques, and adversarial robustness testing with broader systemic thinking about deployment contexts, access controls, and monitoring."
+    },
+    {
+      "q": "Can I access your research and open-source work?",
+      "a": "Most of my research is published openly and my code contributions are on GitHub. Get in touch and I'll share direct links to relevant papers, repositories, and toolkits based on your specific interests."
+    }
+  ]
+}

@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Internet of Money — Your Crypto Education Hub</title>
+<meta name="description" content="Learn cryptocurrency from the ground up. Beginner-friendly guides to Bitcoin, DeFi, wallets, blockchain, smart contracts, and staking.">
+<meta name="keywords" content="crypto education, learn bitcoin, defi explained, crypto wallets, blockchain basics, smart contracts, staking, yield farming">
+<meta property="og:title" content="Internet of Money — Your Crypto Education Hub">
+<meta property="og:description" content="Learn cryptocurrency from the ground up. Beginner-friendly guides to Bitcoin, DeFi, wallets, blockchain, smart contracts, and staking.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://internetofmoney.io">
+<link rel="canonical" href="https://internetofmoney.io">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0a0a0a;
+  --bg-raise: #0e0e0e;
+  --bg-card: #101010;
+  --ink: #ececec;
+  --ink-2: #b4b4b4;
+  --ink-3: #7c7c7c;
+  --hairline: #1f1f1f;
+  --hairline-strong: #2c2c2c;
+  --accent: #f59e0b;
+  --accent-dark: #d97706;
+  --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
+  --measure: 70ch;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+
+body {
+  font-family: var(--sans);
+  font-size: 1.0625rem;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Grain overlay */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+::selection { background: var(--accent); color: #0a0a0a; }
+
+/* ── Reading progress ── */
+.progress {
+  position: fixed;
+  top: 0; left: 0;
+  height: 2px;
+  width: 100%;
+  z-index: 300;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+}
+
+/* ── Nav ── */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 200;
+  background: rgba(10, 10, 10, 0.72);
+  backdrop-filter: blur(14px) saturate(1.4);
+  -webkit-backdrop-filter: blur(14px) saturate(1.4);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.nav.scrolled { border-bottom-color: var(--hairline); }
+
+.nav-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.wordmark {
+  font-family: var(--serif);
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.wordmark:hover { text-decoration: none; color: var(--ink); }
+
+.wordmark-tick {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: var(--accent);
+  flex: none;
+  display: inline-block;
+}
+
+.nav-meta {
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+
+/* ── Hero ── */
+.hero {
+  position: relative;
+  padding: 11rem 1.5rem 5.5rem;
+  border-bottom: 1px solid var(--hairline);
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  left: 55%;
+  width: 44rem;
+  height: 44rem;
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--accent) 11%, transparent), transparent 70%);
+  pointer-events: none;
+}
+
+.hero-inner {
+  position: relative;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.hero-kicker {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--ink-3);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.kicker-rule {
+  width: 2.5rem;
+  height: 1px;
+  background: var(--accent);
+  display: inline-block;
+  flex: none;
+}
+
+.hero-title {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(2.6rem, 6.4vw, 4.75rem);
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  max-width: 18ch;
+  text-wrap: balance;
+}
+
+.hero-sub {
+  margin-top: 1.75rem;
+  max-width: 58ch;
+  font-size: clamp(1.0625rem, 1.6vw, 1.25rem);
+  line-height: 1.65;
+  color: var(--ink-2);
+}
+
+.hero-foot {
+  margin-top: 3.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--ink-3);
+}
+
+.hero-foot-rule {
+  width: 1px;
+  height: 0.875rem;
+  background: var(--hairline-strong);
+}
+
+/* ── Layout: TOC + main ── */
+.layout {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 15rem minmax(0, 1fr);
+  gap: 4rem;
+  align-items: start;
+}
+
+.toc { padding-top: 5rem; }
+
+.toc-sticky {
+  position: sticky;
+  top: 6rem;
+}
+
+.toc-label {
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--ink-3);
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--hairline);
+  margin-bottom: 1rem;
+}
+
+.toc-list {
+  list-style: none;
+  counter-reset: toc;
+}
+
+.toc-list li { counter-increment: toc; }
+
+.toc-link {
+  display: flex;
+  gap: 0.7rem;
+  align-items: baseline;
+  padding: 0.45rem 0 0.45rem 0.85rem;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: var(--ink-3);
+  border-left: 1px solid var(--hairline);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.toc-link::before {
+  content: counter(toc, decimal-leading-zero);
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  color: var(--ink-3);
+  flex: none;
+}
+
+.toc-link:hover { color: var(--ink); text-decoration: none; }
+
+.toc-link.active {
+  color: var(--ink);
+  border-left-color: var(--accent);
+}
+
+.toc-link.active::before { color: var(--accent); }
+
+/* ── Sections ── */
+.main {
+  padding: 5rem 0 6rem;
+  min-width: 0;
+}
+
+.section {
+  padding: 0 0 5rem;
+  margin-bottom: 5rem;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.section:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  margin-bottom: 2.75rem;
+}
+
+.section-no {
+  font-family: var(--mono);
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 400;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--ink-3);
+  flex: none;
+}
+
+.section-title {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(1.6rem, 3vw, 2.25rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+/* ── Intro / drop cap ── */
+.intro-copy {
+  max-width: var(--measure);
+  font-size: 1.1875rem;
+  line-height: 1.8;
+  color: var(--ink-2);
+}
+
+.intro-copy::first-letter {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 4.4em;
+  line-height: 0.78;
+  float: left;
+  padding: 0.08em 0.14em 0 0;
+  color: var(--accent);
+}
+
+/* ── Index cards (curriculum rows) ── */
+.index-list { counter-reset: entry; }
+
+.index-card {
+  counter-increment: entry;
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr);
+  gap: 1.5rem;
+  padding: 2.25rem 0;
+  border-top: 1px solid var(--hairline);
+  transition: background 0.25s ease;
+}
+
+.index-card:last-child { border-bottom: 1px solid var(--hairline); }
+
+.index-card:hover { background: linear-gradient(90deg, var(--bg-raise), transparent); }
+
+.index-card-no::before {
+  content: counter(entry, decimal-leading-zero);
+  font-family: var(--mono);
+  font-size: 1.5rem;
+  color: var(--ink-3);
+  line-height: 1.2;
+}
+
+.index-card-main { min-width: 0; }
+
+.index-card-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.index-card-name {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.index-card-tag {
+  font-family: var(--mono);
+  font-size: 0.6563rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--accent);
+  border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+  padding: 0.25rem 0.55rem;
+  white-space: nowrap;
+}
+
+.index-card-desc {
+  max-width: var(--measure);
+  color: var(--ink-2);
+  margin-bottom: 1.25rem;
+}
+
+.index-card-points {
+  list-style: none;
+  max-width: var(--measure);
+  margin-bottom: 1.5rem;
+  border-top: 1px solid var(--hairline);
+}
+
+.index-card-points li {
+  position: relative;
+  padding: 0.55rem 0 0.55rem 1.4rem;
+  border-bottom: 1px solid var(--hairline);
+  font-size: 0.9375rem;
+  color: var(--ink-2);
+}
+
+.index-card-points li::before {
+  content: "";
+  position: absolute;
+  left: 0.15rem;
+  top: 1.05rem;
+  width: 0.45rem;
+  height: 1px;
+  background: var(--accent);
+}
+
+.index-card-link {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--ink);
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 0.3rem;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.index-card-link:hover { text-decoration: none; color: var(--accent); }
+
+.link-arrow { transition: transform 0.2s ease; display: inline-block; }
+
+.index-card-link:hover .link-arrow { transform: translateX(4px); }
+
+/* Featured card */
+.card-featured {
+  border-left: 2px solid var(--accent);
+  padding-left: 1.5rem;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--accent) 5%, transparent), transparent 55%);
+}
+
+/* ── Prose (guide + resources) ── */
+.prose { max-width: var(--measure); }
+
+.prose h3 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.375rem;
+  line-height: 1.25;
+  letter-spacing: -0.005em;
+  margin: 2.5rem 0 0.9rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--hairline);
+}
+
+.prose h3:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+
+.prose p { color: var(--ink-2); margin-bottom: 1.1rem; }
+
+.prose p:last-child { margin-bottom: 0; }
+
+.prose a {
+  color: var(--accent);
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
+.prose a:hover { text-decoration: none; border-bottom-color: var(--accent); }
+
+.prose ul, .prose ol { margin: 0 0 1.1rem 1.25rem; color: var(--ink-2); }
+
+/* ── FAQ ── */
+.faq-list {
+  max-width: var(--measure);
+  border-top: 1px solid var(--hairline);
+}
+
+.faq-item { border-bottom: 1px solid var(--hairline); }
+
+.faq-q {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.35rem 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--serif);
+  font-size: 1.1875rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--ink);
+  transition: color 0.2s ease;
+}
+
+.faq-q:hover { color: var(--accent); }
+
+.faq-q:focus-visible { outline: 1px solid var(--accent); outline-offset: 4px; }
+
+.faq-marker {
+  position: relative;
+  flex: none;
+  width: 0.85rem;
+  height: 0.85rem;
+}
+
+.faq-marker::before,
+.faq-marker::after {
+  content: "";
+  position: absolute;
+  background: var(--ink-3);
+  transition: transform 0.3s ease, background 0.2s ease;
+}
+
+.faq-marker::before {
+  left: 0; right: 0; top: 50%;
+  height: 1px;
+  margin-top: -0.5px;
+}
+
+.faq-marker::after {
+  top: 0; bottom: 0; left: 50%;
+  width: 1px;
+  margin-left: -0.5px;
+}
+
+.faq-q[aria-expanded="true"] .faq-marker::after { transform: scaleY(0); }
+
+.faq-q[aria-expanded="true"] .faq-marker::before { background: var(--accent); }
+
+.faq-a {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.35s ease;
+}
+
+.faq-a p {
+  color: var(--ink-2);
+  padding: 0 2.5rem 1.5rem 0;
+  max-width: 62ch;
+}
+
+/* ── Footer ── */
+.footer {
+  border-top: 1px solid var(--hairline);
+  background: var(--bg-raise);
+}
+
+.footer-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 2.5rem;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.footer-brand { max-width: 34rem; }
+
+.wordmark--footer { font-size: 1.25rem; margin-bottom: 1rem; }
+
+.footer-disclaimer {
+  font-size: 0.8125rem;
+  line-height: 1.7;
+  color: var(--ink-3);
+}
+
+.footer-links { display: flex; flex-direction: column; gap: 0.6rem; }
+
+.footer-links-heading {
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--ink-3);
+}
+
+.footer-links a { font-size: 0.875rem; color: var(--ink-2); }
+
+.footer-links a:hover { color: var(--accent); }
+
+.footer-bottom { padding-top: 2rem; }
+
+.footer-bottom p {
+  font-size: 0.75rem;
+  line-height: 1.7;
+  color: var(--ink-3);
+}
+
+/* ── Reveal animations ── */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .reveal.in { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
+
+/* ── Responsive ── */
+@media (max-width: 1023px) {
+  .layout { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .toc { display: none; }
+  .main { padding-top: 4rem; }
+}
+
+@media (max-width: 720px) {
+  body { font-size: 1rem; }
+  .hero { padding: 8.5rem 1.25rem 4rem; }
+  .hero-foot { margin-top: 2.5rem; flex-wrap: wrap; }
+  .layout { padding: 0 1.25rem; }
+  .section { padding-bottom: 3.5rem; margin-bottom: 3.5rem; }
+  .section-head { gap: 1rem; margin-bottom: 2rem; }
+  .index-card { grid-template-columns: minmax(0, 1fr); gap: 0.9rem; padding: 1.75rem 0; }
+  .index-card-no::before { font-size: 1.125rem; }
+  .card-featured { padding-left: 1.1rem; }
+  .faq-a p { padding-right: 1rem; }
+  .footer-inner { padding: 3rem 1.25rem 2rem; }
+  .nav-meta { display: none; }
+}
+
+</style>
+</head>
+<body>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="/" class="wordmark"><span class="wordmark-tick" aria-hidden="true"></span>Internet of Money</a>
+    <span class="nav-meta">Updated July 2026</span>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="hero-kicker"><span class="kicker-rule" aria-hidden="true"></span>internetofmoney.io &middot; A field guide</p>
+    <h1 class="hero-title">Understand crypto before you invest</h1>
+    <p class="hero-sub">Plain-English guides to Bitcoin, DeFi, wallets, and blockchain technology — built for beginners who want to learn before they leap.</p>
+    <div class="hero-foot">
+      <span>Edition 2026</span>
+      <span class="hero-foot-rule" aria-hidden="true"></span>
+      <span>Last revised July 2026</span>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+
+  <aside class="toc" aria-label="Table of contents">
+    <div class="toc-sticky">
+      <p class="toc-label">Contents</p>
+      <ol class="toc-list" id="toc">
+        <li><a href="#introduction" class="toc-link">Introduction</a></li>
+        <li><a href="#index" class="toc-link">Start learning</a></li>
+        <li><a href="#guide" class="toc-link">Your crypto learning roadmap</a></li>
+        <li><a href="#resources" class="toc-link">Recommended resources</a></li>
+        <li><a href="#faq" class="toc-link">Questions</a></li>
+      </ol>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <section class="section reveal" id="introduction">
+      <header class="section-head">
+        <span class="section-no">01</span>
+        <h2 class="section-title">Introduction</h2>
+      </header>
+      <p class="intro-copy">Cryptocurrency doesn't have to be confusing. Whether you're curious about Bitcoin, want to understand DeFi, or need to pick your first wallet, we break down every concept in clear, jargon-free language. No shilling, no hype — just honest education so you can make informed decisions with your money.</p>
+    </section>
+
+    <section class="section reveal" id="index">
+      <header class="section-head">
+        <span class="section-no">02</span>
+        <h2 class="section-title">Start learning</h2>
+      </header>
+      <div class="index-list">
+        <article class="index-card">
+  <div class="index-card-no" aria-hidden="true"></div>
+  <div class="index-card-main">
+    <header class="index-card-head">
+      <h3 class="index-card-name">What is Bitcoin</h3>
+      <span class="index-card-tag">Fundamentals</span>
+    </header>
+    <p class="index-card-desc">Bitcoin is the original cryptocurrency — a decentralized digital currency that lets you send money anywhere in the world without banks or intermediaries. Learn how it works, why it has value, and what makes it different from traditional money.</p>
+    <ul class="index-card-points">
+      How Bitcoin transactions work,Proof of Work and mining explained,Bitcoin's fixed supply of 21 million coins,The role of nodes and the network,Bitcoin vs. traditional banking
+    </ul>
+    <a class="index-card-link" href="#affiliate-bitcoin-guide" target="_blank" rel="noopener nofollow">Learn about Bitcoin <span class="link-arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+</article>
+
+<article class="index-card">
+  <div class="index-card-no" aria-hidden="true"></div>
+  <div class="index-card-main">
+    <header class="index-card-head">
+      <h3 class="index-card-name">Understanding DeFi</h3>
+      <span class="index-card-tag">Advanced</span>
+    </header>
+    <p class="index-card-desc">Decentralized Finance (DeFi) recreates traditional financial services — lending, borrowing, trading — using smart contracts instead of banks. Understand how protocols like Aave, Uniswap, and Compound work under the hood.</p>
+    <ul class="index-card-points">
+      What decentralized finance actually means,Lending and borrowing protocols,Decentralized exchanges (DEXs),Liquidity pools and impermanent loss,Risks and opportunities in DeFi
+    </ul>
+    <a class="index-card-link" href="#affiliate-defi-guide" target="_blank" rel="noopener nofollow">Explore DeFi <span class="link-arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+</article>
+
+<article class="index-card">
+  <div class="index-card-no" aria-hidden="true"></div>
+  <div class="index-card-main">
+    <header class="index-card-head">
+      <h3 class="index-card-name">Crypto Wallets Explained</h3>
+      <span class="index-card-tag">Essential</span>
+    </header>
+    <p class="index-card-desc">Your crypto wallet is how you store, send, and receive digital assets. Learn the difference between hot wallets, cold wallets, custodial and non-custodial options, and how to keep your funds safe.</p>
+    <ul class="index-card-points">
+      Hot wallets vs. cold storage,Custodial vs. non-custodial wallets,Hardware wallet recommendations,Seed phrase security best practices,Multi-signature wallet setups
+    </ul>
+    <a class="index-card-link" href="#affiliate-wallets-guide" target="_blank" rel="noopener nofollow">Choose a wallet <span class="link-arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+</article>
+
+<article class="index-card">
+  <div class="index-card-no" aria-hidden="true"></div>
+  <div class="index-card-main">
+    <header class="index-card-head">
+      <h3 class="index-card-name">Blockchain Basics</h3>
+      <span class="index-card-tag">Fundamentals</span>
+    </header>
+    <p class="index-card-desc">Blockchain is the technology underneath every cryptocurrency. Understand how blocks are created, how consensus works, and why this distributed ledger technology is being adopted far beyond crypto.</p>
+    <ul class="index-card-points">
+      How blocks and chains work,Consensus mechanisms explained,Public vs. private blockchains,Immutability and transparency,Real-world blockchain applications
+    </ul>
+    <a class="index-card-link" href="#affiliate-blockchain-guide" target="_blank" rel="noopener nofollow">Learn blockchain <span class="link-arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+</article>
+
+<article class="index-card">
+  <div class="index-card-no" aria-hidden="true"></div>
+  <div class="index-card-main">
+    <header class="index-card-head">
+      <h3 class="index-card-name">Smart Contracts 101</h3>
+      <span class="index-card-tag">Advanced</span>
+    </header>
+    <p class="index-card-desc">Smart contracts are self-executing programs that run on a blockchain. They power DeFi, NFTs, and decentralized applications. Learn how they work and why they're revolutionizing agreements.</p>
+    <ul class="index-card-points">
+      What smart contracts do,How Ethereum smart contracts work,Solidity and contract development,Smart contract auditing and security,Real-world use cases beyond crypto
+    </ul>
+    <a class="index-card-link" href="#affiliate-smartcontracts-guide" target="_blank" rel="noopener nofollow">Understand smart contracts <span class="link-arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+</article>
+
+<article class="index-card">
+  <div class="index-card-no" aria-hidden="true"></div>
+  <div class="index-card-main">
+    <header class="index-card-head">
+      <h3 class="index-card-name">Staking and Yield</h3>
+      <span class="index-card-tag">Earning</span>
+    </header>
+    <p class="index-card-desc">Staking lets you earn passive income by locking up your crypto to help secure a blockchain network. Learn how Proof of Stake works, where to stake, and how to evaluate yield opportunities safely.</p>
+    <ul class="index-card-points">
+      Proof of Stake explained,How staking rewards are calculated,Best staking platforms compared,Liquid staking and LSTs,Evaluating yield farming risks
+    </ul>
+    <a class="index-card-link" href="#affiliate-staking-guide" target="_blank" rel="noopener nofollow">Start staking <span class="link-arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+</article>
+
+      </div>
+    </section>
+
+    <section class="section reveal" id="guide">
+      <header class="section-head">
+        <span class="section-no">03</span>
+        <h2 class="section-title">Your crypto learning roadmap</h2>
+      </header>
+      <div class="prose"><h3>Step 1: Understand the basics</h3><p>Before buying anything, learn what blockchain actually is and why Bitcoin was created. Understanding the underlying technology helps you evaluate every other project and avoid scams.</p><h3>Step 2: Set up a secure wallet</h3><p>Your wallet is your bank. Learn the difference between custodial and non-custodial wallets, hot and cold storage, and why your seed phrase is the most important thing you'll ever write down.</p><h3>Step 3: Explore beyond Bitcoin</h3><p>Once you understand the fundamentals, explore DeFi protocols, smart contract platforms, and staking. Each topic builds on the last, and rushing ahead without the basics is how people lose money.</p><h3>Step 4: Practice with small amounts</h3><p>Start small. Use testnets to practice transactions, swap tiny amounts on a DEX, and stake a minimal position. Real experience teaches more than any guide.</p></div>
+    </section>
+
+    <section class="section reveal" id="resources">
+      <header class="section-head">
+        <span class="section-no">04</span>
+        <h2 class="section-title">Recommended resources</h2>
+      </header>
+      <div class="prose"><h3>Bitcoin Whitepaper</h3><p>The original 9-page paper by Satoshi Nakamoto that started it all. Surprisingly readable. <a href="https://bitcoin.org/bitcoin.pdf" target="_blank" rel="noopener">Read the whitepaper</a></p><h3>Ethereum.org Learn Hub</h3><p>Ethereum's official learning resources cover everything from basic concepts to advanced DeFi mechanics. <a href="https://ethereum.org/en/learn/" target="_blank" rel="noopener">Visit Ethereum.org</a></p><h3>Andreas Antonopoulos — Mastering Bitcoin</h3><p>The definitive technical book on Bitcoin, available free online. Great for those who want to go deeper. <a href="https://github.com/bitcoinbook/bitcoinbook" target="_blank" rel="noopener">Read on GitHub</a></p></div>
+    </section>
+
+    <section class="section reveal" id="faq">
+      <header class="section-head">
+        <span class="section-no">05</span>
+        <h2 class="section-title">Questions, answered</h2>
+      </header>
+      <div class="faq-list" id="faq-list"></div>
+    </section>
+
+  </main>
+
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="wordmark wordmark--footer"><span class="wordmark-tick" aria-hidden="true"></span>Internet of Money</span>
+        <p class="footer-disclaimer">InternetOfMoney.io provides educational content about cryptocurrency. This is not financial advice. Always do your own research before making investment decisions. We may earn commissions through affiliate links.</p>
+      </div>
+      <div class="footer-links">
+        <span class="footer-links-heading">Elsewhere</span>
+        <a href="https://sepehr.ai" target="_blank" rel="noopener">sepehr.ai</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Internet of Money. All rights reserved. Some links on this site are affiliate links. We may earn a commission if you make a purchase at no extra cost to you.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const SITE_CONFIG = {"faqs":[{"q":"Do I need money to start learning about crypto?","a":"No. You can learn everything about blockchain, Bitcoin, and DeFi without spending a cent. Many blockchains have testnets where you can practice transactions with free test tokens. Only invest real money once you truly understand what you're buying."},{"q":"Is cryptocurrency a scam?","a":"Cryptocurrency itself is legitimate technology. However, the crypto space has many scams — fake tokens, rug pulls, and Ponzi schemes. That's exactly why education matters. Learning to evaluate projects, read smart contracts, and spot red flags is the best protection."},{"q":"What's the safest way to store crypto?","a":"For long-term storage, a hardware wallet (like Ledger or Trezor) is the safest option. It keeps your private keys offline and immune to online hacks. Always back up your seed phrase on paper or metal and store it somewhere secure."},{"q":"How is this site different from crypto YouTube?","a":"Most crypto YouTubers are incentivized to hype tokens they hold. We focus on education, not price predictions. Our guides explain how things work so you can make your own decisions — we don't tell you what to buy."},{"q":"What should I learn first?","a":"Start with 'What is Bitcoin' and 'Blockchain Basics' to understand the foundation. Then move to wallets so you know how to store crypto safely. Only after that should you explore DeFi, smart contracts, and staking."}],"accentColor":"#f59e0b","accentLight":"#fef3c7","accentDark":"#d97706","ctaText":""};
+document.addEventListener('DOMContentLoaded', () => {
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Accent color (runtime fallback; primary value is compiled into CSS)
+  if (SITE_CONFIG.accentColor) {
+    document.documentElement.style.setProperty('--accent', SITE_CONFIG.accentColor);
+    document.documentElement.style.setProperty('--accent-dark', SITE_CONFIG.accentDark || SITE_CONFIG.accentColor);
+  }
+
+  // Rebuild feature lists: build injects features as a comma-joined string
+  // (items are joined with "," while commas inside a feature are ", ").
+  document.querySelectorAll('.index-card-points').forEach(ul => {
+    if (ul.querySelector('li')) return;
+    const raw = ul.textContent.trim();
+    ul.textContent = '';
+    if (!raw) { ul.remove(); return; }
+    raw.split(/,(?=\S)/).forEach(part => {
+      const li = document.createElement('li');
+      li.textContent = part.trim();
+      ul.appendChild(li);
+    });
+  });
+
+  // Reading progress hairline
+  const progress = document.getElementById('progress');
+  if (progress) {
+    let ticking = false;
+    const update = () => {
+      const doc = document.documentElement;
+      const max = doc.scrollHeight - window.innerHeight;
+      const ratio = max > 0 ? Math.min(window.scrollY / max, 1) : 0;
+      progress.style.transform = 'scaleX(' + ratio + ')';
+      ticking = false;
+    };
+    window.addEventListener('scroll', () => {
+      if (!ticking) { ticking = true; requestAnimationFrame(update); }
+    }, { passive: true });
+    update();
+  }
+
+  // Nav hairline on scroll
+  const nav = document.getElementById('nav');
+  if (nav) {
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+  }
+
+  // Table of contents scroll tracking
+  const tocLinks = Array.from(document.querySelectorAll('.toc-link'));
+  const sections = tocLinks
+    .map(link => document.getElementById(link.getAttribute('href').slice(1)))
+    .filter(Boolean);
+  if (sections.length && 'IntersectionObserver' in window) {
+    const setActive = id => {
+      tocLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+      });
+    };
+    const visible = new Map();
+    const spy = new IntersectionObserver(entries => {
+      entries.forEach(e => visible.set(e.target.id, e.isIntersecting));
+      const current = sections.find(s => visible.get(s.id));
+      if (current) setActive(current.id);
+    }, { rootMargin: '-15% 0px -55% 0px' });
+    sections.forEach(s => spy.observe(s));
+  }
+
+  // Section reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  if (revealEls.length && !reducedMotion && 'IntersectionObserver' in window) {
+    const revealer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          revealer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -5% 0px' });
+    revealEls.forEach(el => revealer.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('in'));
+  }
+
+  // FAQ accordion
+  const faqList = document.getElementById('faq-list');
+  if (SITE_CONFIG.faqs && SITE_CONFIG.faqs.length && faqList) {
+    SITE_CONFIG.faqs.forEach((faq, i) => {
+      const item = document.createElement('div');
+      item.className = 'faq-item';
+      const qId = 'faq-q-' + i;
+      const aId = 'faq-a-' + i;
+      const btn = document.createElement('button');
+      btn.className = 'faq-q';
+      btn.id = qId;
+      btn.setAttribute('aria-expanded', 'false');
+      btn.setAttribute('aria-controls', aId);
+      const label = document.createElement('span');
+      label.textContent = faq.q;
+      const marker = document.createElement('span');
+      marker.className = 'faq-marker';
+      marker.setAttribute('aria-hidden', 'true');
+      btn.appendChild(label);
+      btn.appendChild(marker);
+      const answer = document.createElement('div');
+      answer.className = 'faq-a';
+      answer.id = aId;
+      answer.setAttribute('role', 'region');
+      answer.setAttribute('aria-labelledby', qId);
+      const p = document.createElement('p');
+      p.textContent = faq.a;
+      answer.appendChild(p);
+      btn.addEventListener('click', () => {
+        const open = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!open));
+        answer.style.maxHeight = open ? '0px' : answer.scrollHeight + 'px';
+      });
+      item.appendChild(btn);
+      item.appendChild(answer);
+      faqList.appendChild(item);
+    });
+  }
+});
+
+
+</script>
+</body>
+</html>

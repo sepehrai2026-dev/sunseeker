@@ -1,0 +1,138 @@
+{
+  "template": "b",
+  "domain": "internetofcoins.io",
+  "name": "Internet of Coins",
+  "logoIcon": "🪙",
+  "title": "Internet of Coins — Cryptocurrency Encyclopedia",
+  "metaDescription": "In-depth guides to the top cryptocurrencies. Learn about Bitcoin, Ethereum, Solana, Cardano, Polkadot, and Avalanche — technology, use cases, and fundamentals.",
+  "metaKeywords": "cryptocurrency guide, bitcoin explained, ethereum guide, solana, cardano, polkadot, avalanche, crypto encyclopedia",
+  "headline": "Know every coin before you buy",
+  "subheadline": "Deep dives into the world's top cryptocurrencies — what they do, how they work, and what makes each one different.",
+  "lastUpdated": "July 2026",
+  "year": "2026",
+  "introCopy": "There are thousands of cryptocurrencies, but only a handful have real technology, active development, and long-term potential. We profile the most important coins and tokens, breaking down their technology, ecosystem, tokenomics, and competitive position so you can evaluate them on substance, not hype.",
+  "topicsTitle": "Coin profiles",
+  "guideTitle": "How to evaluate a cryptocurrency",
+  "guideContent": "<h3>Check the technology</h3><p>What consensus mechanism does it use? How fast are transactions? What's the block size? Understanding the technical architecture tells you what a blockchain can and can't do.</p><h3>Evaluate the team and development</h3><p>Look at GitHub activity, the founding team's track record, and the project's governance model. Active development and transparent leadership are strong positive signals.</p><h3>Understand tokenomics</h3><p>How many tokens exist? Is there a max supply? How are new tokens created? Inflationary vs. deflationary models have very different implications for long-term value.</p><h3>Assess the ecosystem</h3><p>A blockchain is only as valuable as the applications built on it. Check total value locked (TVL), number of active developers, and real user adoption — not just market cap.</p>",
+  "resourcesTitle": "Research tools",
+  "resourcesContent": "<h3>CoinGecko</h3><p>Comprehensive cryptocurrency data aggregator with price tracking, market metrics, and project fundamentals. <a href=\"https://www.coingecko.com\" target=\"_blank\" rel=\"noopener\">Visit CoinGecko</a></p><h3>DeFi Llama</h3><p>The best dashboard for tracking total value locked across DeFi protocols and chains. Essential for ecosystem analysis. <a href=\"https://defillama.com\" target=\"_blank\" rel=\"noopener\">Visit DeFi Llama</a></p><h3>Messari</h3><p>Professional-grade crypto research with detailed project profiles, governance tracking, and institutional-quality reports. <a href=\"https://messari.io\" target=\"_blank\" rel=\"noopener\">Visit Messari</a></p>",
+  "disclaimer": "InternetOfCoins.io provides educational cryptocurrency profiles. This is not financial advice. Always do your own research before investing. We may earn commissions through affiliate links.",
+  "affiliateDisclosure": "Some links on this site are affiliate links. We may earn a commission if you make a purchase at no extra cost to you.",
+  "accentColor": "#6366f1",
+  "accentLight": "#e0e7ff",
+  "accentDark": "#4f46e5",
+  "items": [
+    {
+      "name": "Bitcoin (BTC)",
+      "icon": "₿",
+      "tag": "Store of Value",
+      "description": "The original cryptocurrency and digital gold. Bitcoin is the most decentralized, secure, and battle-tested blockchain network in existence, with a fixed supply of 21 million coins and over 15 years of unbroken operation.",
+      "features": [
+        "Fixed supply: 21 million BTC maximum",
+        "Proof of Work consensus (most secure)",
+        "Lightning Network for fast payments",
+        "Largest network effect and liquidity",
+        "Institutional adoption accelerating"
+      ],
+      "url": "#affiliate-bitcoin",
+      "cta": "Learn about Bitcoin"
+    },
+    {
+      "name": "Ethereum (ETH)",
+      "icon": "⟠",
+      "tag": "Smart Contracts",
+      "description": "The world's leading smart contract platform. Ethereum hosts the vast majority of DeFi protocols, NFT marketplaces, and decentralized applications. Its transition to Proof of Stake dramatically reduced energy consumption.",
+      "features": [
+        "Largest smart contract ecosystem",
+        "Proof of Stake since The Merge (2022)",
+        "EIP-1559 fee burning mechanism",
+        "Layer 2 rollup scaling roadmap",
+        "Most active developer community"
+      ],
+      "url": "#affiliate-ethereum",
+      "cta": "Learn about Ethereum"
+    },
+    {
+      "name": "Solana (SOL)",
+      "icon": "◎",
+      "tag": "High Performance",
+      "description": "A high-throughput blockchain capable of processing thousands of transactions per second at extremely low fees. Solana has become the go-to chain for trading, meme coins, and consumer-facing applications.",
+      "features": [
+        "400ms block times, sub-cent fees",
+        "Proof of History + Proof of Stake",
+        "Strong DeFi and NFT ecosystem",
+        "Saga phone and mobile push",
+        "Firedancer validator client for resilience"
+      ],
+      "url": "#affiliate-solana",
+      "cta": "Learn about Solana"
+    },
+    {
+      "name": "Cardano (ADA)",
+      "icon": "🔷",
+      "tag": "Research-Driven",
+      "description": "A blockchain built on peer-reviewed academic research with a methodical, formal-verification approach to development. Cardano emphasizes correctness and sustainability over speed to market.",
+      "features": [
+        "Peer-reviewed development process",
+        "Ouroboros Proof of Stake protocol",
+        "eUTXO model for deterministic fees",
+        "Strong presence in developing nations",
+        "Plutus smart contract platform"
+      ],
+      "url": "#affiliate-cardano",
+      "cta": "Learn about Cardano"
+    },
+    {
+      "name": "Polkadot (DOT)",
+      "icon": "⬡",
+      "tag": "Interoperability",
+      "description": "A multi-chain protocol that connects specialized blockchains into one unified network. Polkadot's parachain architecture allows different chains to communicate and share security.",
+      "features": [
+        "Relay chain + parachain architecture",
+        "Cross-chain message passing (XCM)",
+        "Shared security model",
+        "On-chain governance and treasury",
+        "Substrate framework for chain building"
+      ],
+      "url": "#affiliate-polkadot",
+      "cta": "Learn about Polkadot"
+    },
+    {
+      "name": "Avalanche (AVAX)",
+      "icon": "🔺",
+      "tag": "Subnets",
+      "description": "A platform of platforms. Avalanche lets anyone launch custom blockchain networks (Subnets) with their own rules and validators while benefiting from the broader Avalanche ecosystem and consensus.",
+      "features": [
+        "Sub-second finality",
+        "Custom Subnet architecture",
+        "Avalanche consensus protocol",
+        "Strong institutional and enterprise adoption",
+        "EVM-compatible C-Chain"
+      ],
+      "url": "#affiliate-avalanche",
+      "cta": "Learn about Avalanche"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Which cryptocurrency should I buy first?",
+      "a": "Most newcomers start with Bitcoin or Ethereum because they have the longest track records, most liquidity, and broadest adoption. They're the least risky entry points. Only explore smaller coins after you understand the fundamentals."
+    },
+    {
+      "q": "What's the difference between a coin and a token?",
+      "a": "A coin (like BTC, ETH, SOL) is the native currency of its own blockchain. A token (like USDC, UNI, LINK) is built on top of someone else's blockchain using a standard like ERC-20. The distinction matters for understanding where value and security come from."
+    },
+    {
+      "q": "Are altcoins riskier than Bitcoin?",
+      "a": "Generally, yes. Bitcoin has the strongest network effect, most liquidity, and longest track record. Altcoins can offer higher potential returns but come with significantly more risk — including the possibility of going to zero. Diversification and research are key."
+    },
+    {
+      "q": "How often are these profiles updated?",
+      "a": "We review and update our coin profiles quarterly to reflect major protocol upgrades, ecosystem developments, and changes in competitive positioning. The crypto space moves fast, and we aim to keep our analysis current."
+    },
+    {
+      "q": "Do you cover meme coins?",
+      "a": "This site focuses on cryptocurrencies with significant technology and real-world utility. We don't profile meme coins here, as their value is driven primarily by social sentiment rather than fundamentals."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "template": "a",
+  "domain": "btcuk.io",
+  "name": "BTC UK",
+  "logoIcon": "🇬🇧",
+  "title": "BTC UK — Best Crypto Exchanges for the United Kingdom",
+  "metaDescription": "Compare the best cryptocurrency exchanges for UK residents in 2026. FCA-registered platforms with GBP deposits, Faster Payments, and clear tax guidance.",
+  "metaKeywords": "buy bitcoin UK, best crypto exchange UK, FCA registered crypto, buy cryptocurrency GBP",
+  "headline": "Buy bitcoin in the UK",
+  "subheadline": "FCA-registered crypto exchanges compared — GBP deposits via Faster Payments, HMRC-friendly tax reporting, and trusted platforms.",
+  "lastUpdated": "July 2026",
+  "year": "2026",
+  "introCopy": "The UK crypto market has matured significantly with FCA oversight and clear HMRC tax guidance. Whether you're buying your first bitcoin or building a diversified portfolio, choosing an FCA-registered exchange protects your money and simplifies your tax return.",
+  "comparisonTitle": "Best UK crypto exchanges",
+  "guideTitle": "Buying crypto in the UK",
+  "guideContent": "<h3>FCA registration</h3><p>Since January 2020, crypto exchanges must be registered with the FCA under the Money Laundering Regulations. Unregistered exchanges cannot legally serve UK customers. Always verify your exchange's FCA registration status.</p><h3>Depositing GBP</h3><p>Faster Payments is the best option — free, instant, and supported by most exchanges. Open Banking is increasingly available for instant deposits. Card purchases work but carry 1-3% fees.</p><h3>Tax rules</h3><p>HMRC treats crypto as an asset subject to Capital Gains Tax. You have an annual CGT allowance. Each disposal (sell, trade, spend) is a taxable event. Keep detailed records and consider using crypto tax software for your Self Assessment.</p>",
+  "disclaimer": "BTCUK.io provides independent comparisons for UK crypto users. Cryptocurrency trading involves risk. This is not financial advice.",
+  "affiliateDisclosure": "Some links are affiliate links. We may earn a commission at no extra cost to you.",
+  "accentColor": "#1d4ed8",
+  "accentLight": "#dbeafe",
+  "accentDark": "#1e40af",
+  "items": [
+    {
+      "name": "Kraken",
+      "icon": "🐙",
+      "tagline": "FCA-registered veteran exchange",
+      "description": "Kraken has full FCA registration and offers GBP deposits via Faster Payments. Competitive fees, a wide selection of assets, and a strong security track record make it a top choice for UK users.",
+      "features": ["FCA registered", "GBP Faster Payments (free)", "Never been hacked", "Advanced trading platform", "24/7 customer support"],
+      "pricing": "Maker <strong>0.25%</strong> / Taker <strong>0.40%</strong>",
+      "url": "#affiliate-kraken",
+      "cta": "Visit Kraken",
+      "featured": true
+    },
+    {
+      "name": "Coinbase",
+      "icon": "🔵",
+      "tagline": "Most trusted global exchange",
+      "description": "Coinbase is FCA-registered and offers a simple, beginner-friendly experience for UK users. GBP deposits via Faster Payments, a wide coin selection, and excellent educational resources.",
+      "features": ["FCA registered", "GBP Faster Payments", "250+ cryptocurrencies", "Coinbase Earn (learn and earn crypto)", "Advanced Trade for lower fees"],
+      "pricing": "Maker <strong>0.40%</strong> / Taker <strong>0.60%</strong>",
+      "url": "#affiliate-coinbase",
+      "cta": "Visit Coinbase"
+    },
+    {
+      "name": "Bitstamp",
+      "icon": "🟩",
+      "tagline": "Europe's longest-running exchange",
+      "description": "Founded in 2011, Bitstamp is one of the oldest exchanges globally. FCA-registered with GBP support, transparent fee structure, and a strong reputation for reliability.",
+      "features": ["FCA registered", "Operating since 2011", "GBP Faster Payments", "Transparent fee tiers", "Institutional-grade platform"],
+      "pricing": "Maker <strong>0.30%</strong> / Taker <strong>0.40%</strong>",
+      "url": "#affiliate-bitstamp",
+      "cta": "Visit Bitstamp"
+    },
+    {
+      "name": "Uphold",
+      "icon": "🟢",
+      "tagline": "Multi-asset trading platform",
+      "description": "Uphold lets you trade crypto, precious metals, and national currencies from a single account. FCA-registered with GBP support. The AutoPilot feature enables recurring purchases.",
+      "features": ["FCA registered", "Crypto, metals, and fiat in one app", "AutoPilot recurring buys", "GBP account support", "No withdrawal fees for crypto"],
+      "pricing": "Spread-based (~<strong>0.8-1.2%</strong>)",
+      "url": "#affiliate-uphold",
+      "cta": "Visit Uphold"
+    }
+  ],
+  "faqs": [
+    {"q": "Is crypto legal in the UK?", "a": "Yes. Crypto is legal in the UK. Exchanges must be registered with the FCA under the Money Laundering Regulations. However, the FCA banned the sale of crypto derivatives (CFDs, futures, ETNs) to retail consumers."},
+    {"q": "How is crypto taxed in the UK?", "a": "HMRC treats crypto as an asset subject to Capital Gains Tax. You pay CGT on gains above your annual allowance when you sell, trade, or spend crypto. Mining and staking income may be subject to Income Tax. Keep records for your Self Assessment."},
+    {"q": "Can I use Binance in the UK?", "a": "Binance has had a complex regulatory history in the UK. Check current FCA registration status before using. Alternatives like Kraken, Coinbase, and Bitstamp are fully FCA-registered and may be safer choices for UK users."},
+    {"q": "What's the cheapest way to buy bitcoin in the UK?", "a": "Deposit GBP via Faster Payments (free on most exchanges) and use limit orders on the exchange's pro/advanced platform. Kraken and Bitstamp offer the lowest trading fees. Avoid card purchases which add 1-3% fees."}
+  ]
+}

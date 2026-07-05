@@ -1,0 +1,138 @@
+{
+  "template": "b",
+  "domain": "sacredseed.io",
+  "name": "Sacred Seed",
+  "logoIcon": "🌱",
+  "title": "Sacred Seed — Crypto Seed Phrase Security & Heirloom Seed Guides",
+  "metaDescription": "Protect what matters most. Guides to crypto seed phrase security, metal backup solutions, hardware wallets, heirloom seed vaults, seed starting, and companion planting.",
+  "metaKeywords": "seed phrase security, metal seed backup, hardware wallet, heirloom seeds, seed vault, companion planting, seed starting guide, crypto backup",
+  "headline": "Protect the seeds that matter",
+  "subheadline": "Whether it's the 24 words that secure your crypto or the heirloom varieties that feed your family — seeds deserve serious protection. We cover both.",
+  "lastUpdated": "July 2026",
+  "year": "2026",
+  "introCopy": "Two worlds, one philosophy: protect what's irreplaceable. Your crypto seed phrase is the master key to your digital wealth — lose it and your assets are gone forever. Heirloom seeds carry generations of genetic heritage that no corporation can replicate. Sacred Seed is your guide to safeguarding both — with practical, no-nonsense advice on security, storage, and stewardship.",
+  "topicsTitle": "Guides",
+  "guideTitle": "The seed philosophy",
+  "guideContent": "<h3>Seeds are sovereignty</h3><p>A crypto seed phrase gives you self-custodial control over your financial assets — no bank, no government, no intermediary. Heirloom seeds give you food sovereignty — the ability to grow, save, and share seeds without dependence on commercial seed companies. Both represent independence.</p><h3>Redundancy is resilience</h3><p>One backup isn't enough. Store your crypto seed phrase in multiple secure locations using durable materials. Keep your seed collection in multiple storage environments with proper temperature and humidity control. Single points of failure are how people lose everything.</p><h3>Knowledge is protection</h3><p>Understanding how seed phrases work (BIP-39, derivation paths) protects you from social engineering attacks. Understanding germination rates, cross-pollination, and seed viability protects your garden's genetic future. In both domains, education is your best defense.</p>",
+  "resourcesTitle": "Essential resources",
+  "resourcesContent": "<h3>BIP-39 Wordlist</h3><p>The official 2,048-word list used by most cryptocurrency wallets to generate seed phrases. Understanding this standard helps you verify your wallet's integrity. <a href=\"https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt\" target=\"_blank\" rel=\"noopener\">View BIP-39 wordlist</a></p><h3>Seed Savers Exchange</h3><p>A nonprofit dedicated to preserving heirloom and open-pollinated seed varieties. Their collection includes thousands of rare varieties you can't find in commercial catalogs. <a href=\"https://www.seedsavers.org\" target=\"_blank\" rel=\"noopener\">Visit Seed Savers Exchange</a></p><h3>Svalbard Global Seed Vault</h3><p>The world's backup seed bank, storing duplicates of seed collections from around the globe in a frozen mountain vault in Norway. A fascinating model for thinking about long-term preservation. <a href=\"https://www.seedvault.no\" target=\"_blank\" rel=\"noopener\">Learn about Svalbard</a></p>",
+  "disclaimer": "SacredSeed.io provides educational content about cryptocurrency security and gardening. This is not financial or agricultural advice. Always verify security practices independently and consult local growing guides for your region. We may earn commissions through affiliate links.",
+  "affiliateDisclosure": "Some links on this site are affiliate links. We may earn a commission if you make a purchase at no extra cost to you.",
+  "accentColor": "#65a30d",
+  "accentLight": "#ecfccb",
+  "accentDark": "#4d7c0f",
+  "items": [
+    {
+      "name": "Seed Phrase Best Practices",
+      "icon": "🔐",
+      "tag": "Crypto Security",
+      "description": "Your seed phrase is the master key to your entire crypto portfolio. Learn how to generate, record, store, and protect those 12 or 24 words — because one mistake means permanent, irreversible loss of your assets.",
+      "features": [
+        "How BIP-39 seed phrases work",
+        "Secure generation and verification",
+        "Storage dos and don'ts",
+        "Social engineering attack prevention",
+        "Inheritance planning for seed phrases"
+      ],
+      "url": "#affiliate-seed-phrase",
+      "cta": "Secure your seed phrase"
+    },
+    {
+      "name": "Metal Backup Solutions",
+      "icon": "🔩",
+      "tag": "Crypto Security",
+      "description": "Paper burns, fades, and dissolves. Metal seed phrase backups are fireproof, waterproof, and corrosion-resistant. We compare the leading steel and titanium backup products — stamped, engraved, and assembled — so your recovery phrase survives anything.",
+      "features": [
+        "Steel vs. titanium comparisons",
+        "Stamp kits vs. pre-cut letter tiles",
+        "Fire, water, and crush test results",
+        "Price and durability rankings",
+        "DIY vs. commercial solutions"
+      ],
+      "url": "#affiliate-metal-backup",
+      "cta": "Compare metal backups"
+    },
+    {
+      "name": "Hardware Wallets",
+      "icon": "🔑",
+      "tag": "Crypto Security",
+      "description": "Hardware wallets keep your private keys offline and sign transactions in a secure element that never exposes your keys to the internet. We compare Ledger, Trezor, and newer entrants on security architecture, supported coins, and usability.",
+      "features": [
+        "Secure element vs. general MCU chips",
+        "Supported cryptocurrencies and chains",
+        "Open-source firmware analysis",
+        "Setup and recovery procedures",
+        "Price and feature comparison matrix"
+      ],
+      "url": "#affiliate-hardware-wallets",
+      "cta": "Choose a hardware wallet"
+    },
+    {
+      "name": "Heirloom Seed Vault",
+      "icon": "🏺",
+      "tag": "Gardening",
+      "description": "An heirloom seed vault is your family's food insurance — a curated collection of open-pollinated, non-GMO seeds that can be saved and replanted year after year. Learn how to build, store, and maintain a seed vault that lasts decades.",
+      "features": [
+        "Selecting varieties for your climate zone",
+        "Proper seed drying and moisture control",
+        "Long-term storage containers and methods",
+        "Germination testing and viability tracking",
+        "Rotation schedules to maintain freshness"
+      ],
+      "url": "#affiliate-seed-vault",
+      "cta": "Build your seed vault"
+    },
+    {
+      "name": "Seed Starting Guide",
+      "icon": "🌱",
+      "tag": "Gardening",
+      "description": "Starting seeds indoors gives you a head start on the growing season and access to varieties you'll never find at a garden center. Our guide covers timing, soil, light, temperature, and hardening off for successful transplants.",
+      "features": [
+        "Indoor seed starting timeline by zone",
+        "Soil mix recipes for seed starting",
+        "Grow light recommendations and setup",
+        "Temperature and humidity management",
+        "Hardening off and transplant techniques"
+      ],
+      "url": "#affiliate-seed-starting",
+      "cta": "Start your seeds"
+    },
+    {
+      "name": "Companion Planting",
+      "icon": "🌻",
+      "tag": "Gardening",
+      "description": "Companion planting is the practice of growing certain plants together for mutual benefit — pest control, pollination, nutrient sharing, and space optimization. Learn the classic combinations and the science behind why they work.",
+      "features": [
+        "The Three Sisters (corn, beans, squash)",
+        "Pest-repelling companion combinations",
+        "Nitrogen-fixing plants and soil health",
+        "Companion planting chart for common crops",
+        "Plants that should never be planted together"
+      ],
+      "url": "#affiliate-companion-planting",
+      "cta": "Plan your garden"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does this site cover both crypto and gardening?",
+      "a": "Both domains revolve around the same core concept: protecting seeds that are irreplaceable. Your crypto seed phrase is the single point of access to your digital wealth. Heirloom seeds carry irreplaceable genetic heritage. The preservation mindset, backup strategies, and sovereignty philosophy apply to both."
+    },
+    {
+      "q": "Can I store my seed phrase digitally?",
+      "a": "We strongly recommend against it. Digital storage (photos, cloud drives, password managers) creates attack vectors — malware, cloud breaches, device theft. Write your seed phrase on paper and back it up on metal. Analog storage in secure locations is the gold standard for seed phrase security."
+    },
+    {
+      "q": "How long do heirloom seeds last in storage?",
+      "a": "It varies by species. Onion and parsley seeds may only last 1-2 years. Tomato and pepper seeds can remain viable for 5-10 years. Some legume seeds last 20+ years. Proper storage (cool, dark, dry, sealed) dramatically extends viability. Test germination rates annually for critical varieties."
+    },
+    {
+      "q": "What's the difference between heirloom and hybrid seeds?",
+      "a": "Heirloom seeds are open-pollinated varieties that breed true — save the seeds and you get the same plant next year. Hybrid seeds (F1) are crosses between two parent lines that produce superior first-generation plants but whose seeds won't reproduce reliably. Heirlooms give you seed sovereignty; hybrids keep you dependent on the seed company."
+    },
+    {
+      "q": "Is a hardware wallet necessary if I have a metal seed backup?",
+      "a": "Yes — they serve different purposes. A hardware wallet protects your keys during active use (signing transactions). A metal seed backup protects your recovery phrase for long-term storage and disaster recovery. You need both: the wallet for daily security and the metal backup for catastrophic scenarios."
+    }
+  ]
+}

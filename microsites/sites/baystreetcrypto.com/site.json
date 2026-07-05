@@ -1,0 +1,138 @@
+{
+  "template": "b",
+  "domain": "baystreetcrypto.com",
+  "name": "Bay Street Crypto",
+  "logoIcon": "🍁",
+  "title": "Bay Street Crypto — Canadian Crypto Market Analysis",
+  "metaDescription": "Canadian cryptocurrency analysis and guides. Crypto tax rules, best Canadian exchanges, TSX crypto ETFs, mining in Canada, and Canadian regulations explained.",
+  "metaKeywords": "canadian crypto, crypto tax canada, best canadian exchanges, crypto etf tsx, bitcoin mining canada, cra cryptocurrency, canadian crypto regulations",
+  "headline": "Crypto for Canadians, by Canadians",
+  "subheadline": "Tax guides, exchange reviews, ETF analysis, and regulatory updates tailored specifically for the Canadian cryptocurrency market.",
+  "lastUpdated": "July 2026",
+  "year": "2026",
+  "introCopy": "Canada has one of the most developed cryptocurrency markets in the world — home to the first Bitcoin ETF, a clear (if complex) tax framework, and abundant cheap energy for mining. But navigating the Canadian crypto landscape requires Canada-specific knowledge. CRA rules aren't the same as IRS rules. Our exchanges aren't the same as American ones. This site covers everything Canadian crypto investors need to know.",
+  "topicsTitle": "Canadian crypto topics",
+  "guideTitle": "Getting started with crypto in Canada",
+  "guideContent": "<h3>Choose a registered Canadian exchange</h3><p>Canadian Securities Administrators (CSA) require crypto trading platforms to register. Using a registered exchange ensures your platform meets Canadian regulatory standards and your assets have some baseline protections.</p><h3>Understand your CRA obligations</h3><p>The CRA treats crypto as a commodity. Every trade, swap, and spend is a taxable event. Keep meticulous records from day one — retroactively tracking cost basis across multiple exchanges and wallets is a nightmare.</p><h3>Consider crypto ETFs for simplicity</h3><p>Canada pioneered spot Bitcoin and Ethereum ETFs, available on the TSX. If you want crypto exposure without managing wallets and keys, ETFs in your TFSA or RRSP can be a tax-efficient option.</p><h3>Explore mining opportunities</h3><p>Canada's cheap hydroelectric power — especially in Quebec, Manitoba, and British Columbia — makes it one of the best countries in the world for Bitcoin mining. Understand the regulatory and energy landscape before investing in hardware.</p>",
+  "resourcesTitle": "Canadian crypto resources",
+  "resourcesContent": "<h3>CRA Cryptocurrency Guide</h3><p>The official Canada Revenue Agency guidance on how cryptocurrency is taxed, including capital gains, business income, and mining income. <a href=\"https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/compliance/digital-currency/cryptocurrency-guide.html\" target=\"_blank\" rel=\"noopener\">Read CRA guide</a></p><h3>CSA Registered Platforms</h3><p>The Canadian Securities Administrators maintain a list of registered and pre-registered crypto trading platforms operating legally in Canada. <a href=\"https://www.securities-administrators.ca/crypto-trading-platforms-regulation-and-enforcement-actions/\" target=\"_blank\" rel=\"noopener\">View registered platforms</a></p><h3>TMX Group (TSX)</h3><p>The Toronto Stock Exchange lists multiple crypto ETFs. Research available products directly on the TMX website. <a href=\"https://www.tmx.com\" target=\"_blank\" rel=\"noopener\">Visit TMX</a></p>",
+  "disclaimer": "BayStreetCrypto.com provides Canadian cryptocurrency market analysis and educational content. This is not financial or tax advice. Consult a qualified Canadian tax professional for your specific situation. We may earn commissions through affiliate links.",
+  "affiliateDisclosure": "Some links on this site are affiliate links. We may earn a commission if you make a purchase at no extra cost to you.",
+  "accentColor": "#dc2626",
+  "accentLight": "#fee2e2",
+  "accentDark": "#b91c1c",
+  "items": [
+    {
+      "name": "Canadian Crypto Tax Guide",
+      "icon": "🧾",
+      "tag": "Tax",
+      "description": "The CRA treats cryptocurrency as a commodity, making every disposal a taxable event. Our guide covers capital gains vs. business income classification, cost basis tracking, TFSA and RRSP implications, and common filing mistakes Canadians make.",
+      "features": [
+        "Capital gains vs. business income rules",
+        "ACB (Adjusted Cost Base) calculation",
+        "TFSA and RRSP crypto ETF strategies",
+        "CRA reporting requirements for crypto",
+        "Common audit triggers to avoid"
+      ],
+      "url": "#affiliate-tax-guide",
+      "cta": "Read tax guide"
+    },
+    {
+      "name": "Best Canadian Exchanges",
+      "icon": "🏦",
+      "tag": "Exchanges",
+      "description": "Not all crypto exchanges are legal in Canada. We review CSA-registered platforms — comparing fees, available coins, CAD funding options, security practices, and customer support for Canadian users.",
+      "features": [
+        "CSA registration status verified",
+        "CAD deposit and withdrawal options",
+        "Trading fee comparisons",
+        "Available cryptocurrencies",
+        "Security and insurance coverage"
+      ],
+      "url": "#affiliate-exchanges",
+      "cta": "Compare exchanges"
+    },
+    {
+      "name": "Crypto ETFs on TSX",
+      "icon": "📈",
+      "tag": "Investing",
+      "description": "Canada was the first country to approve spot Bitcoin and Ethereum ETFs. We analyze the available TSX-listed crypto ETFs — management fees (MERs), holdings, tax treatment, and whether they belong in your TFSA, RRSP, or taxable account.",
+      "features": [
+        "All TSX-listed crypto ETF profiles",
+        "MER comparison and fee analysis",
+        "TFSA vs. RRSP tax implications",
+        "Spot vs. futures-based ETF differences",
+        "Performance tracking and benchmarking"
+      ],
+      "url": "#affiliate-etfs",
+      "cta": "Explore ETFs"
+    },
+    {
+      "name": "Mining in Canada",
+      "icon": "⛏️",
+      "tag": "Mining",
+      "description": "Canada's abundant hydroelectric power and cold climate make it ideal for cryptocurrency mining. We cover the economics of mining operations, provincial energy rates, regulatory requirements, and environmental considerations.",
+      "features": [
+        "Provincial energy rate comparisons",
+        "Mining profitability calculators",
+        "Regulatory requirements by province",
+        "Environmental and sustainability factors",
+        "Home mining vs. hosted mining options"
+      ],
+      "url": "#affiliate-mining",
+      "cta": "Learn about mining"
+    },
+    {
+      "name": "Canadian Regulations",
+      "icon": "⚖️",
+      "tag": "Regulation",
+      "description": "Canada's crypto regulatory framework involves federal and provincial bodies — CSA, FINTRAC, OSFI, and more. We break down what's regulated, what's coming, and how Canadian rules compare to other jurisdictions.",
+      "features": [
+        "CSA registration requirements",
+        "FINTRAC money services business rules",
+        "Provincial securities commission roles",
+        "Upcoming regulatory proposals",
+        "Canada vs. US regulatory comparison"
+      ],
+      "url": "#affiliate-regulations",
+      "cta": "Understand regulations"
+    },
+    {
+      "name": "Quebec Hydro Mining",
+      "icon": "💧",
+      "tag": "Mining",
+      "description": "Quebec's Hydro-Quebec offers some of the cheapest electricity in North America, making it a global hotspot for Bitcoin mining. We cover current rates, Hydro-Quebec's policies on crypto miners, and how to set up operations in the province.",
+      "features": [
+        "Hydro-Quebec rate structures for miners",
+        "Application process and requirements",
+        "Cold climate cooling advantages",
+        "Environmental impact and green mining",
+        "Major mining operations in Quebec"
+      ],
+      "url": "#affiliate-quebec-mining",
+      "cta": "Explore Quebec mining"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I have to pay taxes on crypto in Canada?",
+      "a": "Yes. The CRA considers cryptocurrency a commodity. When you sell, trade, or spend crypto, you trigger a taxable event. Capital gains are 50% taxable (included in income at half the gain). If the CRA considers you a crypto trader rather than an investor, 100% of your gains may be taxable as business income."
+    },
+    {
+      "q": "Can I hold crypto in my TFSA?",
+      "a": "You can't hold crypto directly in a TFSA, but you can hold crypto ETFs listed on the TSX. This gives you crypto exposure with tax-free gains. Be aware that the CRA has warned against frequent trading in TFSAs — passive holding is safer from a tax perspective."
+    },
+    {
+      "q": "Which Canadian exchanges are legal?",
+      "a": "Only exchanges registered with the Canadian Securities Administrators (CSA) are legally operating in Canada. Major registered platforms include Bitbuy, Coinsquare, and Wealthsimple Crypto. Using an unregistered exchange isn't illegal for users but comes with significantly less regulatory protection."
+    },
+    {
+      "q": "Is Bitcoin mining profitable in Canada?",
+      "a": "It can be, depending on your electricity rate and hardware costs. Quebec and Manitoba have some of the cheapest power in North America, which is why major mining operations locate there. Home mining profitability depends heavily on your provincial electricity rate — run the numbers before investing in hardware."
+    },
+    {
+      "q": "How does Canada compare to the US for crypto?",
+      "a": "Canada has been more progressive in some areas — we had spot Bitcoin ETFs years before the US. However, the CSA's registration requirements are strict, and fewer exchanges operate here compared to the US. Tax treatment is broadly similar (capital gains), but the mechanics differ between CRA and IRS rules."
+    }
+  ]
+}

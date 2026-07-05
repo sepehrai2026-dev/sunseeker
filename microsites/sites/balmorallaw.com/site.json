@@ -1,0 +1,76 @@
+{
+  "template": "d",
+  "domain": "balmorallaw.com",
+  "name": "Balmoral Law",
+  "logoIcon": "⚖️",
+  "title": "Balmoral Law — Trusted Legal Counsel",
+  "metaDescription": "Balmoral Law provides experienced legal services in corporate law, real estate transactions, estate planning, business formation, contract negotiation, and litigation support.",
+  "metaKeywords": "law firm, corporate law, real estate attorney, estate planning lawyer, business formation, contract negotiation, litigation support, legal counsel",
+  "headline": "Trusted legal counsel for business and life",
+  "subheadline": "Balmoral Law delivers experienced, attentive legal representation across corporate, real estate, estate planning, and litigation matters. Your interests, protected.",
+  "ctaText": "Request a Consultation",
+  "year": "2026",
+  "servicesTitle": "Practice Areas",
+  "aboutTitle": "About Balmoral Law",
+  "aboutContent": "<h3>Experienced Advocacy, Personal Attention</h3><p>Balmoral Law was founded on the belief that excellent legal representation should be both rigorous and accessible. We combine deep legal expertise with a client-first approach, ensuring you receive the dedicated attention your matter deserves.</p><h3>A Broad Foundation of Practice</h3><p>Our attorneys bring experience across corporate governance, commercial transactions, real property, estate and succession planning, and civil litigation. This breadth allows us to serve as a trusted legal resource across the key moments in your business and personal life.</p><h3>Built on Relationships</h3><p>We measure success by the strength of our client relationships. Many of our clients have been with us for years, relying on Balmoral Law for counsel through transactions, disputes, and life transitions.</p>",
+  "contactTitle": "Get in Touch",
+  "contactSub": "Every legal matter begins with a conversation. Contact us to discuss how Balmoral Law can assist you.",
+  "disclaimer": "This website is for informational purposes only and does not constitute legal advice. No attorney-client relationship is formed by use of this site or by contacting Balmoral Law. Prior results do not guarantee a similar outcome. Please consult an attorney for advice specific to your situation.",
+  "accentColor": "#991b1b",
+  "accentLight": "#fef2f2",
+  "accentDark": "#7f1d1d",
+  "items": [
+    {
+      "icon": "🏢",
+      "name": "Corporate Law",
+      "description": "Comprehensive corporate legal services including governance, shareholder agreements, mergers and acquisitions, regulatory compliance, and day-to-day business counsel."
+    },
+    {
+      "icon": "🏠",
+      "name": "Real Estate Transactions",
+      "description": "Legal representation for commercial and residential real estate transactions, including purchase agreements, title review, lease negotiations, and closing coordination."
+    },
+    {
+      "icon": "📋",
+      "name": "Estate Planning",
+      "description": "Wills, trusts, powers of attorney, healthcare directives, and comprehensive succession planning to protect your family and preserve your legacy."
+    },
+    {
+      "icon": "📝",
+      "name": "Business Formation",
+      "description": "Entity selection, formation, and structuring for LLCs, corporations, partnerships, and joint ventures, tailored to your operational and tax objectives."
+    },
+    {
+      "icon": "🤝",
+      "name": "Contract Negotiation",
+      "description": "Drafting, reviewing, and negotiating commercial contracts, employment agreements, vendor arrangements, and other critical business documents."
+    },
+    {
+      "icon": "⚔️",
+      "name": "Litigation Support",
+      "description": "Strategic litigation counsel for commercial disputes, breach of contract claims, partnership disagreements, and other civil matters requiring advocacy in court."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What types of clients does Balmoral Law serve?",
+      "a": "We serve individuals, families, entrepreneurs, and small to mid-size businesses. Our practice is built around providing accessible, high-quality legal counsel to clients who value a personal relationship with their attorney."
+    },
+    {
+      "q": "How are your legal fees structured?",
+      "a": "We offer hourly billing, flat-fee arrangements, and retainer-based engagements depending on the nature of the matter. Fee structures are discussed transparently during your initial consultation."
+    },
+    {
+      "q": "Do you handle cases outside of your listed practice areas?",
+      "a": "If your matter falls outside our core practice areas, we will let you know and can refer you to trusted colleagues who specialize in the relevant area of law."
+    },
+    {
+      "q": "What should I bring to an initial consultation?",
+      "a": "Bring any relevant documents such as contracts, correspondence, court filings, or corporate records. A summary of your situation and your key questions will help us make the most of our time together."
+    },
+    {
+      "q": "Can you help with an existing legal dispute?",
+      "a": "Yes. We evaluate ongoing disputes and can advise on litigation strategy, settlement negotiations, or alternative dispute resolution options depending on the circumstances of your case."
+    }
+  ]
+}

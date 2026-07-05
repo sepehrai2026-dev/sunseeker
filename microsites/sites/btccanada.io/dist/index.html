@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BTC Canada — Best Crypto Exchanges for Canadians</title>
+<meta name="description" content="Compare the best cryptocurrency exchanges for Canadians in 2026. CAD-friendly platforms with Interac e-Transfer, regulated by CSA and provincial authorities.">
+<meta name="keywords" content="buy bitcoin Canada, best crypto exchange Canada, Canadian crypto exchange, buy crypto with CAD">
+<meta name="theme-color" content="#0a0a0a">
+<meta property="og:title" content="BTC Canada — Best Crypto Exchanges for Canadians">
+<meta property="og:description" content="Compare the best cryptocurrency exchanges for Canadians in 2026. CAD-friendly platforms with Interac e-Transfer, regulated by CSA and provincial authorities.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://btccanada.io">
+<link rel="canonical" href="https://btccanada.io">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   Template A — blackout benchmark report
+   Dark, sharp, hairline-grid system. No rounded corners.
+   ============================================================ */
+
+:root {
+  --accent: #dc2626;
+  --accent-dark: #b91c1c;
+  --accent-light: #fee2e2;
+  --bg: #0a0a0a;
+  --bg-raise: #0e0e0e;
+  --bg-panel: #101010;
+  --line: rgba(255, 255, 255, 0.08);
+  --line-strong: rgba(255, 255, 255, 0.16);
+  --text: #ededed;
+  --text-dim: #9a9a9a;
+  --text-faint: #6b6b6b;
+  --font-display: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection { background: var(--accent); color: #0a0a0a; }
+
+a { color: inherit; }
+
+/* ---- film grain overlay ---- */
+.grain {
+  position: fixed;
+  inset: -100px;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ---- shared bits ---- */
+.section-wrap {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.mono-num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+
+.status-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.02);
+  padding: 6px 12px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  flex: none;
+  animation: pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
+}
+
+/* ---- nav ---- */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: color-mix(in srgb, var(--bg) 72%, transparent);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.nav.scrolled { border-bottom-color: var(--line-strong); }
+
+.nav-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.nav-brand::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background: var(--accent);
+  flex: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 4px;
+  margin-left: auto;
+}
+
+.nav-links a {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text-dim);
+  padding: 8px 12px;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.nav-links a:hover { color: var(--text); background: rgba(255, 255, 255, 0.04); }
+
+/* ---- hero ---- */
+.hero {
+  position: relative;
+  border-bottom: 1px solid var(--line);
+  overflow: hidden;
+}
+
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 72px 72px;
+  -webkit-mask-image: radial-gradient(ellipse 90% 80% at 50% 0%, #000 40%, transparent 100%);
+  mask-image: radial-gradient(ellipse 90% 80% at 50% 0%, #000 40%, transparent 100%);
+  pointer-events: none;
+}
+
+.hero-glow {
+  position: absolute;
+  top: -240px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 520px;
+  background: radial-gradient(ellipse at center, color-mix(in srgb, var(--accent) 16%, transparent) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.hero-inner {
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 108px 24px 92px;
+}
+
+.hero-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 28px;
+}
+
+.hero-eyebrow::before { content: "// "; color: var(--text-faint); }
+
+.hero-title {
+  font-size: clamp(42px, 7.2vw, 84px);
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+  max-width: 15ch;
+  background: linear-gradient(180deg, #ffffff 0%, #b8b8b8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+}
+
+.hero-sub {
+  margin-top: 28px;
+  max-width: 60ch;
+  font-size: clamp(16px, 1.6vw, 19px);
+  line-height: 1.65;
+  color: var(--text-dim);
+  font-weight: 400;
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 36px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 40px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 14px 24px;
+  border: 1px solid transparent;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-arrow { transition: transform 0.2s ease; }
+
+.btn-solid { background: var(--text); color: #0a0a0a; border-color: var(--text); }
+
+.btn-solid:hover { background: var(--accent); border-color: var(--accent); color: #0a0a0a; }
+
+.btn-solid:hover .btn-arrow { transform: translateX(3px); }
+
+.btn-ghost { border-color: var(--line-strong); color: var(--text-dim); }
+
+.btn-ghost:hover { border-color: var(--accent); color: var(--text); }
+
+/* ---- intro lede ---- */
+.intro { padding: 88px 0 8px; }
+
+.intro-copy {
+  max-width: 62ch;
+  font-size: clamp(18px, 2vw, 22px);
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+  color: #cfcfcf;
+  border-left: 1px solid var(--accent);
+  padding-left: 28px;
+}
+
+/* ---- section scaffolding ---- */
+.comparison, .guide, .faq { padding: 96px 0 0; }
+
+.faq { padding-bottom: 112px; }
+
+.section-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.section-index {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.08em;
+}
+
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.section-rule { flex: 1; height: 1px; background: var(--line); }
+
+.section-title {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+  max-width: 22ch;
+  margin-bottom: 48px;
+}
+
+/* ---- comparison cards: hairline benchmark grid ---- */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  counter-reset: card;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-raise);
+  padding: 28px 28px 24px;
+  counter-increment: card;
+  transition: background 0.25s ease;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.card:hover { background: var(--bg-panel); }
+
+.card:hover::before { transform: scaleX(1); }
+
+.card-featured {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 7%, var(--bg-raise)) 0%, var(--bg-raise) 45%);
+  box-shadow: inset 0 0 60px color-mix(in srgb, var(--accent) 5%, transparent);
+}
+
+.card-featured::before { transform: scaleX(1); }
+
+.card-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.card-num::before {
+  content: counter(card, decimal-leading-zero);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--text-faint);
+}
+
+.card-flag {
+  display: none;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+  padding: 3px 8px;
+}
+
+.card-featured .card-flag { display: inline-block; }
+
+.card-name {
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.card-tagline {
+  margin-top: 6px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+}
+
+.card-desc {
+  margin-top: 16px;
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: var(--text-dim);
+}
+
+/* spec rows — rebuilt into rows by script */
+.card-features {
+  list-style: none;
+  margin-top: 22px;
+  border-top: 1px solid var(--line);
+}
+
+.card-features li {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 13px;
+  line-height: 1.5;
+  color: #c4c4c4;
+  font-variant-numeric: tabular-nums;
+}
+
+.card-features li::before {
+  content: "+";
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+  flex: none;
+}
+
+.card-pricing {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: auto;
+  padding: 18px 0 20px;
+}
+
+.card-pricing-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  flex: none;
+}
+
+.card-pricing-value {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  text-align: right;
+  color: var(--text-dim);
+  font-variant-numeric: tabular-nums;
+}
+
+.card-pricing-value strong { color: var(--text); font-weight: 600; }
+
+.card-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid var(--line-strong);
+  padding: 13px 18px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text);
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.card-cta:hover { background: var(--accent); border-color: var(--accent); color: #0a0a0a; }
+
+.card-cta-arrow { flex: none; transition: transform 0.2s ease; }
+
+.card-cta:hover .card-cta-arrow { transform: translate(2px, -2px); }
+
+.card-featured .card-cta { border-color: color-mix(in srgb, var(--accent) 55%, transparent); }
+
+/* ---- guide ---- */
+.guide-content {
+  max-width: 720px;
+  color: var(--text-dim);
+  font-size: 16px;
+}
+
+.guide-content h3 {
+  color: var(--text);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 44px 0 14px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.guide-content h3:first-child { margin-top: 0; }
+
+.guide-content h3::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: var(--accent);
+  flex: none;
+  transform: translateY(-2px);
+}
+
+.guide-content p { margin-bottom: 16px; line-height: 1.7; }
+
+.guide-content ul, .guide-content ol { margin: 0 0 16px 20px; line-height: 1.7; }
+
+.guide-content a { color: var(--accent); }
+
+.guide-content strong { color: var(--text); }
+
+/* ---- faq accordion ---- */
+.faq-list {
+  border-top: 1px solid var(--line);
+  max-width: 860px;
+}
+
+.faq-item { border-bottom: 1px solid var(--line); }
+
+.faq-q {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  padding: 22px 4px;
+  font-family: var(--font-display);
+  font-size: 16.5px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  transition: color 0.2s ease;
+}
+
+.faq-q:hover { color: var(--accent); }
+
+.faq-marker {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  flex: none;
+}
+
+.faq-marker::before, .faq-marker::after {
+  content: "";
+  position: absolute;
+  background: var(--text-faint);
+  transition: transform 0.3s ease, background 0.2s ease;
+}
+
+.faq-marker::before { left: 0; top: 5px; width: 12px; height: 2px; }
+
+.faq-marker::after { left: 5px; top: 0; width: 2px; height: 12px; }
+
+.faq-q:hover .faq-marker::before, .faq-q:hover .faq-marker::after { background: var(--accent); }
+
+.faq-q[aria-expanded="true"] .faq-marker::after { transform: scaleY(0); }
+
+.faq-a {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.faq-a.open { grid-template-rows: 1fr; }
+
+.faq-a-inner { overflow: hidden; }
+
+.faq-a-inner p {
+  padding: 0 4px 24px;
+  max-width: 70ch;
+  color: var(--text-dim);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ---- footer ---- */
+.footer {
+  border-top: 1px solid var(--line);
+  background: #080808;
+}
+
+.footer-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 64px 24px 40px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 64px;
+  padding-bottom: 48px;
+}
+
+.footer-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+}
+
+.footer-name::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: var(--accent);
+}
+
+.footer-disc {
+  margin-top: 16px;
+  max-width: 56ch;
+  font-size: 12.5px;
+  line-height: 1.7;
+  color: var(--text-faint);
+}
+
+.footer-col { display: flex; flex-direction: column; gap: 10px; }
+
+.footer-col-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 6px;
+}
+
+.footer-col a {
+  font-size: 13.5px;
+  text-decoration: none;
+  color: var(--text-dim);
+  transition: color 0.2s ease;
+}
+
+.footer-col a:hover { color: var(--accent); }
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--text-faint);
+}
+
+.footer-affiliate { max-width: 64ch; }
+
+/* ---- scroll reveal (class added by JS only) ---- */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.in { opacity: 1; transform: none; }
+
+/* ---- responsive ---- */
+@media (max-width: 860px) {
+  .footer-top { grid-template-columns: 1fr; gap: 36px; }
+}
+
+@media (max-width: 720px) {
+  .nav-links { display: none; }
+  .nav-inner { justify-content: space-between; }
+  .hero-inner { padding: 76px 24px 64px; }
+  .intro { padding-top: 64px; }
+  .comparison, .guide, .faq { padding-top: 72px; }
+  .faq { padding-bottom: 88px; }
+  .cards { grid-template-columns: 1fr; }
+  .intro-copy { padding-left: 20px; }
+}
+
+@media (max-width: 420px) {
+  .nav-updated { display: none; }
+  .btn { width: 100%; justify-content: center; }
+}
+
+</style>
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-brand">BTC Canada</a>
+    <div class="nav-links">
+      <a href="#compare">Compare</a>
+      <a href="#guide">Guide</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <span class="status-chip nav-updated"><span class="status-dot" aria-hidden="true"></span>Updated July 2026</span>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="hero-eyebrow">BTC Canada &mdash; independent comparison</p>
+    <h1 class="hero-title">Buy bitcoin in Canada</h1>
+    <p class="hero-sub">Canadian-regulated crypto exchanges compared — Interac e-Transfer, CAD trading pairs, and CSA-compliant platforms.</p>
+    <div class="hero-meta">
+      <span class="status-chip"><span class="mono-num" id="hero-count">&ndash;&ndash;</span>&nbsp;options benchmarked</span>
+      <span class="status-chip"><span class="status-dot" aria-hidden="true"></span>Updated July 2026</span>
+    </div>
+    <div class="hero-actions">
+      <a href="#compare" class="btn btn-solid" id="hero-cta"><span id="hero-cta-label">View the comparison</span><svg class="btn-arrow" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5"/></svg></a>
+      <a href="#guide" class="btn btn-ghost">Read the guide</a>
+    </div>
+  </div>
+</header>
+
+<main class="content">
+  <section class="intro">
+    <div class="section-wrap">
+      <p class="intro-copy" data-reveal>Canada has a mature crypto market with strong regulatory oversight from the CSA and provincial securities commissions. Several homegrown exchanges offer Interac e-Transfer deposits, CAD trading pairs, and compliance with Canadian tax reporting requirements.</p>
+    </div>
+  </section>
+
+  <section class="comparison" id="compare">
+    <div class="section-wrap">
+      <div class="section-head" data-reveal>
+        <span class="section-index">01</span>
+        <span class="section-label">Comparison</span>
+        <span class="section-rule" aria-hidden="true"></span>
+      </div>
+      <h2 class="section-title" data-reveal>Best Canadian crypto exchanges</h2>
+      <div class="cards">
+        <article class="card card-featured" data-reveal>
+  <div class="card-top">
+    <span class="card-num" aria-hidden="true"></span>
+    <span class="card-flag">Top pick</span>
+  </div>
+  <div class="card-header">
+    <h3 class="card-name">Shakepay</h3>
+    <p class="card-tagline">Easiest Canadian crypto app</p>
+  </div>
+  <p class="card-desc">Shakepay is a Montreal-based app focused on making bitcoin and ethereum accessible to everyday Canadians. Free Interac e-Transfer deposits, a Visa card with bitcoin cashback, and a shake-to-earn bitcoin feature.</p>
+  <ul class="card-features"><li>Free Interac e-Transfer deposits,Bitcoin cashback Visa card,Shake your phone to earn bitcoin,Registered with AMF and FINTRAC,No trading fees (spread-based)</li></ul>
+  <div class="card-pricing">
+    <span class="card-pricing-label">Pricing</span>
+    <span class="card-pricing-value"><strong>No fees</strong> (spread markup ~1.5-2%)</span>
+  </div>
+  <a href="#affiliate-shakepay" class="card-cta" target="_blank" rel="noopener nofollow sponsored">Visit Shakepay<svg class="card-cta-arrow" width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6" stroke="currentColor" stroke-width="1.5"/></svg></a>
+</article>
+
+<article class="card card-featured" data-reveal>
+  <div class="card-top">
+    <span class="card-num" aria-hidden="true"></span>
+    <span class="card-flag">Top pick</span>
+  </div>
+  <div class="card-header">
+    <h3 class="card-name">Newton</h3>
+    <p class="card-tagline">Lowest-fee Canadian exchange</p>
+  </div>
+  <p class="card-desc">Newton offers the tightest spreads of any Canadian exchange and no commission fees. Supports 70+ cryptocurrencies with free Interac e-Transfer deposits and withdrawals. The best option for cost-conscious Canadian traders.</p>
+  <ul class="card-features"><li>No commission fees,Tightest spreads in Canada,70+ cryptocurrencies,Free Interac deposits and withdrawals,CSA registered</li></ul>
+  <div class="card-pricing">
+    <span class="card-pricing-label">Pricing</span>
+    <span class="card-pricing-value"><strong>No fees</strong> (spread ~0.5-1%)</span>
+  </div>
+  <a href="#affiliate-newton" class="card-cta" target="_blank" rel="noopener nofollow sponsored">Visit Newton<svg class="card-cta-arrow" width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6" stroke="currentColor" stroke-width="1.5"/></svg></a>
+</article>
+
+<article class="card" data-reveal>
+  <div class="card-top">
+    <span class="card-num" aria-hidden="true"></span>
+    <span class="card-flag">Top pick</span>
+  </div>
+  <div class="card-header">
+    <h3 class="card-name">Bitbuy</h3>
+    <p class="card-tagline">IIROC-registered exchange</p>
+  </div>
+  <p class="card-desc">Bitbuy (now part of WonderFi) is one of the first Canadian exchanges to be registered with IIROC. Known for institutional-grade security, proof of reserves, and a Pro trading platform with competitive fees.</p>
+  <ul class="card-features"><li>IIROC registered,Proof of reserves audits,Pro trading platform,Instant Interac deposits,Canadian dollar wire transfers</li></ul>
+  <div class="card-pricing">
+    <span class="card-pricing-label">Pricing</span>
+    <span class="card-pricing-value">Maker <strong>0.10%</strong> / Taker <strong>0.20%</strong> (Pro)</span>
+  </div>
+  <a href="#affiliate-bitbuy" class="card-cta" target="_blank" rel="noopener nofollow sponsored">Visit Bitbuy<svg class="card-cta-arrow" width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6" stroke="currentColor" stroke-width="1.5"/></svg></a>
+</article>
+
+<article class="card" data-reveal>
+  <div class="card-top">
+    <span class="card-num" aria-hidden="true"></span>
+    <span class="card-flag">Top pick</span>
+  </div>
+  <div class="card-header">
+    <h3 class="card-name">Wealthsimple Crypto</h3>
+    <p class="card-tagline">Invest in crypto alongside stocks</p>
+  </div>
+  <p class="card-desc">If you already use Wealthsimple for investing, adding crypto is seamless. Trade 50+ tokens alongside your TFSA and RRSP. No transfer fees, and the familiar Wealthsimple interface.</p>
+  <ul class="card-features"><li>Integrated with Wealthsimple Invest,50+ cryptocurrencies,No deposit or withdrawal fees,Simple mobile and web app,CSA registered</li></ul>
+  <div class="card-pricing">
+    <span class="card-pricing-label">Pricing</span>
+    <span class="card-pricing-value">Spread markup ~<strong>1.5-2%</strong></span>
+  </div>
+  <a href="#affiliate-wealthsimple" class="card-cta" target="_blank" rel="noopener nofollow sponsored">Visit Wealthsimple<svg class="card-cta-arrow" width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6" stroke="currentColor" stroke-width="1.5"/></svg></a>
+</article>
+
+<article class="card" data-reveal>
+  <div class="card-top">
+    <span class="card-num" aria-hidden="true"></span>
+    <span class="card-flag">Top pick</span>
+  </div>
+  <div class="card-header">
+    <h3 class="card-name">Kraken</h3>
+    <p class="card-tagline">Global exchange with CAD support</p>
+  </div>
+  <p class="card-desc">Kraken is a veteran global exchange with full CAD support. Offers advanced trading features, staking, and some of the lowest fees available. A strong choice for experienced Canadian traders.</p>
+  <ul class="card-features"><li>CAD trading pairs,Advanced order types,Proof of reserves,Staking available,24/7 customer support</li></ul>
+  <div class="card-pricing">
+    <span class="card-pricing-label">Pricing</span>
+    <span class="card-pricing-value">Maker <strong>0.25%</strong> / Taker <strong>0.40%</strong></span>
+  </div>
+  <a href="#affiliate-kraken" class="card-cta" target="_blank" rel="noopener nofollow sponsored">Visit Kraken<svg class="card-cta-arrow" width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6" stroke="currentColor" stroke-width="1.5"/></svg></a>
+</article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="guide" id="guide">
+    <div class="section-wrap">
+      <div class="section-head" data-reveal>
+        <span class="section-index">02</span>
+        <span class="section-label">Guide</span>
+        <span class="section-rule" aria-hidden="true"></span>
+      </div>
+      <h2 class="section-title" data-reveal>Buying crypto in Canada</h2>
+      <div class="guide-content" data-reveal><h3>Regulation</h3><p>Canadian crypto exchanges must register with provincial securities regulators and FINTRAC (anti-money laundering). Look for platforms registered as Restricted Dealers with the CSA. This ensures your funds are protected under Canadian law.</p><h3>Funding your account</h3><p>Interac e-Transfer is the most popular and fastest deposit method — funds arrive in minutes and are usually free. Wire transfers and bank drafts are available for larger amounts. Credit card purchases carry extra fees.</p><h3>Tax obligations</h3><p>The CRA treats crypto as a commodity. Capital gains are 50% taxable. If you trade frequently, the CRA may classify your activity as business income (100% taxable). Keep detailed records of every transaction.</p></div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="section-wrap">
+      <div class="section-head" data-reveal>
+        <span class="section-index">03</span>
+        <span class="section-label">FAQ</span>
+        <span class="section-rule" aria-hidden="true"></span>
+      </div>
+      <h2 class="section-title" data-reveal>Frequently asked questions</h2>
+      <div class="faq-list" id="faq-list"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="footer-name">BTC Canada</span>
+        <p class="footer-disc">BTCCanada.io provides independent comparisons for Canadian crypto users. Cryptocurrency trading involves risk. This is not financial advice.</p>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-label">Index</span>
+        <a href="#compare">Comparison</a>
+        <a href="#guide">Guide</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-label">Network</span>
+        <a href="https://sepehr.ai" target="_blank" rel="noopener">sepehr.ai</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 BTC Canada</p>
+      <p class="footer-affiliate">Some links are affiliate links. We may earn a commission at no extra cost to you.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const SITE_CONFIG = {"faqs":[{"q":"Is crypto legal in Canada?","a":"Yes. Cryptocurrency is legal in Canada and regulated by the CSA and provincial securities commissions. Exchanges must register with FINTRAC and comply with anti-money laundering requirements."},{"q":"Can I hold crypto in my TFSA or RRSP?","a":"Not directly, but some platforms like Wealthsimple offer crypto within registered accounts. You can also hold crypto ETFs (like Purpose Bitcoin ETF) in a TFSA or RRSP through any brokerage."},{"q":"How is crypto taxed in Canada?","a":"The CRA treats crypto as a commodity. Only 50% of capital gains are taxable, added to your income. If you trade frequently, the CRA may treat it as business income (100% taxable). Keep records of every transaction."},{"q":"What's the best way to deposit CAD?","a":"Interac e-Transfer is the fastest and cheapest option — most exchanges support it with no fees and near-instant deposits. Wire transfers work for larger amounts but may take 1-3 business days."}],"accentColor":"#dc2626","accentLight":"#fee2e2","accentDark":"#b91c1c","ctaText":""};
+(function () {
+  var cfg = typeof SITE_CONFIG !== 'undefined' ? SITE_CONFIG : {};
+  var root = document.documentElement;
+
+  // Per-site accent (also set at build time in CSS; this keeps runtime parity)
+  if (cfg.accentColor) root.style.setProperty('--accent', cfg.accentColor);
+  if (cfg.accentLight) root.style.setProperty('--accent-light', cfg.accentLight);
+  if (cfg.accentDark) root.style.setProperty('--accent-dark', cfg.accentDark);
+
+  // Optional hero CTA override
+  if (cfg.ctaText) {
+    var ctaLabel = document.getElementById('hero-cta-label');
+    if (ctaLabel) ctaLabel.textContent = cfg.ctaText;
+  }
+
+  // ---- Rebuild feature spec rows ----
+  // The build flattens each item's features array into a single comma-joined
+  // string. Reconstruct the list: the join separator is "," with no trailing
+  // space, while human commas are ", " — and digit,digit-digit-digit runs are
+  // thousands separators.
+  function splitFeatures(str) {
+    var parts = str.split(',');
+    var out = [];
+    for (var i = 0; i < parts.length; i++) {
+      var p = parts[i];
+      if (!out.length) { out.push(p); continue; }
+      var prev = out[out.length - 1];
+      if (/^\s/.test(p) || (/\d$/.test(prev) && /^\d{3}(?!\d)/.test(p))) {
+        out[out.length - 1] = prev + ',' + p;
+      } else {
+        out.push(p);
+      }
+    }
+    var trimmed = [];
+    for (var j = 0; j < out.length; j++) {
+      var t = out[j].replace(/^\s+|\s+$/g, '');
+      if (t) trimmed.push(t);
+    }
+    return trimmed;
+  }
+
+  var featureLists = document.querySelectorAll('.card-features');
+  for (var f = 0; f < featureLists.length; f++) {
+    var ul = featureLists[f];
+    if (ul.querySelectorAll('li').length > 1) continue; // already a proper list
+    var text = (ul.textContent || '').replace(/^\s+|\s+$/g, '');
+    if (!text) continue;
+    ul.innerHTML = '';
+    var feats = splitFeatures(text);
+    for (var k = 0; k < feats.length; k++) {
+      var li = document.createElement('li');
+      li.textContent = feats[k];
+      ul.appendChild(li);
+    }
+  }
+
+  // ---- Hero benchmark count ----
+  var cards = document.querySelectorAll('.cards .card');
+  var countEl = document.getElementById('hero-count');
+  if (countEl && cards.length) {
+    countEl.textContent = (cards.length < 10 ? '0' : '') + cards.length;
+  }
+
+  // ---- FAQ accordion ----
+  var faqList = document.getElementById('faq-list');
+  if (faqList && cfg.faqs && cfg.faqs.length) {
+    for (var q = 0; q < cfg.faqs.length; q++) {
+      (function (faq) {
+        var item = document.createElement('div');
+        item.className = 'faq-item';
+
+        var btn = document.createElement('button');
+        btn.className = 'faq-q';
+        btn.type = 'button';
+        btn.setAttribute('aria-expanded', 'false');
+        var label = document.createElement('span');
+        label.textContent = faq.q;
+        var marker = document.createElement('span');
+        marker.className = 'faq-marker';
+        marker.setAttribute('aria-hidden', 'true');
+        btn.appendChild(label);
+        btn.appendChild(marker);
+
+        var answer = document.createElement('div');
+        answer.className = 'faq-a';
+        var inner = document.createElement('div');
+        inner.className = 'faq-a-inner';
+        var p = document.createElement('p');
+        p.innerHTML = faq.a;
+        inner.appendChild(p);
+        answer.appendChild(inner);
+
+        btn.addEventListener('click', function () {
+          var isOpen = btn.getAttribute('aria-expanded') === 'true';
+          var openBtns = faqList.querySelectorAll('.faq-q[aria-expanded="true"]');
+          for (var o = 0; o < openBtns.length; o++) {
+            openBtns[o].setAttribute('aria-expanded', 'false');
+            openBtns[o].parentNode.querySelector('.faq-a').classList.remove('open');
+          }
+          if (!isOpen) {
+            btn.setAttribute('aria-expanded', 'true');
+            answer.classList.add('open');
+          }
+        });
+
+        item.appendChild(btn);
+        item.appendChild(answer);
+        faqList.appendChild(item);
+      })(cfg.faqs[q]);
+    }
+
+    // FAQ structured data
+    try {
+      var ld = {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: []
+      };
+      for (var m = 0; m < cfg.faqs.length; m++) {
+        ld.mainEntity.push({
+          '@type': 'Question',
+          name: cfg.faqs[m].q,
+          acceptedAnswer: { '@type': 'Answer', text: cfg.faqs[m].a }
+        });
+      }
+      var ldScript = document.createElement('script');
+      ldScript.type = 'application/ld+json';
+      ldScript.text = JSON.stringify(ld).replace(/</g, '\\u003c');
+      document.head.appendChild(ldScript);
+    } catch (e) { /* non-critical */ }
+  }
+
+  // ---- Sticky nav state ----
+  var nav = document.getElementById('nav');
+  if (nav) {
+    var onScroll = function () {
+      if (window.scrollY > 8) nav.classList.add('scrolled');
+      else nav.classList.remove('scrolled');
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+
+  // ---- Scroll reveal (respects prefers-reduced-motion) ----
+  var reduceMotion = window.matchMedia &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var targets = document.querySelectorAll('[data-reveal]');
+  if (!reduceMotion && 'IntersectionObserver' in window && targets.length) {
+    var cardIndex = 0;
+    for (var t = 0; t < targets.length; t++) {
+      targets[t].classList.add('reveal');
+      if (targets[t].classList.contains('card')) {
+        targets[t].style.transitionDelay = (cardIndex % 3) * 70 + 'ms';
+        cardIndex++;
+      }
+    }
+    var io = new IntersectionObserver(function (entries) {
+      for (var e = 0; e < entries.length; e++) {
+        if (entries[e].isIntersecting) {
+          entries[e].target.classList.add('in');
+          io.unobserve(entries[e].target);
+        }
+      }
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    for (var v = 0; v < targets.length; v++) io.observe(targets[v]);
+  }
+})();
+
+
+</script>
+</body>
+</html>

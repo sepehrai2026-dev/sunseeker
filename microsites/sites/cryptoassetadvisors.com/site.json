@@ -1,0 +1,76 @@
+{
+  "template": "d",
+  "domain": "cryptoassetadvisors.com",
+  "name": "Crypto Asset Advisors",
+  "logoIcon": "🏛️",
+  "title": "Crypto Asset Advisors — Professional Digital Asset Advisory",
+  "metaDescription": "Expert crypto asset advisory services including portfolio management, tax planning, DeFi strategy, and institutional onboarding. Navigate digital assets with confidence.",
+  "metaKeywords": "crypto asset advisory, digital asset management, crypto tax planning, DeFi strategy, institutional crypto, compliance consulting",
+  "headline": "Strategic guidance for digital asset portfolios",
+  "subheadline": "We help individuals and institutions navigate the complexities of crypto assets with disciplined portfolio management, tax-efficient strategies, and regulatory compliance.",
+  "ctaText": "Book a Consultation",
+  "year": "2026",
+  "servicesTitle": "Our Advisory Services",
+  "aboutTitle": "About Crypto Asset Advisors",
+  "aboutContent": "<h3>Disciplined Approach to Digital Assets</h3><p>Crypto Asset Advisors brings institutional-grade analysis to digital asset management. Our team combines deep market expertise with rigorous risk frameworks to help clients build and protect wealth in the evolving crypto landscape.</p><h3>Tailored to Your Goals</h3><p>Whether you are an individual seeking exposure to digital assets or an institution exploring crypto allocations, we develop strategies aligned with your risk tolerance, time horizon, and regulatory requirements.</p><h3>Compliance-First Philosophy</h3><p>We operate with full transparency and adherence to applicable regulations. Every recommendation is grounded in thorough due diligence and a commitment to keeping our clients on the right side of evolving compliance standards.</p>",
+  "contactTitle": "Start the Conversation",
+  "contactSub": "Schedule a confidential consultation to discuss your digital asset strategy. We respond within one business day.",
+  "disclaimer": "Crypto Asset Advisors does not provide legal or tax advice. Digital asset investments carry significant risk, including the potential loss of principal. Past performance is not indicative of future results. This website is for informational purposes only and does not constitute a solicitation or offer to buy or sell any securities or digital assets.",
+  "accentColor": "#1e40af",
+  "accentLight": "#dbeafe",
+  "accentDark": "#1e3a8a",
+  "items": [
+    {
+      "icon": "📊",
+      "name": "Portfolio Management",
+      "description": "Structured crypto portfolio construction with ongoing rebalancing, risk monitoring, and performance reporting tailored to your investment objectives."
+    },
+    {
+      "icon": "📋",
+      "name": "Tax Planning",
+      "description": "Proactive tax strategies for digital assets including tax-loss harvesting, lot identification, and reporting to minimize your tax burden across jurisdictions."
+    },
+    {
+      "icon": "🔗",
+      "name": "DeFi Strategy",
+      "description": "Navigate decentralized finance opportunities with curated yield strategies, protocol risk assessments, and smart contract due diligence."
+    },
+    {
+      "icon": "🏢",
+      "name": "Institutional Onboarding",
+      "description": "End-to-end support for institutions entering the crypto space, from custody selection and policy development to execution and reporting infrastructure."
+    },
+    {
+      "icon": "✅",
+      "name": "Compliance Consulting",
+      "description": "Stay ahead of regulatory requirements with AML/KYC framework design, regulatory mapping, and ongoing compliance monitoring for digital asset operations."
+    },
+    {
+      "icon": "🔍",
+      "name": "Market Research",
+      "description": "In-depth market analysis, token fundamental research, and macro trend reports to inform your investment decisions with actionable intelligence."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What size portfolios do you advise on?",
+      "a": "We work with individuals and institutions with digital asset holdings or planned allocations starting at $100,000. Our strategies scale to accommodate portfolios of any size."
+    },
+    {
+      "q": "How do you charge for advisory services?",
+      "a": "We offer both retainer-based advisory engagements and assets-under-advisory fee structures. Pricing is discussed during your initial consultation and tailored to the scope of services."
+    },
+    {
+      "q": "Are you a registered investment advisor?",
+      "a": "Our regulatory status and disclosures are provided during the onboarding process. We operate in compliance with applicable regulations and maintain full transparency about our advisory framework."
+    },
+    {
+      "q": "How do you handle custody of digital assets?",
+      "a": "We do not take custody of client assets. We advise on custody solutions and work with qualified custodians to ensure your assets are held securely under your control."
+    },
+    {
+      "q": "Can you help with crypto tax reporting?",
+      "a": "Yes. We provide comprehensive tax planning and can coordinate with your CPA or tax attorney to ensure accurate reporting of digital asset transactions across all relevant jurisdictions."
+    }
+  ]
+}

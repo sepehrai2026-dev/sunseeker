@@ -1,0 +1,128 @@
+{
+  "template": "a",
+  "domain": "blockmining.io",
+  "name": "BlockMining",
+  "logoIcon": "☁️",
+  "title": "BlockMining — Best Cloud Mining Services Compared (2026)",
+  "metaDescription": "Compare the best cloud mining services for 2026. Expert reviews of NiceHash, Genesis Mining, ECOS, Bitdeer, and StormGain Mining.",
+  "metaKeywords": "cloud mining, best cloud mining service, crypto mining without hardware, NiceHash review, Genesis Mining review, cloud mining comparison",
+  "headline": "Mine crypto without the hardware",
+  "subheadline": "Independent comparisons of cloud mining platforms — rent hashpower, skip the setup, and start mining from anywhere. We separate the legitimate services from the scams.",
+  "lastUpdated": "July 2026",
+  "year": "2026",
+  "introCopy": "Cloud mining lets you mine cryptocurrency without buying, housing, or maintaining hardware. You rent hashpower from a provider who operates the physical miners. It's appealing — but the space is rife with scams. We've evaluated the leading cloud mining platforms on transparency, pricing, payout reliability, and contract terms so you can mine with confidence.",
+  "comparisonTitle": "Top cloud mining services compared",
+  "guideTitle": "How to evaluate cloud mining services",
+  "guideContent": "<h3>Legitimacy first</h3><p>The cloud mining space has a long history of scams and Ponzi schemes. Before investing, verify that the provider has physical mining facilities you can verify, transparent hashrate reporting, and a track record of reliable payouts. If the returns sound too good to be true, they are.</p><h3>Contract terms matter</h3><p>Read the fine print on maintenance fees, contract duration, and termination conditions. Some contracts have clauses that automatically terminate when mining becomes unprofitable — meaning you lose your investment. Look for flexible terms and transparent fee structures.</p><h3>Profitability reality check</h3><p>Cloud mining is rarely more profitable than buying and holding crypto directly. The provider needs to cover hardware, electricity, cooling, staff, and profit margin — all from your contract fees. The main advantage is convenience, not returns.</p><h3>Payout and withdrawal</h3><p>Check minimum payout thresholds, payout frequency, and withdrawal options. The best platforms offer daily payouts to your own wallet with low minimum thresholds. Avoid platforms that lock your earnings for extended periods.</p>",
+  "disclaimer": "BlockMining.io provides independent comparisons of cloud mining services. We may earn a commission through affiliate links at no extra cost to you. Cloud mining carries significant risk including total loss of investment. This is not financial advice.",
+  "affiliateDisclosure": "Some links on this site are affiliate links. We may earn a commission if you make a purchase.",
+  "accentColor": "#d97706",
+  "accentLight": "#fef3c7",
+  "accentDark": "#b45309",
+  "items": [
+    {
+      "name": "NiceHash",
+      "icon": "🔄",
+      "tagline": "Hashpower marketplace and mining OS",
+      "description": "NiceHash is the largest hashpower marketplace — you can buy or sell mining power on demand. Their QuickMiner software auto-optimizes your hardware, and the marketplace model means flexible, no-commitment mining.",
+      "features": [
+        "Buy and sell hashpower on demand",
+        "No long-term contracts required",
+        "QuickMiner auto-optimization software",
+        "Daily payouts in BTC",
+        "Transparent marketplace pricing"
+      ],
+      "pricing": "<strong>Market-based</strong> — pay per GH/day",
+      "url": "#affiliate-nicehash",
+      "cta": "Visit NiceHash",
+      "featured": true
+    },
+    {
+      "name": "Genesis Mining",
+      "icon": "🌍",
+      "tagline": "Established cloud mining provider",
+      "description": "Genesis Mining is one of the oldest cloud mining providers, operating since 2013. They run large-scale mining farms in Iceland and other locations with cheap renewable energy. Long track record of payouts.",
+      "features": [
+        "Operating since 2013",
+        "Mining farms powered by renewable energy",
+        "Multiple contract options",
+        "BTC, ETH, and altcoin mining",
+        "Transparent facility locations"
+      ],
+      "pricing": "From <strong>$100</strong> — 12-24 month contracts",
+      "url": "#affiliate-genesis-mining",
+      "cta": "Visit Genesis Mining"
+    },
+    {
+      "name": "ECOS",
+      "icon": "🌱",
+      "tagline": "All-in-one crypto platform with mining",
+      "description": "ECOS is based in Armenia's Free Economic Zone and offers cloud mining alongside a wallet, exchange, and investment tools. Their mining contracts use power from the Hrazdan thermal plant at competitive electricity rates.",
+      "features": [
+        "Free Economic Zone benefits",
+        "Integrated wallet and exchange",
+        "Low electricity costs",
+        "Mining calculator for ROI estimates",
+        "Portfolio tracking and analytics"
+      ],
+      "pricing": "From <strong>$50</strong> — flexible contract terms",
+      "url": "#affiliate-ecos",
+      "cta": "Visit ECOS"
+    },
+    {
+      "name": "Bitdeer",
+      "icon": "🦌",
+      "tagline": "Institutional-grade cloud mining",
+      "description": "Bitdeer is a publicly traded (NASDAQ: BTDR) cloud mining platform offering both hosting and hashrate sharing. Backed by institutional infrastructure and transparent financials as a public company.",
+      "features": [
+        "Publicly traded (NASDAQ: BTDR)",
+        "Hosting and hashrate sharing",
+        "Institutional-grade infrastructure",
+        "Transparent public company financials",
+        "Multiple mining plans available"
+      ],
+      "pricing": "From <strong>$500</strong> — various contract durations",
+      "url": "#affiliate-bitdeer",
+      "cta": "Visit Bitdeer",
+      "featured": true
+    },
+    {
+      "name": "StormGain Mining",
+      "icon": "⛈️",
+      "tagline": "Free cloud mining with trading platform",
+      "description": "StormGain offers a unique free cloud mining feature within their trading platform. While the free tier has limited hashrate, it lets you try cloud mining without upfront investment. Full trading platform with leverage available.",
+      "features": [
+        "Free cloud mining tier available",
+        "Integrated trading platform",
+        "No hardware or investment required",
+        "4-hour mining sessions",
+        "Built-in crypto wallet"
+      ],
+      "pricing": "<strong>Free tier</strong> available — premium plans from <strong>$50</strong>",
+      "url": "#affiliate-stormgain",
+      "cta": "Visit StormGain"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is cloud mining legitimate?",
+      "a": "Some cloud mining services are legitimate, but the industry has a high rate of scams. Stick with established providers that have verifiable mining facilities, public company status, or long track records. If a service promises guaranteed returns or unusually high profits, it's likely a scam."
+    },
+    {
+      "q": "Is cloud mining profitable?",
+      "a": "Cloud mining is generally less profitable than buying crypto directly, because you're paying for the provider's overhead and profit margin. However, it can make sense if you want mining exposure without managing hardware, and if you choose a reputable provider with competitive rates."
+    },
+    {
+      "q": "What happens if crypto prices crash?",
+      "a": "Most cloud mining contracts have maintenance fee clauses that can render your contract unprofitable or even trigger automatic termination if mining revenue falls below costs. This means you could lose your entire investment during a prolonged downturn."
+    },
+    {
+      "q": "How long do cloud mining contracts last?",
+      "a": "Contract durations typically range from 6 months to 2 years, with some providers offering lifetime contracts. Shorter contracts reduce risk but may have higher per-day costs. NiceHash's marketplace model avoids contracts entirely — you buy hashpower on demand."
+    },
+    {
+      "q": "Can I mine Bitcoin for free?",
+      "a": "StormGain offers a free mining tier, though the hashrate and earnings are minimal. It's useful for learning and experimentation, but don't expect meaningful income. Earning significant mining revenue always requires investment in hardware or hashpower contracts."
+    }
+  ]
+}

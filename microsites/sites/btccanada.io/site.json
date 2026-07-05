@@ -1,0 +1,82 @@
+{
+  "template": "a",
+  "domain": "btccanada.io",
+  "name": "BTC Canada",
+  "logoIcon": "🇨🇦",
+  "title": "BTC Canada — Best Crypto Exchanges for Canadians",
+  "metaDescription": "Compare the best cryptocurrency exchanges for Canadians in 2026. CAD-friendly platforms with Interac e-Transfer, regulated by CSA and provincial authorities.",
+  "metaKeywords": "buy bitcoin Canada, best crypto exchange Canada, Canadian crypto exchange, buy crypto with CAD",
+  "headline": "Buy bitcoin in Canada",
+  "subheadline": "Canadian-regulated crypto exchanges compared — Interac e-Transfer, CAD trading pairs, and CSA-compliant platforms.",
+  "lastUpdated": "July 2026",
+  "year": "2026",
+  "introCopy": "Canada has a mature crypto market with strong regulatory oversight from the CSA and provincial securities commissions. Several homegrown exchanges offer Interac e-Transfer deposits, CAD trading pairs, and compliance with Canadian tax reporting requirements.",
+  "comparisonTitle": "Best Canadian crypto exchanges",
+  "guideTitle": "Buying crypto in Canada",
+  "guideContent": "<h3>Regulation</h3><p>Canadian crypto exchanges must register with provincial securities regulators and FINTRAC (anti-money laundering). Look for platforms registered as Restricted Dealers with the CSA. This ensures your funds are protected under Canadian law.</p><h3>Funding your account</h3><p>Interac e-Transfer is the most popular and fastest deposit method — funds arrive in minutes and are usually free. Wire transfers and bank drafts are available for larger amounts. Credit card purchases carry extra fees.</p><h3>Tax obligations</h3><p>The CRA treats crypto as a commodity. Capital gains are 50% taxable. If you trade frequently, the CRA may classify your activity as business income (100% taxable). Keep detailed records of every transaction.</p>",
+  "disclaimer": "BTCCanada.io provides independent comparisons for Canadian crypto users. Cryptocurrency trading involves risk. This is not financial advice.",
+  "affiliateDisclosure": "Some links are affiliate links. We may earn a commission at no extra cost to you.",
+  "accentColor": "#dc2626",
+  "accentLight": "#fee2e2",
+  "accentDark": "#b91c1c",
+  "items": [
+    {
+      "name": "Shakepay",
+      "icon": "🍁",
+      "tagline": "Easiest Canadian crypto app",
+      "description": "Shakepay is a Montreal-based app focused on making bitcoin and ethereum accessible to everyday Canadians. Free Interac e-Transfer deposits, a Visa card with bitcoin cashback, and a shake-to-earn bitcoin feature.",
+      "features": ["Free Interac e-Transfer deposits", "Bitcoin cashback Visa card", "Shake your phone to earn bitcoin", "Registered with AMF and FINTRAC", "No trading fees (spread-based)"],
+      "pricing": "<strong>No fees</strong> (spread markup ~1.5-2%)",
+      "url": "#affiliate-shakepay",
+      "cta": "Visit Shakepay",
+      "featured": true
+    },
+    {
+      "name": "Newton",
+      "icon": "🟠",
+      "tagline": "Lowest-fee Canadian exchange",
+      "description": "Newton offers the tightest spreads of any Canadian exchange and no commission fees. Supports 70+ cryptocurrencies with free Interac e-Transfer deposits and withdrawals. The best option for cost-conscious Canadian traders.",
+      "features": ["No commission fees", "Tightest spreads in Canada", "70+ cryptocurrencies", "Free Interac deposits and withdrawals", "CSA registered"],
+      "pricing": "<strong>No fees</strong> (spread ~0.5-1%)",
+      "url": "#affiliate-newton",
+      "cta": "Visit Newton",
+      "featured": true
+    },
+    {
+      "name": "Bitbuy",
+      "icon": "🔷",
+      "tagline": "IIROC-registered exchange",
+      "description": "Bitbuy (now part of WonderFi) is one of the first Canadian exchanges to be registered with IIROC. Known for institutional-grade security, proof of reserves, and a Pro trading platform with competitive fees.",
+      "features": ["IIROC registered", "Proof of reserves audits", "Pro trading platform", "Instant Interac deposits", "Canadian dollar wire transfers"],
+      "pricing": "Maker <strong>0.10%</strong> / Taker <strong>0.20%</strong> (Pro)",
+      "url": "#affiliate-bitbuy",
+      "cta": "Visit Bitbuy"
+    },
+    {
+      "name": "Wealthsimple Crypto",
+      "icon": "💚",
+      "tagline": "Invest in crypto alongside stocks",
+      "description": "If you already use Wealthsimple for investing, adding crypto is seamless. Trade 50+ tokens alongside your TFSA and RRSP. No transfer fees, and the familiar Wealthsimple interface.",
+      "features": ["Integrated with Wealthsimple Invest", "50+ cryptocurrencies", "No deposit or withdrawal fees", "Simple mobile and web app", "CSA registered"],
+      "pricing": "Spread markup ~<strong>1.5-2%</strong>",
+      "url": "#affiliate-wealthsimple",
+      "cta": "Visit Wealthsimple"
+    },
+    {
+      "name": "Kraken",
+      "icon": "🐙",
+      "tagline": "Global exchange with CAD support",
+      "description": "Kraken is a veteran global exchange with full CAD support. Offers advanced trading features, staking, and some of the lowest fees available. A strong choice for experienced Canadian traders.",
+      "features": ["CAD trading pairs", "Advanced order types", "Proof of reserves", "Staking available", "24/7 customer support"],
+      "pricing": "Maker <strong>0.25%</strong> / Taker <strong>0.40%</strong>",
+      "url": "#affiliate-kraken",
+      "cta": "Visit Kraken"
+    }
+  ],
+  "faqs": [
+    {"q": "Is crypto legal in Canada?", "a": "Yes. Cryptocurrency is legal in Canada and regulated by the CSA and provincial securities commissions. Exchanges must register with FINTRAC and comply with anti-money laundering requirements."},
+    {"q": "Can I hold crypto in my TFSA or RRSP?", "a": "Not directly, but some platforms like Wealthsimple offer crypto within registered accounts. You can also hold crypto ETFs (like Purpose Bitcoin ETF) in a TFSA or RRSP through any brokerage."},
+    {"q": "How is crypto taxed in Canada?", "a": "The CRA treats crypto as a commodity. Only 50% of capital gains are taxable, added to your income. If you trade frequently, the CRA may treat it as business income (100% taxable). Keep records of every transaction."},
+    {"q": "What's the best way to deposit CAD?", "a": "Interac e-Transfer is the fastest and cheapest option — most exchanges support it with no fees and near-instant deposits. Wire transfers work for larger amounts but may take 1-3 business days."}
+  ]
+}

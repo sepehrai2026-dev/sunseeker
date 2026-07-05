@@ -1,0 +1,72 @@
+{
+  "template": "d",
+  "domain": "cryptocurrencyadvisers.com",
+  "name": "Cryptocurrency Advisers",
+  "logoIcon": "💹",
+  "title": "Cryptocurrency Advisers — Expert Crypto Consulting & Strategy",
+  "metaDescription": "Professional cryptocurrency consulting services. Trading strategy, wallet security, token evaluation, regulatory guidance, and blockchain integration for businesses and individuals.",
+  "metaKeywords": "cryptocurrency consulting, crypto trading strategy, wallet security, token evaluation, ICO advisory, blockchain integration, regulatory guidance",
+  "headline": "Expert cryptocurrency consulting you can trust",
+  "subheadline": "From trading strategy to regulatory compliance, our advisers help you make informed decisions in the fast-moving cryptocurrency market.",
+  "ctaText": "Get in Touch",
+  "year": "2026",
+  "servicesTitle": "Consulting Services",
+  "aboutTitle": "About Cryptocurrency Advisers",
+  "aboutContent": "<h3>Practical Expertise, Not Hype</h3><p>Cryptocurrency Advisers was founded on the principle that sound crypto strategy requires clear thinking, not speculation. We cut through the noise to deliver actionable guidance grounded in market fundamentals and technical analysis.</p><h3>Comprehensive Crypto Support</h3><p>Our consulting covers the full spectrum of cryptocurrency needs, from securing your first wallet to evaluating complex token offerings and navigating the regulatory landscape. We meet clients where they are and guide them forward.</p><h3>Security as a Foundation</h3><p>In an industry where security breaches cost billions annually, we prioritize protecting your assets above all else. Every strategy we recommend starts with a robust security framework.</p>",
+  "contactTitle": "Let's Talk Crypto",
+  "contactSub": "Reach out to discuss your cryptocurrency needs. Whether you are just getting started or looking to optimize existing holdings, we are here to help.",
+  "disclaimer": "Cryptocurrency Advisers provides consulting and educational services only. Cryptocurrency markets are highly volatile and speculative. Nothing on this website constitutes financial, legal, or tax advice. Always conduct your own research and consult qualified professionals before making investment decisions.",
+  "accentColor": "#059669",
+  "accentLight": "#d1fae5",
+  "accentDark": "#047857",
+  "items": [
+    {
+      "icon": "📈",
+      "name": "Trading Strategy",
+      "description": "Data-driven trading frameworks including technical analysis, market timing, position sizing, and risk management for active cryptocurrency traders."
+    },
+    {
+      "icon": "🔒",
+      "name": "Wallet Security",
+      "description": "Comprehensive security audits of your crypto storage, hardware wallet setup, multi-signature configurations, and best practices for protecting your digital assets."
+    },
+    {
+      "icon": "🪙",
+      "name": "Token Evaluation",
+      "description": "Rigorous fundamental analysis of cryptocurrency tokens including tokenomics review, team assessment, technology audit, and market positioning evaluation."
+    },
+    {
+      "icon": "⚖️",
+      "name": "Regulatory Guidance",
+      "description": "Navigate the evolving regulatory landscape with clarity. We help you understand compliance obligations, licensing requirements, and reporting standards."
+    },
+    {
+      "icon": "🚀",
+      "name": "ICO Advisory",
+      "description": "End-to-end advisory for token launches including token design, legal structuring, marketing strategy, and post-launch community management."
+    },
+    {
+      "icon": "⛓️",
+      "name": "Blockchain Integration",
+      "description": "Strategic guidance for businesses looking to integrate blockchain technology into operations, from supply chain to payments and beyond."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do you manage crypto portfolios directly?",
+      "a": "We provide consulting and strategic guidance but do not directly manage or take custody of client funds. We help you develop strategies that you execute through your preferred platforms."
+    },
+    {
+      "q": "What cryptocurrencies do you cover?",
+      "a": "We cover all major cryptocurrencies and can evaluate emerging tokens on request. Our analysis spans Bitcoin, Ethereum, and the broader altcoin market including DeFi and layer-2 protocols."
+    },
+    {
+      "q": "How do I know if my wallet setup is secure?",
+      "a": "We offer security assessments that review your current storage setup, identify vulnerabilities, and recommend improvements. This includes hardware wallet configuration, backup procedures, and operational security practices."
+    },
+    {
+      "q": "Can you help my business accept cryptocurrency payments?",
+      "a": "Yes. We advise on payment processor selection, wallet infrastructure, accounting integration, and compliance considerations for businesses looking to accept crypto payments."
+    }
+  ]
+}

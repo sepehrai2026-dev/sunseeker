@@ -1,0 +1,17 @@
+<article class="card" data-reveal>
+  <div class="card-top">
+    <span class="card-num" aria-hidden="true"></span>
+    <span class="card-flag">Top pick</span>
+  </div>
+  <div class="card-header">
+    <h3 class="card-name">{{item.name}}</h3>
+    <p class="card-tagline">{{item.tagline}}</p>
+  </div>
+  <p class="card-desc">{{item.description}}</p>
+  <ul class="card-features"><li>{{item.features}}</li></ul>
+  <div class="card-pricing">
+    <span class="card-pricing-label">Pricing</span>
+    <span class="card-pricing-value">{{item.pricing}}</span>
+  </div>
+  <a href="{{item.url}}" class="card-cta" target="_blank" rel="noopener nofollow sponsored">{{item.cta}}<svg class="card-cta-arrow" width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6" stroke="currentColor" stroke-width="1.5"/></svg></a>
+</article>

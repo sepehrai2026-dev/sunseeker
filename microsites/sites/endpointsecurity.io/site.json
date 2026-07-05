@@ -1,0 +1,144 @@
+{
+  "template": "a",
+  "domain": "endpointsecurity.io",
+  "name": "Endpoint Security",
+  "logoIcon": "🔐",
+  "title": "Endpoint Security — Best EDR & XDR Platforms Compared",
+  "metaDescription": "Compare the best endpoint detection and response (EDR) and extended detection and response (XDR) platforms for 2026. Independent reviews of CrowdStrike, SentinelOne, Microsoft Defender, and more.",
+  "metaKeywords": "endpoint security, EDR, XDR, endpoint detection and response, CrowdStrike, SentinelOne, best EDR platform",
+  "headline": "Protect every endpoint",
+  "subheadline": "Independent comparisons of EDR, XDR, and endpoint protection platforms — cut through vendor marketing and find the right solution for your organization.",
+  "lastUpdated": "July 2026",
+  "year": "2026",
+  "introCopy": "With remote work and BYOD policies expanding the attack surface, endpoint security has never been more critical. The EDR/XDR market is crowded with overlapping claims. We break down the top platforms by detection capability, response automation, deployment complexity, and total cost of ownership.",
+  "comparisonTitle": "Top endpoint security platforms compared",
+  "guideTitle": "How to choose an endpoint security platform",
+  "guideContent": "<h3>Define your threat model</h3><p>Before evaluating platforms, understand what you're protecting against. A 50-person startup faces different threats than a 10,000-employee enterprise with compliance requirements. Consider your industry, data sensitivity, and regulatory obligations (HIPAA, SOC 2, PCI-DSS).</p><h3>EDR vs. XDR vs. EPP</h3><p>Endpoint Protection Platforms (EPP) focus on prevention — antivirus, firewall, device control. EDR adds detection and response — behavioral analysis, threat hunting, incident investigation. XDR extends beyond endpoints to network, email, cloud, and identity. Most organizations benefit from EDR at minimum.</p><h3>Cloud-native vs. on-premise</h3><p>Cloud-native solutions (CrowdStrike, SentinelOne) deploy faster and update automatically. On-premise options give you more control over data but require infrastructure investment. Hybrid deployments are increasingly common.</p><h3>Managed vs. self-managed</h3><p>If your team lacks 24/7 security operations capability, consider platforms with built-in managed detection and response (MDR). Some vendors include MDR in their pricing; others charge separately.</p>",
+  "disclaimer": "EndpointSecurity.io provides independent comparisons of cybersecurity platforms. We may earn referral fees through partner links. Our reviews are based on independent research and testing.",
+  "affiliateDisclosure": "Some links on this site are partner links. We may earn a referral fee at no extra cost to you.",
+  "accentColor": "#7c3aed",
+  "accentLight": "#ede9fe",
+  "accentDark": "#6d28d9",
+  "items": [
+    {
+      "name": "CrowdStrike Falcon",
+      "icon": "🦅",
+      "tagline": "Cloud-native EDR market leader",
+      "description": "CrowdStrike pioneered cloud-native endpoint security and consistently leads in analyst evaluations. The lightweight Falcon agent provides real-time threat detection, automated response, and integrated threat intelligence. Used by over 29,000 organizations globally.",
+      "features": [
+        "Cloud-native single-agent architecture",
+        "AI-powered threat detection",
+        "Integrated threat intelligence",
+        "24/7 managed threat hunting (Falcon OverWatch)",
+        "15-day average time from deployment to value"
+      ],
+      "pricing": "<strong>$8.99/endpoint/mo</strong> — Falcon Go (up to 100 endpoints)",
+      "url": "#affiliate-crowdstrike",
+      "cta": "Visit CrowdStrike",
+      "featured": true
+    },
+    {
+      "name": "SentinelOne Singularity",
+      "icon": "🤖",
+      "tagline": "Autonomous AI-driven XDR",
+      "description": "SentinelOne's Singularity platform uses behavioral AI to detect and autonomously respond to threats without human intervention. Its storyline technology maps entire attack chains, and one-click remediation can roll back ransomware damage.",
+      "features": [
+        "Autonomous detection and response",
+        "Storyline attack visualization",
+        "One-click ransomware rollback",
+        "Kubernetes and cloud workload protection",
+        "No cloud connectivity required for detection"
+      ],
+      "pricing": "<strong>$6/endpoint/mo</strong> — Singularity Control",
+      "url": "#affiliate-sentinelone",
+      "cta": "Visit SentinelOne",
+      "featured": true
+    },
+    {
+      "name": "Microsoft Defender for Endpoint",
+      "icon": "🪟",
+      "tagline": "Deep Microsoft ecosystem integration",
+      "description": "If your organization is already invested in Microsoft 365, Defender for Endpoint offers compelling value through native integration with Azure AD, Intune, and the broader Microsoft security stack. Included in some M365 E5 licenses.",
+      "features": [
+        "Included in M365 E5 license",
+        "Native Azure AD and Intune integration",
+        "Threat and vulnerability management",
+        "Attack surface reduction rules",
+        "Cross-platform (Windows, macOS, Linux, mobile)"
+      ],
+      "pricing": "<strong>$5.20/user/mo</strong> — Plan 2 standalone",
+      "url": "#affiliate-msdefender",
+      "cta": "Visit Microsoft"
+    },
+    {
+      "name": "Palo Alto Cortex XDR",
+      "icon": "🔥",
+      "tagline": "Network-to-endpoint XDR",
+      "description": "Cortex XDR combines endpoint, network, and cloud data for comprehensive threat detection. Particularly strong if you already use Palo Alto firewalls — the integration provides unmatched cross-layer visibility and automated response.",
+      "features": [
+        "Integrates endpoint, network, and cloud data",
+        "Behavioral analytics and ML detection",
+        "Automated root cause analysis",
+        "Native integration with Palo Alto NGFW",
+        "Forensic investigation tools"
+      ],
+      "pricing": "Contact for pricing — enterprise agreements",
+      "url": "#affiliate-cortex",
+      "cta": "Visit Palo Alto"
+    },
+    {
+      "name": "Sophos Intercept X",
+      "icon": "🛡️",
+      "tagline": "Anti-ransomware specialist",
+      "description": "Sophos Intercept X is known for industry-leading anti-ransomware technology including CryptoGuard. It combines deep learning AI with anti-exploit technology and includes a built-in MDR option at competitive pricing.",
+      "features": [
+        "CryptoGuard anti-ransomware",
+        "Deep learning malware detection",
+        "Anti-exploit technology",
+        "Built-in MDR option",
+        "Central management via Sophos Central"
+      ],
+      "pricing": "From <strong>$28/user/year</strong> — Intercept X Advanced",
+      "url": "#affiliate-sophos",
+      "cta": "Visit Sophos"
+    },
+    {
+      "name": "Elastic Security",
+      "icon": "🔍",
+      "tagline": "Open-source SIEM + endpoint",
+      "description": "Elastic Security combines free and open endpoint protection with SIEM capabilities built on Elasticsearch. Ideal for teams that want full data ownership, custom detection rules, and no per-endpoint licensing.",
+      "features": [
+        "Free and open endpoint agent",
+        "No per-endpoint licensing fees",
+        "Built-in SIEM capabilities",
+        "Custom detection rules with EQL",
+        "Self-hosted or Elastic Cloud"
+      ],
+      "pricing": "<strong>Free</strong> (self-hosted) or from <strong>$95/mo</strong> (Elastic Cloud)",
+      "url": "#affiliate-elastic",
+      "cta": "Visit Elastic"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the difference between EDR and antivirus?",
+      "a": "Traditional antivirus uses signature-based detection to block known malware. EDR goes further by monitoring endpoint behavior in real-time, detecting unknown threats through behavioral analysis, and providing investigation and response tools. Think of antivirus as a lock on your door and EDR as a security camera system with an alarm."
+    },
+    {
+      "q": "Do I need XDR or is EDR enough?",
+      "a": "EDR is sufficient for most organizations that primarily need endpoint protection. XDR adds value when you want correlated detection across endpoints, network, email, and cloud — reducing alert fatigue and catching multi-stage attacks that span multiple vectors. If your security team is small, XDR's automated correlation can be a force multiplier."
+    },
+    {
+      "q": "How long does deployment typically take?",
+      "a": "Cloud-native solutions like CrowdStrike and SentinelOne can be deployed to thousands of endpoints in hours. On-premise solutions or those requiring network architecture changes may take weeks. Most vendors offer phased rollout options starting with a pilot group."
+    },
+    {
+      "q": "Can these platforms protect remote workers?",
+      "a": "Yes, all modern EDR/XDR platforms are designed for remote and hybrid workforces. Cloud-native solutions are particularly well-suited since the agent communicates directly with the cloud console regardless of the endpoint's network location."
+    },
+    {
+      "q": "What about Linux and macOS support?",
+      "a": "All platforms listed here support Windows, macOS, and Linux to varying degrees. CrowdStrike and SentinelOne have the strongest cross-platform parity. Microsoft Defender has improved significantly on macOS and Linux but some features remain Windows-first."
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "template": "a",
+  "domain": "madamevape.com",
+  "name": "Madame Vape",
+  "logoIcon": "💨",
+  "title": "Madame Vape — Best Vape Products Compared (2026)",
+  "metaDescription": "Compare the best vape products for 2026. Expert reviews of JUUL, Vuse, IQOS, Flum Float, and Elf Bar with detailed feature comparisons.",
+  "metaKeywords": "best vape products, vape comparison, JUUL review, Vuse review, IQOS review, Elf Bar review, vaping guide",
+  "headline": "Vaping, reviewed with clarity",
+  "subheadline": "Independent comparisons of the leading vape products — flavor options, battery life, design, and value so you can make an informed choice.",
+  "lastUpdated": "July 2026",
+  "year": "2026",
+  "introCopy": "The vape market is crowded, confusing, and full of conflicting information. Whether you're an experienced vaper or exploring alternatives to traditional cigarettes, choosing the right device matters. We've compared the leading vape products on design, flavor selection, nicotine delivery, battery life, and overall value.",
+  "comparisonTitle": "Top vape products compared",
+  "guideTitle": "How to choose the right vape",
+  "guideContent": "<h3>Pod systems vs. disposables</h3><p>Pod systems use refillable or replaceable pods and a rechargeable battery — lower long-term cost and less waste. Disposables are convenient (no charging, no refilling) but more expensive per puff and generate more waste. For regular use, pod systems are the better value.</p><h3>Nicotine salt vs. freebase</h3><p>Nicotine salt e-liquids deliver a smoother throat hit at higher nicotine concentrations, making them popular with people transitioning from cigarettes. Freebase nicotine provides a stronger throat hit at lower concentrations. Most pod systems use nicotine salts.</p><h3>Heat-not-burn devices</h3><p>Devices like IQOS heat real tobacco instead of vaporizing liquid. They're positioned between cigarettes and vapes — offering a more familiar tobacco taste with potentially reduced harmful compounds compared to combustion. However, they're not risk-free.</p><h3>Battery and portability</h3><p>Battery life matters if you vape throughout the day. Most pod systems last 8-12 hours on a charge. Consider size and pocket-friendliness too — the best device is one you'll actually carry with you.</p>",
+  "disclaimer": "MadameVape.com provides independent comparisons of vape products. We may earn a commission through affiliate links at no extra cost to you. Vaping products contain nicotine, which is addictive. These products are intended for adult smokers and vapers only.",
+  "affiliateDisclosure": "Some links on this site are affiliate links. We may earn a commission if you make a purchase.",
+  "accentColor": "#a855f7",
+  "accentLight": "#f3e8ff",
+  "accentDark": "#9333ea",
+  "items": [
+    {
+      "name": "JUUL",
+      "icon": "🔋",
+      "tagline": "Sleek pod system pioneer",
+      "description": "JUUL popularized the modern pod vape with its slim, minimalist design and simple pod system. Known for consistent nicotine delivery and a draw-activated mechanism with no buttons to press.",
+      "features": [
+        "Ultra-slim, pocket-friendly design",
+        "Draw-activated (no buttons)",
+        "Consistent nicotine salt delivery",
+        "Magnetic pod connection",
+        "USB-C charging"
+      ],
+      "pricing": "Device: <strong>$9.99</strong> — Pods: <strong>$6.49/2-pack</strong>",
+      "url": "#affiliate-juul",
+      "cta": "Shop JUUL",
+      "featured": true
+    },
+    {
+      "name": "Vuse",
+      "icon": "🌬️",
+      "tagline": "Reliable pod system by R.J. Reynolds",
+      "description": "Vuse (formerly Vuse Alto) is backed by one of the largest tobacco companies, offering reliable devices and a wide range of flavor options. Strong battery life and consistent vapor production make it a popular daily driver.",
+      "features": [
+        "Long-lasting battery (up to 12 hours)",
+        "Wide flavor selection",
+        "Pre-filled pod system",
+        "Backed by major tobacco company",
+        "Available in multiple nicotine strengths"
+      ],
+      "pricing": "Device: <strong>$1.00</strong> (with pods) — Pods: <strong>$5.99/2-pack</strong>",
+      "url": "#affiliate-vuse",
+      "cta": "Shop Vuse",
+      "featured": true
+    },
+    {
+      "name": "IQOS",
+      "icon": "🔥",
+      "tagline": "Heat-not-burn tobacco system",
+      "description": "IQOS by Philip Morris heats real tobacco sticks (TEREA) instead of vaporizing liquid. It delivers a familiar tobacco experience without combustion, producing an aerosol rather than smoke. FDA-authorized as a modified risk tobacco product.",
+      "features": [
+        "Heats real tobacco (no combustion)",
+        "FDA modified risk authorization",
+        "TEREA stick compatibility",
+        "No ash, less odor than cigarettes",
+        "Premium build quality"
+      ],
+      "pricing": "Device: <strong>$49.00</strong> — TEREA sticks: <strong>$7.50/pack</strong>",
+      "url": "#affiliate-iqos",
+      "cta": "Shop IQOS"
+    },
+    {
+      "name": "Flum Float",
+      "icon": "🍬",
+      "tagline": "High-puff disposable vape",
+      "description": "The Flum Float is a popular disposable vape offering approximately 3,000 puffs per device. Known for bold, sweet flavor profiles and a smooth draw. Convenient for travel or as a backup device.",
+      "features": [
+        "Approximately 3,000 puffs per device",
+        "Bold fruit and dessert flavors",
+        "No charging or refilling needed",
+        "Compact and lightweight",
+        "5% nicotine salt"
+      ],
+      "pricing": "<strong>$12.99</strong> per device",
+      "url": "#affiliate-flum-float",
+      "cta": "Shop Flum Float"
+    },
+    {
+      "name": "Elf Bar",
+      "icon": "✨",
+      "tagline": "Flavor-forward disposable vape",
+      "description": "Elf Bar (now EBDESIGN in the US) is one of the world's most popular disposable vape brands, known for an enormous flavor range and smooth nicotine delivery. Their rechargeable disposable models offer high puff counts.",
+      "features": [
+        "Massive flavor selection (50+ options)",
+        "Up to 5,000 puffs (rechargeable models)",
+        "Smooth mesh coil technology",
+        "Rechargeable USB-C on select models",
+        "Ergonomic design"
+      ],
+      "pricing": "From <strong>$10.99</strong> per device",
+      "url": "#affiliate-elf-bar",
+      "cta": "Shop Elf Bar"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is vaping safer than smoking?",
+      "a": "Public health authorities generally agree that vaping is less harmful than combustible cigarettes because it doesn't involve burning tobacco. However, vaping is not risk-free — it still delivers nicotine and other substances to your lungs. It's best viewed as a harm reduction tool for current smokers, not a safe habit to pick up."
+    },
+    {
+      "q": "What's the difference between pod systems and disposables?",
+      "a": "Pod systems have a rechargeable battery and replaceable pods — lower cost per puff and less waste over time. Disposables are all-in-one devices you discard when empty — more convenient but pricier per puff and environmentally wasteful. For regular use, pod systems save money."
+    },
+    {
+      "q": "How do I choose the right nicotine strength?",
+      "a": "If you're transitioning from a pack-a-day cigarette habit, start with 5% (50mg) nicotine salt. Lighter smokers may prefer 3% (30mg). If you experience dizziness or headaches, drop to a lower strength. Non-smokers should not start using nicotine products."
+    },
+    {
+      "q": "What is heat-not-burn technology?",
+      "a": "Heat-not-burn devices like IQOS heat real tobacco to around 350C instead of burning it at 600C+. This produces an aerosol containing nicotine and tobacco flavor without the combustion byproducts (tar, carbon monoxide) found in cigarette smoke. The FDA has authorized IQOS as a modified risk tobacco product."
+    },
+    {
+      "q": "How long do vape devices last?",
+      "a": "Pod system batteries typically last 8-12 hours of regular use and can be recharged hundreds of times. The device itself usually lasts 6-12 months before the battery degrades. Disposables last from 200 to 5,000 puffs depending on the model — roughly 1-7 days for a regular vaper."
+    }
+  ]
+}
